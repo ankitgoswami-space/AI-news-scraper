@@ -1264,7 +1264,7 @@ def run():
 
     print(
         "Initial backfill complete:",
-        state["initial_backfill_complete"],
+        state.get("initial_backfill_complete", False),
     )
 
     print()
