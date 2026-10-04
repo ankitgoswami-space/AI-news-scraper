@@ -1,3 +1,15 @@
+"""
+Analytics India Magazine scraper (sitemap -> Playwright -> clean article JSON)
+
+Usage:
+    python analytics_india_scraper.py                  # normal run (backfill or weekly, auto)
+    python analytics_india_scraper.py --max-urls 0     # no per-run URL cap
+    python analytics_india_scraper.py --audit          # content-quality report, no scraping
+    python analytics_india_scraper.py --refetch-short  # re-extract suspiciously short articles
+    python analytics_india_scraper.py --force-initial  # force backfill mode again
+"""
+
+import argparse
 import json
 import logging
 import re
@@ -18,9 +30,7 @@ from playwright.sync_api import sync_playwright
 
 SOURCE_NAME = "Analytics India Magazine"
 
-ROOT_SITEMAP_URL = (
-    "https://analyticsindiamag.com/ai-news-sitemap.xml"
-)
+ROOT_SITEMAP_URL = "https://analyticsindiamag.com/ai-news-sitemap.xml"
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
@@ -32,21 +42,21 @@ LOG_FILE = DATA_DIR / "analytics_india_scraper.log"
 
 INITIAL_START_DATE = date(2026, 1, 1)
 
-# Maximum sitemap URLs inspected in one run.
 MAX_URLS_PER_RUN = 250
+MAX_ATTEMPTS_PER_URL = 5
+CHECKPOINT_EVERY = 25
+RESTART_PAGE_AFTER_FAILURES = 5
 
-# Used when looking for the date boundary.
-CONSECUTIVE_OLD_REQUIRED = 30
-
-MAX_FAILED_RETRIES = 50
+MIN_CONTENT_CHARS = 300
+SHORT_CONTENT_CHARS = 1200
 
 PAGE_NAVIGATION_TIMEOUT = 30000
-HYDRATION_WAIT_MS = 1200
+HYDRATION_WAIT_MS = 2500
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/154.0.0.0 Safari/537.36"
+    "Chrome/131.0.0.0 Safari/537.36"
 )
 
 
@@ -70,7 +80,6 @@ logger = logging.getLogger(__name__)
 # ============================================================
 
 SESSION = requests.Session()
-
 SESSION.headers.update(
     {
         "User-Agent": USER_AGENT,
@@ -81,45 +90,26 @@ SESSION.headers.update(
 
 
 # ============================================================
-# SELECTORS TO REMOVE
+# NOISE REMOVAL CONFIG
 # ============================================================
 
-REMOVE_SELECTORS = [
-    "script",
-    "style",
-    "noscript",
-    "nav",
-    "footer",
-    "aside",
-    "form",
-    "iframe",
-    "svg",
+NOISE_TAGS_SELECTOR = "script, style, noscript, nav, footer, aside, form, iframe, svg, button"
 
-    # sharing / social
-    "[class*='share']",
-    "[class*='social']",
-    "[class*='follow']",
+NOISE_TOKENS = [
+    "share", "sharing", "social", "follow",
+    "newsletter", "subscribe", "subscription",
+    "advert", "advertisement", "ads", "ad", "adslot", "sponsored", "promo",
+    "related", "recommended", "recommend", "trending",
+    "comment", "comments", "sidebar", "breadcrumb", "breadcrumbs",
+]
 
-    # newsletter
-    "[class*='newsletter']",
-    "[id*='newsletter']",
-    "[class*='subscribe']",
-
-    # advertising
-    "[class*='advert']",
-    "[class*='advertisement']",
-    "[class*='ads']",
-    "[id*='advert']",
-    "[id*='ads']",
-
-    # related/recommended
-    "[class*='related']",
-    "[class*='recommended']",
-    "[class*='recommend']",
-
-    # comments
-    "[class*='comment']",
-    "[id*='comment']",
+BAD_PHRASES = [
+    "advertise with us",
+    "subscribe to our newsletter",
+    "follow us on",
+    "related stories",
+    "recommended stories",
+    "what actually matters",
 ]
 
 
@@ -130,72 +120,60 @@ REMOVE_SELECTORS = [
 def normalize_url(url):
     if not url:
         return ""
-
-    url = url.strip()
-
-    parsed = urlparse(url)
-
+    parsed = urlparse(url.strip())
     clean = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
-
-    clean = clean.rstrip("/")
-
-    return clean
+    return clean.rstrip("/")
 
 
 def clean_text(text):
     if not text:
         return ""
-
     text = text.replace("\xa0", " ")
-
     lines = []
-
     for line in text.splitlines():
         line = re.sub(r"\s+", " ", line).strip()
-
         if line:
             lines.append(line)
-
     return "\n\n".join(lines)
+
+
+MONTHS = {
+    m: i
+    for i, m in enumerate(
+        ["jan", "feb", "mar", "apr", "may", "jun",
+         "jul", "aug", "sep", "oct", "nov", "dec"],
+        start=1,
+    )
+}
 
 
 def parse_date_string(value):
     if not value:
         return None
+    value = str(value).strip()
 
-    value = value.strip()
-
-    # ISO date
-    match = re.search(
-        r"(20\d{2})[-/](\d{1,2})[-/](\d{1,2})",
-        value,
-    )
-
+    match = re.search(r"(20\d{2})[-/](\d{1,2})[-/](\d{1,2})", value)
     if match:
         try:
-            return date(
-                int(match.group(1)),
-                int(match.group(2)),
-                int(match.group(3)),
-            )
+            return date(int(match.group(1)), int(match.group(2)), int(match.group(3)))
         except ValueError:
             pass
 
-    # Example:
-    # October 1, 2026
-    # OCTOBER 1, 2026, 6:48 PM
-    patterns = [
-        "%B %d, %Y",
-        "%B %d, %Y, %I:%M %p",
-        "%b %d, %Y",
-        "%b %d, %Y, %I:%M %p",
-    ]
-
-    for pattern in patterns:
+    match = re.search(
+        r"\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+"
+        r"(\d{1,2})(?:st|nd|rd|th)?,?\s+(20\d{2})\b",
+        value,
+        re.IGNORECASE,
+    )
+    if match:
         try:
-            return datetime.strptime(value, pattern).date()
+            return date(
+                int(match.group(3)),
+                MONTHS[match.group(1).lower()],
+                int(match.group(2)),
+            )
         except ValueError:
-            continue
+            pass
 
     return None
 
@@ -207,7 +185,6 @@ def parse_date_string(value):
 def load_json(path, default):
     if not path.exists():
         return deepcopy(default)
-
     try:
         with open(path, "r", encoding="utf-8") as file:
             return json.load(file)
@@ -218,15 +195,8 @@ def load_json(path, default):
 
 def save_json(path, data):
     temp_path = path.with_suffix(".tmp")
-
     with open(temp_path, "w", encoding="utf-8") as file:
-        json.dump(
-            data,
-            file,
-            ensure_ascii=False,
-            indent=2,
-        )
-
+        json.dump(data, file, ensure_ascii=False, indent=2)
     temp_path.replace(path)
 
 
@@ -234,22 +204,28 @@ def save_json(path, data):
 # STATE
 # ============================================================
 
+DEFAULT_STATE = {
+    "initial_backfill_complete": False,
+    "old_urls": {},
+    "refetch": [],
+    "last_run": None,
+}
+
+
 def load_state():
-    return load_json(
-        STATE_FILE,
-        {
-            "initial_backfill_complete": False,
-            "last_cursor_url": None,
-            "last_run": None,
-        },
-    )
+    state = deepcopy(DEFAULT_STATE)
+    loaded = load_json(STATE_FILE, {})
+    if isinstance(loaded, dict):
+        state.update(loaded)
+    if not isinstance(state.get("old_urls"), dict):
+        state["old_urls"] = {}
+    if not isinstance(state.get("refetch"), list):
+        state["refetch"] = []
+    return state
 
 
 def save_state(state):
-    state["last_run"] = datetime.now().isoformat(
-        timespec="seconds"
-    )
-
+    state["last_run"] = datetime.now().isoformat(timespec="seconds")
     save_json(STATE_FILE, state)
 
 
@@ -258,36 +234,15 @@ def save_state(state):
 # ============================================================
 
 def load_failed_urls():
-    data = load_json(
-        FAILED_FILE,
-        {},
-    )
-
-    if not isinstance(data, dict):
-        return {}
-
-    return data
-
-
-def save_failed_urls(data):
-    save_json(FAILED_FILE, data)
+    data = load_json(FAILED_FILE, {})
+    return data if isinstance(data, dict) else {}
 
 
 def mark_failed(failed_urls, url, error):
-    item = failed_urls.get(
-        url,
-        {
-            "attempts": 0,
-            "last_error": "",
-        },
-    )
-
-    item["attempts"] += 1
+    item = failed_urls.get(url, {"attempts": 0, "last_error": ""})
+    item["attempts"] = item.get("attempts", 0) + 1
     item["last_error"] = str(error)
-    item["last_attempt"] = datetime.now().isoformat(
-        timespec="seconds"
-    )
-
+    item["last_attempt"] = datetime.now().isoformat(timespec="seconds")
     failed_urls[url] = item
 
 
@@ -296,111 +251,129 @@ def mark_failed(failed_urls, url, error):
 # ============================================================
 
 def load_existing_articles():
-    data = load_json(
-        OUTPUT_FILE,
-        [],
-    )
-
-    if not isinstance(data, list):
-        return []
-
-    return data
+    data = load_json(OUTPUT_FILE, [])
+    return data if isinstance(data, list) else []
 
 
-def merge_articles(existing, new_articles):
+def merge_articles(existing, new_articles, prefer_longer=()):
     by_url = {}
-
     for article in existing:
         url = normalize_url(article.get("url"))
-
         if url:
             by_url[url] = article
 
     for article in new_articles:
         url = normalize_url(article.get("url"))
-
-        if url:
-            by_url[url] = article
+        if not url:
+            continue
+        old = by_url.get(url)
+        if (
+            old is not None
+            and url in prefer_longer
+            and len(old.get("content", "")) > len(article.get("content", ""))
+        ):
+            continue
+        by_url[url] = article
 
     result = list(by_url.values())
-
-    result.sort(
-        key=lambda item: item.get(
-            "published_date",
-            "",
-        ),
-        reverse=True,
-    )
-
+    result.sort(key=lambda item: item.get("published_date") or "", reverse=True)
     return result
+
+
+def checkpoint(existing, new_articles, failed_urls, state, prefer_longer=()):
+    merged = merge_articles(existing, new_articles, prefer_longer)
+    save_json(OUTPUT_FILE, merged)
+    save_json(FAILED_FILE, failed_urls)
+    save_state(state)
+    return merged
 
 
 # ============================================================
 # SITEMAP
 # ============================================================
 
-def fetch_sitemap(url):
-    response = SESSION.get(
-        url,
-        timeout=30,
-    )
-
-    response.raise_for_status()
-
-    return response.text
+def fetch_sitemap(url, retries=3):
+    last_exc = None
+    for attempt in range(1, retries + 1):
+        try:
+            response = SESSION.get(url, timeout=30)
+            response.raise_for_status()
+            return response.text
+        except Exception as exc:
+            last_exc = exc
+            logger.warning("Sitemap fetch %s failed (%s/%s): %s", url, attempt, retries, exc)
+            time.sleep(2 * attempt)
+    raise last_exc
 
 
 def parse_sitemap(xml_text):
-    soup = BeautifulSoup(
-        xml_text,
-        "xml",
-    )
+    soup = BeautifulSoup(xml_text, "xml")
 
-    urls = []
+    children = []
+    for sm in soup.find_all("sitemap"):
+        loc = sm.find("loc")
+        if loc and loc.get_text(strip=True):
+            children.append(loc.get_text(strip=True))
 
-    for loc in soup.find_all("loc"):
-        value = loc.get_text(
-            strip=True
+    entries = []
+    for node in soup.find_all("url"):
+        loc = node.find("loc")
+        if not loc or not loc.get_text(strip=True):
+            continue
+
+        lastmod = node.find("lastmod")
+        pub = node.find(re.compile(r"(^|:)publication_date$"))
+
+        entries.append(
+            {
+                "url": loc.get_text(strip=True),
+                "lastmod": parse_date_string(lastmod.get_text(strip=True)) if lastmod else None,
+                "pub": parse_date_string(pub.get_text(strip=True)) if pub else None,
+            }
         )
 
-        if value:
-            urls.append(value)
-
-    return urls
+    return children, entries
 
 
-def get_article_urls():
-    logger.info(
-        "Fetching AIM AI-News sitemap: %s",
-        ROOT_SITEMAP_URL,
+def get_article_entries():
+    logger.info("Fetching AIM AI-News sitemap: %s", ROOT_SITEMAP_URL)
+
+    all_entries = []
+    to_visit = [(ROOT_SITEMAP_URL, 0)]
+    visited = set()
+
+    while to_visit:
+        url, depth = to_visit.pop(0)
+        if url in visited or depth > 2:
+            continue
+        visited.add(url)
+
+        children, entries = parse_sitemap(fetch_sitemap(url))
+        all_entries.extend(entries)
+
+        for child in children:
+            to_visit.append((child, depth + 1))
+
+    unique = {}
+    for entry in all_entries:
+        url = normalize_url(entry["url"])
+        if not url or "/ai-news/" not in url:
+            continue
+        entry["url"] = url
+        if url not in unique:
+            unique[url] = entry
+        else:
+            for key in ("pub", "lastmod"):
+                unique[url][key] = unique[url][key] or entry[key]
+
+    entries = list(unique.values())
+    entries.sort(
+        key=lambda e: (
+            (e["pub"] or e["lastmod"]) is None,
+            -((e["pub"] or e["lastmod"]).toordinal() if (e["pub"] or e["lastmod"]) else 0),
+        )
     )
-
-    xml = fetch_sitemap(
-        ROOT_SITEMAP_URL
-    )
-
-    urls = parse_sitemap(xml)
-
-    normalized = []
-
-    seen = set()
-
-    for url in urls:
-        url = normalize_url(url)
-
-        if not url:
-            continue
-
-        if "/ai-news/" not in url:
-            continue
-
-        if url in seen:
-            continue
-
-        seen.add(url)
-        normalized.append(url)
-
-    return normalized
+    return entries
 
 
 # ============================================================
@@ -408,390 +381,310 @@ def get_article_urls():
 # ============================================================
 
 def extract_date_from_jsonld(page):
-    scripts = page.locator(
-        "script[type='application/ld+json']"
-    )
-
+    scripts = page.locator("script[type='application/ld+json']")
     for i in range(scripts.count()):
         try:
-            raw = scripts.nth(i).inner_text()
-
-            data = json.loads(raw)
-
+            data = json.loads(scripts.nth(i).inner_text())
             objects = []
-
             if isinstance(data, dict):
                 objects.append(data)
-
                 graph = data.get("@graph")
-
                 if isinstance(graph, list):
                     objects.extend(graph)
-
             elif isinstance(data, list):
                 objects.extend(data)
 
             for obj in objects:
                 if not isinstance(obj, dict):
                     continue
-
-                value = (
-                    obj.get("datePublished")
-                    or obj.get("dateCreated")
-                )
-
-                parsed = parse_date_string(
-                    str(value)
-                )
-
+                value = obj.get("datePublished") or obj.get("dateCreated")
+                parsed = parse_date_string(value) if value else None
                 if parsed:
                     return parsed
-
         except Exception:
             continue
-
     return None
 
 
 def extract_publication_date(page):
-    # --------------------------------------------------------
-    # 1. JSON-LD
-    # --------------------------------------------------------
-
     parsed = extract_date_from_jsonld(page)
-
     if parsed:
         return parsed
 
-    # --------------------------------------------------------
-    # 2. Meta tags
-    # --------------------------------------------------------
-
-    meta_selectors = [
+    for selector in [
         "meta[property='article:published_time']",
         "meta[name='article:published_time']",
         "meta[name='publish_date']",
         "meta[name='date']",
         "meta[itemprop='datePublished']",
-    ]
-
-    for selector in meta_selectors:
+    ]:
         locator = page.locator(selector)
-
         if locator.count() == 0:
             continue
-
         try:
-            value = locator.first.get_attribute(
-                "content"
-            )
-
-            parsed = parse_date_string(
-                value or ""
-            )
-
+            parsed = parse_date_string(locator.first.get_attribute("content") or "")
             if parsed:
                 return parsed
-
         except Exception:
             pass
 
-    # --------------------------------------------------------
-    # 3. Global <time>
-    # --------------------------------------------------------
-
-    times = page.locator("time")
-
-    for i in range(times.count()):
+    times = page.locator("article time, main time")
+    for i in range(min(times.count(), 10)):
         try:
             node = times.nth(i)
-
-            datetime_value = node.get_attribute(
-                "datetime"
-            )
-
-            text_value = node.inner_text()
-
-            parsed = parse_date_string(
-                datetime_value or ""
-            )
-
+            parsed = parse_date_string(node.get_attribute("datetime") or "")
             if not parsed:
-                parsed = parse_date_string(
-                    text_value or ""
-                )
-
+                parsed = parse_date_string(node.inner_text() or "")
             if parsed:
                 return parsed
-
         except Exception:
             continue
 
-    # --------------------------------------------------------
-    # 4. Visible body text fallback
-    # --------------------------------------------------------
-
     try:
-        body = page.locator("body").inner_text()
-
-        patterns = [
-            r"\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2}",
-            r"\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},\s+20\d{2}",
-        ]
-
-        for pattern in patterns:
-            match = re.search(
-                pattern,
-                body,
-                re.IGNORECASE,
-            )
-
-            if match:
-                parsed = parse_date_string(
-                    match.group(0)
-                )
-
-                if parsed:
-                    return parsed
-
+        nearby = page.evaluate(
+            """
+            () => {
+                const h = document.querySelector("h1");
+                if (!h) return "";
+                let n = h;
+                for (let i = 0; i < 3 && n.parentElement; i++) n = n.parentElement;
+                return (n.innerText || "").slice(0, 1500);
+            }
+            """
+        )
+        return parse_date_string(nearby)
     except Exception:
-        pass
-
-    return None
+        return None
 
 
 # ============================================================
 # ARTICLE EXTRACTION
 # ============================================================
 
-def extract_article(
-    page,
-    url,
-    publication_date,
-):
-    """
-    Extract article content using the page H1 as the anchor.
+EXTRACT_JS = """
+(root, args) => {
+    const noiseTokens = new Set(args.noiseTokens);
+    const badPhrases = args.badPhrases;
 
-    We walk upward from the H1 and score candidate containers.
-    """
+    const isNoise = (el) => {
+        const cls = typeof el.className === "string" ? el.className : "";
+        const raw = (cls + " " + (el.id || "")).toLowerCase();
+        return raw.split(/[^a-z0-9]+/).some(t => noiseTokens.has(t));
+    };
 
-    try:
-        h1 = page.locator("h1").first
+    const clone = root.cloneNode(true);
 
-        if h1.count() == 0:
-            return None
+    clone.querySelectorAll(args.noiseTags).forEach(el => el.remove());
 
-        page_title = clean_text(
-            h1.inner_text()
-        )
+    clone.querySelectorAll("*").forEach(el => {
+        if (isNoise(el) && (el.textContent || "").length < 500) el.remove();
+    });
 
-        if not page_title:
-            return None
+    const parts = [];
+    const seen = new Set();
+    let bodyLen = 0;
 
-        result = page.evaluate(
-            """
-            (args) => {
+    const candidates = clone.querySelectorAll("p, h2, h3, li, div");
+    candidates.forEach(el => {
+        const tag = el.tagName.toLowerCase();
 
-                const pageTitle = args.pageTitle;
-                const removeSelectors = args.removeSelectors;
+        if (tag === "div") {
+            const hasBlock = el.querySelector(
+                "p, div, h1, h2, h3, h4, h5, h6, ul, ol, table, article, section, aside, blockquote"
+            );
+            if (hasBlock) return;
+        }
 
-                const h1 = Array.from(
-                    document.querySelectorAll("h1")
-                ).find(
-                    el => (el.innerText || "").trim() === pageTitle
-                );
+        if (tag === "li" && el.querySelector("p")) return;
 
-                if (!h1) {
-                    return null;
-                }
+        const text = (el.textContent || "").replace(/\\s+/g, " ").trim();
+        if (!text) return;
 
-                let best = null;
-                let bestScore = -Infinity;
-
-                let node = h1;
-
-                for (
-                    let level = 0;
-                    level < 8 && node;
-                    level++
-                ) {
-
-                    const clone = node.cloneNode(true);
-
-                    for (const selector of removeSelectors) {
-                        try {
-                            clone.querySelectorAll(selector)
-                                .forEach(el => el.remove());
-                        } catch (e) {
-                            // Ignore invalid/missing selector.
-                        }
-                    }
-
-                    const paragraphs = Array.from(
-                        clone.querySelectorAll("p")
-                    )
-                    .map(
-                        p => (p.innerText || "").trim()
-                    )
-                    .filter(
-                        text => text.length > 40
-                    );
-
-                    const paragraphText =
-                        paragraphs.join("\\n\\n");
-
-                    const fullText =
-                        (clone.innerText || "").trim();
-
-                    if (!fullText) {
-                        node = node.parentElement;
-                        continue;
-                    }
-
-                    const lower =
-                        fullText.toLowerCase();
-
-                    const badPhrases = [
-                        "advertise with us",
-                        "what actually matters.",
-                        "subscribe to our newsletter",
-                        "follow us",
-                        "read more",
-                        "related stories",
-                        "recommended stories"
-                    ];
-
-                    let badPhraseCount = 0;
-
-                    for (
-                        const phrase of badPhrases
-                    ) {
-                        if (lower.includes(phrase)) {
-                            badPhraseCount++;
-                        }
-                    }
-
-                    let score = 0;
-
-                    // Candidate contains exact article title.
-                    if (fullText.includes(pageTitle)) {
-                        score += 200;
-                    }
-
-                    // Prefer real paragraph content.
-                    score += Math.min(
-                        paragraphs.length * 25,
-                        250
-                    );
-
-                    // Prefer substantial article body.
-                    if (paragraphText.length >= 5000) {
-                        score += 300;
-                    } else if (
-                        paragraphText.length >= 3000
-                    ) {
-                        score += 250;
-                    } else if (
-                        paragraphText.length >= 1500
-                    ) {
-                        score += 180;
-                    } else if (
-                        paragraphText.length >= 800
-                    ) {
-                        score += 100;
-                    } else if (
-                        paragraphText.length >= 400
-                    ) {
-                        score += 50;
-                    }
-
-                    score -=
-                        badPhraseCount * 120;
-
-                    if (paragraphText.length < 300) {
-                        score -= 250;
-                    }
-
-                    if (score > bestScore) {
-
-                        bestScore = score;
-
-                        best = {
-                            title: pageTitle,
-                            content: paragraphText,
-                            paragraphCount:
-                                paragraphs.length,
-                            score: score
-                        };
-                    }
-
-                    node = node.parentElement;
-                }
-
-                return best;
+        if (tag === "h2" || tag === "h3") {
+            if (text.length >= 4 && text.length <= 200) {
+                parts.push({ heading: true, text: text });
             }
-            """,
-            {
-                "pageTitle": page_title,
-                "removeSelectors": REMOVE_SELECTORS,
-            },
-        )
+            return;
+        }
 
-        if not result:
-            return None
+        if (text.length < 30) return;
 
-        content = clean_text(
-            result.get("content", "")
-        )
+        const linkLen = Array.from(el.querySelectorAll("a"))
+            .reduce((sum, a) => sum + (a.textContent || "").trim().length, 0);
 
-        title = clean_text(
-            result.get("title", "")
-        )
+        if (text.length < 200 && linkLen / text.length > 0.7) return;
+        if (/^(also read|read more|read:|also see|related:|advertisement)/i.test(text)) return;
 
-        # ----------------------------------------------------
-        # Validation
-        # ----------------------------------------------------
+        const lower = text.toLowerCase();
+        if (text.length < 250 && badPhrases.some(p => lower.includes(p))) return;
 
+        if (seen.has(text)) return;
+        seen.add(text);
+
+        parts.push({ heading: false, text: text });
+        bodyLen += text.length;
+    });
+
+    while (parts.length && parts[0].heading) parts.shift();
+    while (parts.length && parts[parts.length - 1].heading) parts.pop();
+
+    const joined = parts.map(p => p.text).join("\\n\\n");
+
+    return {
+        content: joined,
+        bodyLen: bodyLen,
+        paragraphCount: parts.filter(p => !p.heading).length,
+    };
+}
+"""
+
+
+GENERIC_OG_TITLE = "AIM — India's Leading AI & Data Science Media Platform"
+
+
+def pick_title(page):
+    """
+    Prefer og:title — but skip the generic site-wide og:title that AIM
+    sometimes serves on article pages.
+
+    Fall back to the first non-empty H1.
+    """
+    loc = page.locator("meta[property='og:title']")
+    if loc.count() > 0:
+        try:
+            title = (loc.first.get_attribute("content") or "").strip()
+            if title and title != GENERIC_OG_TITLE:
+                for suffix in (
+                    " | Analytics India Magazine",
+                    " - Analytics India Magazine",
+                    " | AIM",
+                ):
+                    if title.endswith(suffix):
+                        title = title[: -len(suffix)].strip()
+                return title
+        except Exception:
+            pass
+
+    for selector in ("article h1", "main h1", "h1"):
+        h1s = page.locator(selector)
+        for i in range(min(h1s.count(), 10)):
+            node = h1s.nth(i)
+            try:
+                title = " ".join(node.inner_text().split())
+            except Exception:
+                continue
+            if title:
+                return title
+
+    return ""
+
+
+def _collect_candidates(page):
+    """
+    Return a list of Playwright locators likely to hold the article body,
+    ordered by confidence:
+      1. <article> that contains the first non-empty H1
+      2. All <article> tags with meaningful text
+      3. <main>
+    """
+    candidates = []
+
+    # 1. Article that contains the first non-empty H1
+    h1s = page.locator("h1")
+    for i in range(min(h1s.count(), 5)):
+        node = h1s.nth(i)
+        try:
+            t = node.inner_text().strip()
+        except Exception:
+            continue
+        if not t:
+            continue
+        art = node.locator("xpath=ancestor::article[1]")
+        if art.count() > 0:
+            candidates.append(art.first)
+        break
+
+    # 2. All <article> tags
+    arts = page.locator("article")
+    for i in range(min(arts.count(), 5)):
+        try:
+            art_len = len(arts.nth(i).inner_text())
+        except Exception:
+            continue
+        if art_len > 300:
+            candidates.append(arts.nth(i))
+
+    # 3. <main>
+    mains = page.locator("main")
+    if mains.count() > 0:
+        candidates.append(mains.first)
+
+    return candidates
+
+
+def extract_article(page, url, publication_date):
+    try:
+        title = pick_title(page)
         if not title:
             return None
 
-        if len(content) < 300:
-            logger.warning(
-                "Content too short: %s | %s chars",
-                url,
-                len(content),
-            )
-            return None
-
-        # Avoid known non-article containers.
-        bad_titles = {
+        if title.lower() in {
             "advertise with us",
             "subscribe to our newsletter",
             "what actually matters.",
-        }
-
-        if title.lower() in bad_titles:
+        }:
             return None
+
+        candidates = _collect_candidates(page)
+        if not candidates:
+            logger.warning("No article container found: %s", url)
+            return None
+
+        best_content = ""
+        best_result = None
+
+        for cand in candidates:
+            try:
+                r = cand.evaluate(
+                    EXTRACT_JS,
+                    {
+                        "noiseTags": NOISE_TAGS_SELECTOR,
+                        "noiseTokens": NOISE_TOKENS,
+                        "badPhrases": BAD_PHRASES,
+                    },
+                )
+            except Exception:
+                continue
+            if not r:
+                continue
+            c = clean_text(r.get("content", ""))
+            if len(c) > len(best_content):
+                best_content = c
+                best_result = r
+
+        if not best_content:
+            return None
+
+        if len(best_content) < MIN_CONTENT_CHARS:
+            logger.warning("Content too short (rejected): %s | %s chars", url, len(best_content))
+            return None
+
+        if len(best_content) < SHORT_CONTENT_CHARS:
+            logger.warning(
+                "Short article kept: %s | %s chars | %s paragraphs",
+                url, len(best_content), best_result.get("paragraphCount"),
+            )
 
         return {
             "title": title,
             "source": SOURCE_NAME,
             "url": normalize_url(url),
-            "published_date": (
-                publication_date.isoformat()
-                if publication_date
-                else None
-            ),
-            "content": content,
+            "published_date": publication_date.isoformat(),
+            "content": best_content,
         }
 
     except Exception as exc:
-        logger.exception(
-            "Article extraction failed: %s | %s",
-            url,
-            exc,
-        )
-
+        logger.exception("Article extraction failed: %s | %s", url, exc)
         return None
 
 
@@ -802,55 +695,36 @@ def extract_article(
 def create_browser_context(browser):
     return browser.new_context(
         user_agent=USER_AGENT,
-        viewport={
-            "width": 1440,
-            "height": 900,
-        },
+        viewport={"width": 1440, "height": 900},
     )
 
 
 def prepare_page(context):
     page = context.new_page()
 
-    # Block heavy resources only.
     def handle_route(route):
-        resource_type = route.request.resource_type
-
-        if resource_type in {
-            "image",
-            "media",
-            "font",
-        }:
+        if route.request.resource_type in {"image", "media", "font"}:
             route.abort()
             return
-
         route.continue_()
 
-    page.route(
-        "**/*",
-        handle_route,
-    )
-
+    page.route("**/*", handle_route)
     return page
 
 
 def load_article_page(page, url):
-    page.goto(
-        url,
-        wait_until="domcontentloaded",
-        timeout=PAGE_NAVIGATION_TIMEOUT,
-    )
+    page.goto(url, wait_until="domcontentloaded", timeout=PAGE_NAVIGATION_TIMEOUT)
+    page.wait_for_timeout(HYDRATION_WAIT_MS)
 
-    page.wait_for_timeout(
-        HYDRATION_WAIT_MS
-    )
-
-    # Wait for H1 if available.
+    # AIM lazy-loads the article body. Wait for any loading skeleton
+    # (Tailwind's animate-pulse class) to disappear before extraction.
     try:
-        page.locator("h1").first.wait_for(
-            state="visible",
-            timeout=10000,
-        )
+        page.wait_for_selector(".animate-pulse", state="detached", timeout=6000)
+    except Exception:
+        pass
+
+    try:
+        page.locator("h1").first.wait_for(state="visible", timeout=10000)
     except Exception:
         pass
 
@@ -861,114 +735,167 @@ def load_article_page(page, url):
 
 def current_week_start():
     today = date.today()
-
-    # Monday = 0
-    return today - timedelta(
-        days=today.weekday()
-    )
-
-
-def is_valid_initial_date(pub_date):
-    return (
-        pub_date is not None
-        and INITIAL_START_DATE
-        <= pub_date
-        <= date.today()
-    )
-
-
-def is_valid_weekly_date(pub_date):
-    if not pub_date:
-        return False
-
-    return (
-        current_week_start()
-        <= pub_date
-        <= date.today()
-    )
+    return today - timedelta(days=today.weekday())
 
 
 # ============================================================
-# MAIN PROCESSING
+# QUEUE
 # ============================================================
 
-def process_article(
-    page,
-    url,
-    initial_mode,
-):
-    try:
-        load_article_page(
-            page,
-            url,
-        )
+def build_queue(entries, stored, state, failed_urls, initial_mode):
+    week_start = current_week_start()
+    refetch = set(state["refetch"])
+    old_urls = state["old_urls"]
 
-        publication_date = (
-            extract_publication_date(page)
-        )
+    def capped(url):
+        return failed_urls.get(url, {}).get("attempts", 0) >= MAX_ATTEMPTS_PER_URL
 
-        if not publication_date:
-            return (
-                "no_date",
-                None,
-            )
+    queue = []
+    seen = set()
+
+    for entry in entries:
+        url = entry["url"]
+        if url in seen:
+            continue
+        seen.add(url)
+
+        hint = entry["pub"] or entry["lastmod"]
+
+        if url in refetch:
+            queue.append((url, INITIAL_START_DATE, entry["pub"]))
+            continue
+
+        if url in old_urls or capped(url):
+            continue
+
+        if url in failed_urls and url not in stored:
+            queue.append((url, INITIAL_START_DATE, entry["pub"]))
+            continue
 
         if initial_mode:
-
-            if not is_valid_initial_date(
-                publication_date
-            ):
-                return (
-                    "old",
-                    None,
-                )
-
+            if url in stored:
+                continue
+            if hint and hint < INITIAL_START_DATE:
+                old_urls[url] = hint.isoformat()
+                continue
+            queue.append((url, INITIAL_START_DATE, entry["pub"]))
         else:
+            if hint and hint < week_start:
+                continue
+            stored_date = stored.get(url)
+            if url in stored and stored_date and stored_date < week_start:
+                continue
+            queue.append((url, week_start, entry["pub"]))
 
-            if not is_valid_weekly_date(
-                publication_date
-            ):
-                return (
-                    "old",
-                    None,
-                )
+    for url in list(failed_urls):
+        if url in seen or capped(url) or url in stored or url in old_urls:
+            continue
+        seen.add(url)
+        queue.append((url, INITIAL_START_DATE, None))
 
-        article = extract_article(
-            page,
-            url,
-            publication_date,
-        )
+    for url in sorted(refetch):
+        if url not in seen:
+            seen.add(url)
+            queue.append((url, INITIAL_START_DATE, None))
 
+    return queue
+
+
+# ============================================================
+# ARTICLE PROCESSING
+# ============================================================
+
+def process_article(page, url, min_date, pub_hint):
+    try:
+        load_article_page(page, url)
+
+        publication_date = pub_hint or extract_publication_date(page)
+
+        if not publication_date:
+            return "failed", "no publication date found"
+
+        if publication_date < min_date:
+            return "old", publication_date.isoformat()
+
+        if publication_date > date.today() + timedelta(days=1):
+            return "failed", f"publication date in the future: {publication_date}"
+
+        article = extract_article(page, url, publication_date)
         if not article:
-            return (
-                "failed",
-                None,
-            )
+            return "failed", "content extraction failed or too short"
 
-        return (
-            "success",
-            article,
-        )
+        return "success", article
 
     except Exception as exc:
+        logger.error("Failed URL: %s | %s", url, exc)
+        return "failed", f"{type(exc).__name__}: {exc}"
 
-        logger.error(
-            "Failed URL: %s | %s",
-            url,
-            exc,
-        )
 
-        return (
-            "failed",
-            None,
-        )
+# ============================================================
+# AUDIT / REFETCH
+# ============================================================
+
+def audit():
+    articles = load_existing_articles()
+
+    print()
+    print("=" * 60)
+    print("CONTENT AUDIT")
+    print("=" * 60)
+
+    if not articles:
+        print("No articles stored yet.")
+        return
+
+    lengths = sorted(len(a.get("content", "")) for a in articles)
+    dates = sorted(a["published_date"] for a in articles if a.get("published_date"))
+    urls = [normalize_url(a.get("url")) for a in articles]
+
+    print("Articles           :", len(articles))
+    print("Unique URLs        :", len(set(urls)))
+    print("Missing date       :", len(articles) - len(dates))
+    if dates:
+        print("Date range         :", dates[0], "->", dates[-1])
+
+    print("Content length     : min", lengths[0],
+          "| median", lengths[len(lengths) // 2], "| max", lengths[-1])
+
+    buckets = [(0, 600), (600, 1200), (1200, 2500), (2500, 5000), (5000, 10**9)]
+    for low, high in buckets:
+        count = sum(1 for n in lengths if low <= n < high)
+        label = f"{low}-{high}" if high < 10**9 else f"{low}+"
+        print(f"  {label:>10} chars : {count}")
+
+    print()
+    print("15 shortest articles:")
+    for article in sorted(articles, key=lambda a: len(a.get("content", "")))[:15]:
+        print(f"  {len(article.get('content', '')):>5} | {article.get('published_date')} | {article.get('url')}")
+
+    short = sum(1 for n in lengths if n < SHORT_CONTENT_CHARS)
+    print()
+    print(f"{short} articles are under {SHORT_CONTENT_CHARS} chars. "
+          f"Open a few of the URLs above: if the real article is longer, "
+          f"run with --refetch-short.")
+
+
+def mark_short_for_refetch(state):
+    articles = load_existing_articles()
+    urls = [
+        normalize_url(a.get("url"))
+        for a in articles
+        if a.get("url") and len(a.get("content", "")) < SHORT_CONTENT_CHARS
+    ]
+    state["refetch"] = sorted(set(state["refetch"]) | set(urls))
+    state["initial_backfill_complete"] = False
+    save_state(state)
+    print(f"Marked {len(urls)} short articles for re-extraction.")
 
 
 # ============================================================
 # RUN
 # ============================================================
 
-def run():
+def run(args):
     print()
     print("=" * 60)
     print("ANALYTICS INDIA MAGAZINE SCRAPER")
@@ -976,307 +903,170 @@ def run():
 
     state = load_state()
 
-    initial_mode = not state.get(
-        "initial_backfill_complete",
-        False,
-    )
+    if args.refetch_short:
+        mark_short_for_refetch(state)
+
+    initial_mode = args.force_initial or not state["initial_backfill_complete"]
 
     if initial_mode:
-        print(
-            "MODE: INITIAL BACKFILL"
-        )
-        print(
-            f"DATE RANGE: {INITIAL_START_DATE} -> {date.today()}"
-        )
+        print("MODE: INITIAL BACKFILL")
+        print(f"DATE RANGE: {INITIAL_START_DATE} -> {date.today()}")
     else:
-        print(
-            "MODE: WEEKLY REFRESH"
-        )
-        print(
-            f"DATE RANGE: {current_week_start()} -> {date.today()}"
-        )
-
-    # --------------------------------------------------------
-    # Sitemap
-    # --------------------------------------------------------
+        print("MODE: WEEKLY REFRESH")
+        print(f"DATE RANGE: {current_week_start()} -> {date.today()}")
 
     print()
     print("Fetching sitemap...")
 
-    urls = get_article_urls()
+    entries = get_article_entries()
+    print(f"Unique AI-News URLs in sitemap: {len(entries)}")
 
-    print(
-        f"Unique AI-News URLs: {len(urls)}"
-    )
-
-    if not urls:
-        print(
-            "No URLs found."
-        )
+    if not entries:
+        print("No URLs found.")
         return
 
-    # --------------------------------------------------------
-    # Cursor
-    # --------------------------------------------------------
-
-    cursor_url = state.get(
-        "last_cursor_url"
-    )
-
-    start_index = 0
-
-    if cursor_url:
-
-        normalized_cursor = normalize_url(
-            cursor_url
-        )
-
-        for index, url in enumerate(urls):
-
-            if normalize_url(url) == normalized_cursor:
-                start_index = index + 1
-                break
-
-    # --------------------------------------------------------
-    # For weekly mode always start from newest.
-    # --------------------------------------------------------
-
-    if not initial_mode:
-        start_index = 0
-
-    urls_to_process = urls[
-        start_index:
-        start_index + MAX_URLS_PER_RUN
-    ]
-
-    print(
-        f"Processing: {len(urls_to_process)} URLs"
-    )
-
-    # --------------------------------------------------------
-    # Existing data
-    # --------------------------------------------------------
-
     existing = load_existing_articles()
-
     failed_urls = load_failed_urls()
 
+    stored = {
+        normalize_url(a.get("url")): parse_date_string(a.get("published_date"))
+        for a in existing
+        if a.get("url")
+    }
+
+    full_queue = build_queue(entries, stored, state, failed_urls, initial_mode)
+
+    max_urls = args.max_urls
+    queue = full_queue if max_urls == 0 else full_queue[:max_urls]
+
+    print(f"Pending in this mode: {len(full_queue)} | processing now: {len(queue)}")
+
+    refetch = set(state["refetch"])
+    refetch_original = set(refetch)
+
     new_articles = []
-
-    successful = 0
-    failed = 0
-    old_count = 0
-    no_date = 0
-
-    # --------------------------------------------------------
-    # Browser
-    # --------------------------------------------------------
+    successful = failed = old_count = 0
+    consecutive_failures = 0
+    finished = False
 
     with sync_playwright() as playwright:
-
-        browser = playwright.chromium.launch(
-            headless=True
-        )
-
-        context = create_browser_context(
-            browser
-        )
-
-        page = prepare_page(
-            context
-        )
+        browser = playwright.chromium.launch(headless=True)
+        context = create_browser_context(browser)
+        page = prepare_page(context)
 
         try:
+            for number, (url, min_date, pub_hint) in enumerate(queue, start=1):
+                print(f"[{number}/{len(queue)}] {url}")
 
-            consecutive_old = 0
-
-            for number, url in enumerate(
-                urls_to_process,
-                start=1,
-            ):
-
-                print(
-                    f"[{number}/{len(urls_to_process)}] {url}"
-                )
-
-                status, article = process_article(
-                    page,
-                    url,
-                    initial_mode,
-                )
+                status, payload = process_article(page, url, min_date, pub_hint)
 
                 if status == "success":
-
                     successful += 1
-
-                    consecutive_old = 0
-
-                    new_articles.append(
-                        article
-                    )
-
-                    print(
-                        "  OK:",
-                        article["published_date"],
-                        "|",
-                        len(article["content"]),
-                        "chars",
-                    )
-
-                    failed_urls.pop(
-                        normalize_url(url),
-                        None,
-                    )
+                    consecutive_failures = 0
+                    new_articles.append(payload)
+                    failed_urls.pop(url, None)
+                    refetch.discard(url)
+                    print("  OK:", payload["published_date"], "|", len(payload["content"]), "chars")
 
                 elif status == "old":
-
                     old_count += 1
-
-                    consecutive_old += 1
-
-                    print(
-                        "  OLD / OUT OF RANGE"
-                    )
-
-                elif status == "no_date":
-
-                    no_date += 1
-
-                    consecutive_old = 0
-
-                    print(
-                        "  NO PUBLICATION DATE"
-                    )
+                    consecutive_failures = 0
+                    failed_urls.pop(url, None)
+                    refetch.discard(url)
+                    if min_date == INITIAL_START_DATE:
+                        state["old_urls"][url] = payload
+                    print("  OLD / OUT OF RANGE:", payload)
 
                 else:
-
                     failed += 1
+                    consecutive_failures += 1
+                    refetch.discard(url)
+                    mark_failed(failed_urls, url, payload)
+                    print("  FAILED:", payload)
 
-                    consecutive_old = 0
-
-                    mark_failed(
-                        failed_urls,
-                        normalize_url(url),
-                        "article extraction failed",
+                if number % CHECKPOINT_EVERY == 0:
+                    state["refetch"] = sorted(refetch)
+                    existing = checkpoint(
+                        existing, new_articles, failed_urls, state, refetch_original
                     )
+                    new_articles = []
 
-                    print(
-                        "  FAILED"
-                    )
-
-                # Stop when we've crossed the relevant
-                # date boundary in the newest-first sitemap.
-                if (
-                    consecutive_old
-                    >= CONSECUTIVE_OLD_REQUIRED
-                ):
-
-                    print(
-                        "Date boundary reached."
-                    )
-
-                    break
+                if consecutive_failures >= RESTART_PAGE_AFTER_FAILURES:
+                    print("  Too many failures in a row, restarting browser context...")
+                    logger.warning("Restarting browser context after %s failures", consecutive_failures)
+                    try:
+                        context.close()
+                    except Exception:
+                        pass
+                    context = create_browser_context(browser)
+                    page = prepare_page(context)
+                    consecutive_failures = 0
 
                 time.sleep(0.15)
 
+            finished = True
+
         finally:
+            try:
+                context.close()
+                browser.close()
+            except Exception:
+                pass
 
-            context.close()
-            browser.close()
+            state["refetch"] = sorted(refetch)
+            merged = checkpoint(
+                existing, new_articles, failed_urls, state, refetch_original
+            )
 
-    # --------------------------------------------------------
-    # Merge
-    # --------------------------------------------------------
-
-    merged = merge_articles(
-        existing,
-        new_articles,
-    )
-
-    save_json(
-        OUTPUT_FILE,
-        merged,
-    )
-
-    save_failed_urls(
-        failed_urls
-    )
-
-    # --------------------------------------------------------
-    # Cursor
-    # --------------------------------------------------------
-
-    if urls_to_process:
-
-        last_processed_url = urls_to_process[-1]
-
-        state["last_cursor_url"] = (
-            last_processed_url
-        )
-
-    # Initial backfill becomes complete only when
-    # we actually crossed the Jan 1 boundary.
-    if initial_mode and old_count >= CONSECUTIVE_OLD_REQUIRED:
+    if initial_mode and finished and len(full_queue) <= len(queue):
         state["initial_backfill_complete"] = True
+        save_state(state)
 
-    save_state(
-        state
+    capped = sum(
+        1 for v in failed_urls.values()
+        if v.get("attempts", 0) >= MAX_ATTEMPTS_PER_URL
     )
-
-    # --------------------------------------------------------
-    # Summary
-    # --------------------------------------------------------
 
     print()
     print("=" * 60)
     print("RUN COMPLETE")
     print("=" * 60)
-
-    print(
-        "Successful:",
-        successful,
-    )
-
-    print(
-        "Failed:",
-        failed,
-    )
-
-    print(
-        "Old/out of range:",
-        old_count,
-    )
-
-    print(
-        "No date:",
-        no_date,
-    )
-
-    print(
-        "New/updated articles:",
-        len(new_articles),
-    )
-
-    print(
-        "Total stored articles:",
-        len(merged),
-    )
-
-    print(
-        "Initial backfill complete:",
-        state.get("initial_backfill_complete", False),
-    )
-
+    print("Successful          :", successful)
+    print("Failed (this run)   :", failed)
+    print("Old/out of range    :", old_count)
+    print("Still pending       :", max(len(full_queue) - len(queue), 0))
+    print("Failed URLs on file :", len(failed_urls), f"({capped} gave up after {MAX_ATTEMPTS_PER_URL} tries)")
+    print("Total stored        :", len(merged))
+    print("Backfill complete   :", state["initial_backfill_complete"])
     print()
-    print(
-        "Saved:",
-        OUTPUT_FILE,
-    )
+    print("Saved:", OUTPUT_FILE)
+
+    if not state["initial_backfill_complete"]:
+        print("Run again to continue the backfill (or use --max-urls 0 to do it in one go).")
 
 
 # ============================================================
 # ENTRY POINT
 # ============================================================
 
+def main():
+    parser = argparse.ArgumentParser(description="Analytics India Magazine scraper")
+    parser.add_argument("--max-urls", type=int, default=MAX_URLS_PER_RUN,
+                        help="max URLs to visit this run (0 = unlimited)")
+    parser.add_argument("--audit", action="store_true",
+                        help="print a content-quality report and exit")
+    parser.add_argument("--refetch-short", action="store_true",
+                        help=f"re-extract stored articles shorter than {SHORT_CONTENT_CHARS} chars")
+    parser.add_argument("--force-initial", action="store_true",
+                        help="run in initial-backfill mode even if marked complete")
+    args = parser.parse_args()
+
+    if args.audit:
+        audit()
+        return
+
+    run(args)
+
+
 if __name__ == "__main__":
-    run()
+    main()

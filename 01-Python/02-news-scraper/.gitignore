@@ -1,4 +1,72 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-data/analytics_india_state.json
-data/analytics_india_failed_urls.json
-data/analytics_india_scraper.log
+# ============================================================
+# Virtual environments
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+
+# ============================================================
+# Environment / secrets
+# ============================================================
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# IDE / OS
+# ============================================================
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# Runtime artifacts (data folder)
+# ============================================================
+data/*.log
+data/*.tmp
+data/*.tmp.json
+data/*_failed_urls.json
+data/_diag_*.png
+data/analytics_india_structured*.json
+
+# ============================================================
+# Debug / scratch files (root)
+# ============================================================
+aim_bundle.js
+article.html
+
+# ============================================================
+# Scratch / diagnostic / exploration scripts
+# ============================================================
+src/claude.py
+src/_diag_*.py
+src/_check_*.py
+src/test_*.py
+src/find_tables.py
+src/source_probe.py
+src/structure_intelligence*.py
+
+# ============================================================
+# Node (future dashboard)
+# ============================================================
+node_modules/
+.next/
+dist/
