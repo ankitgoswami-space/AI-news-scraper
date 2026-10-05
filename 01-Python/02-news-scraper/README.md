@@ -32,7 +32,7 @@ into structured intelligence that answers questions like:
 
 | Source | Type | Records | Method |
 |---|---|---|---|
-| TechCrunch (AI) | News | ~36 | `requests` + BeautifulSoup |
+| TechCrunch (AI) | News | ~36 | requests + BeautifulSoup |
 | Analytics India Magazine | News | 999 | Playwright (JS-rendered) |
 | arXiv (cs.AI, cs.CL, cs.LG) | Research | 10,621 | REST API (Atom XML) |
 
@@ -54,10 +54,11 @@ Each record follows a common shape, with source-specific extras where useful.
   "published_date": "2026-08-24",
   "content": "clean article body"
 }
+```
 
-Research papers (arXiv):
+**Research papers (arXiv):**
 
-json
+```json
 {
   "title": "...",
   "source": "arXiv",
@@ -68,8 +69,13 @@ json
   "categories": ["cs.AI", "cs.CL"],
   "primary_category": "cs.AI"
 }
-Project Structure
-text
+```
+
+---
+
+## Project Structure
+
+```text
 02-news-scraper/
 ├── src/
 │   ├── scraper_01_techcrunch.py           # V1 reference
@@ -85,15 +91,26 @@ text
 │   └── arxiv_state.json                   # incremental tracking
 ├── requirements.txt
 └── README.md
-Setup
-bash
+```
+
+---
+
+## Setup
+
+```bash
 python -m venv .venv
 .venv\Scripts\activate           # Windows
 pip install -r requirements.txt
 playwright install chromium      # required for the AIM scraper
-Usage
-Analytics India Magazine (Playwright)
-bash
+```
+
+---
+
+## Usage
+
+### Analytics India Magazine (Playwright)
+
+```bash
 # One-time backfill: 1 Jan 2026 -> today
 python src/scraper_02_analytics_india.py --force-initial --max-urls 0
 
@@ -105,8 +122,11 @@ python src/scraper_02_analytics_india.py --refetch-short --max-urls 0
 
 # Quality report (no fetching)
 python src/scraper_02_analytics_india.py --audit
-arXiv (API)
-bash
+```
+
+### arXiv (API)
+
+```bash
 # One-time backfill: last 30 days
 python src/scraper_12_arxiv.py --days 30
 
@@ -118,69 +138,80 @@ python src/scraper_12_arxiv.py --days 7 --max-results 200
 
 # Quality report
 python src/scraper_12_arxiv.py --audit
+```
 
-Design Decisions
-Per-source isolation. Each source lives in its own file. Source-specific
+---
+
+## Design Decisions
+
+**Per-source isolation.** Each source lives in its own file. Source-specific
 quirks stay local, failures don't cascade, and each scraper can be tested and
 replaced independently.
 
-Normalized URLs as identity. Deduplication uses a normalized URL
+**Normalized URLs as identity.** Deduplication uses a normalized URL
 (scheme + host + path, no query, no trailing slash, no version suffix). This
 keeps re-runs idempotent.
 
-State files, not memory. Each scraper keeps its own state file
-(*_state.json) so runs are resumable. Kill the process mid-run, restart, and
+**State files, not memory.** Each scraper keeps its own state file
+(`*_state.json`) so runs are resumable. Kill the process mid-run, restart, and
 it picks up where it left off.
 
-Checkpointing. Long runs write to disk every N items. A crash never loses
+**Checkpointing.** Long runs write to disk every N items. A crash never loses
 more than one checkpoint's worth of work.
 
-Honest scope. This is a solo learning project. If a source needs paid
+**Honest scope.** This is a solo learning project. If a source needs paid
 proxies, CAPTCHA solving, or login walls (LinkedIn, Naukri, Instahyre), it's
 skipped. 9 working sources beat 15 broken ones.
 
-Roadmap
-V2 (current): complete the 9-source universe.
+---
 
-☑ TechCrunch
-☑ Analytics India Magazine
-□ Inc42
-□ YourStory
-□ Economic Times – Tech
-□ Mint – Technology
-☑ arXiv
-□ Hugging Face
-□ Google Research
-V3: extract skills, companies, locations, and hiring signals from the
-collected data.
+## Roadmap
 
-V4: LLM-powered summarization, entity extraction, classification, and
-trend detection.
+### V2 (current): complete the 9-source universe
 
-V5: RAG-based career assistant grounded in the project's own data.
+- [x] TechCrunch
+- [x] Analytics India Magazine
+- [ ] Inc42
+- [ ] YourStory
+- [ ] Economic Times – Tech
+- [ ] Mint – Technology
+- [x] arXiv
+- [ ] Hugging Face
+- [ ] Google Research
 
-V6: Streamlit dashboard — skill trends, city/company insights, and chat.
+### Later versions
 
-Sources Removed from Scope
+- **V3:** extract skills, companies, locations, and hiring signals from the collected data.
+- **V4:** LLM-powered summarization, entity extraction, classification, and trend detection.
+- **V5:** RAG-based career assistant grounded in the project's own data.
+- **V6:** Streamlit dashboard — skill trends, city/company insights, and chat.
+
+---
+
+## Sources Removed from Scope
+
 These were in the original plan but are impractical without infrastructure
 this project doesn't have:
 
-Source	Reason
-LinkedIn Jobs	Login wall + aggressive anti-bot
-Naukri	CAPTCHA, IP bans
-Instahyre	Same as Naukri
-Wellfound	Login-gated
-IndiaAI	Messy HTML, low yield
-MeitY	Low AI-career signal density
+| Source | Reason |
+|---|---|
+| LinkedIn Jobs | Login wall + aggressive anti-bot |
+| Naukri | CAPTCHA, IP bans |
+| Instahyre | Same as Naukri |
+| Wellfound | Login-gated |
+| IndiaAI | Messy HTML, low yield |
+| MeitY | Low AI-career signal density |
+
 Job and skill signals come instead from news and research content.
 
-Status Honesty
-All 9 sources are not implemented. 2 of 9 are.
+---
 
-V2 is not complete. It requires the remaining sources plus shared
-reliability tooling.
+## Status Honesty
 
-The dataset is real, dated, deduplicated, and clean — but it's news and
-research, not job listings.
+- All 9 sources are **not** implemented. 2 of 9 are.
+- V2 is **not** complete. It requires the remaining sources plus shared reliability tooling.
+- The dataset is real, dated, deduplicated, and clean — but it's news and research, not job listings.
 
-Repo: github.com/ankitgoswami-space/AI-news-scraper
+---
+
+Repo: [github.com/ankitgoswami-space/AI-news-scraper](https://github.com/ankitgoswami-space/AI-news-scraper)
