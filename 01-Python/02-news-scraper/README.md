@@ -1,95 +1,186 @@
-# Indian AI Career & Startup News Monitor
+# Indian AI Career & Startup Intelligence Platform
 
-Scrape AI-related news from TechCrunch using Python and BeautifulSoup, and save the extracted articles as structured JSON data.
+An end-to-end data platform for the Indian AI/GenAI ecosystem. It starts as a
+multi-source data collector and progressively becomes a career intelligence
+system with LLM processing, RAG, and a dashboard.
 
-## What This Project Does
+The goal: turn scattered information (news, research, jobs, startup activity)
+into structured intelligence that answers questions like:
 
-This project demonstrates the basic workflow of web scraping:
+- What's happening in India's AI ecosystem?
+- Which AI/GenAI skills are in demand?
+- Which cities and companies are hiring?
+- Which research areas are emerging?
+- What should I learn next?
 
-1. Requests — Fetches the TechCrunch AI category page
-2. BeautifulSoup — Parses the HTML
-3. HTML element discovery — Finds relevant article headings and links
-4. Data extraction — Extracts article titles and URLs
-5. Duplicate removal — Removes duplicate articles using URLs
-6. JSON — Saves the structured news data
+---
 
-The long-term goal is to build a personal monitor for:
+## Current Status
 
-- Indian AI startups
-- AI job opportunities
-- Skill requirements
-- AI developments
-- New research and findings
-- AI ecosystem activity in Bengaluru, Hyderabad, Gurgaon/Gurugram and Noida
+**V1 complete. V2 in progress (2 of 9 sources shipped).**
 
-The current version focuses only on the web-scraping foundation.
+| Version | Scope | Status |
+|---|---|---|
+| V1 | Basic web scraper | ✅ Complete |
+| V2 | Multi-source data collection | 🚧 In progress |
+| V3 | Career intelligence (skills, companies, locations) | ⏳ Planned |
+| V4 | LLM intelligence layer | ⏳ Planned |
+| V5 | RAG career assistant | ⏳ Planned |
+| V6 | Intelligence dashboard | ⏳ Planned |
 
-## Files
+### What's actually shipped
 
-| File | Purpose |
-|---|---|
-| scraper.py | Scrapes the TechCrunch AI category page using Requests and BeautifulSoup |
-| news.json | Stores the extracted and deduplicated article data |
-| PROJECT_OVERVIEW.md | Full project scope, roadmap and development plan |
+| Source | Type | Records | Method |
+|---|---|---|---|
+| TechCrunch (AI) | News | ~36 | `requests` + BeautifulSoup |
+| Analytics India Magazine | News | 999 | Playwright (JS-rendered) |
+| arXiv (cs.AI, cs.CL, cs.LG) | Research | 10,621 | REST API (Atom XML) |
 
-## Requirements
+**Total: ~11,650 structured records, 0 missing dates, deduplicated by URL.**
 
-- Python 3.10+
-- Python packages: requests, beautifulsoup4
+---
 
-## Setup
+## Dataset Schema
 
-### 1. Install Python Packages
+Each record follows a common shape, with source-specific extras where useful.
 
-pip install requests beautifulsoup4
+**News articles (AIM, TechCrunch):**
 
-### 2. Run the Scraper
+```json
+{
+  "title": "...",
+  "source": "Analytics India Magazine",
+  "url": "https://analyticsindiamag.com/ai-news/...",
+  "published_date": "2026-08-24",
+  "content": "clean article body"
+}
 
-From the src directory:
+Research papers (arXiv):
 
-python scraper.py
+json
+{
+  "title": "...",
+  "source": "arXiv",
+  "url": "https://arxiv.org/abs/2610.03717",
+  "published_date": "2026-10-02",
+  "content": "abstract",
+  "authors": ["..."],
+  "categories": ["cs.AI", "cs.CL"],
+  "primary_category": "cs.AI"
+}
+Project Structure
+text
+02-news-scraper/
+├── src/
+│   ├── scraper_01_techcrunch.py           # V1 reference
+│   ├── scraper_02_analytics_india.py      # Playwright scraper
+│   ├── scraper_12_arxiv.py                # API scraper
+│   ├── scraper_03..15_*.py                # Placeholders for future sources
+│   └── probe_arxiv.py                     # API probe utility
+├── data/
+│   ├── techcrunch.json
+│   ├── analytics_india.json               # 999 articles
+│   ├── analytics_india_state.json         # runtime state (for resume)
+│   ├── arxiv.json                         # 10,621 papers
+│   └── arxiv_state.json                   # incremental tracking
+├── requirements.txt
+└── README.md
+Setup
+bash
+python -m venv .venv
+.venv\Scripts\activate           # Windows
+pip install -r requirements.txt
+playwright install chromium      # required for the AIM scraper
+Usage
+Analytics India Magazine (Playwright)
+bash
+# One-time backfill: 1 Jan 2026 -> today
+python src/scraper_02_analytics_india.py --force-initial --max-urls 0
 
-The extracted news data is saved to:
+# Weekly refresh: Monday -> today
+python src/scraper_02_analytics_india.py
 
-data/news.json
+# Re-extract short articles and retry failures
+python src/scraper_02_analytics_india.py --refetch-short --max-urls 0
 
-## Current Result
+# Quality report (no fetching)
+python src/scraper_02_analytics_india.py --audit
+arXiv (API)
+bash
+# One-time backfill: last 30 days
+python src/scraper_12_arxiv.py --days 30
 
-The current scraper extracts 36 unique AI articles from the fetched TechCrunch AI category page.
+# Incremental (since last stored date)
+python src/scraper_12_arxiv.py --incremental
 
-Each article contains:
+# Custom window
+python src/scraper_12_arxiv.py --days 7 --max-results 200
 
-title
-url
-source
-category
+# Quality report
+python src/scraper_12_arxiv.py --audit
 
-## What I Learned
+Design Decisions
+Per-source isolation. Each source lives in its own file. Source-specific
+quirks stay local, failures don't cascade, and each scraper can be tested and
+replaced independently.
 
-- How HTTP requests work with Python
-- How to fetch HTML using requests
-- How to parse HTML using BeautifulSoup
-- How to inspect HTML structure before choosing selectors
-- How to use find_all() to locate HTML elements
-- How to extract text from HTML elements
-- How to extract links using href
-- How to create structured Python dictionaries
-- How to use sets for duplicate detection
-- How to save structured data as JSON
-- Why a successful HTTP request does not guarantee that the expected HTML tags are present
+Normalized URLs as identity. Deduplication uses a normalized URL
+(scheme + host + path, no query, no trailing slash, no version suffix). This
+keeps re-runs idempotent.
 
-## Future Improvements
+State files, not memory. Each scraper keeps its own state file
+(*_state.json) so runs are resumable. Kill the process mid-run, restart, and
+it picks up where it left off.
 
-- Add more news sources
-- Extract publication dates
-- Improve article filtering
-- Add location/category filtering
-- Extract companies, job roles and skill requirements
-- Track Indian AI startups
-- Add AI-based summarization
-- Build a career-intelligence layer using LLMs and RAG
+Checkpointing. Long runs write to disk every N items. A crash never loses
+more than one checkpoint's worth of work.
 
-## Author
+Honest scope. This is a solo learning project. If a source needs paid
+proxies, CAPTCHA solving, or login walls (LinkedIn, Naukri, Instahyre), it's
+skipped. 9 working sources beat 15 broken ones.
 
-**Ankit Goswami**
-Gen AI Engineer Journey (2026)
+Roadmap
+V2 (current): complete the 9-source universe.
+
+☑ TechCrunch
+☑ Analytics India Magazine
+□ Inc42
+□ YourStory
+□ Economic Times – Tech
+□ Mint – Technology
+☑ arXiv
+□ Hugging Face
+□ Google Research
+V3: extract skills, companies, locations, and hiring signals from the
+collected data.
+
+V4: LLM-powered summarization, entity extraction, classification, and
+trend detection.
+
+V5: RAG-based career assistant grounded in the project's own data.
+
+V6: Streamlit dashboard — skill trends, city/company insights, and chat.
+
+Sources Removed from Scope
+These were in the original plan but are impractical without infrastructure
+this project doesn't have:
+
+Source	Reason
+LinkedIn Jobs	Login wall + aggressive anti-bot
+Naukri	CAPTCHA, IP bans
+Instahyre	Same as Naukri
+Wellfound	Login-gated
+IndiaAI	Messy HTML, low yield
+MeitY	Low AI-career signal density
+Job and skill signals come instead from news and research content.
+
+Status Honesty
+All 9 sources are not implemented. 2 of 9 are.
+
+V2 is not complete. It requires the remaining sources plus shared
+reliability tooling.
+
+The dataset is real, dated, deduplicated, and clean — but it's news and
+research, not job listings.
+
+Repo: github.com/ankitgoswami-space/AI-news-scraper
