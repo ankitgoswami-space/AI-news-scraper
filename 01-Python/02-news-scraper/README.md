@@ -17,12 +17,12 @@ into structured intelligence that answers questions like:
 
 ## Current Status
 
-**V1 complete. V2 in progress (2 of 9 sources shipped).**
+**V1 and V2 complete. 9 of 9 sources shipped (~14,600 records).**
 
 | Version | Scope | Status |
 |---|---|---|
 | V1 | Basic web scraper | ✅ Complete |
-| V2 | Multi-source data collection | 🚧 In progress |
+| V2 | Multi-source data collection | ✅ Complete |
 | V3 | Career intelligence (skills, companies, locations) | ⏳ Planned |
 | V4 | LLM intelligence layer | ⏳ Planned |
 | V5 | RAG career assistant | ⏳ Planned |
@@ -34,9 +34,15 @@ into structured intelligence that answers questions like:
 |---|---|---|---|
 | TechCrunch (AI) | News | ~36 | requests + BeautifulSoup |
 | Analytics India Magazine | News | 999 | Playwright (JS-rendered) |
+| Inc42 | News | 24 | RSS |
+| YourStory | News | 20 | RSS |
+| Economic Times – Tech | News | 50 | RSS + full-content fetch |
+| Mint – Technology | News | 35 | RSS + full-content fetch |
 | arXiv (cs.AI, cs.CL, cs.LG) | Research | 10,621 | REST API (Atom XML) |
+| Hugging Face | Models | 2,779 | REST API (multi-sort merge) |
+| Google Research | Research | 100 | RSS + full-content fetch |
 
-**Total: ~11,650 structured records, 0 missing dates, deduplicated by URL.**
+**Total: ~14,664 structured records, 0 missing dates, deduplicated by URL.**
 
 ---
 
@@ -167,17 +173,17 @@ skipped. 9 working sources beat 15 broken ones.
 
 ## Roadmap
 
-### V2 (current): complete the 9-source universe
+### V2: 9-source universe ✅ COMPLETE
 
 - [x] TechCrunch
 - [x] Analytics India Magazine
-- [ ] Inc42
-- [ ] YourStory
-- [ ] Economic Times – Tech
-- [ ] Mint – Technology
+- [x] Inc42
+- [x] YourStory
+- [x] Economic Times – Tech
+- [x] Mint – Technology
 - [x] arXiv
-- [ ] Hugging Face
-- [ ] Google Research
+- [x] Hugging Face
+- [x] Google Research
 
 ### Later versions
 
