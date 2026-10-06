@@ -60,6 +60,7 @@ src/claude.py
 src/_diag_*.py
 src/_check_*.py
 src/test_*.py
+src/probe_*.py
 src/find_tables.py
 src/source_probe.py
 src/structure_intelligence*.py

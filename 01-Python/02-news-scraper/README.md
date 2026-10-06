@@ -81,8 +81,8 @@ Each record follows a common shape, with source-specific extras where useful.
 │   ├── scraper_01_techcrunch.py           # V1 reference
 │   ├── scraper_02_analytics_india.py      # Playwright scraper
 │   ├── scraper_12_arxiv.py                # API scraper
-│   ├── scraper_03..15_*.py                # Placeholders for future sources
-│   └── probe_arxiv.py                     # API probe utility
+│   ├── scraper_03..06_*.py                # Placeholders (Inc42, YourStory, ET, Mint)
+│   
 ├── data/
 │   ├── techcrunch.json
 │   ├── analytics_india.json               # 999 articles
