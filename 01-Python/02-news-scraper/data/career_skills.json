@@ -1,0 +1,465 @@
+{
+  "generated_from": "skills_extractor.py",
+  "sources_processed": {
+    "AIM": {
+      "records": 999,
+      "chars_scanned": 4966518
+    },
+    "TechCrunch": {
+      "records": 36,
+      "chars_scanned": 2542
+    },
+    "Inc42": {
+      "records": 24,
+      "chars_scanned": 206262
+    },
+    "YourStory": {
+      "records": 20,
+      "chars_scanned": 90588
+    },
+    "ET Tech": {
+      "records": 50,
+      "chars_scanned": 201747
+    },
+    "Mint": {
+      "records": 35,
+      "chars_scanned": 118733
+    },
+    "arXiv": {
+      "records": 10621,
+      "chars_scanned": 16282380
+    },
+    "Hugging Face": {
+      "records": 2779,
+      "chars_scanned": 1224921
+    },
+    "Google Research": {
+      "records": 100,
+      "chars_scanned": 1125763
+    }
+  },
+  "skills": {
+    "LLM": {
+      "total": 8933,
+      "sources": {
+        "arXiv": 8363,
+        "Google Research": 327,
+        "AIM": 142,
+        "Hugging Face": 100,
+        "Inc42": 1
+      }
+    },
+    "Transformers": {
+      "total": 6102,
+      "sources": {
+        "Hugging Face": 4846,
+        "arXiv": 1192,
+        "AIM": 32,
+        "Google Research": 32
+      }
+    },
+    "Agentic AI": {
+      "total": 3849,
+      "sources": {
+        "arXiv": 2007,
+        "AIM": 1486,
+        "Google Research": 217,
+        "Hugging Face": 96,
+        "Mint": 12,
+        "Inc42": 10,
+        "TechCrunch": 9,
+        "ET Tech": 9,
+        "YourStory": 3
+      }
+    },
+    "Fine-tuning": {
+      "total": 3389,
+      "sources": {
+        "arXiv": 2075,
+        "Hugging Face": 1156,
+        "Google Research": 91,
+        "AIM": 66,
+        "Mint": 1
+      }
+    },
+    "Quantization": {
+      "total": 3203,
+      "sources": {
+        "Hugging Face": 2536,
+        "arXiv": 652,
+        "Google Research": 15
+      }
+    },
+    "Multimodal": {
+      "total": 2099,
+      "sources": {
+        "arXiv": 1426,
+        "AIM": 361,
+        "Hugging Face": 236,
+        "Google Research": 76
+      }
+    },
+    "Embeddings": {
+      "total": 1714,
+      "sources": {
+        "arXiv": 1156,
+        "Hugging Face": 422,
+        "Google Research": 82,
+        "AIM": 54
+      }
+    },
+    "NVIDIA": {
+      "total": 1291,
+      "sources": {
+        "AIM": 830,
+        "Hugging Face": 342,
+        "arXiv": 85,
+        "ET Tech": 27,
+        "Mint": 5,
+        "TechCrunch": 1,
+        "YourStory": 1
+      }
+    },
+    "PyTorch": {
+      "total": 1233,
+      "sources": {
+        "Hugging Face": 1158,
+        "arXiv": 70,
+        "AIM": 4,
+        "Google Research": 1
+      }
+    },
+    "Git": {
+      "total": 1206,
+      "sources": {
+        "arXiv": 1040,
+        "AIM": 115,
+        "Google Research": 29,
+        "Hugging Face": 10,
+        "Mint": 9,
+        "ET Tech": 2,
+        "Inc42": 1
+      }
+    },
+    "GPU": {
+      "total": 973,
+      "sources": {
+        "arXiv": 607,
+        "AIM": 333,
+        "ET Tech": 15,
+        "Hugging Face": 12,
+        "Google Research": 4,
+        "Mint": 2
+      }
+    },
+    "Azure": {
+      "total": 717,
+      "sources": {
+        "Hugging Face": 668,
+        "AIM": 47,
+        "arXiv": 2
+      }
+    },
+    "LoRA": {
+      "total": 708,
+      "sources": {
+        "arXiv": 378,
+        "Hugging Face": 318,
+        "Google Research": 10,
+        "AIM": 2
+      }
+    },
+    "RAG": {
+      "total": 658,
+      "sources": {
+        "arXiv": 514,
+        "AIM": 85,
+        "Google Research": 47,
+        "Hugging Face": 12
+      }
+    },
+    "Reasoning": {
+      "total": 542,
+      "sources": {
+        "arXiv": 483,
+        "AIM": 34,
+        "Google Research": 13,
+        "Hugging Face": 12
+      }
+    },
+    "Diffusers": {
+      "total": 475,
+      "sources": {
+        "Hugging Face": 472,
+        "arXiv": 3
+      }
+    },
+    "Diffusion": {
+      "total": 392,
+      "sources": {
+        "arXiv": 364,
+        "Google Research": 26,
+        "Hugging Face": 2
+      }
+    },
+    "Prompt Engg": {
+      "total": 364,
+      "sources": {
+        "arXiv": 315,
+        "AIM": 31,
+        "Google Research": 18
+      }
+    },
+    "Sarvam AI": {
+      "total": 246,
+      "sources": {
+        "AIM": 241,
+        "Mint": 2,
+        "arXiv": 2,
+        "Inc42": 1
+      }
+    },
+    "JAX": {
+      "total": 246,
+      "sources": {
+        "Hugging Face": 180,
+        "Google Research": 34,
+        "arXiv": 32
+      }
+    },
+    "Hugging Face": {
+      "total": 230,
+      "sources": {
+        "AIM": 132,
+        "arXiv": 73,
+        "Google Research": 17,
+        "Mint": 3,
+        "ET Tech": 2,
+        "Hugging Face": 2,
+        "Inc42": 1
+      }
+    },
+    "vLLM": {
+      "total": 225,
+      "sources": {
+        "Hugging Face": 164,
+        "arXiv": 54,
+        "AIM": 7
+      }
+    },
+    "PEFT": {
+      "total": 204,
+      "sources": {
+        "Hugging Face": 160,
+        "arXiv": 44
+      }
+    },
+    "AWS": {
+      "total": 185,
+      "sources": {
+        "AIM": 177,
+        "arXiv": 5,
+        "Google Research": 3
+      }
+    },
+    "Python": {
+      "total": 166,
+      "sources": {
+        "arXiv": 129,
+        "AIM": 22,
+        "Google Research": 13,
+        "Hugging Face": 2
+      }
+    },
+    "GCP": {
+      "total": 142,
+      "sources": {
+        "AIM": 116,
+        "Google Research": 23,
+        "arXiv": 3
+      }
+    },
+    "Rust": {
+      "total": 133,
+      "sources": {
+        "Hugging Face": 66,
+        "AIM": 54,
+        "arXiv": 13
+      }
+    },
+    "Databricks": {
+      "total": 132,
+      "sources": {
+        "AIM": 132
+      }
+    },
+    "SQL": {
+      "total": 114,
+      "sources": {
+        "arXiv": 105,
+        "AIM": 6,
+        "Google Research": 3
+      }
+    },
+    "Spark": {
+      "total": 108,
+      "sources": {
+        "AIM": 66,
+        "Hugging Face": 38,
+        "arXiv": 4
+      }
+    },
+    "Snowflake": {
+      "total": 103,
+      "sources": {
+        "AIM": 93,
+        "Hugging Face": 8,
+        "arXiv": 2
+      }
+    },
+    "CUDA": {
+      "total": 83,
+      "sources": {
+        "arXiv": 31,
+        "AIM": 28,
+        "Hugging Face": 24
+      }
+    },
+    "MongoDB": {
+      "total": 60,
+      "sources": {
+        "AIM": 57,
+        "arXiv": 3
+      }
+    },
+    "TypeScript": {
+      "total": 38,
+      "sources": {
+        "AIM": 34,
+        "arXiv": 4
+      }
+    },
+    "JavaScript": {
+      "total": 36,
+      "sources": {
+        "AIM": 24,
+        "arXiv": 10,
+        "Hugging Face": 2
+      }
+    },
+    "Ollama": {
+      "total": 31,
+      "sources": {
+        "Hugging Face": 14,
+        "AIM": 10,
+        "arXiv": 7
+      }
+    },
+    "Vector DB": {
+      "total": 27,
+      "sources": {
+        "arXiv": 14,
+        "AIM": 7,
+        "Google Research": 6
+      }
+    },
+    "Keras": {
+      "total": 25,
+      "sources": {
+        "Hugging Face": 24,
+        "Google Research": 1
+      }
+    },
+    "Java": {
+      "total": 21,
+      "sources": {
+        "arXiv": 12,
+        "AIM": 7,
+        "Hugging Face": 2
+      }
+    },
+    "Kubernetes": {
+      "total": 17,
+      "sources": {
+        "arXiv": 11,
+        "AIM": 5,
+        "Google Research": 1
+      }
+    },
+    "BharatGPT": {
+      "total": 15,
+      "sources": {
+        "AIM": 15
+      }
+    },
+    "PostgreSQL": {
+      "total": 15,
+      "sources": {
+        "arXiv": 8,
+        "AIM": 7
+      }
+    },
+    "Docker": {
+      "total": 14,
+      "sources": {
+        "arXiv": 11,
+        "AIM": 3
+      }
+    },
+    "Krutrim": {
+      "total": 13,
+      "sources": {
+        "AIM": 8,
+        "Inc42": 3,
+        "YourStory": 2
+      }
+    },
+    "TensorFlow": {
+      "total": 8,
+      "sources": {
+        "arXiv": 5,
+        "Hugging Face": 2,
+        "Google Research": 1
+      }
+    },
+    "MLOps": {
+      "total": 7,
+      "sources": {
+        "arXiv": 5,
+        "AIM": 2
+      }
+    },
+    "LangChain": {
+      "total": 4,
+      "sources": {
+        "AIM": 3,
+        "arXiv": 1
+      }
+    },
+    "Airflow": {
+      "total": 3,
+      "sources": {
+        "AIM": 2,
+        "arXiv": 1
+      }
+    },
+    "scikit-learn": {
+      "total": 3,
+      "sources": {
+        "arXiv": 3
+      }
+    },
+    "LlamaIndex": {
+      "total": 1,
+      "sources": {
+        "AIM": 1
+      }
+    },
+    "Kafka": {
+      "total": 1,
+      "sources": {
+        "AIM": 1
+      }
+    }
+  }
+}
