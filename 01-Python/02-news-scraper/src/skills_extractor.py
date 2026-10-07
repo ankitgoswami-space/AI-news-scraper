@@ -18,7 +18,7 @@ from pathlib import Path
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
-# Source file -> human label used in output
+# Source file -> 
 SOURCES = {
     "analytics_india.json":   "AIM",
     "techcrunch.json":        "TechCrunch",
@@ -29,6 +29,10 @@ SOURCES = {
     "arxiv.json":             "arXiv",
     "huggingface.json":       "Hugging Face",
     "google_research.json":   "Google Research",
+    "adzuna.json":            "Adzuna India",        # NEW
+    "hn_hiring.json":         "HN Who's Hiring",     # NEW
+    "remoteok.json":          "RemoteOK",            # NEW
+    "wwr.json":               "We Work Remotely",    # NEW
 }
 
 OUTPUT_FILE = DATA_DIR / "career_skills.json"
@@ -83,6 +87,14 @@ SKILLS = {
     "CUDA":           [r"\bcuda\b"],
     "GPU":            [r"\bgpus?\b"],
     "NVIDIA":         [r"\bnvidia\b"],
+    "Machine Learning": [r"machine learning", r"\bml\b(?!\s*ops)"],
+    "Deep Learning":    [r"deep learning", r"\bdl\b"],
+    "NLP":              [r"\bnlp\b", r"natural language processing"],
+    "Computer Vision":  [r"computer vision", r"\bcv\b"],
+    "Machine Learning": [r"machine learning", r"\bml engineer"],
+    "Deep Learning":    [r"deep learning", r"\bdl\b"],
+    "NLP":              [r"\bnlp\b", r"natural language processing"],
+    "Computer Vision":  [r"computer vision", r"\bcv engineer"],
 
     # --- Cloud / infra ---
     "AWS":            [r"\baws\b", r"amazon web services"],
