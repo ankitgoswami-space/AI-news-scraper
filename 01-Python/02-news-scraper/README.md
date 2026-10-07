@@ -23,10 +23,29 @@ into structured intelligence that answers questions like:
 |---|---|---|
 | V1 | Basic web scraper | ✅ Complete |
 | V2 | Multi-source data collection | ✅ Complete |
-| V3 | Career intelligence (skills, companies, locations) | ⏳ Planned |
+| V3 | Career intelligence (skills, companies, locations) | 🚧 In progress (skills done) |
 | V4 | LLM intelligence layer | ⏳ Planned |
 | V5 | RAG career assistant | ⏳ Planned |
 | V6 | Intelligence dashboard | ⏳ Planned |
+
+### Top AI skills detected (V3 output)
+
+Across 14,664 records, the most-mentioned AI skills are:
+
+| Skill | Mentions | Top source |
+|---|---|---|
+| LLM | 8,933 | arXiv |
+| Transformers | 6,102 | Hugging Face |
+| Agentic AI | 3,849 | arXiv / AIM |
+| Fine-tuning | 3,389 | arXiv / HF |
+| Quantization | 3,203 | Hugging Face |
+| Multimodal | 2,099 | arXiv |
+| Embeddings | 1,714 | arXiv |
+| NVIDIA | 1,291 | AIM |
+| PyTorch | 1,233 | Hugging Face |
+| RAG | 658 | arXiv |
+
+Full breakdown: `data/career_skills.json`
 
 ### What's actually shipped
 
@@ -187,7 +206,12 @@ skipped. 9 working sources beat 15 broken ones.
 
 ### Later versions
 
-- **V3:** extract skills, companies, locations, and hiring signals from the collected data.
+### V3 (current): career intelligence
+
+- [x] Skills extraction across all sources (51 skills, `data/career_skills.json`)
+- [ ] Company extraction (Indian AI startups mentioned in news)
+- [ ] Location extraction (Bengaluru, Hyderabad, Gurgaon, Noida)
+- [ ] Per-source skill profiles
 - **V4:** LLM-powered summarization, entity extraction, classification, and trend detection.
 - **V5:** RAG-based career assistant grounded in the project's own data.
 - **V6:** Streamlit dashboard — skill trends, city/company insights, and chat.
