@@ -212,7 +212,16 @@ skipped. 9 working sources beat 15 broken ones.
 - [x] Location extraction (18 cities, `data/career_locations.json`)
 - [x] Per-source breakdowns (included in all three outputs)
 
+**Top signals:**
+
+| Category | Leaders |
+|---|---|
+| Skills | LLM (9334), Transformers (6115), Agentic AI (4163), Fine-tuning (3417), Python (445) |
+| Companies | Google (3564), Anthropic (2067), OpenAI (1671), NVIDIA (1136), Sarvam AI (246) |
+| Cities | Bengaluru (1888), Remote (812), Hyderabad (609), Mumbai (375), Chennai (301) |
+
 - **V4:** LLM-powered summarization, entity extraction, classification, and trend detection.
+- **V4:** (next):** LLM-powered summarization, entity extraction, classification, and trend detection.
 - **V5:** RAG-based career assistant grounded in the project's own data.
 - **V6:** Streamlit dashboard — skill trends, city/company insights, and chat.
 
@@ -238,8 +247,8 @@ Job and skill signals come instead from news and research content.
 
 ## Status Honesty
 
-- All 9 sources are **not** implemented. 2 of 9 are.
-- V2 is **not** complete. It requires the remaining sources plus shared reliability tooling.
+- All 9 sources are implemented.
+- V2 is complete.
 - The dataset is real, dated, deduplicated, and clean — but it's news and research, not job listings.
 
 ---
