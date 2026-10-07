@@ -23,29 +23,28 @@ into structured intelligence that answers questions like:
 |---|---|---|
 | V1 | Basic web scraper | ✅ Complete |
 | V2 | Multi-source data collection | ✅ Complete |
-| V3 | Career intelligence (skills, companies, locations) | 🚧 In progress (skills done) |
+| V3 | Career intelligence (skills, companies, locations) | ✅ Complete |
 | V4 | LLM intelligence layer | ⏳ Planned |
 | V5 | RAG career assistant | ⏳ Planned |
 | V6 | Intelligence dashboard | ⏳ Planned |
 
-### Top AI skills detected (V3 output)
+### Top signals (V3 output)
 
-Across 14,664 records, the most-mentioned AI skills are:
-
+**Top AI skills:**
 | Skill | Mentions | Top source |
 |---|---|---|
-| LLM | 8,933 | arXiv |
-| Transformers | 6,102 | Hugging Face |
-| Agentic AI | 3,849 | arXiv / AIM |
-| Fine-tuning | 3,389 | arXiv / HF |
-| Quantization | 3,203 | Hugging Face |
-| Multimodal | 2,099 | arXiv |
-| Embeddings | 1,714 | arXiv |
-| NVIDIA | 1,291 | AIM |
-| PyTorch | 1,233 | Hugging Face |
-| RAG | 658 | arXiv |
+| LLM | 9,334 | arXiv |
+| Transformers | 6,115 | Hugging Face |
+| Agentic AI | 4,163 | arXiv / AIM |
+| Fine-tuning | 3,417 | arXiv / HF |
+| Quantization | 3,204 | Hugging Face |
+| Python | 445 | Adzuna India |
+| AWS | 423 | Adzuna India |
+| SQL | 201 | arXiv / Adzuna |
 
-Full breakdown: `data/career_skills.json`
+**Top cities (India):** Bengaluru, Hyderabad, Mumbai, Chennai, Pune, Delhi NCR, Noida, Gurgaon
+
+**Top companies:** Google, Anthropic, OpenAI, NVIDIA, Meta, Amazon/AWS, Microsoft, TCS, Infosys, Sarvam AI
 
 ### What's actually shipped
 
@@ -206,12 +205,13 @@ skipped. 9 working sources beat 15 broken ones.
 
 ### Later versions
 
-### V3 (current): career intelligence
+### V3: career intelligence ✅ COMPLETE
 
-- [x] Skills extraction across all sources (51 skills, `data/career_skills.json`)
-- [ ] Company extraction (Indian AI startups mentioned in news)
-- [ ] Location extraction (Bengaluru, Hyderabad, Gurgaon, Noida)
-- [ ] Per-source skill profiles
+- [x] Skills extraction (57 skills, `data/career_skills.json`)
+- [x] Company extraction (50+ companies, `data/career_companies.json`)
+- [x] Location extraction (18 cities, `data/career_locations.json`)
+- [x] Per-source breakdowns (included in all three outputs)
+
 - **V4:** LLM-powered summarization, entity extraction, classification, and trend detection.
 - **V5:** RAG-based career assistant grounded in the project's own data.
 - **V6:** Streamlit dashboard — skill trends, city/company insights, and chat.
