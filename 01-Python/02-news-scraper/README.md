@@ -223,7 +223,19 @@ skipped. 9 working sources beat 15 broken ones.
 - **V4:** LLM-powered summarization, entity extraction, classification, and trend detection.
 - **V4:** (next):** LLM-powered summarization, entity extraction, classification, and trend detection.
 - **V5:** RAG-based career assistant grounded in the project's own data.
-- **V6:** Streamlit dashboard — skill trends, city/company insights, and chat.
+### V6: dashboard (current)
+
+- [x] Streamlit dashboard with 5 pages (Overview, Skills, Companies, Locations, News)
+- [x] Interactive charts (Plotly): top skills, top companies, top cities
+- [x] Skill detail with source breakdown
+- [x] News feed with source + search filters
+- [ ] Deploy to Streamlit Cloud (live URL)
+- [ ] Integrate V4 LLM summaries when ready
+
+**Run locally:**
+```bash
+pip install -r requirements.txt
+streamlit run dashboard/app.py
 
 ---
 
