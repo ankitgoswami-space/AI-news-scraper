@@ -71,3 +71,6 @@ src/structure_intelligence*.py
 node_modules/
 .next/
 dist/
+
+# Daily work logs (contain credentials — keep local only)
+DAILY_LOG_*.md
