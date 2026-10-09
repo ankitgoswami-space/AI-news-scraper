@@ -303,7 +303,12 @@ def process(limit=0):
     if not isinstance(enriched, list):
         enriched = []
 
-    done_urls = {j.get("url") for j in enriched if j.get("url")}
+    # Only skip URLs that were successfully enriched (no error tag).
+    # Failed entries stay in the list (for audit) but are retried.
+    done_urls = {
+        j.get("url") for j in enriched
+        if j.get("url") and not j.get("_enrichment_error")
+    }
     print(f"Already done   : {len(done_urls)}")
 
     todo = [j for j in jobs if j.get("url") and j["url"] not in done_urls]
