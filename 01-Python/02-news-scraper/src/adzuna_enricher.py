@@ -4,17 +4,19 @@ Adzuna Job Enricher — V4 extension for real job listings.
 For each Adzuna job:
   1. Fetch the full job description page (Adzuna details URL)
   2. Send it to Gemini
-  3. Extract structured fields: experience, required skills, nice-to-have
-     skills, salary, remote type, employment type, role category
+  3. Extract structured fields
 
-Output: data/adzuna_enriched.json
-Resume-safe: re-run continues from where it stopped.
+Fixes (2026-10-11):
+  - Adzuna fetch retry on connection errors
+  - 404 marked permanent (never retried)
+  - Connection/429 marked temporary (retried next run)
+  - Slow down when Adzuna blocks
 
 Usage:
-    python adzuna_enricher.py --limit 10     # test
-    python adzuna_enricher.py                # full run
-    python adzuna_enricher.py --reset        # start fresh
-    python adzuna_enricher.py --audit        # show stats
+    python adzuna_enricher.py --limit 10
+    python adzuna_enricher.py
+    python adzuna_enricher.py --reset
+    python adzuna_enricher.py --audit
 """
 
 import argparse
@@ -44,9 +46,15 @@ MODEL = "gemini-flash-lite-latest"
 CHECKPOINT_EVERY = 25
 MAX_RETRIES = 4
 RETRY_BACKOFF = 5
-CONTENT_CHARS = 4000           # job descriptions are longer than articles
-FETCH_DELAY = 0.5              # between page fetches
+CONTENT_CHARS = 4000
+FETCH_DELAY = 0.5
 CONTENT_SELECTOR = "main"
+
+# Adzuna block handling
+ADZUNA_FETCH_RETRIES = 3        # for each job page fetch
+ADZUNA_RETRY_WAIT = 5           # seconds; multiplied by attempt
+ADZUNA_BLOCK_COOLDOWN = 60      # if >= N consecutive connection errors, pause
+ADZUNA_BLOCK_THRESHOLD = 5
 
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -77,6 +85,39 @@ client = genai.Client(api_key=API_KEY)
 
 
 # ============================================================
+# ERROR CLASSIFIERS
+# ============================================================
+
+def is_permanent_error(exc):
+    """404 / Gone = job deleted, never retry."""
+    msg = str(exc)
+    return "404" in msg or "Not Found" in msg or "410" in msg or "Gone" in msg
+
+
+def is_connection_error(exc):
+    """Network errors — temporary, retry next run."""
+    msg = str(exc).lower()
+    return (
+        "connection" in msg
+        or "max retries" in msg
+        or "10054" in msg
+        or "timeout" in msg
+        or "readerror" in msg
+        or "connectionerror" in msg
+    )
+
+
+def is_transient_llm_error(exc):
+    """429/503 — retry immediately with backoff."""
+    msg = str(exc)
+    return (
+        "429" in msg or "RESOURCE_EXHAUSTED" in msg
+        or "503" in msg or "UNAVAILABLE" in msg
+        or "500" in msg
+    )
+
+
+# ============================================================
 # PROMPT
 # ============================================================
 
@@ -99,24 +140,14 @@ RULES:
    "AI Research", "AI Product Manager", "Frontend Engineer", "Backend Engineer",
    "Full Stack Engineer", "DevOps Engineer", "Other"
 
-2. experience_min_years — integer (minimum years of experience)
-   - If posting says "2-5 years", min = 2
-   - If posting says "5+ years", min = 5, max = null
-   - If posting says "Fresher" or "0-1 years", min = 0
-   - If no experience mentioned, use null
-
+2. experience_min_years — integer (minimum years) or null
 3. experience_max_years — integer (maximum years) or null
-
 4. experience_level — one of: "fresher", "junior", "mid", "senior", "lead", "unknown"
-
 5. employment_type — one of: "full-time", "part-time", "contract", "internship", "unknown"
-
 6. remote_type — one of: "remote", "hybrid", "onsite", "unknown"
-
 7. salary_range_lpa — string like "15-25" or "20+" or "" if not mentioned
-   (Convert lacs/annum to LPA integers)
 
-8. required_skills — array of ONLY these exact names (do not invent):
+8. required_skills — array of ONLY these exact names:
    Python, JavaScript, TypeScript, Java, C++, Rust, Go, SQL,
    PyTorch, TensorFlow, JAX, scikit-learn, Keras, Hugging Face, Transformers,
    LLM, RAG, LangChain, LlamaIndex, Vector DB, Embeddings, Fine-tuning,
@@ -126,12 +157,10 @@ RULES:
    React, Node.js, FastAPI, Django, Flask, REST API, GraphQL,
    Computer Vision, NLP, Deep Learning, Machine Learning, Data Analysis,
    Pandas, NumPy
-   - Use exact names. Empty array [] if none.
 
-9. nice_to_have_skills — same closed list, but only if posting says
-   "nice to have", "preferred", "bonus", or similar. Empty array if none.
+9. nice_to_have_skills — same closed list, only if "nice to have/preferred/bonus"
 
-10. responsibilities_summary — 1-2 sentence summary of the main responsibilities.
+10. responsibilities_summary — 1-2 sentences
 
 Return ONLY the JSON object.
 
@@ -150,16 +179,37 @@ Full Description:
 # HELPERS
 # ============================================================
 
-def fetch_job_page(url):
-    resp = requests.get(url, headers=HEADERS, timeout=30, allow_redirects=True)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "html.parser")
-    el = soup.select_one(CONTENT_SELECTOR)
-    if not el:
-        return ""
-    text = el.get_text(" ", strip=True)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
+def fetch_job_page(url, retries=ADZUNA_FETCH_RETRIES):
+    """Fetch full job description with retry. Raises on 404 or after retries."""
+    last_exc = None
+    for attempt in range(1, retries + 1):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=30, allow_redirects=True)
+            # 404 → permanent, raise immediately
+            if resp.status_code == 404:
+                raise requests.HTTPError(f"404 Not Found: {url}", response=resp)
+            resp.raise_for_status()
+
+            soup = BeautifulSoup(resp.text, "html.parser")
+            el = soup.select_one(CONTENT_SELECTOR)
+            if not el:
+                return ""
+            text = el.get_text(" ", strip=True)
+            return re.sub(r"\s+", " ", text).strip()
+
+        except requests.HTTPError as he:
+            # 404 → permanent, don't retry
+            if he.response is not None and he.response.status_code == 404:
+                raise
+            last_exc = he
+            if attempt < retries:
+                time.sleep(ADZUNA_RETRY_WAIT * attempt)
+        except Exception as exc:
+            last_exc = exc
+            if attempt < retries:
+                time.sleep(ADZUNA_RETRY_WAIT * attempt)
+
+    raise last_exc
 
 
 def parse_json_safe(text):
@@ -237,12 +287,9 @@ def extract_from_llm(job, content):
 
         except Exception as exc:
             last_exc = exc
-            msg = str(exc)
-            transient = ("503" in msg or "UNAVAILABLE" in msg
-                         or "429" in msg or "RESOURCE_EXHAUSTED" in msg)
-            if transient and attempt < MAX_RETRIES:
+            if is_transient_llm_error(exc) and attempt < MAX_RETRIES:
                 wait = RETRY_BACKOFF * attempt
-                print(f"      [retry {attempt}] {wait}s — {msg[:70]}")
+                print(f"      [llm retry {attempt}] {wait}s — {str(exc)[:70]}")
                 time.sleep(wait)
                 continue
             raise
@@ -259,12 +306,10 @@ def enrich_job(job):
     if not url:
         raise ValueError("no URL")
 
-    # Fetch full description
     content = fetch_job_page(url)
     if not content or len(content) < 200:
         raise ValueError(f"full content too short ({len(content)} chars)")
 
-    # LLM extraction
     parsed, tokens = extract_from_llm(job, content)
 
     return {
@@ -303,12 +348,23 @@ def process(limit=0):
     if not isinstance(enriched, list):
         enriched = []
 
-    # Only skip URLs that were successfully enriched (no error tag).
-    # Failed entries stay in the list (for audit) but are retried.
-    done_urls = {
-        j.get("url") for j in enriched
-        if j.get("url") and not j.get("_enrichment_error")
-    }
+    # Skip: successfully enriched OR permanently failed (404)
+    # Retry: temporary failures (connection, 429) and untouched jobs
+    done_urls = set()
+    for j in enriched:
+        url = j.get("url")
+        if not url:
+            continue
+        # Skip only if successfully enriched OR permanently failed
+        has_error = bool(j.get("_enrichment_error"))
+        is_permanent = bool(j.get("_permanent_failure"))
+        is_temporary = bool(j.get("_temporary_failure"))
+
+        if not has_error and not is_temporary:
+            done_urls.add(url)          # success
+        elif is_permanent:
+            done_urls.add(url)          # 404, skip forever
+        # else: retry (temporary failure, or old-format error without flags)
     print(f"Already done   : {len(done_urls)}")
 
     todo = [j for j in jobs if j.get("url") and j["url"] not in done_urls]
@@ -328,7 +384,9 @@ def process(limit=0):
     start_time = time.time()
     total_tokens = 0
     processed = 0
-    failed = 0
+    failed_perm = 0
+    failed_temp = 0
+    consecutive_conn_errors = 0
 
     try:
         for i, job in enumerate(todo, start=1):
@@ -340,6 +398,7 @@ def process(limit=0):
                 enriched.append(enriched_job)
                 processed += 1
                 total_tokens += tokens
+                consecutive_conn_errors = 0
 
                 elapsed = time.time() - start_time
                 avg = elapsed / i
@@ -350,13 +409,39 @@ def process(limit=0):
                     f"exp {enriched_job['experience_min_years']}-{enriched_job['experience_max_years']}  |  "
                     f"ETA {format_eta(eta)}"
                 )
+
             except Exception as exc:
-                failed += 1
-                print(f"      FAILED: {type(exc).__name__}: {str(exc)[:100]}")
-                enriched.append({
-                    **job,
-                    "_enrichment_error": str(exc)[:200],
-                })
+                if is_permanent_error(exc):
+                    failed_perm += 1
+                    print(f"      PERMANENT (skip forever): {str(exc)[:80]}")
+                    enriched.append({
+                        **job,
+                        "_enrichment_error": str(exc)[:200],
+                        "_permanent_failure": True,
+                    })
+                elif is_connection_error(exc):
+                    failed_temp += 1
+                    consecutive_conn_errors += 1
+                    print(f"      TEMP (connection): {str(exc)[:80]}")
+                    enriched.append({
+                        **job,
+                        "_enrichment_error": str(exc)[:200],
+                        "_temporary_failure": True,
+                    })
+                else:
+                    failed_temp += 1
+                    print(f"      TEMP ({type(exc).__name__}): {str(exc)[:80]}")
+                    enriched.append({
+                        **job,
+                        "_enrichment_error": str(exc)[:200],
+                        "_temporary_failure": True,
+                    })
+
+            # Cooldown if Adzuna is blocking us
+            if consecutive_conn_errors >= ADZUNA_BLOCK_THRESHOLD:
+                print(f"      !!! {consecutive_conn_errors} consecutive connection errors — pausing {ADZUNA_BLOCK_COOLDOWN}s")
+                time.sleep(ADZUNA_BLOCK_COOLDOWN)
+                consecutive_conn_errors = 0
 
             if i % CHECKPOINT_EVERY == 0:
                 save_json(OUTPUT_FILE, enriched)
@@ -375,15 +460,16 @@ def process(limit=0):
         print("=" * 60)
         print("SUMMARY")
         print("=" * 60)
-        print(f"Processed   : {processed}")
-        print(f"Failed      : {failed}")
-        print(f"Total       : {len(enriched)}")
-        print(f"Tokens used : {total_tokens:,}")
-        print(f"Time        : {format_eta(elapsed)}")
+        print(f"Processed         : {processed}")
+        print(f"Failed permanent  : {failed_perm} (404 — will NOT retry)")
+        print(f"Failed temporary  : {failed_temp} (connection/LLM — will retry)")
+        print(f"Total in file     : {len(enriched)}")
+        print(f"Tokens used       : {total_tokens:,}")
+        print(f"Time              : {format_eta(elapsed)}")
         if processed:
-            print(f"Avg per job : {elapsed/processed:.1f}s")
-            print(f"Avg tokens  : {total_tokens/processed:.0f}")
-        print(f"Output      : {OUTPUT_FILE}")
+            print(f"Avg per job       : {elapsed/processed:.1f}s")
+            print(f"Avg tokens        : {total_tokens/processed:.0f}")
+        print(f"Output            : {OUTPUT_FILE}")
 
 
 # ============================================================
@@ -400,49 +486,45 @@ def audit():
     print("=" * 60)
     print("ADZUNA ENRICHED AUDIT")
     print("=" * 60)
-    print(f"Total enriched : {len(data)}")
+    print(f"Total records      : {len(data)}")
 
     success = sum(1 for j in data if not j.get("_enrichment_error"))
-    failed = sum(1 for j in data if j.get("_enrichment_error"))
-    with_skills = sum(1 for j in data if j.get("required_skills"))
-    with_salary = sum(1 for j in data if j.get("salary_range_lpa"))
-    with_exp = sum(1 for j in data if j.get("experience_min_years") is not None)
+    perm_fail = sum(1 for j in data if j.get("_permanent_failure"))
+    temp_fail = sum(1 for j in data if j.get("_temporary_failure"))
+    other_fail = len(data) - success - perm_fail - temp_fail
 
-    print(f"Success        : {success}")
-    print(f"Failed         : {failed}")
-    print(f"With skills    : {with_skills}")
-    print(f"With salary    : {with_salary}")
-    print(f"With experience: {with_exp}")
+    print(f"Success            : {success}")
+    print(f"Failed (permanent) : {perm_fail}")
+    print(f"Failed (temporary) : {temp_fail}")
+    print(f"Other failures     : {other_fail}")
 
-    # Category distribution
-    cats = {}
-    for j in data:
-        c = j.get("role_category") or "UNKNOWN"
-        cats[c] = cats.get(c, 0) + 1
-    print()
-    print("Role categories:")
-    for c, n in sorted(cats.items(), key=lambda x: -x[1]):
-        print(f"  {c:25s} : {n}")
+    # Success-only stats
+    ok = [j for j in data if not j.get("_enrichment_error")]
+    if ok:
+        with_skills = sum(1 for j in ok if j.get("required_skills"))
+        with_salary = sum(1 for j in ok if j.get("salary_range_lpa"))
+        with_exp = sum(1 for j in ok if j.get("experience_min_years") is not None)
+        print(f"With skills        : {with_skills}")
+        print(f"With salary        : {with_salary}")
+        print(f"With experience    : {with_exp}")
 
-    # Top skills
-    skills = {}
-    for j in data:
-        for s in j.get("required_skills") or []:
-            skills[s] = skills.get(s, 0) + 1
-    print()
-    print("Top required skills:")
-    for s, n in sorted(skills.items(), key=lambda x: -x[1])[:20]:
-        print(f"  {s:20s} : {n}")
+        cats = {}
+        for j in ok:
+            c = j.get("role_category") or "UNKNOWN"
+            cats[c] = cats.get(c, 0) + 1
+        print()
+        print("Role categories:")
+        for c, n in sorted(cats.items(), key=lambda x: -x[1])[:12]:
+            print(f"  {c:25s} : {n}")
 
-    # Experience distribution
-    exps = {}
-    for j in data:
-        lvl = j.get("experience_level") or "unknown"
-        exps[lvl] = exps.get(lvl, 0) + 1
-    print()
-    print("Experience levels:")
-    for lvl, n in sorted(exps.items(), key=lambda x: -x[1]):
-        print(f"  {lvl:12s} : {n}")
+        skills = {}
+        for j in ok:
+            for s in j.get("required_skills") or []:
+                skills[s] = skills.get(s, 0) + 1
+        print()
+        print("Top required skills:")
+        for s, n in sorted(skills.items(), key=lambda x: -x[1])[:15]:
+            print(f"  {s:20s} : {n}")
 
 
 # ============================================================
