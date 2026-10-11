@@ -280,27 +280,41 @@ def page_overview():
 # JOB MATCHING HELPERS
 # ============================================================
 
+MIN_SKILLS_FOR_MATCH = 3   # jobs with fewer extracted skills give unreliable match %
+
 def compute_match(user_skills, job_skills):
-    """Return (match_pct, matched_skills, missing_skills)."""
-    if not job_skills:
-        return 0, [], []
+    """
+    Return (match_pct, matched_skills, missing_skills).
+
+    match_pct = None if the job has too few extracted skills to score
+    reliably (prevents misleading 100% on 1-skill jobs).
+    """
+    if not job_skills or len(job_skills) < MIN_SKILLS_FOR_MATCH:
+        return None, [], []
     user_set = set(user_skills)
     job_set = set(job_skills)
     matched = sorted(user_set & job_set)
     missing = sorted(job_set - user_set)
-    pct = round(len(matched) / len(job_set) * 100) if job_set else 0
+    pct = round(len(matched) / len(job_set) * 100)
     return pct, matched, missing
 
 
 def _render_job_card(row, show_match=False):
     """Render a single job card with optional match indicators."""
     with st.container(border=True):
-        # Title + match badge
-        if show_match and "match_pct" in row and pd.notna(row.get("match_pct")):
-            pct = int(row.get("match_pct", 0))
-            st.markdown(f"### {row['title']}  ·  `{pct}% match`")
+        # Title + match badge (handle None / NaN match_pct)
+        pct = row.get("match_pct")
+        has_match = (
+            show_match
+            and pct is not None
+            and not pd.isna(pct)
+        )
+        if has_match:
+            st.markdown(f"### {row['title']}  ·  `{int(pct)}% match`")
         else:
             st.markdown(f"### {row['title']}")
+            if show_match:
+                st.caption("_Not enough extracted skills to score this job reliably_")
 
         st.markdown(
             f"**{row['company']}** · {row['location']} · "
@@ -312,9 +326,14 @@ def _render_job_card(row, show_match=False):
         if row.get("published_date"):
             st.caption(f"📅 Posted: {row['published_date']}")
 
-        if row["experience_min"] is not None or row["experience_max"] is not None:
-            lo = row["experience_min"] if row["experience_min"] is not None else "?"
-            hi = row["experience_max"] if row["experience_max"] is not None else "?"
+        # Experience — handle NaN properly
+        exp_lo = row.get("experience_min")
+        exp_hi = row.get("experience_max")
+        has_lo = exp_lo is not None and not pd.isna(exp_lo)
+        has_hi = exp_hi is not None and not pd.isna(exp_hi)
+        if has_lo or has_hi:
+            lo = int(exp_lo) if has_lo else "?"
+            hi = int(exp_hi) if has_hi else "?"
             st.caption(f"Experience: {lo}-{hi} years")
 
         # Skills
@@ -469,9 +488,17 @@ def page_jobs():
     if user_skills and f_sort == "Best match" and not filtered.empty:
         st.divider()
         st.subheader("⭐ Best matches for you")
-        top = filtered[filtered["match_pct"] >= 30].head(10)
+        # Require: >=40% match AND at least 2 matched skills
+        top = filtered[
+            filtered["match_pct"].notna()
+            & (filtered["match_pct"] >= 40)
+            & (filtered["matched_skills"].apply(lambda x: len(x) >= 2))
+        ].head(10)
         if top.empty:
-            st.info("No strong matches yet. Add more skills or relax the filters above.")
+            st.info(
+                "No strong matches yet. Add more skills to your profile, "
+                "or relax the filters above."
+            )
         else:
             for _, row in top.iterrows():
                 _render_job_card(row, show_match=True)
