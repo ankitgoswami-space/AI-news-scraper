@@ -3,11 +3,11 @@ Indian AI Career & Startup Intelligence — Dashboard
 
 Pages:
   Overview    — high-level stats + top skills/locations/companies
+  Jobs        — ⭐ job market intelligence + personal match scoring
   Skills      — research-view skill distribution
   Companies   — top companies
   Locations   — cities
   News        — latest AI news
-  Jobs        — ⭐ job market intelligence from Adzuna enriched data
 
 Run:
     streamlit run dashboard/app.py
@@ -126,20 +126,34 @@ def news_df():
 
 @st.cache_data
 def jobs_df():
-    """Load Adzuna enriched jobs."""
+    """
+    Load Adzuna enriched jobs.
+
+    - Skips failed records
+    - Dedupes by normalized URL (keeps first occurrence = most recent enrich)
+    - Preserves published_date for freshness filtering
+    """
     data = load_json("adzuna_enriched.json")
     if not isinstance(data, list) or not data:
         return pd.DataFrame()
 
+    seen_urls = set()
     rows = []
     for j in data:
         if j.get("_enrichment_error"):
             continue
+
+        url = (j.get("url") or "").strip().rstrip("/")
+        if not url or url in seen_urls:
+            continue
+        seen_urls.add(url)
+
         rows.append({
             "title": j.get("title", ""),
             "company": j.get("company", ""),
             "location": j.get("location", ""),
-            "url": j.get("url", ""),
+            "url": url,
+            "published_date": j.get("published_date", ""),
             "role_category": j.get("role_category", "") or "Unknown",
             "experience_min": j.get("experience_min_years"),
             "experience_max": j.get("experience_max_years"),
@@ -263,152 +277,162 @@ def page_overview():
 
 
 # ============================================================
-# PAGE: JOBS  ⭐ NEW
+# JOB MATCHING HELPERS
+# ============================================================
+
+def compute_match(user_skills, job_skills):
+    """Return (match_pct, matched_skills, missing_skills)."""
+    if not job_skills:
+        return 0, [], []
+    user_set = set(user_skills)
+    job_set = set(job_skills)
+    matched = sorted(user_set & job_set)
+    missing = sorted(job_set - user_set)
+    pct = round(len(matched) / len(job_set) * 100) if job_set else 0
+    return pct, matched, missing
+
+
+def _render_job_card(row, show_match=False):
+    """Render a single job card with optional match indicators."""
+    with st.container(border=True):
+        # Title + match badge
+        if show_match and "match_pct" in row and pd.notna(row.get("match_pct")):
+            pct = int(row.get("match_pct", 0))
+            st.markdown(f"### {row['title']}  ·  `{pct}% match`")
+        else:
+            st.markdown(f"### {row['title']}")
+
+        st.markdown(
+            f"**{row['company']}** · {row['location']} · "
+            f"{row['experience_level']} · "
+            f"{row['salary_range_lpa'] or '—'} LPA · "
+            f"{row['employment_type'] or '—'}"
+        )
+
+        if row.get("published_date"):
+            st.caption(f"📅 Posted: {row['published_date']}")
+
+        if row["experience_min"] is not None or row["experience_max"] is not None:
+            lo = row["experience_min"] if row["experience_min"] is not None else "?"
+            hi = row["experience_max"] if row["experience_max"] is not None else "?"
+            st.caption(f"Experience: {lo}-{hi} years")
+
+        # Skills
+        if show_match and "matched_skills" in row:
+            matched = row.get("matched_skills") or []
+            missing = row.get("missing_skills") or []
+            if matched:
+                st.markdown("**✓ You have:** " + ", ".join(matched))
+            if missing:
+                display = missing[:8]
+                suffix = " ..." if len(missing) > 8 else ""
+                st.markdown("**✗ You need:** " + ", ".join(display) + suffix)
+        else:
+            if row["required_skills"]:
+                st.markdown("**Required skills:** " + ", ".join(row["required_skills"]))
+            if row["nice_to_have_skills"]:
+                st.markdown("**Nice to have:** " + ", ".join(row["nice_to_have_skills"]))
+
+        if row["responsibilities_summary"]:
+            st.caption(row["responsibilities_summary"])
+
+        if row["url"]:
+            st.markdown(f"[Apply →]({row['url']})")
+
+
+# ============================================================
+# PAGE: JOBS
 # ============================================================
 
 def page_jobs():
     st.title("💼 Job Market Intelligence")
-    st.caption("Real India AI job data from Adzuna — skills, salaries, experience levels")
+    st.caption("Real India AI jobs — with personal match scoring")
 
     df = jobs_df()
     if df.empty:
         st.warning("No enriched jobs yet. Run `python src/adzuna_enricher.py` first.")
         return
 
-    # Header row: refresh + last updated
-    col1, col2, col3 = st.columns([1, 1, 3])
-    with col1:
+    # Header row: refresh + last updated + total
+    c1, c2, c3, c4 = st.columns([1, 1, 1, 3])
+    with c1:
         if st.button("🔄 Refresh"):
             st.cache_data.clear()
             st.rerun()
-    with col2:
+    with c2:
         mtime = file_mtime("adzuna_enriched.json")
         if mtime:
             st.caption(f"Updated: {mtime}")
-    with col3:
-        st.caption(f"Source: **{len(df)}** real jobs from Adzuna India")
+    with c3:
+        st.caption(f"Total: **{len(df)}** unique jobs")
 
+    # ---------- Your Profile ----------
+    with st.expander("🎯 Your Profile — set skills to see match scores", expanded=False):
+        all_skills = set()
+        for sk in df["required_skills"]:
+            for s in sk:
+                all_skills.add(s)
+        all_skills = sorted(all_skills)
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            user_skills = st.multiselect(
+                "Your current skills",
+                options=all_skills,
+                default=[],
+                key="user_skills",
+                help="Select skills you already have. Jobs will be ranked by match.",
+            )
+        with col2:
+            user_exp = st.number_input(
+                "Years of exp",
+                min_value=0, max_value=30, value=0, step=1,
+                key="user_exp",
+            )
+
+    # ---------- Filters ----------
     st.divider()
+    st.subheader("🔍 Filters")
 
-    # --- Top 20 skills in demand ---
-    st.subheader("🎯 Top 20 skills in demand")
-    skill_counts = {}
-    for skills in df["required_skills"]:
-        for s in skills:
-            skill_counts[s] = skill_counts.get(s, 0) + 1
-    sk_df = pd.DataFrame(
-        [{"skill": k, "count": v} for k, v in skill_counts.items()]
-    ).sort_values("count", ascending=False).head(20).reset_index(drop=True)
-
-    if not sk_df.empty:
-        fig = px.bar(
-            sk_df, x="count", y="skill", orientation="h",
-            color="count", color_continuous_scale="Viridis",
-            text="count",
-        )
-        fig.update_traces(textposition="outside")
-        fig.update_layout(
-            height=600, yaxis=dict(autorange="reversed"),
-            coloraxis_showscale=False,
-            margin=dict(l=0, r=40, t=10, b=10),
-        )
-        st.plotly_chart(fig, width='stretch')
-
-    st.divider()
-
-    # --- Skills by role + by experience ---
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.subheader("Skills by role category")
-        role_options = sorted([r for r in df["role_category"].unique() if r])
-        selected_role = st.selectbox("Select role", ["— All —"] + role_options)
-
-        if selected_role != "— All —":
-            sub = df[df["role_category"] == selected_role]
-            role_skills = {}
-            for skills in sub["required_skills"]:
-                for s in skills:
-                    role_skills[s] = role_skills.get(s, 0) + 1
-            role_df = pd.DataFrame(
-                [{"skill": k, "count": v} for k, v in role_skills.items()]
-            ).sort_values("count", ascending=False).head(15).reset_index(drop=True)
-
-            if not role_df.empty:
-                fig2 = px.bar(
-                    role_df, x="count", y="skill", orientation="h",
-                    color="count", color_continuous_scale="Blues",
-                )
-                fig2.update_layout(
-                    height=500, yaxis=dict(autorange="reversed"),
-                    coloraxis_showscale=False,
-                    margin=dict(l=0, r=0, t=10, b=10),
-                )
-                st.plotly_chart(fig2, width='stretch')
-
-    with col2:
-        st.subheader("Skills by experience level")
-        exp_options = sorted([e for e in df["experience_level"].unique() if e and e != "unknown"])
-        selected_exp = st.selectbox("Select level", ["— All —"] + exp_options)
-
-        if selected_exp != "— All —":
-            sub = df[df["experience_level"] == selected_exp]
-            exp_skills = {}
-            for skills in sub["required_skills"]:
-                for s in skills:
-                    exp_skills[s] = exp_skills.get(s, 0) + 1
-            exp_df = pd.DataFrame(
-                [{"skill": k, "count": v} for k, v in exp_skills.items()]
-            ).sort_values("count", ascending=False).head(15).reset_index(drop=True)
-
-            if not exp_df.empty:
-                fig3 = px.bar(
-                    exp_df, x="count", y="skill", orientation="h",
-                    color="count", color_continuous_scale="Greens",
-                )
-                fig3.update_layout(
-                    height=500, yaxis=dict(autorange="reversed"),
-                    coloraxis_showscale=False,
-                    margin=dict(l=0, r=0, t=10, b=10),
-                )
-                st.plotly_chart(fig3, width='stretch')
-
-    st.divider()
-
-    # --- Experience level distribution ---
-    st.subheader("Experience level distribution")
-    exp_dist = df["experience_level"].value_counts().reset_index()
-    exp_dist.columns = ["level", "count"]
-    if not exp_dist.empty:
-        fig4 = px.bar(
-            exp_dist, x="level", y="count",
-            color="level",
-            color_discrete_sequence=px.colors.qualitative.Set2,
-        )
-        fig4.update_layout(
-            showlegend=False, height=350,
-            margin=dict(l=0, r=0, t=10, b=10),
-        )
-        st.plotly_chart(fig4, width='stretch')
-
-    st.divider()
-
-    # --- Job listings with filters ---
-    st.subheader("🔍 Real job listings")
-
-    c1, c2, c3, c4 = st.columns(4)
+    c1, c2, c3, c4, c5 = st.columns(5)
 
     with c1:
-        f_role = st.selectbox("Role", ["All"] + sorted(df["role_category"].unique().tolist()), key="jrole")
+        f_role = st.selectbox(
+            "Role",
+            ["All"] + sorted(df["role_category"].unique().tolist()),
+            key="jrole",
+        )
     with c2:
-        # extract just the city (first token before comma)
-        cities = sorted({(loc.split(",")[0].strip() if loc else "Unknown") for loc in df["location"].unique()})
+        cities = sorted({
+            (loc.split(",")[0].strip() if loc else "Unknown")
+            for loc in df["location"].unique()
+        })
         f_city = st.selectbox("City", ["All"] + cities, key="jcity")
     with c3:
+        exp_options = sorted([
+            e for e in df["experience_level"].unique()
+            if e and e != "unknown"
+        ])
         f_exp = st.selectbox("Experience", ["All"] + exp_options, key="jexp")
     with c4:
-        f_skill = st.text_input("Skill contains", "", key="jskill")
+        f_fresh = st.selectbox(
+            "Posted",
+            ["All time", "Last 7 days", "Last 14 days", "Last 30 days"],
+            key="jfresh",
+        )
+    with c5:
+        if user_skills:
+            f_sort = st.selectbox(
+                "Sort",
+                ["Best match", "Newest"],
+                key="jsort",
+            )
+        else:
+            f_sort = "Newest"
+            st.caption("Sort: Newest")
+            st.caption("(set skills ↑ for match scoring)")
 
+    # ---------- Apply Filters ----------
     filtered = df.copy()
     if f_role != "All":
         filtered = filtered[filtered["role_category"] == f_role]
@@ -416,43 +440,98 @@ def page_jobs():
         filtered = filtered[filtered["location"].str.contains(f_city, case=False, na=False)]
     if f_exp != "All":
         filtered = filtered[filtered["experience_level"] == f_exp]
-    if f_skill:
-        filtered = filtered[filtered["required_skills"].apply(
-            lambda skills: any(f_skill.lower() in s.lower() for s in (skills or []))
-        )]
 
-    st.caption(f"Showing **{len(filtered)}** jobs")
+    # Freshness filter
+    if f_fresh != "All time":
+        days_map = {"Last 7 days": 7, "Last 14 days": 14, "Last 30 days": 30}
+        days = days_map[f_fresh]
+        cutoff = (pd.Timestamp.now() - pd.Timedelta(days=days)).strftime("%Y-%m-%d")
+        filtered = filtered[filtered["published_date"] >= cutoff]
 
-    for _, row in filtered.head(30).iterrows():
-        with st.container(border=True):
-            st.markdown(f"### {row['title']}")
-            st.markdown(
-                f"**{row['company']}** · {row['location']} · "
-                f"{row['experience_level']} · "
-                f"{row['salary_range_lpa'] or '—'} LPA · "
-                f"{row['employment_type'] or '—'}"
+    # Compute match scores if user has skills
+    if user_skills and not filtered.empty:
+        def _match(row):
+            pct, matched, missing = compute_match(user_skills, row["required_skills"])
+            return pd.Series([pct, matched, missing])
+
+        filtered[["match_pct", "matched_skills", "missing_skills"]] = filtered.apply(_match, axis=1)
+
+        if f_sort == "Best match":
+            filtered = filtered.sort_values("match_pct", ascending=False)
+        else:
+            filtered = filtered.sort_values("published_date", ascending=False)
+    else:
+        filtered = filtered.sort_values("published_date", ascending=False)
+
+    st.caption(f"**{len(filtered)}** jobs match your filters")
+
+    # ---------- Jobs That Fit You ----------
+    if user_skills and f_sort == "Best match" and not filtered.empty:
+        st.divider()
+        st.subheader("⭐ Best matches for you")
+        top = filtered[filtered["match_pct"] >= 30].head(10)
+        if top.empty:
+            st.info("No strong matches yet. Add more skills or relax the filters above.")
+        else:
+            for _, row in top.iterrows():
+                _render_job_card(row, show_match=True)
+
+    # ---------- Unlock Skills ----------
+    if user_skills:
+        st.divider()
+        st.subheader("🎓 Skills that unlock more jobs")
+        st.caption("Learning these would open up the most new opportunities")
+
+        skill_opportunities = {}
+        for sk_list in df["required_skills"]:
+            for s in sk_list:
+                if s not in user_skills:
+                    skill_opportunities[s] = skill_opportunities.get(s, 0) + 1
+
+        top_missing = sorted(skill_opportunities.items(), key=lambda x: -x[1])[:12]
+        if top_missing:
+            unlock_df = pd.DataFrame(
+                [{"skill": s, "jobs_unlocked": n} for s, n in top_missing]
             )
+            fig = px.bar(
+                unlock_df, x="jobs_unlocked", y="skill", orientation="h",
+                color="jobs_unlocked", color_continuous_scale="Greens",
+                text="jobs_unlocked",
+            )
+            fig.update_traces(textposition="outside")
+            fig.update_layout(
+                height=450, yaxis=dict(autorange="reversed"),
+                coloraxis_showscale=False,
+                margin=dict(l=0, r=40, t=10, b=10),
+            )
+            st.plotly_chart(fig, width='stretch')
 
-            if row["experience_min"] is not None or row["experience_max"] is not None:
-                lo = row["experience_min"] if row["experience_min"] is not None else "?"
-                hi = row["experience_max"] if row["experience_max"] is not None else "?"
-                st.caption(f"Experience: {lo}-{hi} years")
+    # ---------- All Jobs (paginated) ----------
+    st.divider()
+    st.subheader("📋 All matching jobs")
 
-            if row["required_skills"]:
-                st.markdown("**Required skills:** " + ", ".join(row["required_skills"]))
+    # Reset pagination when filters change
+    filter_key = f"{f_role}|{f_city}|{f_exp}|{f_fresh}|{f_sort}|{len(user_skills)}"
+    if st.session_state.get("_jobs_filter_key") != filter_key:
+        st.session_state["_jobs_filter_key"] = filter_key
+        st.session_state["jobs_show"] = 30
 
-            if row["nice_to_have_skills"]:
-                st.markdown("**Nice to have:** " + ", ".join(row["nice_to_have_skills"]))
+    if "jobs_show" not in st.session_state:
+        st.session_state["jobs_show"] = 30
 
-            if row["responsibilities_summary"]:
-                st.caption(row["responsibilities_summary"])
+    show_n = min(st.session_state["jobs_show"], len(filtered))
+    for _, row in filtered.head(show_n).iterrows():
+        _render_job_card(row, show_match=bool(user_skills))
 
-            if row["url"]:
-                st.markdown(f"[Apply →]({row['url']})")
+    if show_n < len(filtered):
+        remaining = len(filtered) - show_n
+        if st.button(f"⬇ Load {min(30, remaining)} more ({remaining} remaining)"):
+            st.session_state["jobs_show"] += 30
+            st.rerun()
 
 
 # ============================================================
-# PAGE: SKILLS (research view — unchanged)
+# PAGE: SKILLS (research view)
 # ============================================================
 
 def page_skills():
