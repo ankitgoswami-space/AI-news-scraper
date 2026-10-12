@@ -1,11 +1,11 @@
 @echo off
-REM Windows Task Scheduler wrapper for daily refresh
+chcp 65001 > nul
+set PYTHONIOENCODING=utf-8
 
 cd /d "%~dp0"
 
 echo Starting daily refresh at %DATE% %TIME%
 
-REM Full refresh — scrapers + V3 + V4 (chunked enrichers)
 python src\refresh_all.py
 
 echo Refresh finished at %DATE% %TIME%

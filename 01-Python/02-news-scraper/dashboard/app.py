@@ -14,12 +14,26 @@ Run:
 """
 
 import json
+import sys
 from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+
+# Allow importing from src/
+_SRC = Path(__file__).resolve().parent.parent / "src"
+if str(_SRC) not in sys.path:
+    sys.path.insert(0, str(_SRC))
+
+from ats_utils import (
+    extract_pdf_text,
+    extract_skills_from_text,
+    detect_contact_info,
+    count_words,
+    compute_ats_report,
+)
 
 
 # ============================================================
@@ -198,7 +212,7 @@ st.sidebar.divider()
 
 page = st.sidebar.radio(
     "Navigate",
-    ["Overview", "Jobs", "Skills", "Companies", "Locations", "News"],
+    ["Overview", "Jobs", "ATS Checker", "Skills", "Companies", "Locations", "News"],
 )
 
 st.sidebar.divider()
@@ -556,6 +570,219 @@ def page_jobs():
             st.session_state["jobs_show"] += 30
             st.rerun()
 
+# ============================================================
+# PAGE: ATS CHECKER
+# ============================================================
+
+def page_ats():
+    st.title("📄 ATS Checker")
+    st.caption("Upload your resume → see which jobs you're ATS-ready for")
+
+    # ---------- Resume Upload ----------
+    st.subheader("1. Upload your resume (PDF)")
+    uploaded = st.file_uploader("Resume PDF", type=["pdf"], key="resume_file")
+
+    if uploaded is not None:
+        file_bytes = uploaded.read()
+        file_hash = str(hash(file_bytes))
+
+        if st.session_state.get("_resume_hash") != file_hash:
+            try:
+                with st.spinner("Parsing resume..."):
+                    text = extract_pdf_text(file_bytes)
+                    skills = extract_skills_from_text(text)
+                    st.session_state["_resume_hash"] = file_hash
+                    st.session_state["_resume_text"] = text
+                    st.session_state["_resume_skills"] = skills
+            except Exception as e:
+                st.error(f"Failed to parse PDF: {e}")
+                return
+
+    resume_text = st.session_state.get("_resume_text")
+    resume_skills = st.session_state.get("_resume_skills")
+
+    if not resume_text:
+        st.info("⬆️ Upload your resume to see ATS analysis.")
+        return
+
+    # ---------- Resume Summary ----------
+    st.success(
+        f"✅ Resume parsed — {count_words(resume_text):,} words, "
+        f"{len(resume_skills)} skills detected"
+    )
+
+    with st.expander("📊 Resume Analysis", expanded=True):
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            st.markdown("**Skills detected**")
+            if resume_skills:
+                skill_list = sorted(resume_skills.keys(), key=lambda x: -resume_skills[x])
+                st.write(", ".join(skill_list))
+            else:
+                st.warning("No skills detected. Check PDF is text-based (not scanned).")
+        with c2:
+            st.markdown("**Contact info**")
+            contacts = detect_contact_info(resume_text)
+            for k, v in contacts.items():
+                st.markdown(f"{'✅' if v else '❌'} {k.title()}")
+        with c3:
+            st.markdown("**Resume stats**")
+            words = count_words(resume_text)
+            st.write(f"Words: {words}")
+            if 250 <= words <= 900:
+                st.success("Length: optimal")
+            elif words < 250:
+                st.warning("Too short")
+            else:
+                st.warning("Very long")
+
+    # ---------- Compute ATS for all jobs ----------
+    st.divider()
+    st.subheader("2. Compute ATS scores")
+
+    if st.button("🔄 Compute ATS for all jobs", key="ats_compute_all"):
+        jobs = jobs_df()
+        if jobs.empty:
+            st.warning("No enriched jobs available.")
+            return
+        with st.spinner(f"Analyzing {len(jobs)} jobs..."):
+            reports = []
+            for _, job in jobs.iterrows():
+                rep = compute_ats_report(resume_text, resume_skills, job.to_dict())
+                reports.append(rep)
+            jobs = jobs.copy()
+            jobs["_ats_score"] = [r["score"] for r in reports]
+            jobs["_ats_report"] = reports
+            st.session_state["_ats_jobs"] = jobs
+        st.success(f"Computed ATS for {len(jobs)} jobs")
+
+    if "_ats_jobs" not in st.session_state:
+        st.info("Click 'Compute ATS for all jobs' to see top matches.")
+        return
+
+    jobs_scored = st.session_state["_ats_jobs"]
+
+    # ---------- Filters + Sort ----------
+    st.divider()
+    st.subheader("⭐ Jobs you're ATS-ready for")
+
+    c1, c2, c3 = st.columns([2, 2, 2])
+
+    with c1:
+        min_score = st.slider(
+            "Minimum ATS score",
+            min_value=0, max_value=100, value=50, step=5,
+            key="ats_min_score",
+        )
+    with c2:
+        role_filter = st.selectbox(
+            "Role",
+            ["All"] + sorted(jobs_scored["role_category"].unique().tolist()),
+            key="ats_role",
+        )
+    with c3:
+        sort_by = st.selectbox(
+            "Sort",
+            ["Best ATS match", "Newest first"],
+            key="ats_sort",
+        )
+
+    # Filter
+    filtered = jobs_scored[jobs_scored["_ats_score"] >= min_score].copy()
+    if role_filter != "All":
+        filtered = filtered[filtered["role_category"] == role_filter]
+
+    if sort_by == "Best ATS match":
+        filtered = filtered.sort_values("_ats_score", ascending=False)
+    else:
+        filtered = filtered.sort_values("published_date", ascending=False)
+
+    st.caption(f"**{len(filtered)}** jobs match (ATS ≥ {min_score}%)")
+
+    # Pagination
+    filter_key = f"{min_score}|{role_filter}|{sort_by}"
+    if st.session_state.get("_ats_filter_key") != filter_key:
+        st.session_state["_ats_filter_key"] = filter_key
+        st.session_state["ats_show"] = 30
+
+    if "ats_show" not in st.session_state:
+        st.session_state["ats_show"] = 30
+
+    show_n = min(st.session_state["ats_show"], len(filtered))
+
+    for _, job in filtered.head(show_n).iterrows():
+        report = job["_ats_report"]
+
+        with st.container(border=True):
+            c1, c2 = st.columns([3, 1])
+            with c1:
+                st.markdown(f"### {job['title']}")
+                st.markdown(
+                    f"**{job['company']}** · {job['location']} · "
+                    f"{job['experience_level']} · {job['salary_range_lpa'] or '—'} LPA"
+                )
+            with c2:
+                score = report["score"]
+                if score >= 75:
+                    st.success(f"ATS: {score}%")
+                elif score >= 50:
+                    st.warning(f"ATS: {score}%")
+                else:
+                    st.error(f"ATS: {score}%")
+
+            if report["matched_required"]:
+                st.markdown("**✓ You have:** " + ", ".join(report["matched_required"]))
+            if report["missing_required"]:
+                st.markdown("**✗ Missing:** " + ", ".join(report["missing_required"]))
+
+            with st.expander("💡 Suggestions"):
+                if report["missing_required"]:
+                    st.markdown(
+                        f"**Add these keywords to your resume:** "
+                        f"{', '.join(report['missing_required'])}"
+                    )
+                if report["word_count"] < 250:
+                    st.markdown("**Resume too short** — add more detail")
+                if not report["contacts"]["linkedin"]:
+                    st.markdown("**Add LinkedIn URL** to your resume header")
+                if not report["contacts"]["github"]:
+                    st.markdown("**Add GitHub URL** — critical for AI roles")
+
+            st.markdown(f"[Apply →]({job['url']})")
+
+    # Load more button
+    if show_n < len(filtered):
+        remaining = len(filtered) - show_n
+        if st.button(f"⬇ Load {min(30, remaining)} more ({remaining} remaining)"):
+            st.session_state["ats_show"] += 30
+            st.rerun()
+
+    # ---------- Skill Gap Insight ----------
+    st.divider()
+    st.subheader("🎓 Skills that most improve your ATS score")
+
+    missing_counter = {}
+    for _, job in jobs_scored.iterrows():
+        for skill in job["_ats_report"]["missing_required"]:
+            missing_counter[skill] = missing_counter.get(skill, 0) + 1
+
+    if missing_counter:
+        top_gaps = sorted(missing_counter.items(), key=lambda x: -x[1])[:15]
+        gap_df = pd.DataFrame(
+            [{"skill": s, "jobs_unlocked": n} for s, n in top_gaps]
+        )
+        fig = px.bar(
+            gap_df, x="jobs_unlocked", y="skill", orientation="h",
+            color="jobs_unlocked", color_continuous_scale="Reds",
+            text="jobs_unlocked",
+        )
+        fig.update_traces(textposition="outside")
+        fig.update_layout(
+            height=500, yaxis=dict(autorange="reversed"),
+            coloraxis_showscale=False,
+            margin=dict(l=0, r=40, t=10, b=10),
+        )
+        st.plotly_chart(fig, width='stretch')
 
 # ============================================================
 # PAGE: SKILLS (research view)
@@ -724,6 +951,8 @@ if page == "Overview":
     page_overview()
 elif page == "Jobs":
     page_jobs()
+elif page == "ATS Checker":
+    page_ats()
 elif page == "Skills":
     page_skills()
 elif page == "Companies":
