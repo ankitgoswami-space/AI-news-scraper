@@ -34,7 +34,13 @@ from ats_utils import (
     count_words,
     compute_ats_report,
 )
-
+from referral_utils import (
+    build_linkedin_searches,
+    format_template,
+    TEMPLATE_PEER,
+    TEMPLATE_HR,
+    TEMPLATE_ALUMNI,
+)
 
 # ============================================================
 # CONFIG
@@ -312,6 +318,39 @@ def compute_match(user_skills, job_skills):
     pct = round(len(matched) / len(job_set) * 100)
     return pct, matched, missing
 
+def _render_referral_section(job):
+    """Render LinkedIn searches + outreach templates for a job."""
+    user_profile = st.session_state.get("_user_profile", {})
+
+    with st.expander("🔗 Find Referral (LinkedIn + templates)"):
+        st.markdown("**1. Find people on LinkedIn**")
+        st.caption("Click to open LinkedIn search in new tab. Then pick a profile to DM.")
+
+        searches = build_linkedin_searches(
+            job, user_college=user_profile.get("college", "")
+        )
+        for label, url in searches:
+            st.markdown(f"- [{label}]({url})")
+
+        st.divider()
+        st.markdown("**2. Outreach templates**")
+        st.caption(
+            "Fill `[Name]` with the person's real name before sending. "
+            "Keep it short — long DMs get ignored."
+        )
+
+        templates = [
+            ("📧 Peer / Same role", TEMPLATE_PEER),
+            ("📧 Recruiter / HR",   TEMPLATE_HR),
+        ]
+        if user_profile.get("college"):
+            templates.append(("📧 Alumni", TEMPLATE_ALUMNI))
+
+        for label, tmpl in templates:
+            filled = format_template(tmpl, job, user_profile)
+            st.markdown(f"**{label}**")
+            st.code(filled, language=None)
+
 
 def _render_job_card(row, show_match=False):
     """Render a single job card with optional match indicators."""
@@ -368,6 +407,9 @@ def _render_job_card(row, show_match=False):
 
         if row["responsibilities_summary"]:
             st.caption(row["responsibilities_summary"])
+        
+        _render_referral_section(row)
+
 
         if row["url"]:
             st.markdown(f"[Apply →]({row['url']})")
@@ -400,7 +442,7 @@ def page_jobs():
         st.caption(f"Total: **{len(df)}** unique jobs")
 
     # ---------- Your Profile ----------
-    with st.expander("🎯 Your Profile — set skills to see match scores", expanded=False):
+    with st.expander("🎯 Your Profile — skills + outreach info", expanded=False):
         all_skills = set()
         for sk in df["required_skills"]:
             for s in sk:
@@ -422,6 +464,32 @@ def page_jobs():
                 min_value=0, max_value=30, value=0, step=1,
                 key="user_exp",
             )
+
+        st.markdown("**For referral outreach (optional)**")
+        col3, col4 = st.columns(2)
+        with col3:
+            user_name = st.text_input(
+                "Your full name", value="", key="user_name",
+            )
+            user_college = st.text_input(
+                "Your college (for alumni search)",
+                value="", key="user_college",
+            )
+        with col4:
+            user_pitch = st.text_input(
+                "One-line pitch",
+                value="",
+                key="user_pitch",
+                placeholder="e.g. AI/ML engineer building RAG systems",
+            )
+
+        # Store profile in session for referral templates
+        st.session_state["_user_profile"] = {
+            "name": user_name,
+            "college": user_college,
+            "pitch": user_pitch,
+            "skills": user_skills,
+        }
 
     # ---------- Filters ----------
     st.divider()
