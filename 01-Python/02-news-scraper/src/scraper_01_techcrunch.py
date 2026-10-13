@@ -48,7 +48,7 @@ for article in news:
 
 print("Unique articles:", len(unique_news))
 
-with open("../data/news.json", "w", encoding="utf-8") as file:
+with open("data/techcrunch.json", "w", encoding="utf-8") as file:
     json.dump(unique_news, file, ensure_ascii=False, indent=4)
 
-print("News saved to data/news.json")
+print("News saved to data/techcrunch.json")
