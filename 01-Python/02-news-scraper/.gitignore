@@ -78,3 +78,7 @@ DAILY_LOG_*.md
 
 # Automation logs
 logs/
+
+# Personal application tracker
+data/applications.json
+data/applications.json.tmp

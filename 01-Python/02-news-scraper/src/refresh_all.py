@@ -49,8 +49,8 @@ V3_EXTRACTORS = [
 ]
 
 V4_ENRICHERS = [
-    ("Adzuna Enricher",     "adzuna_enricher.py",              ["--limit", "150"]),
-    ("AIM Enricher",        "llm_enricher.py",                 ["--limit", "200"]),
+    ("Adzuna Enricher",     "adzuna_enricher.py",              ["--limit", "50"]),
+    ("AIM Enricher",        "llm_enricher.py",                 ["--limit", "50"]),
     ("Blog Intel",          "blog_intel.py",                   []),
 ]
 

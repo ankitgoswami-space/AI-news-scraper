@@ -3,7 +3,8 @@ Indian AI Career & Startup Intelligence — Dashboard
 
 Pages:
   Overview    — high-level stats + top skills/locations/companies
-  Jobs        — ⭐ job market intelligence + personal match scoring
+  Jobs        — ⭐ job market intelligence + personal match scoring + referral + applied tracker
+  ATS Checker — resume vs job ATS matching
   Skills      — research-view skill distribution
   Companies   — top companies
   Locations   — cities
@@ -41,6 +42,13 @@ from referral_utils import (
     TEMPLATE_HR,
     TEMPLATE_ALUMNI,
 )
+from applications_utils import (
+    load_applications,
+    add_application,
+    remove_application,
+    stats as app_stats,
+)
+
 
 # ============================================================
 # CONFIG
@@ -146,13 +154,6 @@ def news_df():
 
 @st.cache_data
 def jobs_df():
-    """
-    Load Adzuna enriched jobs.
-
-    - Skips failed records
-    - Dedupes by normalized URL (keeps first occurrence = most recent enrich)
-    - Preserves published_date for freshness filtering
-    """
     data = load_json("adzuna_enriched.json")
     if not isinstance(data, list) or not data:
         return pd.DataFrame()
@@ -300,15 +301,10 @@ def page_overview():
 # JOB MATCHING HELPERS
 # ============================================================
 
-MIN_SKILLS_FOR_MATCH = 3   # jobs with fewer extracted skills give unreliable match %
+MIN_SKILLS_FOR_MATCH = 3
+
 
 def compute_match(user_skills, job_skills):
-    """
-    Return (match_pct, matched_skills, missing_skills).
-
-    match_pct = None if the job has too few extracted skills to score
-    reliably (prevents misleading 100% on 1-skill jobs).
-    """
     if not job_skills or len(job_skills) < MIN_SKILLS_FOR_MATCH:
         return None, [], []
     user_set = set(user_skills)
@@ -317,6 +313,7 @@ def compute_match(user_skills, job_skills):
     missing = sorted(job_set - user_set)
     pct = round(len(matched) / len(job_set) * 100)
     return pct, matched, missing
+
 
 def _render_referral_section(job):
     """Render LinkedIn searches + outreach templates for a job."""
@@ -355,13 +352,9 @@ def _render_referral_section(job):
 def _render_job_card(row, show_match=False):
     """Render a single job card with optional match indicators."""
     with st.container(border=True):
-        # Title + match badge (handle None / NaN match_pct)
+        # Title + match badge
         pct = row.get("match_pct")
-        has_match = (
-            show_match
-            and pct is not None
-            and not pd.isna(pct)
-        )
+        has_match = show_match and pct is not None and not pd.isna(pct)
         if has_match:
             st.markdown(f"### {row['title']}  ·  `{int(pct)}% match`")
         else:
@@ -379,7 +372,7 @@ def _render_job_card(row, show_match=False):
         if row.get("published_date"):
             st.caption(f"📅 Posted: {row['published_date']}")
 
-        # Experience — handle NaN properly
+        # Experience — NaN-safe
         exp_lo = row.get("experience_min")
         exp_hi = row.get("experience_max")
         has_lo = exp_lo is not None and not pd.isna(exp_lo)
@@ -407,12 +400,32 @@ def _render_job_card(row, show_match=False):
 
         if row["responsibilities_summary"]:
             st.caption(row["responsibilities_summary"])
-        
+
         _render_referral_section(row)
 
+        # ---------- Applied Tracker ----------
+        job_url = (row.get("url") or "").rstrip("/")
+        apps = load_applications()
+        applied = apps.get(job_url)
 
-        if row["url"]:
-            st.markdown(f"[Apply →]({row['url']})")
+        col_a, col_b = st.columns([2, 1])
+        with col_a:
+            if applied:
+                st.success(f"✅ Applied on {applied.get('applied_date', '?')}")
+            else:
+                key = f"apply_{abs(hash(job_url))}"
+                if st.button("📝 Mark as Applied", key=key):
+                    add_application(dict(row))
+                    st.rerun()
+        with col_b:
+            if job_url:
+                st.markdown(f"[Apply →]({job_url})")
+
+        if applied:
+            key = f"rm_{abs(hash(job_url))}"
+            if st.button("Remove from applied", key=key):
+                remove_application(job_url)
+                st.rerun()
 
 
 # ============================================================
@@ -428,7 +441,7 @@ def page_jobs():
         st.warning("No enriched jobs yet. Run `python src/adzuna_enricher.py` first.")
         return
 
-    # Header row: refresh + last updated + total
+    # Header row
     c1, c2, c3, c4 = st.columns([1, 1, 1, 3])
     with c1:
         if st.button("🔄 Refresh"):
@@ -439,7 +452,10 @@ def page_jobs():
         if mtime:
             st.caption(f"Updated: {mtime}")
     with c3:
-        st.caption(f"Total: **{len(df)}** unique jobs")
+        st.caption(f"Total: **{len(df)}** jobs")
+    with c4:
+        a_stats = app_stats()
+        st.caption(f"📝 Applied: **{a_stats['total']}**")
 
     # ---------- Your Profile ----------
     with st.expander("🎯 Your Profile — skills + outreach info", expanded=False):
@@ -483,7 +499,6 @@ def page_jobs():
                 placeholder="e.g. AI/ML engineer building RAG systems",
             )
 
-        # Store profile in session for referral templates
         st.session_state["_user_profile"] = {
             "name": user_name,
             "college": user_college,
@@ -542,14 +557,12 @@ def page_jobs():
     if f_exp != "All":
         filtered = filtered[filtered["experience_level"] == f_exp]
 
-    # Freshness filter
     if f_fresh != "All time":
         days_map = {"Last 7 days": 7, "Last 14 days": 14, "Last 30 days": 30}
         days = days_map[f_fresh]
         cutoff = (pd.Timestamp.now() - pd.Timedelta(days=days)).strftime("%Y-%m-%d")
         filtered = filtered[filtered["published_date"] >= cutoff]
 
-    # Compute match scores if user has skills
     if user_skills and not filtered.empty:
         def _match(row):
             pct, matched, missing = compute_match(user_skills, row["required_skills"])
@@ -566,11 +579,10 @@ def page_jobs():
 
     st.caption(f"**{len(filtered)}** jobs match your filters")
 
-    # ---------- Jobs That Fit You ----------
+    # ---------- Best Matches ----------
     if user_skills and f_sort == "Best match" and not filtered.empty:
         st.divider()
         st.subheader("⭐ Best matches for you")
-        # Require: >=40% match AND at least 2 matched skills
         top = filtered[
             filtered["match_pct"].notna()
             & (filtered["match_pct"] >= 40)
@@ -619,7 +631,6 @@ def page_jobs():
     st.divider()
     st.subheader("📋 All matching jobs")
 
-    # Reset pagination when filters change
     filter_key = f"{f_role}|{f_city}|{f_exp}|{f_fresh}|{f_sort}|{len(user_skills)}"
     if st.session_state.get("_jobs_filter_key") != filter_key:
         st.session_state["_jobs_filter_key"] = filter_key
@@ -638,6 +649,7 @@ def page_jobs():
             st.session_state["jobs_show"] += 30
             st.rerun()
 
+
 # ============================================================
 # PAGE: ATS CHECKER
 # ============================================================
@@ -646,7 +658,6 @@ def page_ats():
     st.title("📄 ATS Checker")
     st.caption("Upload your resume → see which jobs you're ATS-ready for")
 
-    # ---------- Resume Upload ----------
     st.subheader("1. Upload your resume (PDF)")
     uploaded = st.file_uploader("Resume PDF", type=["pdf"], key="resume_file")
 
@@ -673,7 +684,6 @@ def page_ats():
         st.info("⬆️ Upload your resume to see ATS analysis.")
         return
 
-    # ---------- Resume Summary ----------
     st.success(
         f"✅ Resume parsed — {count_words(resume_text):,} words, "
         f"{len(resume_skills)} skills detected"
@@ -704,7 +714,6 @@ def page_ats():
             else:
                 st.warning("Very long")
 
-    # ---------- Compute ATS for all jobs ----------
     st.divider()
     st.subheader("2. Compute ATS scores")
 
@@ -730,7 +739,6 @@ def page_ats():
 
     jobs_scored = st.session_state["_ats_jobs"]
 
-    # ---------- Filters + Sort ----------
     st.divider()
     st.subheader("⭐ Jobs you're ATS-ready for")
 
@@ -755,7 +763,6 @@ def page_ats():
             key="ats_sort",
         )
 
-    # Filter
     filtered = jobs_scored[jobs_scored["_ats_score"] >= min_score].copy()
     if role_filter != "All":
         filtered = filtered[filtered["role_category"] == role_filter]
@@ -767,7 +774,6 @@ def page_ats():
 
     st.caption(f"**{len(filtered)}** jobs match (ATS ≥ {min_score}%)")
 
-    # Pagination
     filter_key = f"{min_score}|{role_filter}|{sort_by}"
     if st.session_state.get("_ats_filter_key") != filter_key:
         st.session_state["_ats_filter_key"] = filter_key
@@ -818,14 +824,12 @@ def page_ats():
 
             st.markdown(f"[Apply →]({job['url']})")
 
-    # Load more button
     if show_n < len(filtered):
         remaining = len(filtered) - show_n
         if st.button(f"⬇ Load {min(30, remaining)} more ({remaining} remaining)"):
             st.session_state["ats_show"] += 30
             st.rerun()
 
-    # ---------- Skill Gap Insight ----------
     st.divider()
     st.subheader("🎓 Skills that most improve your ATS score")
 
@@ -851,6 +855,7 @@ def page_ats():
             margin=dict(l=0, r=40, t=10, b=10),
         )
         st.plotly_chart(fig, width='stretch')
+
 
 # ============================================================
 # PAGE: SKILLS (research view)
