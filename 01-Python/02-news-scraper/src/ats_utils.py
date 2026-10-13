@@ -92,7 +92,8 @@ COMPILED_SKILLS = {
 # ============================================================
 
 def extract_pdf_text(file_bytes):
-    """Extract text from a PDF using pypdf."""
+    """Extract text from a PDF — try pypdf, fallback to pymupdf."""
+    # Try pypdf first
     try:
         from pypdf import PdfReader
         import io
@@ -100,9 +101,22 @@ def extract_pdf_text(file_bytes):
         text = ""
         for page in reader.pages:
             text += (page.extract_text() or "") + "\n"
+        if text.strip():
+            return text
+    except Exception:
+        pass
+
+    # Fallback: pymupdf (fitz)
+    try:
+        import fitz
+        doc = fitz.open(stream=file_bytes, filetype="pdf")
+        text = ""
+        for page in doc:
+            text += page.get_text() + "\n"
+        doc.close()
         return text
     except Exception as e:
-        raise RuntimeError(f"PDF extraction failed: {e}")
+        raise RuntimeError(f"PDF extraction failed (both pypdf and pymupdf): {e}")
 
 
 def extract_skills_from_text(text):
