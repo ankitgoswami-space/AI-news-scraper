@@ -1,30 +1,32 @@
 """
-RAG Query — retrieve relevant chunks + generate grounded answer via Gemini.
+RAG Query — fastembed + numpy (lightweight, cloud-safe).
 
-Usage (CLI):
-    python rag_query.py "Kaunsi Indian startups RAG pe kaam kar rahi hain?"
+Documents: pre-computed embeddings (numpy .npy in data/rag_store/).
+Queries:   embedded on-the-fly via fastembed (ONNX, no torch).
+Similarity: numpy cosine.
+
+Usage:
+    python rag_query.py "your question"
 """
 
+import json
 import os
 import sys
 from pathlib import Path
 
-import chromadb
-from chromadb.utils import embedding_functions
+import numpy as np
 from google import genai
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
-CHROMA_DIR = DATA_DIR / "chroma_db"
+RAG_DIR = DATA_DIR / "rag_store"
 ENV_FILE = PROJECT_ROOT / ".env"
 
-EMBED_MODEL = "all-MiniLM-L6-v2"
-COLLECTION_NAME = "career_intel"
+FASTEMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 GEMINI_MODEL = "gemini-flash-lite-latest"
-
-TOP_K = 8                    # how many chunks to retrieve
-MAX_CONTEXT_CHARS = 8000     # cap prompt size
+TOP_K = 8
+MAX_CONTEXT_CHARS = 8000
 
 
 # ---------- Load env ----------
@@ -40,20 +42,59 @@ _gemini_key = os.getenv("GEMINI_API_KEY", "")
 _client = genai.Client(api_key=_gemini_key) if _gemini_key else None
 
 
-# ---------- Chroma ----------
-_embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-    model_name=EMBED_MODEL
-)
-_chroma = chromadb.PersistentClient(path=str(CHROMA_DIR))
-_collection = _chroma.get_or_create_collection(
-    name=COLLECTION_NAME,
-    embedding_function=_embedding_fn,
-)
+# ---------- Lazy loaders ----------
+_EMBEDDINGS = None
+_DOCS = None
+_METAS = None
+_EMBEDDER = None
+
+
+def _load_store():
+    global _EMBEDDINGS, _DOCS, _METAS
+    if _EMBEDDINGS is not None:
+        return
+    emb_path = RAG_DIR / "embeddings.npy"
+    docs_path = RAG_DIR / "docs.json"
+    metas_path = RAG_DIR / "metas.json"
+    if not emb_path.exists():
+        raise RuntimeError(f"Embeddings not found at {emb_path}")
+    _EMBEDDINGS = np.load(emb_path).astype(np.float32)
+    with open(docs_path, "r", encoding="utf-8") as f:
+        _DOCS = json.load(f)
+    with open(metas_path, "r", encoding="utf-8") as f:
+        _METAS = json.load(f)
+    # L2 normalize once
+    norms = np.linalg.norm(_EMBEDDINGS, axis=1, keepdims=True)
+    norms[norms == 0] = 1.0
+    _EMBEDDINGS = _EMBEDDINGS / norms
+
+
+def _get_embedder():
+    global _EMBEDDER
+    if _EMBEDDER is None:
+        from fastembed import TextEmbedding
+        _EMBEDDER = TextEmbedding(model_name=FASTEMBED_MODEL)
+    return _EMBEDDER
+
+
+def _embed_query(text):
+    embedder = _get_embedder()
+    vecs = list(embedder.embed([text]))
+    if not vecs:
+        raise RuntimeError("fastembed returned no vectors")
+    return np.array(vecs[0], dtype=np.float32)
+
+
+def _cosine_top_k(query_vec, k):
+    q = query_vec / (np.linalg.norm(query_vec) or 1.0)
+    sims = _EMBEDDINGS @ q
+    idx = np.argsort(-sims)[:k]
+    return idx, sims[idx]
 
 
 SYSTEM_PROMPT = (
     "You are an AI career intelligence assistant for the Indian AI/GenAI ecosystem. "
-    "You answer questions using ONLY the provided context (news articles and job listings). "
+    "Answer questions using ONLY the provided context (news articles and job listings). "
     "If the context does not contain enough information, say so honestly — do not invent. "
     "Be concise. Cite sources when possible."
 )
@@ -66,32 +107,25 @@ Question: {question}
 Answer based ONLY on the context above. If the context is insufficient, say so."""
 
 
-def _format_context(results):
-    """Turn ChromaDB results into a numbered context block."""
-    docs = results.get("documents", [[]])[0]
-    metas = results.get("metadatas", [[]])[0]
-    distances = results.get("distances", [[]])[0]
-
+def _format_context(indices, sims):
     blocks = []
     total = 0
-    for i, (doc, meta, dist) in enumerate(zip(docs, metas, distances), start=1):
-        # Distance → relevance (cosine: smaller = better)
-        relevance = max(0.0, 1.0 - float(dist))
-        label = f"[{i}] {meta.get('type', '?').upper()} | {meta.get('title', '')[:80]}"
+    for rank, (i, sim) in enumerate(zip(indices, sims), start=1):
+        doc = _DOCS[i]
+        meta = _METAS[i]
+        label = f"[{rank}] {meta.get('type', '?').upper()} | {meta.get('title', '')[:80]}"
         url = meta.get("url", "")
         block = f"{label}\n{'-' * 60}\n{doc}\nSource: {url}\n"
         total += len(block)
         if total > MAX_CONTEXT_CHARS:
             break
-        blocks.append(block)
-
-    return "\n".join(blocks), [m for m in metas[:len(blocks)]]
+        blocks.append((block, meta))
+    return "\n".join(b for b, _ in blocks), [m for _, m in blocks]
 
 
 def _ask_gemini(prompt):
     if _client is None:
         raise RuntimeError("GEMINI_API_KEY not set in .env")
-
     resp = _client.models.generate_content(
         model=GEMINI_MODEL,
         contents=prompt,
@@ -101,22 +135,26 @@ def _ask_gemini(prompt):
 
 
 def query(question, top_k=TOP_K, return_sources=True):
-    """
-    Returns (answer, sources) where sources is a list of
-    {title, url, type, relevance} dicts.
-    """
     if not question or not question.strip():
         return "Empty question.", []
 
-    results = _collection.query(
-        query_texts=[question],
-        n_results=top_k,
-    )
+    _load_store()
 
-    if not results.get("documents") or not results["documents"][0]:
-        return "No relevant information found in the knowledge base.", []
+    try:
+        qvec = _embed_query(question)
+    except Exception as e:
+        return f"[Embedding error: {e}]", []
 
-    context_block, metas = _format_context(results)
+    if qvec.shape[0] != _EMBEDDINGS.shape[1]:
+        return (
+            f"[Dim mismatch: query={qvec.shape[0]} docs={_EMBEDDINGS.shape[1]}. "
+            f"Rebuild index with matching model.]",
+            [],
+        )
+
+    idx, sims = _cosine_top_k(qvec, top_k)
+    context_block, metas = _format_context(idx, sims)
+
     prompt = SYSTEM_PROMPT + "\n\n" + USER_TEMPLATE.format(
         context=context_block,
         question=question,
@@ -141,16 +179,13 @@ def query(question, top_k=TOP_K, return_sources=True):
             "location": m.get("location", ""),
             "date": m.get("date", ""),
         })
-
     return answer, sources
 
 
-# ---------- CLI ----------
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python rag_query.py \"your question\"")
+        print('Usage: python rag_query.py "your question"')
         sys.exit(1)
-
     question = " ".join(sys.argv[1:])
     print(f"\nQ: {question}\n")
     answer, sources = query(question)
