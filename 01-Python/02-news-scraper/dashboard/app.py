@@ -48,7 +48,12 @@ from applications_utils import (
     remove_application,
     stats as app_stats,
 )
-
+try:
+    from rag_query import query as rag_query_fn
+    RAG_AVAILABLE = True
+except Exception as _rag_err:
+    RAG_AVAILABLE = False
+    _rag_err_msg = str(_rag_err)
 
 # ============================================================
 # CONFIG
@@ -219,7 +224,7 @@ st.sidebar.divider()
 
 page = st.sidebar.radio(
     "Navigate",
-    ["Overview", "Jobs", "ATS Checker", "Skills", "Companies", "Locations", "News"],
+    ["Overview", "Jobs", "Ask AI", "ATS Checker", "Skills", "Companies", "Locations", "News"],
 )
 
 st.sidebar.divider()
@@ -1015,6 +1020,73 @@ def page_news():
             st.write(row["content"])
             st.markdown(f"[Read more →]({row['url']})")
 
+# ============================================================
+# PAGE: ASK AI (RAG)
+# ============================================================
+
+def page_ask_ai():
+    st.title("🤖 Ask AI")
+    st.caption("Ask anything about the Indian AI career ecosystem — answers grounded in 2,265 indexed articles & jobs")
+
+    if not RAG_AVAILABLE:
+        st.error(f"RAG not available: {_rag_err_msg}")
+        st.info("Make sure `rag_indexer.py` has been run at least once, and Gemini API key is set.")
+        return
+
+    # Sample questions
+    with st.expander("💡 Sample questions", expanded=False):
+        st.markdown("""
+- Which Indian AI startups are working on RAG?
+- What skills are required for AI/ML Engineer roles in Bangalore?
+- What is happening in India's AI ecosystem regarding LLMs?
+- Which companies are hiring for agentic AI?
+- What salaries are typical for GenAI engineers in India?
+        """)
+
+    # Query input
+    question = st.text_input(
+        "Your question",
+        key="rag_question",
+        placeholder="e.g. Which Indian startups are working on RAG?",
+    )
+
+    col1, col2 = st.columns([1, 4])
+    with col1:
+        ask = st.button("🔍 Ask", type="primary")
+    with col2:
+        top_k = st.slider("Sources to retrieve", 3, 15, 8, 1, key="rag_top_k")
+
+    if ask and question.strip():
+        with st.spinner("Retrieving + generating answer..."):
+            try:
+                answer, sources = rag_query_fn(question.strip(), top_k=top_k)
+            except Exception as e:
+                st.error(f"Query failed: {e}")
+                return
+
+        st.divider()
+        st.subheader("Answer")
+        st.markdown(answer)
+
+        if sources:
+            st.divider()
+            st.subheader(f"📚 Sources ({len(sources)})")
+            for i, s in enumerate(sources, start=1):
+                badge = "📰" if s["type"] == "article" else "💼"
+                with st.container(border=True):
+                    st.markdown(f"**{badge} {s['title']}**")
+                    meta_parts = []
+                    if s.get("company"):
+                        meta_parts.append(s["company"])
+                    if s.get("location"):
+                        meta_parts.append(s["location"])
+                    if s.get("date"):
+                        meta_parts.append(s["date"])
+                    if meta_parts:
+                        st.caption(" · ".join(meta_parts))
+                    if s.get("url"):
+                        st.markdown(f"[Open →]({s['url']})")
+
 
 # ============================================================
 # ROUTER
@@ -1024,6 +1096,8 @@ if page == "Overview":
     page_overview()
 elif page == "Jobs":
     page_jobs()
+elif page == "Ask AI":
+    page_ask_ai()
 elif page == "ATS Checker":
     page_ats()
 elif page == "Skills":

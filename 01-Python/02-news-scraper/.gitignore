@@ -82,3 +82,6 @@ logs/
 # Personal application tracker
 data/applications.json
 data/applications.json.tmp
+
+# RAG vector DB (rebuildable, ~50MB)
+data/chroma_db/
