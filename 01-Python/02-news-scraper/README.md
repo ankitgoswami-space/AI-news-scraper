@@ -14,6 +14,7 @@ into structured intelligence that answers questions like:
 - What should I learn next?
 
 ---
+> **Last verified:** 2026-10-15 — All V1-V6 features live. RAG assistant operational.
 
 ## Current Status
 
