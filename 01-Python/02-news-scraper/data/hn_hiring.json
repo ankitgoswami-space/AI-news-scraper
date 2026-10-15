@@ -1,5 +1,41 @@
 [
   {
+    "title": "GovStar — https:&#x2F;&#x2F;govstar.us",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50090302",
+    "published_date": "2026-10-14",
+    "content": "GovStar | https:&#x2F;&#x2F;govstar.us | Remote (U.S. Eastern&#x2F;Central Time) | Senior Full Stack Python Developer | U.S. Citizenship Required\n\nGovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national security initiatives.\n\nThis is a hands-on role for an experienced engineer who wants to stay close to the code, spending the majority of their time developing software.\n\nWe’re looking for strong experience with Python, React&#x2F;TypeScript, CSS, REST APIs, SQL&#x2F;PostgreSQL and NoSQL databases, plus experience with LLMs, RAG, prompt engineering, and cloud platforms such as Azure or AWS.\n\nRelevant technologies: Python, React, TypeScript, Azure OpenAI, PostgreSQL, CosmosDB, Docker, Kubernetes, GitLab CI&#x2F;CD, LLMs, and RAG.\n\nRequirements: U.S. citizenship • U.S. resident • Reside in Eastern or Central Time Zone • Ability to obtain government clearance • BA&#x2F;BS + 15 years relevant experience (experience may substitute for education).\n\nCompensation varies by experience and demonstrated technical capability. We’re happy to discuss compensation expectations early in the process so neither side wastes time.\n\nGovStar benefits include medical, dental, and vision coverage; 401(k) matching; paid time off; and an employee shares program.\n\nTo apply, email your resume and GitHub profile to nicholas.hanson@govstar.us\n\nPlease mention “Hacker News” and “Senior Full Stack Python Developer” in the subject line.",
+    "company": "GovStar",
+    "location": "Remote"
+  },
+  {
+    "title": "NeuralFrame — Senior Backend Engineer, Medical Data Pipeline (Python + Rust)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50095921",
+    "published_date": "2026-10-14",
+    "content": "NeuralFrame | Senior Backend Engineer, Medical Data Pipeline (Python + Rust) | REMOTE (US only, US time zones; no visa sponsorship) | Full-time | $170k–$210k + 0.1%–0.25% equity\n\nWe build software that hospitals, cancer registries and researchers use. You'd own the pipeline that pulls data from hospital systems and transforms it for analytics and research.\n\nWhere Rust fits: part of our hospital data acquisition layer, the code that talks to hospital systems, is written in Rust. You'd work on both sides: Rust where performance and correctness matter most, async Python for the rest of the pipeline. Rust experience is a strong plus. Whether you learned it at work or on your own, we want to hear what you built with it.\n\nStack: Rust, async Python (mypy, pytest, ruff, uv), PostgreSQL and MongoDB, Dagster, Terraform&#x2F;OpenTofu, AWS (ECS&#x2F;Fargate, RDS, Lambda, S3), GitHub Actions.\n\nYou'll need 5+ years building backend services or data pipelines in production (retries, idempotency, schema design and migrations, well-tested and typed code) and strong Python and SQL. No healthcare background needed.\n\nApply: https:&#x2F;&#x2F;wellfound.com&#x2F;jobs&#x2F;4829721-senior-backend-software-e... . In your note, tell us in a few sentences about one pipeline failure you traced (what broke, how you found it, what you changed) and, if you've written Rust, what you built with it.",
+    "company": "NeuralFrame",
+    "location": "Remote"
+  },
+  {
+    "title": "3Gimbals — https:&#x2F;&#x2F;www.linkedin.com&#x2F;jobs&#x2F;view&#x2F;4477632187 (US&#x2F;Remote)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50095249",
+    "published_date": "2026-10-14",
+    "content": "3Gimbals | https:&#x2F;&#x2F;www.linkedin.com&#x2F;jobs&#x2F;view&#x2F;4477632187 (US&#x2F;Remote)\n\nHiring entry &#x2F; mid-level full stack swe's with strong experience with Python, React&#x2F;TypeScript, CSS, REST APIs, SQL&#x2F;PostgreSQL, and experience with LLMs, RAG, prompt engineering, and AWS cloud.\n\nWe are a small team doing a cool mix of application dev on our webapp OMEN, etl stuff, and harness engineering. If interested apply!\n\nRequirement: US Citizenship, Ability to obtain government clearance\n\nSalary: $120k-$160k depending on experience",
+    "company": "3Gimbals",
+    "location": "Remote"
+  },
+  {
+    "title": "exLabora AI (General Purpose Robot Workforce) — https:&#x2F;&#x2F;exlabora.com&#x2F;open-roles.html",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50091446",
+    "published_date": "2026-10-14",
+    "content": "exLabora AI (General Purpose Robot Workforce) | https:&#x2F;&#x2F;exlabora.com&#x2F;open-roles.html | Founding Robotic Engineer (Software, Mechatronics, AI)",
+    "company": "exLabora AI (General Purpose Robot Workforce)",
+    "location": ""
+  },
+  {
     "title": "Sendery ( https:&#x2F;&#x2F;sendery.co ) — iOS Engineer",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50066343",
@@ -868,7 +904,7 @@
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=49930470",
     "published_date": "2026-10-02",
-    "content": "Metcor | AI Engineer | London, UK | hybrid | £120k\n\n https:&#x2F;&#x2F;metcor.co.uk \n\nYou will re-shape how real engineering work gets done at the UK's leading facilities management company: how our jobs get scheduled, how we predict and prevent outages before they hit our clients. We are 600+ people serving thousands of client sites. Our competitors are watching AI happen. You will extend our lead.\n\nYou will be the second person in our AI team: what you build and how you build it becomes how Metcor does AI.\n\nYour budget for AI tools is unlimited, as long as you can show the business outcomes.\n\n https:&#x2F;&#x2F;metcorgroup-my.sharepoint.com&#x2F;:u:&#x2F;g&#x2F;personal&#x2F;janosch...",
+    "content": "Metcor | AI Engineer | London, UK | hybrid | £120k | No visa sponsorship\n\n https:&#x2F;&#x2F;metcor.co.uk \n\nYou will re-shape how real engineering work gets done at the UK's leading facilities management company: how our jobs get scheduled, how we predict and prevent outages before they hit our clients. We are 600+ people serving thousands of client sites. Our competitors are watching AI happen. You will extend our lead.\n\nYou will be the second person in our AI team: what you build and how you build it becomes how Metcor does AI.\n\nYour budget for AI tools is unlimited, as long as you can show the business outcomes.\n\n https:&#x2F;&#x2F;metcorgroup-my.sharepoint.com&#x2F;:u:&#x2F;g&#x2F;personal&#x2F;janosch...",
     "company": "Metcor",
     "location": ""
   },
