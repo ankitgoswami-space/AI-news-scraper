@@ -18968,5 +18968,50 @@
       "LLM"
     ],
     "category": "AI Product"
+  },
+  {
+    "title": "Meta Launches Muse Wonder AI Models for Personal and Professional Agents",
+    "source": "Analytics India Magazine",
+    "url": "https://analyticsindiamag.com/ai-news/meta-launches-muse-wonder-ai-models-for-personal-and-professional-agents",
+    "published_date": "2026-10-13",
+    "content": "Meta said Muse Wonder has the strongest safeguards to date against cyber misuse, but retains access to advanced cyber capabilities for defensive use.\n\nMeta has launched Muse Wonder and Muse Wonder Full, two AI models built for personal and professional agents, with capabilities spanning long-term memory, multi-step task execution, and coding.\n\nThe models are part of Meta’s effort to scale its AI efforts. Meta trained both models were trained at the company’s gigawatt-scale Prometheus data centre.\n\nMuse Wonder is available through the Meta Model API and Muse Code, while Muse Wonder Full is available to Muse Code subscribers. Meta plans to bring Muse Wonder to its Muse platform, initially for subscribers, where it will power experiences, generate artefacts, and handle tasks that require greater intelligence.\n\nThe company also plans to use the model to develop specialised models for wider access through Muse.\n\nThe Muse Wonder series combines two capabilities that Meta calls Active Memory and Active Focus. Active Memory allows the models to retain relevant information across conversations and retrieve it when needed for a task.\n\n“One of the most critical steps towards useful personal and professional agents is reliable memory,” Meta said in a release. The company describes the capability as “carrying important context about you across conversations and actively retrieving the details relevant to the task at hand”.\n\nActive Focus refers to the models’ ability to work towards a goal over an extended period, try alternative approaches, address obstacles, and adapt to new information. Meta said the models can ask for clarification when required and check with users before taking important actions.\n\nThese capabilities aim to support agents that can work across applications and handle tasks involving multiple requirements and constraints.\n\nThe company said the models achieved state-of-the-art results across benchmarks covering personal and professional agents, memory, and coding. Its evaluations include AutomationBench-AA for business workflows, MemoryBench for long-term contextual memory, SWE-Marathon for sustained software engineering, and DeepSWE for long-horizon coding.\n\nMeta also evaluated the models on specialised tasks in law, finance and health. These include Harvey’s Legal Agent Benchmark, which tests whether models can work with source documents and follow detailed instructions to produce legal work, and Vals Finance Agent V2.\n\nMeta said Muse Wonder Full can generalise more effectively to unfamiliar tasks than its earlier Muse Spark 1.3 model, based on the company’s evaluation of performance as reasoning effort increases.\n\nThe company examined the relationship between performance on tasks targeted during post-training and performance on tasks that were not targeted during that process. It found that Muse Wonder Full performed better on unfamiliar tasks compared with Muse Spark 1.3.\n\nMeta attributed this to the stronger base models underpinning the Muse Wonder series, saying that improvements from post-training carry over more effectively to tasks outside the training focus.\n\n“This versatility especially matters for personal agents, which need to handle many combinations of goals, tools, and constraints—not all of which we can anticipate during training,” the company said.\n\nMeta said it trained the models to handle private information carefully and resist adversarial instructions, given that personal agents may access messages, calendars, and private documents while acting on a user’s behalf.\n\nThe company also said Muse Wonder has its strongest safeguards to date against chemical, biological, radiological, and nuclear risks, as well as cyber misuse. It said the models retain access to advanced cyber capabilities for defensive use under Meta’s Superintelligence Scaling Framework.\n\nAdvertise with Us\n\nOur Events\n\nAI Trainings\n\nGot a tip? Share confidential information with AIM.\n\nBuild your routine with some of our top newsletters or view them all here.\n\nWake up informed\n\nMake sense of the day's AI news and breakthroughs with our morning briefing.\n\nIndustry intelligence\n\nReceive a roundup of AI adoption stories by industry vertical, curated for professionals.\n\n3x WeeklySector6See the latest\n\nBy signing up, you agree to our Privacy Policy.\n\nStay ahead with AI insights.\n\nUnlimited access to premium articles, exclusive analysis, and the stories shaping India's AI economy.\n\n1190 Miraloma Way Suite P, Sunnyvale, CA 94085\n\n1st Floor, Sakti Statesman, Bellandur, Bengaluru – 560103\n\n© 2026 AIM. All rights reserved.",
+    "summary": "Meta has launched the Muse Wonder and Muse Wonder Full AI models designed for personal and professional agents. The models feature capabilities such as long-term memory, multi-step task execution, and coding.",
+    "companies": [
+      "Meta"
+    ],
+    "technologies": [
+      "Muse Wonder",
+      "Muse Wonder Full",
+      "Meta Model API"
+    ],
+    "skills": [],
+    "category": "AI Product"
+  },
+  {
+    "title": "Sarvam AI in Talks to Raise $300 Mn at $3 Bn Valuation: Report",
+    "source": "Analytics India Magazine",
+    "url": "https://analyticsindiamag.com/ai-news/sarvam-ai-in-talks-to-raise-300-mn-at-3-bn-valuation-report",
+    "published_date": "2026-10-13",
+    "content": "The Bengaluru-based startup is looking to expand its AI research, enterprise deployments and presence in global markets.\n\nBengaluru-based AI startup Sarvam AI is in early discussions to raise $250 million to $300 million at a valuation of $3 billion, potentially doubling its valuation in four months, according to an ET report.\n\nThe proposed funding round could make Sarvam the most highly valued AI startup in India. The amount being raised and the valuation could change as discussions progress, the report added.\n\nSarvam AI is also reportedly in talks with large domestic enterprises and institutions as it seeks to keep a substantial shareholding with Indian entities. The discussions are at an early stage.\n\nAIM reached out to Sarvam AI for confirmation. The company had not responded at the time of publication.\n\nIn June, Sarvam raised $234 million in the first close of its $300 million Series B round at a post-money valuation of $1.5 billion. HCLTech led the round with a $150 million investment, alongside Bessemer Venture Partners and existing investors Khosla Ventures and Peak XV Partners. NVIDIA and IndiGo Ventures participated in a $75 million extension.\n\nFounded by Vivek Raghavan and Pratyush Kumar in 2023, Sarvam develops Indian-language AI models and applications for government agencies and businesses, with a focus on sectors such as banking and insurance. Its customers include Life Insurance Corporation of India, SBI Life, IDFC First Bank, Tata Capital and CRED.\n\nThe company is expanding its efforts across AI models, computing infrastructure and enterprise deployments. It plans to build a trillion-parameter AI model and establish an office in San Francisco to recruit researchers. Sarvam has also hired Sashikumar Sreedharan, the former head of Google Cloud India.\n\nSarvam’s Indus AI workspace has received approval for deployment across Maharashtra government departments for tasks such as drafting, translation and document analysis. Government data for the deployment will be hosted within India.\n\nAdvertise with Us\n\nOur Events\n\nAI Trainings\n\nBuild your routine with some of our top newsletters or view them all here.\n\nWake up informed\n\nMake sense of the day's AI news and breakthroughs with our morning briefing.\n\nIndustry intelligence\n\nReceive a roundup of AI adoption stories by industry vertical, curated for professionals.\n\n3x WeeklySector6See the latest\n\nBy signing up, you agree to our Privacy Policy.\n\nStay ahead with AI insights.\n\nUnlimited access to premium articles, exclusive analysis, and the stories shaping India's AI economy.\n\n1190 Miraloma Way Suite P, Sunnyvale, CA 94085\n\n1st Floor, Sakti Statesman, Bellandur, Bengaluru – 560103\n\n© 2026 AIM. All rights reserved.",
+    "summary": "Bengaluru-based startup Sarvam AI is in early discussions to raise $250 million to $300 million at a valuation of $3 billion. The company plans to use the capital to expand its AI research, enterprise deployments, and global presence.",
+    "companies": [
+      "Sarvam AI",
+      "HCLTech",
+      "Bessemer Venture Partners",
+      "Khosla Ventures",
+      "Peak XV Partners",
+      "NVIDIA",
+      "IndiGo Ventures",
+      "Life Insurance Corporation of India",
+      "SBI Life",
+      "IDFC First Bank",
+      "Tata Capital",
+      "CRED",
+      "Google",
+      "Maharashtra government"
+    ],
+    "technologies": [],
+    "skills": [],
+    "category": "Funding"
   }
 ]
