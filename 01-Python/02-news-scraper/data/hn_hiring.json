@@ -1,5 +1,14 @@
 [
   {
+    "title": "Treat Health — Full-stack Engineer (Elixir, Phoenix LiveView, React)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50104234",
+    "published_date": "2026-10-15",
+    "content": "Treat Health | Full-stack Engineer (Elixir, Phoenix LiveView, React) | Helsinki, Finland | ONSITE | Full-time | Compensation in the link below\n\nTreat Health is building healthcare where the right care takes minutes, not days. You describe your concern in your own words, our smart intake asks the follow-up questions a doctor would ask, and a licensed doctor reviews the whole picture and decides on the care. Prescriptions and records go straight to Kanta, Finland's national health archive.\n\nRight now, agentic frontend engineering and agentic mobile app development matter most to us. We expect you to work across the whole stack, with our assistance and tooling.\n\nStack: Elixir, Phoenix LiveView, React, TypeScript, Tailwind, GCP, Cloudflare and Rust, with Swift and Kotlin for our native mobile apps. Claude is part of everyday work, from planning and coding to review. We care about how well you direct coding agents, not how fast you type.\n\nSmall team, high trust: you own problems end to end, with real influence on what we build. Health data stays in the EU, every sign-in uses strong identification, and patient data never ends up in logs.\n\nFor now, working on site in Helsinki is a must, and we can't offer relocation or visa support, so you need to already be able to work in Finland. We may hire remotely in the future, so check back later.\n\nCompensation, details and how to apply: https:&#x2F;&#x2F;treat.health&#x2F;en&#x2F;careers&#x2F;full-stack-engineer&#x2F;",
+    "company": "Treat Health",
+    "location": "Remote"
+  },
+  {
     "title": "GovStar — https:&#x2F;&#x2F;govstar.us",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50090302",
