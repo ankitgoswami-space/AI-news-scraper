@@ -1,5 +1,41 @@
 [
     {
+        "title": "India becomes the latest country to report rogue AI agent activity",
+        "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Elorian’s first AI model wants to reason with images, not just about them",
+        "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Jev is Vercel’s fastest-adopted AI model ever",
+        "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
+        "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
+        "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
+        "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
         "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
         "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
         "source": "TechCrunch",
@@ -132,54 +168,6 @@
         "category": "AI"
     },
     {
-        "title": "Science Corporation implants its vision-restoring chip in its first Stargardt disease patient",
-        "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Cerebras CEO says we’re nearing a future where everyone has a personal AI assistant at home",
-        "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Industrial Next wants factory robots to switch tasks in minutes, not weeks",
-        "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Cerebras CEO pushes back on AI doomsday warnings",
-        "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
-        "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Flox Intelligence is building AI to keep wildlife away from trains, airports, and roads",
-        "url": "https://techcrunch.com/2026/10/13/flox-intelligence-is-building-ai-to-keep-wildlife-away-from-trains-airports-and-roads/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Facebook is giving users more control over their algorithm",
-        "url": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Laplace Intelligence red-teams robots and self-driving cars before they hit the real world",
-        "url": "https://techcrunch.com/2026/10/13/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
         "title": "Tesla reveals SpaceX-powered Roadster that flies and falls with style",
         "url": "https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style/",
         "source": "TechCrunch",
@@ -188,6 +176,12 @@
     {
         "title": "FBI arrests OpenAI employee accused of planting hidden recording device in conference room",
         "url": "https://techcrunch.com/2026/10/13/fbi-arrests-openai-employee-accused-of-planting-hidden-recording-device-in-conference-room/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Google Play now lets anyone build private, vibe-coded apps that run on Android",
+        "url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/",
         "source": "TechCrunch",
         "category": "AI"
     },
@@ -212,12 +206,6 @@
     {
         "title": "This AI startup says it can generate permit-ready blueprints in minutes",
         "url": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Elon Musk intensifies attack on Ambani over Starlink India launch delay",
-        "url": "https://techcrunch.com/2026/10/09/elon-musk-intensifies-attack-on-ambani-over-starlink-india-launch-delay/",
         "source": "TechCrunch",
         "category": "AI"
     }

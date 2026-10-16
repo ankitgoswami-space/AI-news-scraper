@@ -8,7 +8,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "comfyui",
     "downloads": 0,
-    "likes": 13,
+    "likes": 16,
     "tags": [
       "comfyui",
       "text-to-image",
@@ -34,7 +34,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "comfyui",
     "downloads": 0,
-    "likes": 11,
+    "likes": 22,
     "tags": [
       "comfyui",
       "moss-image",
@@ -54,6 +54,93 @@
     "content": "Pipeline: text-to-image. Library: comfyui. Tags: comfyui, moss-image, text-to-image, quantized, int8, w4a8, gptq, convrot, en, zh, base_model:OpenMOSS-Team/MOSS-Image-SFT, base_model:quantized:OpenMOSS-Team/MOSS-Image-SFT, license:apache-2.0, region:us"
   },
   {
+    "id": "lodestones/MOSS-Image-SFT-8-steps-dmd",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd",
+    "author": "lodestones",
+    "created_at": "2026-10-16",
+    "pipeline_tag": "",
+    "library_name": "diffusers",
+    "downloads": 0,
+    "likes": 34,
+    "tags": [
+      "diffusers",
+      "safetensors",
+      "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+      "base_model:finetune:OpenMOSS-Team/MOSS-Image-SFT",
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "content": "Library: diffusers. Tags: diffusers, safetensors, base_model:OpenMOSS-Team/MOSS-Image-SFT, base_model:finetune:OpenMOSS-Team/MOSS-Image-SFT, license:apache-2.0, region:us"
+  },
+  {
+    "id": "Comfy-Org/MOSS-Image",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/Comfy-Org/MOSS-Image",
+    "author": "Comfy-Org",
+    "created_at": "2026-10-16",
+    "pipeline_tag": "",
+    "library_name": "diffusion-single-file",
+    "downloads": 0,
+    "likes": 32,
+    "tags": [
+      "diffusion-single-file",
+      "comfyui",
+      "base_model:OpenMOSS-Team/MOSS-Image-Base",
+      "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "content": "Library: diffusion-single-file. Tags: diffusion-single-file, comfyui, base_model:OpenMOSS-Team/MOSS-Image-Base, base_model:finetune:OpenMOSS-Team/MOSS-Image-Base, license:apache-2.0, region:us"
+  },
+  {
+    "id": "unsloth/flux-3-image-klein-GGUF",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/unsloth/flux-3-image-klein-GGUF",
+    "author": "unsloth",
+    "created_at": "2026-10-16",
+    "pipeline_tag": "image-to-image",
+    "library_name": "gguf",
+    "downloads": 0,
+    "likes": 9,
+    "tags": [
+      "gguf",
+      "unsloth",
+      "text-to-image",
+      "image-editing",
+      "image-to-image",
+      "flux",
+      "flux-3",
+      "black-forest-labs",
+      "en",
+      "base_model:black-forest-labs/flux-3-image-klein",
+      "base_model:quantized:black-forest-labs/flux-3-image-klein",
+      "license:other",
+      "region:us"
+    ],
+    "content": "Pipeline: image-to-image. Library: gguf. Tags: gguf, unsloth, text-to-image, image-editing, image-to-image, flux, flux-3, black-forest-labs, en, base_model:black-forest-labs/flux-3-image-klein, base_model:quantized:black-forest-labs/flux-3-image-klein, license:other, region:us"
+  },
+  {
+    "id": "tencent/Qwen3-8B-DSpine-b16",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/tencent/Qwen3-8B-DSpine-b16",
+    "author": "tencent",
+    "created_at": "2026-10-16",
+    "pipeline_tag": "",
+    "library_name": "",
+    "downloads": 0,
+    "likes": 9,
+    "tags": [
+      "safetensors",
+      "qwen3",
+      "custom_code",
+      "arxiv:2609.36173",
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "content": "Tags: safetensors, qwen3, custom_code, arxiv:2609.36173, license:apache-2.0, region:us"
+  },
+  {
     "id": "tencent/Hy-Memory-30B-A3B",
     "source": "Hugging Face",
     "url": "https://huggingface.co/tencent/Hy-Memory-30B-A3B",
@@ -62,7 +149,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 0,
-    "likes": 59,
+    "likes": 112,
     "tags": [
       "transformers",
       "safetensors",
@@ -87,7 +174,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 594,
-    "likes": 26,
+    "likes": 32,
     "tags": [
       "transformers",
       "safetensors",
@@ -118,7 +205,7 @@
     "pipeline_tag": "image-to-video",
     "library_name": "",
     "downloads": 149,
-    "likes": 18,
+    "likes": 22,
     "tags": [
       "safetensors",
       "audio-video",
@@ -143,7 +230,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "",
     "downloads": 1960,
-    "likes": 18,
+    "likes": 19,
     "tags": [
       "gguf",
       "flux",
@@ -171,7 +258,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 0,
-    "likes": 15,
+    "likes": 16,
     "tags": [
       "region:us"
     ],
@@ -186,7 +273,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 9,
-    "likes": 15,
+    "likes": 19,
     "tags": [
       "gguf",
       "27 reasoning modes",
@@ -246,7 +333,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "",
     "downloads": 876,
-    "likes": 10,
+    "likes": 14,
     "tags": [
       "gguf",
       "text-to-image",
@@ -272,7 +359,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 0,
-    "likes": 10,
+    "likes": 14,
     "tags": [
       "license:apache-2.0",
       "region:us"
@@ -329,6 +416,99 @@
     "content": "Pipeline: image-text-to-text. Tags: gguf, nvidia, nemotron-3.5, moe, 27 reasoning modes, 15 AI Constructs, 5 Super AI Constructs, Brainstorm AI Construct, Brainstorm Business AI Construct, Universal Teacher AI Construct, Agent AI Construct, Coder AI Construct, Turbo-Brilliance, NEO Imatrix, NEO Imatrix MAX, QAT IQ2 quant, image-text-to-text, en, es, fr, de, it, ja, dataset:nvidia/nemotron-post-training-v3, dataset:nvidia/nemotron-pre-training-datasets, arxiv:2605.07182, arxiv:2601.20088, arxiv:2502.02631, arxiv:2502.05003, base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16, base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16, license:other, endpoints_compatible, region:us, conversational"
   },
   {
+    "id": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/nvidia/Nemotron-3.5-Rerank-8B-BF16",
+    "author": "nvidia",
+    "created_at": "2026-10-15",
+    "pipeline_tag": "text-ranking",
+    "library_name": "sentence-transformers",
+    "downloads": 662,
+    "likes": 15,
+    "tags": [
+      "sentence-transformers",
+      "safetensors",
+      "mistral3",
+      "text-classification",
+      "reranker",
+      "cross-encoder",
+      "visual-document-retrieval",
+      "multimodal reranking",
+      "semantic-search",
+      "rag",
+      "transformers",
+      "vllm",
+      "text-ranking",
+      "custom_code",
+      "multilingual",
+      "en",
+      "ar",
+      "as",
+      "bn",
+      "bg",
+      "zh",
+      "da",
+      "nl",
+      "fi",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "mr",
+      "ne",
+      "no",
+      "fa",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sw",
+      "sv",
+      "ta",
+      "te",
+      "th",
+      "uk",
+      "ur",
+      "vi",
+      "base_model:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+      "base_model:finetune:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+      "license:other",
+      "region:us"
+    ],
+    "content": "Pipeline: text-ranking. Library: sentence-transformers. Tags: sentence-transformers, safetensors, mistral3, text-classification, reranker, cross-encoder, visual-document-retrieval, multimodal reranking, semantic-search, rag, transformers, vllm, text-ranking, custom_code, multilingual, en, ar, as, bn, bg, zh, da, nl, fi, fr, de, hi, id, it, ja, ko, ms, mr, ne, no, fa, pt, ro, ru, es, sw, sv, ta, te, th, uk, ur, vi, base_model:mistralai/Ministral-3-8B-Instruct-2512-BF16, base_model:finetune:mistralai/Ministral-3-8B-Instruct-2512-BF16, license:other, region:us"
+  },
+  {
+    "id": "ausboss/FLUX-3-Image-Klein-Outpaint-LoRA",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/ausboss/FLUX-3-Image-Klein-Outpaint-LoRA",
+    "author": "ausboss",
+    "created_at": "2026-10-15",
+    "pipeline_tag": "image-to-image",
+    "library_name": "",
+    "downloads": 0,
+    "likes": 12,
+    "tags": [
+      "lora",
+      "outpainting",
+      "uncrop",
+      "flux",
+      "flux-3",
+      "flux-3-image-klein",
+      "comfyui",
+      "ai-toolkit",
+      "image-to-image",
+      "base_model:black-forest-labs/flux-3-image-klein-base",
+      "base_model:adapter:black-forest-labs/flux-3-image-klein-base",
+      "license:other",
+      "region:us"
+    ],
+    "content": "Pipeline: image-to-image. Tags: lora, outpainting, uncrop, flux, flux-3, flux-3-image-klein, comfyui, ai-toolkit, image-to-image, base_model:black-forest-labs/flux-3-image-klein-base, base_model:adapter:black-forest-labs/flux-3-image-klein-base, license:other, region:us"
+  },
+  {
     "id": "qnguyen3/QUAN-Transcribe-1.0",
     "source": "Hugging Face",
     "url": "https://huggingface.co/qnguyen3/QUAN-Transcribe-1.0",
@@ -337,7 +517,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "",
     "downloads": 320,
-    "likes": 48,
+    "likes": 49,
     "tags": [
       "safetensors",
       "ctc",
@@ -362,7 +542,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 0,
-    "likes": 24,
+    "likes": 25,
     "tags": [
       "transformers",
       "npu",
@@ -447,7 +627,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 1611,
-    "likes": 10,
+    "likes": 11,
     "tags": [
       "gguf",
       "vision",
@@ -479,7 +659,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusion-single-file",
     "downloads": 73767,
-    "likes": 348,
+    "likes": 423,
     "tags": [
       "diffusion-single-file",
       "comfyui",
@@ -506,7 +686,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 10082,
-    "likes": 48,
+    "likes": 60,
     "tags": [
       "gguf",
       "nvidia",
@@ -541,7 +721,7 @@
     "pipeline_tag": "time-series-forecasting",
     "library_name": "timestral",
     "downloads": 333,
-    "likes": 48,
+    "likes": 64,
     "tags": [
       "timestral",
       "safetensors",
@@ -564,7 +744,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 426,
-    "likes": 33,
+    "likes": 42,
     "tags": [
       "transformers",
       "safetensors",
@@ -596,7 +776,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 3957,
-    "likes": 33,
+    "likes": 37,
     "tags": [
       "gguf",
       "nvidia",
@@ -630,7 +810,7 @@
     "pipeline_tag": "time-series-forecasting",
     "library_name": "timestral",
     "downloads": 265,
-    "likes": 21,
+    "likes": 24,
     "tags": [
       "timestral",
       "safetensors",
@@ -653,7 +833,7 @@
     "pipeline_tag": "time-series-forecasting",
     "library_name": "timestral",
     "downloads": 124,
-    "likes": 20,
+    "likes": 22,
     "tags": [
       "timestral",
       "safetensors",
@@ -676,7 +856,7 @@
     "pipeline_tag": "time-series-forecasting",
     "library_name": "timestral",
     "downloads": 172,
-    "likes": 17,
+    "likes": 18,
     "tags": [
       "timestral",
       "safetensors",
@@ -699,7 +879,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 211,
-    "likes": 12,
+    "likes": 14,
     "tags": [
       "safetensors",
       "step5_vl",
@@ -719,7 +899,7 @@
     "pipeline_tag": "",
     "library_name": "mlx",
     "downloads": 0,
-    "likes": 12,
+    "likes": 15,
     "tags": [
       "mlx",
       "jinja",
@@ -747,7 +927,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 2600,
-    "likes": 14,
+    "likes": 15,
     "tags": [
       "transformers",
       "gguf",
@@ -774,7 +954,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 178,
-    "likes": 10,
+    "likes": 15,
     "tags": [
       "transformers",
       "safetensors",
@@ -799,7 +979,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "",
     "downloads": 954,
-    "likes": 9,
+    "likes": 11,
     "tags": [
       "safetensors",
       "fish_omni",
@@ -835,7 +1015,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "",
     "downloads": 0,
-    "likes": 9,
+    "likes": 12,
     "tags": [
       "comfyui",
       "text-to-speech",
@@ -850,6 +1030,55 @@
     "content": "Pipeline: text-to-speech. Tags: comfyui, text-to-speech, voice-cloning, fish-audio, drama-3, base_model:fishaudio/drama-3, base_model:quantized:fishaudio/drama-3, license:other, region:us"
   },
   {
+    "id": "ibm-granite/granite-switch-4.1-8b",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/ibm-granite/granite-switch-4.1-8b",
+    "author": "ibm-granite",
+    "created_at": "2026-10-14",
+    "pipeline_tag": "text-generation",
+    "library_name": "transformers",
+    "downloads": 278,
+    "likes": 17,
+    "tags": [
+      "transformers",
+      "safetensors",
+      "granite_switch",
+      "text-generation",
+      "language",
+      "granite-switch",
+      "granite-4.1",
+      "conversational",
+      "license:apache-2.0",
+      "endpoints_compatible",
+      "region:us"
+    ],
+    "content": "Pipeline: text-generation. Library: transformers. Tags: transformers, safetensors, granite_switch, text-generation, language, granite-switch, granite-4.1, conversational, license:apache-2.0, endpoints_compatible, region:us"
+  },
+  {
+    "id": "MultiverseComputingCAI/Comet_60B_A12B_BF16",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16",
+    "author": "MultiverseComputingCAI",
+    "created_at": "2026-10-14",
+    "pipeline_tag": "image-text-to-text",
+    "library_name": "transformers",
+    "downloads": 17,
+    "likes": 9,
+    "tags": [
+      "transformers",
+      "safetensors",
+      "nemotron_h_omni",
+      "image-text-to-text",
+      "conversational",
+      "custom_code",
+      "en",
+      "license:other",
+      "endpoints_compatible",
+      "region:us"
+    ],
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, nemotron_h_omni, image-text-to-text, conversational, custom_code, en, license:other, endpoints_compatible, region:us"
+  },
+  {
     "id": "lightx2v/Qwen-Image-2.1-Lightning",
     "source": "Hugging Face",
     "url": "https://huggingface.co/lightx2v/Qwen-Image-2.1-Lightning",
@@ -858,7 +1087,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 38685,
-    "likes": 77,
+    "likes": 79,
     "tags": [
       "diffusers",
       "lora",
@@ -883,7 +1112,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 27394,
-    "likes": 63,
+    "likes": 64,
     "tags": [
       "transformers",
       "gguf",
@@ -928,7 +1157,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 1123,
-    "likes": 29,
+    "likes": 31,
     "tags": [
       "diffusers",
       "lora",
@@ -954,7 +1183,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 1276,
-    "likes": 109,
+    "likes": 111,
     "tags": [
       "safetensors",
       "bailing_hybrid",
@@ -962,10 +1191,11 @@
       "conversational",
       "custom_code",
       "license:mit",
+      "eval-results",
       "fp8",
       "region:us"
     ],
-    "content": "Pipeline: text-generation. Tags: safetensors, bailing_hybrid, text-generation, conversational, custom_code, license:mit, fp8, region:us"
+    "content": "Pipeline: text-generation. Tags: safetensors, bailing_hybrid, text-generation, conversational, custom_code, license:mit, eval-results, fp8, region:us"
   },
   {
     "id": "FrontiersMind/Lumma-fev-27B",
@@ -1038,7 +1268,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 0,
-    "likes": 20,
+    "likes": 26,
     "tags": [
       "gguf",
       "liquid",
@@ -1152,7 +1382,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "",
     "downloads": 437,
-    "likes": 12,
+    "likes": 13,
     "tags": [
       "safetensors",
       "fish_omni",
@@ -1187,7 +1417,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "",
     "downloads": 133738,
-    "likes": 15,
+    "likes": 18,
     "tags": [
       "gguf",
       "audio.cpp",
@@ -1213,7 +1443,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 12520,
-    "likes": 13,
+    "likes": 14,
     "tags": [
       "gguf",
       "moe",
@@ -1242,7 +1472,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 46,
-    "likes": 14,
+    "likes": 15,
     "tags": [
       "transformers",
       "safetensors",
@@ -1274,7 +1504,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 477,
-    "likes": 20,
+    "likes": 24,
     "tags": [
       "transformers",
       "safetensors",
@@ -1304,7 +1534,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 22790,
-    "likes": 341,
+    "likes": 389,
     "tags": [
       "diffusers",
       "safetensors",
@@ -1329,7 +1559,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 25414,
-    "likes": 88,
+    "likes": 103,
     "tags": [
       "diffusers",
       "safetensors",
@@ -1354,7 +1584,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 0,
-    "likes": 12,
+    "likes": 19,
     "tags": [
       "safetensors",
       "portuguese",
@@ -1376,7 +1606,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "vllm",
     "downloads": 548,
-    "likes": 10,
+    "likes": 11,
     "tags": [
       "vllm",
       "safetensors",
@@ -1409,7 +1639,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 43,
-    "likes": 10,
+    "likes": 15,
     "tags": [
       "safetensors",
       "gemma4",
@@ -1429,6 +1659,29 @@
       "region:us"
     ],
     "content": "Pipeline: image-text-to-text. Tags: safetensors, gemma4, decision-index, typed-outputs, nvfp4, fp8, quantized, moe, custom-engine, image-text-to-text, conversational, base_model:google/gemma-4-26B-A4B-it, base_model:finetune:google/gemma-4-26B-A4B-it, license:apache-2.0, 8-bit, region:us"
+  },
+  {
+    "id": "reflection/Beam-1.0-501B-A23B-DFlash2",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-DFlash2",
+    "author": "reflection",
+    "created_at": "2026-10-13",
+    "pipeline_tag": "",
+    "library_name": "",
+    "downloads": 141,
+    "likes": 20,
+    "tags": [
+      "safetensors",
+      "qwen3",
+      "dflash2",
+      "speculative-decoding",
+      "beam",
+      "base_model:reflection/Beam-1.0-501B-A23B",
+      "base_model:finetune:reflection/Beam-1.0-501B-A23B",
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "content": "Tags: safetensors, qwen3, dflash2, speculative-decoding, beam, base_model:reflection/Beam-1.0-501B-A23B, base_model:finetune:reflection/Beam-1.0-501B-A23B, license:apache-2.0, region:us"
   },
   {
     "id": "sthanika-ai/Sieve-31B",
@@ -1493,7 +1746,7 @@
     "pipeline_tag": "image-classification",
     "library_name": "",
     "downloads": 254,
-    "likes": 25,
+    "likes": 26,
     "tags": [
       "onnx",
       "safetensors",
@@ -1725,7 +1978,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 9356,
-    "likes": 406,
+    "likes": 424,
     "tags": [
       "transformers",
       "safetensors",
@@ -1770,7 +2023,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 4051,
-    "likes": 31,
+    "likes": 33,
     "tags": [
       "gguf",
       "atomic-chat",
@@ -1868,7 +2121,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 63,
-    "likes": 14,
+    "likes": 16,
     "tags": [
       "safetensors",
       "system-one",
@@ -1876,13 +2129,14 @@
       "classification",
       "calibration",
       "vision",
+      "decision-model",
       "en",
       "base_model:Qwen/Qwen3.8-27B",
       "base_model:finetune:Qwen/Qwen3.8-27B",
       "license:apache-2.0",
       "region:us"
     ],
-    "content": "Tags: safetensors, system-one, decisions, classification, calibration, vision, en, base_model:Qwen/Qwen3.8-27B, base_model:finetune:Qwen/Qwen3.8-27B, license:apache-2.0, region:us"
+    "content": "Tags: safetensors, system-one, decisions, classification, calibration, vision, decision-model, en, base_model:Qwen/Qwen3.8-27B, base_model:finetune:Qwen/Qwen3.8-27B, license:apache-2.0, region:us"
   },
   {
     "id": "Skywork/Matrix-Game-4.0",
@@ -1893,7 +2147,7 @@
     "pipeline_tag": "video-to-video",
     "library_name": "",
     "downloads": 0,
-    "likes": 24,
+    "likes": 25,
     "tags": [
       "safetensors",
       "matrix-game-4.0",
@@ -1946,7 +2200,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "mlx",
     "downloads": 3228,
-    "likes": 15,
+    "likes": 16,
     "tags": [
       "mlx",
       "safetensors",
@@ -1985,7 +2239,7 @@
     "pipeline_tag": "robotics",
     "library_name": "",
     "downloads": 0,
-    "likes": 10,
+    "likes": 11,
     "tags": [
       "safetensors",
       "autonomous-driving",
@@ -2010,7 +2264,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 2676,
-    "likes": 105,
+    "likes": 116,
     "tags": [
       "transformers",
       "safetensors",
@@ -2034,9 +2288,10 @@
       "endpoints_compatible",
       "8-bit",
       "modelopt_mixed",
-      "region:us"
+      "region:us",
+      "deploy:sagemaker"
     ],
-    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, nemotron_h_omni, image-text-to-text, nvidia, pytorch, nemotron-3.5, conversational, custom_code, en, es, fr, de, it, ja, base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16, base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16, license:other, eval-results, endpoints_compatible, 8-bit, modelopt_mixed, region:us"
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, nemotron_h_omni, image-text-to-text, nvidia, pytorch, nemotron-3.5, conversational, custom_code, en, es, fr, de, it, ja, base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16, base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16, license:other, eval-results, endpoints_compatible, 8-bit, modelopt_mixed, region:us, deploy:sagemaker"
   },
   {
     "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
@@ -2047,7 +2302,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 2155,
-    "likes": 54,
+    "likes": 62,
     "tags": [
       "transformers",
       "safetensors",
@@ -2068,9 +2323,10 @@
       "dataset:nvidia/nemotron-pre-training-datasets",
       "license:other",
       "endpoints_compatible",
-      "region:us"
+      "region:us",
+      "deploy:sagemaker"
     ],
-    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, nemotron_h_omni, image-text-to-text, nvidia, pytorch, nemotron-3.5, conversational, custom_code, en, es, fr, de, it, ja, dataset:nvidia/nemotron-post-training-v3, dataset:nvidia/nemotron-pre-training-datasets, license:other, endpoints_compatible, region:us"
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, nemotron_h_omni, image-text-to-text, nvidia, pytorch, nemotron-3.5, conversational, custom_code, en, es, fr, de, it, ja, dataset:nvidia/nemotron-post-training-v3, dataset:nvidia/nemotron-pre-training-datasets, license:other, endpoints_compatible, region:us, deploy:sagemaker"
   },
   {
     "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16",
@@ -2081,7 +2337,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 374,
-    "likes": 43,
+    "likes": 46,
     "tags": [
       "transformers",
       "safetensors",
@@ -2115,7 +2371,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 2672,
-    "likes": 15,
+    "likes": 19,
     "tags": [
       "gguf",
       "nvidia",
@@ -2179,7 +2435,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "Model Optimizer",
     "downloads": 475,
-    "likes": 10,
+    "likes": 11,
     "tags": [
       "Model Optimizer",
       "safetensors",
@@ -2199,6 +2455,38 @@
       "region:us"
     ],
     "content": "Pipeline: text-generation. Library: Model Optimizer. Tags: Model Optimizer, safetensors, qwen3, nvidia, ModelOpt, Nemotron-3.5-Bolt, latent-moe, LiLiCorr, text-generation, arxiv:2608.20530, base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB, base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB, license:other, 8-bit, modelopt_fp4, region:us"
+  },
+  {
+    "id": "MahmoodLab/CONCH-Z",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/MahmoodLab/CONCH-Z",
+    "author": "MahmoodLab",
+    "created_at": "2026-10-12",
+    "pipeline_tag": "zero-shot-image-classification",
+    "library_name": "transformers",
+    "downloads": 58,
+    "likes": 9,
+    "tags": [
+      "transformers",
+      "safetensors",
+      "conch_z",
+      "feature-extraction",
+      "histology",
+      "pathology",
+      "vision-language",
+      "zero-shot",
+      "pytorch",
+      "vit",
+      "zero-shot-image-classification",
+      "custom_code",
+      "en",
+      "arxiv:2610.17233",
+      "base_model:MahmoodLab/conchv1_5",
+      "base_model:finetune:MahmoodLab/conchv1_5",
+      "license:cc-by-nc-nd-4.0",
+      "region:us"
+    ],
+    "content": "Pipeline: zero-shot-image-classification. Library: transformers. Tags: transformers, safetensors, conch_z, feature-extraction, histology, pathology, vision-language, zero-shot, pytorch, vit, zero-shot-image-classification, custom_code, en, arxiv:2610.17233, base_model:MahmoodLab/conchv1_5, base_model:finetune:MahmoodLab/conchv1_5, license:cc-by-nc-nd-4.0, region:us"
   },
   {
     "id": "bartowski/AesCode-8B-GGUF",
@@ -2289,7 +2577,7 @@
     "pipeline_tag": "text-classification",
     "library_name": "transformers",
     "downloads": 88859,
-    "likes": 1123,
+    "likes": 1352,
     "tags": [
       "transformers",
       "safetensors",
@@ -2312,10 +2600,11 @@
       "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
       "license:apache-2.0",
       "model-index",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: text-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5_moe, image-text-to-text, system-one, typed-decisions, decision-model, calibrated-probabilities, jev, noul, choice, score, mixture-of-experts, vllm, text-classification, en, arxiv:2609.14973, base_model:Qwen/Qwen3.5-35B-A3B, base_model:finetune:Qwen/Qwen3.5-35B-A3B, license:apache-2.0, model-index, endpoints_compatible, region:us"
+    "content": "Pipeline: text-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5_moe, image-text-to-text, system-one, typed-decisions, decision-model, calibrated-probabilities, jev, noul, choice, score, mixture-of-experts, vllm, text-classification, en, arxiv:2609.14973, base_model:Qwen/Qwen3.5-35B-A3B, base_model:finetune:Qwen/Qwen3.5-35B-A3B, license:apache-2.0, model-index, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "autotrust/JEV-35B-NVFP4",
@@ -2386,9 +2675,10 @@
       "base_model:google/embeddinggemma-2",
       "base_model:finetune:google/embeddinggemma-2",
       "license:apache-2.0",
+      "eval-results",
       "region:us"
     ],
-    "content": "Pipeline: text-classification. Library: transformers. Tags: transformers, safetensors, gemma_decision, feature-extraction, typed-decisions, structured-decisions, calibration, embeddinggemma, custom_code, decision-model, text-classification, en, multilingual, dataset:LocalLLaMA/typed-decisions, base_model:google/embeddinggemma-2, base_model:finetune:google/embeddinggemma-2, license:apache-2.0, region:us"
+    "content": "Pipeline: text-classification. Library: transformers. Tags: transformers, safetensors, gemma_decision, feature-extraction, typed-decisions, structured-decisions, calibration, embeddinggemma, custom_code, decision-model, text-classification, en, multilingual, dataset:LocalLLaMA/typed-decisions, base_model:google/embeddinggemma-2, base_model:finetune:google/embeddinggemma-2, license:apache-2.0, eval-results, region:us"
   },
   {
     "id": "AuroraAI-Research/AuroraIMG-6M",
@@ -2508,7 +2798,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 41328,
-    "likes": 54,
+    "likes": 59,
     "tags": [
       "transformers",
       "gguf",
@@ -2547,7 +2837,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 4841,
-    "likes": 9,
+    "likes": 10,
     "tags": [
       "gguf",
       "code-generation",
@@ -2672,18 +2962,20 @@
       "region-control",
       "3d-pose",
       "pose-conditioning",
+      "outline-conditioning",
       "instance-segmentation",
       "safetensors",
       "image-to-image",
       "en",
       "dataset:toyxyz/booruregion_10k",
       "dataset:toyxyz/booru3dpose_10k",
+      "dataset:toyxyz/boorupose_outline_10k",
       "base_model:circlestone-labs/Anima",
       "base_model:adapter:circlestone-labs/Anima",
       "license:other",
       "region:us"
     ],
-    "content": "Pipeline: image-to-image. Tags: anima, controlnet, lllite, comfyui, region-control, 3d-pose, pose-conditioning, instance-segmentation, safetensors, image-to-image, en, dataset:toyxyz/booruregion_10k, dataset:toyxyz/booru3dpose_10k, base_model:circlestone-labs/Anima, base_model:adapter:circlestone-labs/Anima, license:other, region:us"
+    "content": "Pipeline: image-to-image. Tags: anima, controlnet, lllite, comfyui, region-control, 3d-pose, pose-conditioning, outline-conditioning, instance-segmentation, safetensors, image-to-image, en, dataset:toyxyz/booruregion_10k, dataset:toyxyz/booru3dpose_10k, dataset:toyxyz/boorupose_outline_10k, base_model:circlestone-labs/Anima, base_model:adapter:circlestone-labs/Anima, license:other, region:us"
   },
   {
     "id": "Nimruz/Mizan-v3-3B",
@@ -2757,7 +3049,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 73,
-    "likes": 44,
+    "likes": 105,
     "tags": [
       "diffusers",
       "safetensors",
@@ -2780,7 +3072,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 54,
-    "likes": 42,
+    "likes": 109,
     "tags": [
       "diffusers",
       "safetensors",
@@ -2805,7 +3097,7 @@
     "pipeline_tag": "audio-to-audio",
     "library_name": "",
     "downloads": 200,
-    "likes": 14,
+    "likes": 15,
     "tags": [
       "onnx",
       "safetensors",
@@ -2852,7 +3144,7 @@
     "pipeline_tag": "reinforcement-learning",
     "library_name": "numpy",
     "downloads": 0,
-    "likes": 14,
+    "likes": 15,
     "tags": [
       "numpy",
       "connect-ai-lab",
@@ -2882,7 +3174,7 @@
     "pipeline_tag": "zero-shot-classification",
     "library_name": "transformers",
     "downloads": 3565,
-    "likes": 212,
+    "likes": 218,
     "tags": [
       "transformers",
       "safetensors",
@@ -2899,10 +3191,11 @@
       "base_model:Qwen/Qwen3.8-27B",
       "base_model:finetune:Qwen/Qwen3.8-27B",
       "license:apache-2.0",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.8-27B, base_model:finetune:Qwen/Qwen3.8-27B, license:apache-2.0, endpoints_compatible, region:us"
+    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.8-27B, base_model:finetune:Qwen/Qwen3.8-27B, license:apache-2.0, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "unsloth/Qwen-Image-2.1-Turbo-GGUF",
@@ -2940,7 +3233,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 104303,
-    "likes": 20,
+    "likes": 21,
     "tags": [
       "diffusers",
       "safetensors",
@@ -2971,7 +3264,7 @@
     "pipeline_tag": "zero-shot-classification",
     "library_name": "transformers",
     "downloads": 3361,
-    "likes": 67,
+    "likes": 68,
     "tags": [
       "transformers",
       "safetensors",
@@ -2988,10 +3281,11 @@
       "base_model:Qwen/Qwen3.5-9B",
       "base_model:finetune:Qwen/Qwen3.5-9B",
       "license:apache-2.0",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.5-9B, base_model:finetune:Qwen/Qwen3.5-9B, license:apache-2.0, endpoints_compatible, region:us"
+    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.5-9B, base_model:finetune:Qwen/Qwen3.5-9B, license:apache-2.0, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "vllm-sr/d3-edge",
@@ -3019,10 +3313,11 @@
       "base_model:Qwen/Qwen3.5-0.8B",
       "base_model:finetune:Qwen/Qwen3.5-0.8B",
       "license:apache-2.0",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.5-0.8B, base_model:finetune:Qwen/Qwen3.5-0.8B, license:apache-2.0, endpoints_compatible, region:us"
+    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.5-0.8B, base_model:finetune:Qwen/Qwen3.5-0.8B, license:apache-2.0, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "FluidInference/clef-text-0.6b-coreml",
@@ -3080,10 +3375,11 @@
       "base_model:Qwen/Qwen3.5-4B",
       "base_model:finetune:Qwen/Qwen3.5-4B",
       "license:apache-2.0",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.5-4B, base_model:finetune:Qwen/Qwen3.5-4B, license:apache-2.0, endpoints_compatible, region:us"
+    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.5-4B, base_model:finetune:Qwen/Qwen3.5-4B, license:apache-2.0, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "vllm-sr/d3-nano",
@@ -3094,7 +3390,7 @@
     "pipeline_tag": "zero-shot-classification",
     "library_name": "transformers",
     "downloads": 2436,
-    "likes": 32,
+    "likes": 33,
     "tags": [
       "transformers",
       "safetensors",
@@ -3111,10 +3407,11 @@
       "base_model:Qwen/Qwen3.5-2B",
       "base_model:finetune:Qwen/Qwen3.5-2B",
       "license:apache-2.0",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.5-2B, base_model:finetune:Qwen/Qwen3.5-2B, license:apache-2.0, endpoints_compatible, region:us"
+    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.5-2B, base_model:finetune:Qwen/Qwen3.5-2B, license:apache-2.0, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "vllm-sr/d3-lite",
@@ -3142,10 +3439,11 @@
       "base_model:Qwen/Qwen3.5-0.8B",
       "base_model:finetune:Qwen/Qwen3.5-0.8B",
       "license:apache-2.0",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.5-0.8B, base_model:finetune:Qwen/Qwen3.5-0.8B, license:apache-2.0, endpoints_compatible, region:us"
+    "content": "Pipeline: zero-shot-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5, feature-extraction, zero-shot-classification, decision-model, classification, system-one, multimodal, vision, video, custom_code, base_model:Qwen/Qwen3.5-0.8B, base_model:finetune:Qwen/Qwen3.5-0.8B, license:apache-2.0, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "lightx2v/LightVAE",
@@ -3156,7 +3454,7 @@
     "pipeline_tag": "other",
     "library_name": "wan2.2",
     "downloads": 819,
-    "likes": 31,
+    "likes": 33,
     "tags": [
       "wan2.2",
       "video-vae",
@@ -3183,7 +3481,7 @@
     "pipeline_tag": "",
     "library_name": "llama-cpp",
     "downloads": 2787,
-    "likes": 13,
+    "likes": 14,
     "tags": [
       "llama-cpp",
       "gguf",
@@ -3238,7 +3536,7 @@
     "pipeline_tag": "image-to-text",
     "library_name": "onnx",
     "downloads": 442,
-    "likes": 108,
+    "likes": 125,
     "tags": [
       "onnx",
       "safetensors",
@@ -3315,7 +3613,7 @@
     "pipeline_tag": "fill-mask",
     "library_name": "transformers",
     "downloads": 2108,
-    "likes": 46,
+    "likes": 47,
     "tags": [
       "transformers",
       "safetensors",
@@ -3392,7 +3690,7 @@
     "pipeline_tag": "feature-extraction",
     "library_name": "transformers",
     "downloads": 840,
-    "likes": 18,
+    "likes": 19,
     "tags": [
       "transformers",
       "safetensors",
@@ -3446,7 +3744,7 @@
     "pipeline_tag": "image-to-3d",
     "library_name": "uniforge3d",
     "downloads": 0,
-    "likes": 13,
+    "likes": 14,
     "tags": [
       "uniforge3d",
       "pytorch",
@@ -3467,7 +3765,7 @@
     "pipeline_tag": "text-classification",
     "library_name": "transformers",
     "downloads": 162,
-    "likes": 10,
+    "likes": 11,
     "tags": [
       "transformers",
       "safetensors",
@@ -3507,6 +3805,63 @@
     "content": "Pipeline: text-classification. Library: transformers. Tags: transformers, safetensors, modernbert, feature-extraction, decision-model, jev-style, typed-decisions, system-one, decision-index, calibration, ettin, cross-encoder, zero-shot-classification, classification, calibrated-probabilities, routing, multiple-choice, jev, text-classification, en, dataset:hotchpotch/bekko-system-one-dataset-v0, dataset:tasksource/procedural-typed-decisions, dataset:Team-ACE/ToolACE, dataset:glaiveai/glaive-function-calling-v2, dataset:causalNLP/cladder, dataset:facebook/anli, dataset:nvidia/When2Call, base_model:cross-encoder/ettin-reranker-150m-v1, base_model:finetune:cross-encoder/ettin-reranker-150m-v1, license:cc-by-nc-4.0, model-index, text-embeddings-inference, endpoints_compatible, region:us"
   },
   {
+    "id": "reflection/Beam-1.0-501B-A23B-NVFP4",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4",
+    "author": "reflection",
+    "created_at": "2026-10-10",
+    "pipeline_tag": "text-generation",
+    "library_name": "",
+    "downloads": 864,
+    "likes": 24,
+    "tags": [
+      "safetensors",
+      "beam",
+      "mixture-of-experts",
+      "reasoning",
+      "code",
+      "tool-use",
+      "nvfp4",
+      "text-generation",
+      "conversational",
+      "en",
+      "license:apache-2.0",
+      "8-bit",
+      "modelopt",
+      "region:us",
+      "deploy:sagemaker"
+    ],
+    "content": "Pipeline: text-generation. Tags: safetensors, beam, mixture-of-experts, reasoning, code, tool-use, nvfp4, text-generation, conversational, en, license:apache-2.0, 8-bit, modelopt, region:us, deploy:sagemaker"
+  },
+  {
+    "id": "reflection/Beam-1.0-501B-A23B-FP8",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8",
+    "author": "reflection",
+    "created_at": "2026-10-10",
+    "pipeline_tag": "text-generation",
+    "library_name": "",
+    "downloads": 603,
+    "likes": 19,
+    "tags": [
+      "safetensors",
+      "beam",
+      "mixture-of-experts",
+      "reasoning",
+      "code",
+      "tool-use",
+      "fp8",
+      "text-generation",
+      "conversational",
+      "en",
+      "license:apache-2.0",
+      "compressed-tensors",
+      "region:us",
+      "deploy:sagemaker"
+    ],
+    "content": "Pipeline: text-generation. Tags: safetensors, beam, mixture-of-experts, reasoning, code, tool-use, fp8, text-generation, conversational, en, license:apache-2.0, compressed-tensors, region:us, deploy:sagemaker"
+  },
+  {
     "id": "Qwen/Qwen-Image-2.1-Turbo",
     "source": "Hugging Face",
     "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
@@ -3515,7 +3870,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 17421,
-    "likes": 914,
+    "likes": 936,
     "tags": [
       "diffusers",
       "safetensors",
@@ -3540,7 +3895,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "gguf",
     "downloads": 327786,
-    "likes": 506,
+    "likes": 511,
     "tags": [
       "gguf",
       "atomic-chat",
@@ -3571,7 +3926,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 3650,
-    "likes": 123,
+    "likes": 125,
     "tags": [
       "transformers",
       "safetensors",
@@ -3595,10 +3950,11 @@
       "base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct",
       "base_model:finetune:Qwen/Qwen3-Omni-30B-A3B-Instruct",
       "license:apache-2.0",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, qwen3_omni_moe, text-to-audio, clef, cloudflare, systemone, decision-model, qwen3-omni, post-train, image-text-to-typed-output, multimodal, audio, video, structured-output, classification, custom-code, image-text-to-text, conversational, base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct, base_model:finetune:Qwen/Qwen3-Omni-30B-A3B-Instruct, license:apache-2.0, endpoints_compatible, region:us"
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, qwen3_omni_moe, text-to-audio, clef, cloudflare, systemone, decision-model, qwen3-omni, post-train, image-text-to-typed-output, multimodal, audio, video, structured-output, classification, custom-code, image-text-to-text, conversational, base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct, base_model:finetune:Qwen/Qwen3-Omni-30B-A3B-Instruct, license:apache-2.0, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "tencent/Youtu-Parsing-Omni",
@@ -3609,7 +3965,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 1552,
-    "likes": 103,
+    "likes": 104,
     "tags": [
       "transformers",
       "safetensors",
@@ -3655,9 +4011,10 @@
       "base_model:Qwen/Qwen3.5-0.8B",
       "base_model:finetune:Qwen/Qwen3.5-0.8B",
       "license:apache-2.0",
+      "eval-results",
       "region:us"
     ],
-    "content": "Pipeline: text-classification. Library: vega. Tags: vega, typed-decisions, decision-model, system-one, calibration, conformal-prediction, multimodal, text-classification, arxiv:2507.19855, base_model:Qwen/Qwen3.5-0.8B, base_model:finetune:Qwen/Qwen3.5-0.8B, license:apache-2.0, region:us"
+    "content": "Pipeline: text-classification. Library: vega. Tags: vega, typed-decisions, decision-model, system-one, calibration, conformal-prediction, multimodal, text-classification, arxiv:2507.19855, base_model:Qwen/Qwen3.5-0.8B, base_model:finetune:Qwen/Qwen3.5-0.8B, license:apache-2.0, eval-results, region:us"
   },
   {
     "id": "Abiray/Qwen-Image-2.1-Turbo-GGUF",
@@ -3954,7 +4311,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 10508,
-    "likes": 22,
+    "likes": 23,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -4071,7 +4428,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 60927,
-    "likes": 178,
+    "likes": 181,
     "tags": [
       "gguf",
       "liquid",
@@ -4215,7 +4572,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 16438,
-    "likes": 48,
+    "likes": 50,
     "tags": [
       "gguf",
       "atomic-chat",
@@ -4257,7 +4614,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "strata",
     "downloads": 61496,
-    "likes": 15,
+    "likes": 16,
     "tags": [
       "strata",
       "gguf",
@@ -4323,7 +4680,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 79,
-    "likes": 27,
+    "likes": 28,
     "tags": [
       "safetensors",
       "jeva",
@@ -4331,11 +4688,12 @@
       "decision-making",
       "candidate-selection",
       "scoring",
+      "decision-model",
       "en",
       "arxiv:2610.18773",
       "region:us"
     ],
-    "content": "Tags: safetensors, jeva, system-one, decision-making, candidate-selection, scoring, en, arxiv:2610.18773, region:us"
+    "content": "Tags: safetensors, jeva, system-one, decision-making, candidate-selection, scoring, decision-model, en, arxiv:2610.18773, region:us"
   },
   {
     "id": "lightonai/colgrep-agent-2B-GGUF",
@@ -4376,7 +4734,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 370955,
-    "likes": 505,
+    "likes": 510,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -4406,7 +4764,7 @@
     "pipeline_tag": "video-to-video",
     "library_name": "diffusion-single-file",
     "downloads": 1554,
-    "likes": 72,
+    "likes": 74,
     "tags": [
       "diffusion-single-file",
       "minimax-h3",
@@ -4435,7 +4793,7 @@
     "pipeline_tag": "text-classification",
     "library_name": "",
     "downloads": 584,
-    "likes": 235,
+    "likes": 236,
     "tags": [
       "safetensors",
       "modernbert",
@@ -4498,7 +4856,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 21625,
-    "likes": 30,
+    "likes": 31,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -5086,7 +5444,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "Model Optimizer",
     "downloads": 771,
-    "likes": 110,
+    "likes": 138,
     "tags": [
       "Model Optimizer",
       "safetensors",
@@ -5117,7 +5475,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 82652,
-    "likes": 113,
+    "likes": 116,
     "tags": [
       "gguf",
       "mellum",
@@ -5178,7 +5536,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 3098,
-    "likes": 59,
+    "likes": 60,
     "tags": [
       "diffusers",
       "qwen-image-2.1",
@@ -5251,7 +5609,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 166084,
-    "likes": 52,
+    "likes": 55,
     "tags": [
       "gguf",
       "imatrix",
@@ -5278,7 +5636,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 10217,
-    "likes": 29,
+    "likes": 30,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -5340,7 +5698,7 @@
     "pipeline_tag": "text-to-video",
     "library_name": "minimax-h3",
     "downloads": 8794,
-    "likes": 34,
+    "likes": 35,
     "tags": [
       "minimax-h3",
       "veda_tile_score_predictor",
@@ -5775,7 +6133,7 @@
     "pipeline_tag": "any-to-any",
     "library_name": "transformers",
     "downloads": 0,
-    "likes": 16,
+    "likes": 18,
     "tags": [
       "transformers",
       "sponsor",
@@ -5822,7 +6180,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 17553,
-    "likes": 813,
+    "likes": 842,
     "tags": [
       "transformers",
       "safetensors",
@@ -5849,7 +6207,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 867,
-    "likes": 21,
+    "likes": 22,
     "tags": [
       "safetensors",
       "edgerock",
@@ -5877,7 +6235,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 1137,
-    "likes": 94,
+    "likes": 105,
     "tags": [
       "transformers",
       "safetensors",
@@ -5919,7 +6277,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 26796,
-    "likes": 74,
+    "likes": 80,
     "tags": [
       "transformers",
       "gguf",
@@ -5957,7 +6315,7 @@
     "pipeline_tag": "visual-document-retrieval",
     "library_name": "sentence-transformers",
     "downloads": 779,
-    "likes": 11,
+    "likes": 14,
     "tags": [
       "sentence-transformers",
       "safetensors",
@@ -6014,6 +6372,33 @@
     "content": "Pipeline: visual-document-retrieval. Library: sentence-transformers. Tags: sentence-transformers, safetensors, mistral3, feature-extraction, multimodal-embedding, image-embeddings, text-embeddings, retrieval, rag, semantic-search, transformers, vllm, visual-document-retrieval, multilingual, en, ar, as, bn, bg, zh, da, nl, fi, fr, de, hi, id, it, ja, ko, ms, mr, ne, no, fa, pt, ro, ru, es, sw, sv, ta, te, th, uk, ur, vi, base_model:mistralai/Ministral-3-3B-Instruct-2512-BF16, base_model:finetune:mistralai/Ministral-3-3B-Instruct-2512-BF16, license:other, region:us"
   },
   {
+    "id": "reflection/Beam-1.0-501B-A23B",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+    "author": "reflection",
+    "created_at": "2026-10-07",
+    "pipeline_tag": "text-generation",
+    "library_name": "",
+    "downloads": 440,
+    "likes": 93,
+    "tags": [
+      "safetensors",
+      "beam",
+      "mixture-of-experts",
+      "reasoning",
+      "code",
+      "tool-use",
+      "text-generation",
+      "conversational",
+      "en",
+      "license:apache-2.0",
+      "eval-results",
+      "region:us",
+      "deploy:sagemaker"
+    ],
+    "content": "Pipeline: text-generation. Tags: safetensors, beam, mixture-of-experts, reasoning, code, tool-use, text-generation, conversational, en, license:apache-2.0, eval-results, region:us, deploy:sagemaker"
+  },
+  {
     "id": "unsloth/embeddinggemma-2-GGUF",
     "source": "Hugging Face",
     "url": "https://huggingface.co/unsloth/embeddinggemma-2-GGUF",
@@ -6022,7 +6407,7 @@
     "pipeline_tag": "feature-extraction",
     "library_name": "",
     "downloads": 100611,
-    "likes": 317,
+    "likes": 319,
     "tags": [
       "gguf",
       "embedding",
@@ -6055,7 +6440,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 9692,
-    "likes": 95,
+    "likes": 96,
     "tags": [
       "transformers",
       "safetensors",
@@ -6086,7 +6471,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 2020,
-    "likes": 87,
+    "likes": 90,
     "tags": [
       "diffusers",
       "qwen-image-2.1",
@@ -6344,7 +6729,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 15381,
-    "likes": 38,
+    "likes": 39,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -6741,7 +7126,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 8822,
-    "likes": 365,
+    "likes": 369,
     "tags": [
       "transformers",
       "safetensors",
@@ -6767,7 +7152,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 125004,
-    "likes": 143,
+    "likes": 147,
     "tags": [
       "transformers",
       "gguf",
@@ -6794,7 +7179,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 33260,
-    "likes": 74,
+    "likes": 78,
     "tags": [
       "transformers",
       "gguf",
@@ -6854,7 +7239,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 139,
-    "likes": 9,
+    "likes": 11,
     "tags": [
       "safetensors",
       "llama",
@@ -6879,7 +7264,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 4901,
-    "likes": 118,
+    "likes": 122,
     "tags": [
       "safetensors",
       "glm5_next",
@@ -27477,7 +27862,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 17820,
-    "likes": 428,
+    "likes": 434,
     "tags": [
       "transformers",
       "safetensors",
@@ -27514,10 +27899,11 @@
       "base_model:LiquidAI/LFM2.5-VL-3B",
       "base_model:finetune:LiquidAI/LFM2.5-VL-3B",
       "license:other",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, lfm2_vl, image-text-to-text, liquid, lfm2.5, edge, decision, classification, calibration, system-one, multimodal, decision-model, conversational, custom_code, ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi, arxiv:2511.23404, base_model:LiquidAI/LFM2.5-VL-3B, base_model:finetune:LiquidAI/LFM2.5-VL-3B, license:other, endpoints_compatible, region:us"
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, lfm2_vl, image-text-to-text, liquid, lfm2.5, edge, decision, classification, calibration, system-one, multimodal, decision-model, conversational, custom_code, ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi, arxiv:2511.23404, base_model:LiquidAI/LFM2.5-VL-3B, base_model:finetune:LiquidAI/LFM2.5-VL-3B, license:other, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "speridlabs/iris-3b",
@@ -27528,7 +27914,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "pytorch",
     "downloads": 1320,
-    "likes": 293,
+    "likes": 298,
     "tags": [
       "pytorch",
       "safetensors",
@@ -27557,7 +27943,7 @@
     "pipeline_tag": "text-classification",
     "library_name": "pytorch",
     "downloads": 3819,
-    "likes": 151,
+    "likes": 153,
     "tags": [
       "pytorch",
       "safetensors",
@@ -27571,9 +27957,10 @@
       "base_model:Qwen/Qwen3.8-27B",
       "base_model:finetune:Qwen/Qwen3.8-27B",
       "license:apache-2.0",
+      "eval-results",
       "region:us"
     ],
-    "content": "Pipeline: text-classification. Library: pytorch. Tags: pytorch, safetensors, qwen3_5, classification, multimodal, custom-code, decider, decision-model, text-classification, base_model:Qwen/Qwen3.8-27B, base_model:finetune:Qwen/Qwen3.8-27B, license:apache-2.0, region:us"
+    "content": "Pipeline: text-classification. Library: pytorch. Tags: pytorch, safetensors, qwen3_5, classification, multimodal, custom-code, decider, decision-model, text-classification, base_model:Qwen/Qwen3.8-27B, base_model:finetune:Qwen/Qwen3.8-27B, license:apache-2.0, eval-results, region:us"
   },
   {
     "id": "LiquidAI/d1-omni-600M",
@@ -27584,7 +27971,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 13400,
-    "likes": 131,
+    "likes": 132,
     "tags": [
       "transformers",
       "safetensors",
@@ -28005,7 +28392,7 @@
     "pipeline_tag": "feature-extraction",
     "library_name": "transformers",
     "downloads": 174,
-    "likes": 29,
+    "likes": 30,
     "tags": [
       "transformers",
       "safetensors",
@@ -28034,7 +28421,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 1642,
-    "likes": 11,
+    "likes": 13,
     "tags": [
       "transformers",
       "safetensors",
@@ -28066,7 +28453,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "",
     "downloads": 0,
-    "likes": 127,
+    "likes": 128,
     "tags": [
       "lora",
       "image-editing",
@@ -28094,7 +28481,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 144586,
-    "likes": 144,
+    "likes": 145,
     "tags": [
       "gguf",
       "gsq",
@@ -28276,7 +28663,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 182130,
-    "likes": 381,
+    "likes": 389,
     "tags": [
       "safetensors",
       "gguf",
@@ -28531,7 +28918,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 143268,
-    "likes": 77,
+    "likes": 78,
     "tags": [
       "gguf",
       "llama-cpp",
@@ -29249,7 +29636,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 368,
-    "likes": 32,
+    "likes": 33,
     "tags": [
       "transformers",
       "safetensors",
@@ -29281,7 +29668,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "vllm",
     "downloads": 17864,
-    "likes": 940,
+    "likes": 944,
     "tags": [
       "vllm",
       "safetensors",
@@ -29339,10 +29726,11 @@
       "base_model:adapter:google/gemma-4-26B-A4B-it",
       "license:apache-2.0",
       "model-index",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: text-classification. Library: transformers. Tags: transformers, safetensors, gemma4, image-text-to-text, system-one, system-two, adaptive-thinking, typed-decisions, decision-model, calibrated-probabilities, jev, noul, choice, score, lora, mixture-of-experts, multimodal, vllm, text-classification, en, arxiv:2609.14973, base_model:google/gemma-4-26B-A4B-it, base_model:adapter:google/gemma-4-26B-A4B-it, license:apache-2.0, model-index, endpoints_compatible, region:us"
+    "content": "Pipeline: text-classification. Library: transformers. Tags: transformers, safetensors, gemma4, image-text-to-text, system-one, system-two, adaptive-thinking, typed-decisions, decision-model, calibrated-probabilities, jev, noul, choice, score, lora, mixture-of-experts, multimodal, vllm, text-classification, en, arxiv:2609.14973, base_model:google/gemma-4-26B-A4B-it, base_model:adapter:google/gemma-4-26B-A4B-it, license:apache-2.0, model-index, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
@@ -29353,7 +29741,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 1532981,
-    "likes": 280,
+    "likes": 284,
     "tags": [
       "gguf",
       "llama-cpp",
@@ -29394,7 +29782,7 @@
     "pipeline_tag": "text-to-video",
     "library_name": "minimax-h3",
     "downloads": 54309,
-    "likes": 113,
+    "likes": 115,
     "tags": [
       "minimax-h3",
       "diffusers",
@@ -30035,7 +30423,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 3597,
-    "likes": 78,
+    "likes": 80,
     "tags": [
       "transformers",
       "safetensors",
@@ -30136,7 +30524,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 1193,
-    "likes": 52,
+    "likes": 54,
     "tags": [
       "safetensors",
       "qwen3",
@@ -30616,13 +31004,14 @@
       "classification",
       "calibration",
       "vision",
+      "decision-model",
       "en",
       "base_model:google/siglip2-base-patch16-224",
       "base_model:finetune:google/siglip2-base-patch16-224",
       "license:apache-2.0",
       "region:us"
     ],
-    "content": "Tags: system-one, decisions, classification, calibration, vision, en, base_model:google/siglip2-base-patch16-224, base_model:finetune:google/siglip2-base-patch16-224, license:apache-2.0, region:us"
+    "content": "Tags: system-one, decisions, classification, calibration, vision, decision-model, en, base_model:google/siglip2-base-patch16-224, base_model:finetune:google/siglip2-base-patch16-224, license:apache-2.0, region:us"
   },
   {
     "id": "Jackrong/Qwopus3-5-9B-Coder-Flash-GGUF",
@@ -30674,7 +31063,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "peft",
     "downloads": 1,
-    "likes": 12,
+    "likes": 13,
     "tags": [
       "peft",
       "safetensors",
@@ -30725,7 +31114,7 @@
     "pipeline_tag": "text-classification",
     "library_name": "pytorch",
     "downloads": 2931,
-    "likes": 123,
+    "likes": 125,
     "tags": [
       "pytorch",
       "safetensors",
@@ -31387,7 +31776,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "",
     "downloads": 6158,
-    "likes": 514,
+    "likes": 550,
     "tags": [
       "safetensors",
       "fish_omni",
@@ -31554,7 +31943,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "mlx",
     "downloads": 558,
-    "likes": 9,
+    "likes": 13,
     "tags": [
       "mlx",
       "safetensors",
@@ -31585,7 +31974,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 20160,
-    "likes": 2186,
+    "likes": 2190,
     "tags": [
       "transformers",
       "safetensors",
@@ -31606,10 +31995,11 @@
       "base_model:Qwen/Qwen3.8-27B",
       "base_model:finetune:Qwen/Qwen3.8-27B",
       "license:apache-2.0",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, qwen3_5, image-text-to-text, clef, cloudflare, systemone, decision-model, qwen3.8, post-train, image-text-to-typed-output, multimodal, structured-output, classification, custom-code, conversational, base_model:Qwen/Qwen3.8-27B, base_model:finetune:Qwen/Qwen3.8-27B, license:apache-2.0, endpoints_compatible, region:us"
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, qwen3_5, image-text-to-text, clef, cloudflare, systemone, decision-model, qwen3.8, post-train, image-text-to-typed-output, multimodal, structured-output, classification, custom-code, conversational, base_model:Qwen/Qwen3.8-27B, base_model:finetune:Qwen/Qwen3.8-27B, license:apache-2.0, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "Cloudflare/clef-flash",
@@ -31620,7 +32010,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 31598,
-    "likes": 831,
+    "likes": 832,
     "tags": [
       "transformers",
       "safetensors",
@@ -31641,10 +32031,11 @@
       "base_model:Qwen/Qwen3.5-9B",
       "base_model:finetune:Qwen/Qwen3.5-9B",
       "license:apache-2.0",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, qwen3_5, image-text-to-text, clef, cloudflare, systemone, decision-model, qwen3.5, post-train, image-text-to-typed-output, multimodal, structured-output, classification, custom-code, conversational, base_model:Qwen/Qwen3.5-9B, base_model:finetune:Qwen/Qwen3.5-9B, license:apache-2.0, endpoints_compatible, region:us"
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, qwen3_5, image-text-to-text, clef, cloudflare, systemone, decision-model, qwen3.5, post-train, image-text-to-typed-output, multimodal, structured-output, classification, custom-code, conversational, base_model:Qwen/Qwen3.5-9B, base_model:finetune:Qwen/Qwen3.5-9B, license:apache-2.0, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "autotrust/JEV-27B-VL",
@@ -31655,7 +32046,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 1645809,
-    "likes": 5717,
+    "likes": 5812,
     "tags": [
       "transformers",
       "safetensors",
@@ -31682,10 +32073,11 @@
       "base_model:Qwen/Qwen3.8-27B",
       "base_model:adapter:Qwen/Qwen3.8-27B",
       "license:apache-2.0",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, qwen3_5, image-text-to-text, jev, system-one, system-two, typed-decisions, decision-model, calibrated-probabilities, multimodal, vision, zero-shot, decision-index, recommendation, lora, vllm, conversational, en, dataset:SargeDev/jev-distill-corpus-v3, arxiv:2609.14973, arxiv:2512.16899, base_model:Qwen/Qwen3.8-27B, base_model:adapter:Qwen/Qwen3.8-27B, license:apache-2.0, endpoints_compatible, region:us"
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, qwen3_5, image-text-to-text, jev, system-one, system-two, typed-decisions, decision-model, calibrated-probabilities, multimodal, vision, zero-shot, decision-index, recommendation, lora, vllm, conversational, en, dataset:SargeDev/jev-distill-corpus-v3, arxiv:2609.14973, arxiv:2512.16899, base_model:Qwen/Qwen3.8-27B, base_model:adapter:Qwen/Qwen3.8-27B, license:apache-2.0, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "Cactus-Compute/whistle",
@@ -31696,7 +32088,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "cactus-needle",
     "downloads": 40130,
-    "likes": 424,
+    "likes": 425,
     "tags": [
       "cactus-needle",
       "whistle",
@@ -32105,7 +32497,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 74803,
-    "likes": 47,
+    "likes": 53,
     "tags": [
       "gguf",
       "qwen3.8-flash-next",
@@ -32165,7 +32557,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "",
     "downloads": 28013,
-    "likes": 97,
+    "likes": 98,
     "tags": [
       "safetensors",
       "gguf",
@@ -32724,7 +33116,7 @@
     "pipeline_tag": "zero-shot-classification",
     "library_name": "transformers",
     "downloads": 2934,
-    "likes": 75,
+    "likes": 76,
     "tags": [
       "transformers",
       "safetensors",
@@ -33763,7 +34155,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 587,
-    "likes": 64,
+    "likes": 65,
     "tags": [
       "transformers",
       "safetensors",
@@ -33794,7 +34186,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 113007,
-    "likes": 145,
+    "likes": 147,
     "tags": [
       "gguf",
       "27 reasoning modes",
@@ -34074,7 +34466,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "mlx",
     "downloads": 10091,
-    "likes": 326,
+    "likes": 331,
     "tags": [
       "mlx",
       "parakeet_tdt_five_value",
@@ -34104,7 +34496,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "",
     "downloads": 0,
-    "likes": 163,
+    "likes": 164,
     "tags": [
       "LoRA",
       "lora",
@@ -34150,7 +34542,7 @@
     "pipeline_tag": "video-to-video",
     "library_name": "ltx",
     "downloads": 11151,
-    "likes": 184,
+    "likes": 186,
     "tags": [
       "ltx",
       "alpha-matte",
@@ -34254,7 +34646,7 @@
     "pipeline_tag": "translation",
     "library_name": "",
     "downloads": 1740,
-    "likes": 60,
+    "likes": 61,
     "tags": [
       "safetensors",
       "qwen3_5",
@@ -34389,7 +34781,7 @@
     "pipeline_tag": "image-to-video",
     "library_name": "minimax-h3",
     "downloads": 3956,
-    "likes": 46,
+    "likes": 47,
     "tags": [
       "minimax-h3",
       "lora",
@@ -34505,7 +34897,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusion-single-file",
     "downloads": 230993,
-    "likes": 554,
+    "likes": 556,
     "tags": [
       "diffusion-single-file",
       "text-to-image",
@@ -35252,7 +35644,7 @@
     "pipeline_tag": "image-text-to-video",
     "library_name": "minimax-h3",
     "downloads": 19494,
-    "likes": 478,
+    "likes": 482,
     "tags": [
       "minimax-h3",
       "lora",
@@ -35435,7 +35827,7 @@
     "pipeline_tag": "video-to-video",
     "library_name": "ltx",
     "downloads": 16123,
-    "likes": 64,
+    "likes": 65,
     "tags": [
       "ltx",
       "ic-lora",
@@ -35999,7 +36391,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 217,
-    "likes": 10,
+    "likes": 11,
     "tags": [
       "transformers",
       "safetensors",
@@ -36032,7 +36424,7 @@
     "pipeline_tag": "video-to-video",
     "library_name": "",
     "downloads": 110,
-    "likes": 12,
+    "likes": 13,
     "tags": [
       "video-super-resolution",
       "video-restoration",
@@ -36057,7 +36449,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 10389,
-    "likes": 19,
+    "likes": 20,
     "tags": [
       "gguf",
       "qwen3_5",
@@ -36117,7 +36509,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 819254,
-    "likes": 413,
+    "likes": 415,
     "tags": [
       "gguf",
       "gsq",
@@ -36151,7 +36543,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 34522,
-    "likes": 257,
+    "likes": 258,
     "tags": [
       "transformers",
       "gguf",
@@ -36182,7 +36574,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "",
     "downloads": 0,
-    "likes": 66,
+    "likes": 72,
     "tags": [
       "lora",
       "outpainting",
@@ -36543,7 +36935,7 @@
     "pipeline_tag": "video-to-video",
     "library_name": "diffusion-single-file",
     "downloads": 62628,
-    "likes": 487,
+    "likes": 496,
     "tags": [
       "diffusion-single-file",
       "minimax-h3",
@@ -36624,10 +37016,11 @@
       "base_model:finetune:Qwen/Qwen3.8-27B",
       "license:apache-2.0",
       "model-index",
+      "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: text-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5_text, text-generation, system-one, system-two, blocks-of-experts, typed-decisions, decision-model, calibrated-probabilities, knowledge-distillation, jev, noul, choice, score, lora, qwen3_5, dual-head, vllm, text-classification, en, dataset:SargeDev/jev-distill-corpus-v3, base_model:Qwen/Qwen3.8-27B, base_model:finetune:Qwen/Qwen3.8-27B, license:apache-2.0, model-index, endpoints_compatible, region:us"
+    "content": "Pipeline: text-classification. Library: transformers. Tags: transformers, safetensors, qwen3_5_text, text-generation, system-one, system-two, blocks-of-experts, typed-decisions, decision-model, calibrated-probabilities, knowledge-distillation, jev, noul, choice, score, lora, qwen3_5, dual-head, vllm, text-classification, en, dataset:SargeDev/jev-distill-corpus-v3, base_model:Qwen/Qwen3.8-27B, base_model:finetune:Qwen/Qwen3.8-27B, license:apache-2.0, model-index, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "Ashmotv/transformation_lora",
@@ -36690,7 +37083,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 1825,
-    "likes": 55,
+    "likes": 57,
     "tags": [
       "safetensors",
       "gemma4",
@@ -36822,8 +37215,8 @@
     "created_at": "2026-09-25",
     "pipeline_tag": "",
     "library_name": "transformers",
-    "downloads": 466956,
-    "likes": 37,
+    "downloads": 496904,
+    "likes": 41,
     "tags": [
       "transformers",
       "gguf",
@@ -37130,7 +37523,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 1019831,
-    "likes": 370,
+    "likes": 374,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -37201,7 +37594,7 @@
     "pipeline_tag": "",
     "library_name": "diffusers",
     "downloads": 33650,
-    "likes": 179,
+    "likes": 182,
     "tags": [
       "diffusers",
       "safetensors",
@@ -37254,7 +37647,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 422166,
-    "likes": 185,
+    "likes": 187,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -37981,7 +38374,7 @@
     "pipeline_tag": "text-classification",
     "library_name": "pytorch",
     "downloads": 5562,
-    "likes": 481,
+    "likes": 482,
     "tags": [
       "pytorch",
       "safetensors",
@@ -38562,7 +38955,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 1210,
-    "likes": 65,
+    "likes": 66,
     "tags": [
       "transformers",
       "safetensors",
@@ -38659,9 +39052,10 @@
       "base_model:jhu-clsp/mmBERT-base",
       "base_model:finetune:jhu-clsp/mmBERT-base",
       "license:apache-2.0",
+      "eval-results",
       "region:us"
     ],
-    "content": "Pipeline: text-classification. Library: thx01. Tags: thx01, safetensors, decision-model, calibration, reinforcement-learning, proper-scoring-rules, routing, extraction, citation, multilingual, azerbaijani, thx-01, text-classification, az, en, ru, tr, de, fr, es, ar, hi, zh, fa, ka, ja, ko, uk, kk, uz, it, base_model:jhu-clsp/mmBERT-base, base_model:finetune:jhu-clsp/mmBERT-base, license:apache-2.0, region:us"
+    "content": "Pipeline: text-classification. Library: thx01. Tags: thx01, safetensors, decision-model, calibration, reinforcement-learning, proper-scoring-rules, routing, extraction, citation, multilingual, azerbaijani, thx-01, text-classification, az, en, ru, tr, de, fr, es, ar, hi, zh, fa, ka, ja, ko, uk, kk, uz, it, base_model:jhu-clsp/mmBERT-base, base_model:finetune:jhu-clsp/mmBERT-base, license:apache-2.0, eval-results, region:us"
   },
   {
     "id": "PedroMarinhoDev/HunyuanImage-3.0-Instruct-Distil-ComfyUI",
@@ -38787,7 +39181,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "llama.cpp",
     "downloads": 22268,
-    "likes": 46,
+    "likes": 65,
     "tags": [
       "llama.cpp",
       "gguf",
@@ -38820,7 +39214,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "llama.cpp",
     "downloads": 4761,
-    "likes": 17,
+    "likes": 22,
     "tags": [
       "llama.cpp",
       "gguf",
@@ -38853,7 +39247,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "llama.cpp",
     "downloads": 2839,
-    "likes": 15,
+    "likes": 17,
     "tags": [
       "llama.cpp",
       "gguf",
@@ -38886,7 +39280,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 493574,
-    "likes": 739,
+    "likes": 742,
     "tags": [
       "diffusers",
       "safetensors",
@@ -38966,7 +39360,7 @@
     "pipeline_tag": "robotics",
     "library_name": "lerobot",
     "downloads": 2446,
-    "likes": 145,
+    "likes": 146,
     "tags": [
       "lerobot",
       "safetensors",
@@ -39017,7 +39411,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "",
     "downloads": 24250,
-    "likes": 98,
+    "likes": 99,
     "tags": [
       "safetensors",
       "parakeet_tdt",
@@ -39699,7 +40093,7 @@
     "pipeline_tag": "text-ranking",
     "library_name": "contrastive-lm",
     "downloads": 4860,
-    "likes": 777,
+    "likes": 778,
     "tags": [
       "contrastive-lm",
       "clm",
@@ -39753,7 +40147,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 26119,
-    "likes": 653,
+    "likes": 656,
     "tags": [
       "transformers",
       "safetensors",
@@ -39784,7 +40178,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 100156,
-    "likes": 734,
+    "likes": 737,
     "tags": [
       "transformers",
       "safetensors",
@@ -39847,7 +40241,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "",
     "downloads": 1262277,
-    "likes": 405,
+    "likes": 406,
     "tags": [
       "gguf",
       "quantized",
@@ -39901,7 +40295,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 753981,
-    "likes": 152,
+    "likes": 153,
     "tags": [
       "gguf",
       "mimo_v2",
@@ -39928,7 +40322,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 92057,
-    "likes": 559,
+    "likes": 562,
     "tags": [
       "transformers",
       "safetensors",
@@ -40450,7 +40844,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 12039,
-    "likes": 870,
+    "likes": 873,
     "tags": [
       "transformers",
       "safetensors",
@@ -40582,9 +40976,10 @@
       "zh",
       "ja",
       "license:cc-by-nc-4.0",
+      "eval-results",
       "region:us"
     ],
-    "content": "Pipeline: zero-shot-classification. Tags: safetensors, qwen3_5, decision-model, zero-shot-classification, classification, agents, browser-agent, computer-use, calibrated-probabilities, vllm, en, de, fr, hi, zh, ja, license:cc-by-nc-4.0, region:us"
+    "content": "Pipeline: zero-shot-classification. Tags: safetensors, qwen3_5, decision-model, zero-shot-classification, classification, agents, browser-agent, computer-use, calibrated-probabilities, vllm, en, de, fr, hi, zh, ja, license:cc-by-nc-4.0, eval-results, region:us"
   },
   {
     "id": "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF",
@@ -40821,7 +41216,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 87115,
-    "likes": 43,
+    "likes": 44,
     "tags": [
       "gguf",
       "qwen3.8",
@@ -40872,7 +41267,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "llama.cpp",
     "downloads": 48451,
-    "likes": 70,
+    "likes": 69,
     "tags": [
       "llama.cpp",
       "gguf",
@@ -41136,7 +41531,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 2939,
-    "likes": 156,
+    "likes": 158,
     "tags": [
       "transformers",
       "safetensors",
@@ -41216,7 +41611,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "gguf",
     "downloads": 2477554,
-    "likes": 4413,
+    "likes": 4427,
     "tags": [
       "gguf",
       "qwen",
@@ -41243,15 +41638,16 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 572,
-    "likes": 82,
+    "likes": 87,
     "tags": [
       "safetensors",
       "step5_vl",
       "license:other",
+      "eval-results",
       "fp8",
       "region:us"
     ],
-    "content": "Tags: safetensors, step5_vl, license:other, fp8, region:us"
+    "content": "Tags: safetensors, step5_vl, license:other, eval-results, fp8, region:us"
   },
   {
     "id": "stepfun-ai/Step-5-Preview-BF16",
@@ -41362,7 +41758,7 @@
     "pipeline_tag": "text-classification",
     "library_name": "peft",
     "downloads": 24802,
-    "likes": 127,
+    "likes": 129,
     "tags": [
       "peft",
       "safetensors",
@@ -41670,7 +42066,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 2638,
-    "likes": 51,
+    "likes": 56,
     "tags": [
       "transformers",
       "gguf",
@@ -41701,7 +42097,7 @@
     "pipeline_tag": "text-classification",
     "library_name": "transformers",
     "downloads": 49816,
-    "likes": 5644,
+    "likes": 5656,
     "tags": [
       "transformers",
       "safetensors",
@@ -41733,7 +42129,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "",
     "downloads": 18362,
-    "likes": 293,
+    "likes": 294,
     "tags": [
       "safetensors",
       "parakeet_tdt",
@@ -41877,7 +42273,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "llama.cpp",
     "downloads": 211426,
-    "likes": 109,
+    "likes": 111,
     "tags": [
       "llama.cpp",
       "gguf",
@@ -41996,15 +42392,18 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 4,
-    "likes": 13,
+    "likes": 15,
     "tags": [
       "transformers",
+      "safetensors",
+      "muse_spark",
+      "image-text-to-text",
       "facebook",
       "meta",
       "pytorch",
       "muse",
       "muse-spark",
-      "image-text-to-text",
+      "conversational",
       "en",
       "base_model:meta-models/Muse-Spark-Open-816B-A42B",
       "base_model:finetune:meta-models/Muse-Spark-Open-816B-A42B",
@@ -42012,7 +42411,7 @@
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, facebook, meta, pytorch, muse, muse-spark, image-text-to-text, en, base_model:meta-models/Muse-Spark-Open-816B-A42B, base_model:finetune:meta-models/Muse-Spark-Open-816B-A42B, license:other, endpoints_compatible, region:us"
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, muse_spark, image-text-to-text, facebook, meta, pytorch, muse, muse-spark, conversational, en, base_model:meta-models/Muse-Spark-Open-816B-A42B, base_model:finetune:meta-models/Muse-Spark-Open-816B-A42B, license:other, endpoints_compatible, region:us"
   },
   {
     "id": "Venastine-Research/Xing4.0-29B-A4B-GGUF",
@@ -42023,7 +42422,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 61337,
-    "likes": 710,
+    "likes": 711,
     "tags": [
       "transformers",
       "safetensors",
@@ -42141,7 +42540,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "splash",
     "downloads": 0,
-    "likes": 158,
+    "likes": 159,
     "tags": [
       "splash",
       "apple-silicon",
@@ -42518,7 +42917,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "llama.cpp",
     "downloads": 4908985,
-    "likes": 2710,
+    "likes": 2716,
     "tags": [
       "llama.cpp",
       "gguf",
@@ -42629,7 +43028,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "mlx",
     "downloads": 84623,
-    "likes": 457,
+    "likes": 458,
     "tags": [
       "mlx",
       "safetensors",
@@ -42660,7 +43059,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 1035763,
-    "likes": 215,
+    "likes": 217,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -43006,7 +43405,7 @@
     "pipeline_tag": "",
     "library_name": "diffusion-single-file",
     "downloads": 10584606,
-    "likes": 1128,
+    "likes": 1133,
     "tags": [
       "diffusion-single-file",
       "comfyui",
@@ -43261,7 +43660,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 815,
-    "likes": 364,
+    "likes": 429,
     "tags": [
       "transformers",
       "safetensors",
@@ -43291,7 +43690,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 814,
-    "likes": 131,
+    "likes": 148,
     "tags": [
       "transformers",
       "safetensors",
@@ -43312,9 +43711,10 @@
       "8-bit",
       "modelopt",
       "region:us",
-      "deploy:sagemaker"
+      "deploy:sagemaker",
+      "deploy:azure"
     ],
-    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, muse_spark, image-text-to-text, facebook, meta, pytorch, muse, muse-spark, nvfp4, conversational, en, base_model:meta-models/Muse-Spark-Open-816B-A42B, base_model:quantized:meta-models/Muse-Spark-Open-816B-A42B, license:other, endpoints_compatible, 8-bit, modelopt, region:us, deploy:sagemaker"
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, muse_spark, image-text-to-text, facebook, meta, pytorch, muse, muse-spark, nvfp4, conversational, en, base_model:meta-models/Muse-Spark-Open-816B-A42B, base_model:quantized:meta-models/Muse-Spark-Open-816B-A42B, license:other, endpoints_compatible, 8-bit, modelopt, region:us, deploy:sagemaker, deploy:azure"
   },
   {
     "id": "Qwen/Qwen-Image-2.1",
@@ -43325,7 +43725,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 165326,
-    "likes": 3328,
+    "likes": 3338,
     "tags": [
       "diffusers",
       "safetensors",
@@ -43372,8 +43772,8 @@
     "created_at": "2026-09-14",
     "pipeline_tag": "text-generation",
     "library_name": "Model Optimizer",
-    "downloads": 44687,
-    "likes": 37,
+    "downloads": 50869,
+    "likes": 44,
     "tags": [
       "Model Optimizer",
       "safetensors",
@@ -43450,7 +43850,7 @@
     "pipeline_tag": "feature-extraction",
     "library_name": "transformers",
     "downloads": 151258,
-    "likes": 2465,
+    "likes": 2503,
     "tags": [
       "transformers",
       "safetensors",
@@ -43483,7 +43883,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 10318,
-    "likes": 47,
+    "likes": 48,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -43511,7 +43911,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 0,
-    "likes": 201,
+    "likes": 202,
     "tags": [
       "transformers",
       "deepseek",
@@ -43844,7 +44244,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 85612,
-    "likes": 1784,
+    "likes": 1819,
     "tags": [
       "gguf",
       "safetensors",
@@ -43879,7 +44279,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 493317,
-    "likes": 466,
+    "likes": 467,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -44049,7 +44449,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 1276459,
-    "likes": 4553,
+    "likes": 4564,
     "tags": [
       "transformers",
       "safetensors",
@@ -44077,7 +44477,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "",
     "downloads": 48481,
-    "likes": 575,
+    "likes": 578,
     "tags": [
       "safetensors",
       "qwen3_asr",
@@ -44107,7 +44507,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 57191,
-    "likes": 667,
+    "likes": 677,
     "tags": [
       "transformers",
       "safetensors",
@@ -44293,7 +44693,7 @@
     "pipeline_tag": "text-to-audio",
     "library_name": "",
     "downloads": 32179,
-    "likes": 1156,
+    "likes": 1157,
     "tags": [
       "safetensors",
       "yue2",
@@ -44674,7 +45074,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 41461,
-    "likes": 110,
+    "likes": 111,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -44986,7 +45386,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 5349998,
-    "likes": 903,
+    "likes": 912,
     "tags": [
       "gguf",
       "gsq",
@@ -45231,7 +45631,7 @@
     "pipeline_tag": "",
     "library_name": "minimax-h3",
     "downloads": 134035,
-    "likes": 441,
+    "likes": 443,
     "tags": [
       "minimax-h3",
       "lora",
@@ -45253,7 +45653,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 1282153,
-    "likes": 1779,
+    "likes": 1780,
     "tags": [
       "transformers",
       "safetensors",
@@ -45408,7 +45808,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 204333,
-    "likes": 373,
+    "likes": 374,
     "tags": [
       "transformers",
       "gguf",
@@ -45715,7 +46115,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 13367,
-    "likes": 3028,
+    "likes": 3029,
     "tags": [
       "safetensors",
       "zdtaichu5_0",
@@ -45769,7 +46169,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "Model Optimizer",
     "downloads": 611663,
-    "likes": 196,
+    "likes": 197,
     "tags": [
       "Model Optimizer",
       "safetensors",
@@ -46040,7 +46440,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 516867,
-    "likes": 133,
+    "likes": 135,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -46419,7 +46819,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "Model Optimizer",
     "downloads": 384702,
-    "likes": 377,
+    "likes": 378,
     "tags": [
       "Model Optimizer",
       "safetensors",
@@ -46450,7 +46850,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "Model Optimizer",
     "downloads": 140443,
-    "likes": 169,
+    "likes": 170,
     "tags": [
       "Model Optimizer",
       "safetensors",
@@ -46503,7 +46903,7 @@
     "pipeline_tag": "voice-activity-detection",
     "library_name": "nemo",
     "downloads": 90352,
-    "likes": 782,
+    "likes": 783,
     "tags": [
       "nemo",
       "safetensors",
@@ -46534,7 +46934,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 1833225,
-    "likes": 1813,
+    "likes": 1827,
     "tags": [
       "gguf",
       "unsloth",
@@ -46656,7 +47056,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 15389,
-    "likes": 419,
+    "likes": 418,
     "tags": [
       "transformers",
       "safetensors",
@@ -46720,8 +47120,8 @@
     "created_at": "2026-09-01",
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
-    "downloads": 22360,
-    "likes": 90,
+    "downloads": 24216,
+    "likes": 100,
     "tags": [
       "transformers",
       "safetensors",
@@ -47065,7 +47465,7 @@
     "pipeline_tag": "video-to-video",
     "library_name": "minimax-h3",
     "downloads": 32023,
-    "likes": 298,
+    "likes": 299,
     "tags": [
       "minimax-h3",
       "diffusers",
@@ -47246,7 +47646,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 114498,
-    "likes": 690,
+    "likes": 692,
     "tags": [
       "safetensors",
       "glm_moe_dsa",
@@ -47289,7 +47689,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 2514,
-    "likes": 146,
+    "likes": 148,
     "tags": [
       "safetensors",
       "glm_moe_dsa",
@@ -47494,7 +47894,7 @@
     "pipeline_tag": "image-text-to-video",
     "library_name": "diffusion-single-file",
     "downloads": 547537,
-    "likes": 263,
+    "likes": 262,
     "tags": [
       "diffusion-single-file",
       "minimax-h3",
@@ -47626,7 +48026,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 1396724,
-    "likes": 2221,
+    "likes": 2228,
     "tags": [
       "gguf",
       "gsq",
@@ -47992,8 +48392,8 @@
     "created_at": "2026-08-27",
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
-    "downloads": 6863,
-    "likes": 101,
+    "downloads": 6866,
+    "likes": 102,
     "tags": [
       "transformers",
       "safetensors",
@@ -48110,7 +48510,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "mlx",
     "downloads": 23101,
-    "likes": 92,
+    "likes": 94,
     "tags": [
       "mlx",
       "safetensors",
@@ -48483,7 +48883,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 753032,
-    "likes": 903,
+    "likes": 909,
     "tags": [
       "gguf",
       "abliterated",
@@ -48522,7 +48922,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 1204483,
-    "likes": 1205,
+    "likes": 1206,
     "tags": [
       "gguf",
       "unsloth",
@@ -48545,7 +48945,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 79334,
-    "likes": 196,
+    "likes": 197,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -48610,7 +49010,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 958322,
-    "likes": 483,
+    "likes": 485,
     "tags": [
       "gguf",
       "unsloth",
@@ -48711,7 +49111,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 723719,
-    "likes": 193,
+    "likes": 194,
     "tags": [
       "gguf",
       "atomic-chat",
@@ -48988,6 +49388,33 @@
     "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, qwen4_exp, image-text-to-text, abliterated, qwen, qwen4, qwen3.8, flash-next, uncensored, ai-red-team, red-teaming, moe, vision-language, function-calling, reasoning, mtp, mlx, apple-silicon, 4bit, conversational, en, zh, base_model:Qwen/Qwen3.8-Flash-Next, base_model:quantized:Qwen/Qwen3.8-Flash-Next, license:apache-2.0, endpoints_compatible, 4-bit, region:us"
   },
   {
+    "id": "aj9o9/GLM-5.3-Flash-GGUF",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/aj9o9/GLM-5.3-Flash-GGUF",
+    "author": "aj9o9",
+    "created_at": "2026-08-26",
+    "pipeline_tag": "text-generation",
+    "library_name": "",
+    "downloads": 13114,
+    "likes": 22,
+    "tags": [
+      "gguf",
+      "llama.cpp",
+      "moe",
+      "text-generation",
+      "en",
+      "zh",
+      "base_model:zai-org/GLM-5.3-Flash",
+      "base_model:quantized:zai-org/GLM-5.3-Flash",
+      "license:mit",
+      "endpoints_compatible",
+      "region:us",
+      "imatrix",
+      "conversational"
+    ],
+    "content": "Pipeline: text-generation. Tags: gguf, llama.cpp, moe, text-generation, en, zh, base_model:zai-org/GLM-5.3-Flash, base_model:quantized:zai-org/GLM-5.3-Flash, license:mit, endpoints_compatible, region:us, imatrix, conversational"
+  },
+  {
     "id": "zai-org/GLM-5.3",
     "source": "Hugging Face",
     "url": "https://huggingface.co/zai-org/GLM-5.3",
@@ -48996,7 +49423,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 1833879,
-    "likes": 2234,
+    "likes": 2239,
     "tags": [
       "transformers",
       "safetensors",
@@ -49024,7 +49451,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 6527460,
-    "likes": 2865,
+    "likes": 2868,
     "tags": [
       "transformers",
       "safetensors",
@@ -49052,7 +49479,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "transformers",
     "downloads": 14483,
-    "likes": 714,
+    "likes": 717,
     "tags": [
       "transformers",
       "safetensors",
@@ -49233,7 +49660,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 2379596,
-    "likes": 6264,
+    "likes": 6280,
     "tags": [
       "transformers",
       "safetensors",
@@ -49339,7 +49766,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 210034,
-    "likes": 267,
+    "likes": 268,
     "tags": [
       "transformers",
       "safetensors",
@@ -49473,7 +49900,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 125870,
-    "likes": 158,
+    "likes": 159,
     "tags": [
       "transformers",
       "safetensors",
@@ -49694,7 +50121,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "mlx",
     "downloads": 569746,
-    "likes": 1474,
+    "likes": 1476,
     "tags": [
       "mlx",
       "safetensors",
@@ -49747,7 +50174,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 312186,
-    "likes": 387,
+    "likes": 388,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -49779,7 +50206,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 107336,
-    "likes": 313,
+    "likes": 315,
     "tags": [
       "transformers",
       "safetensors",
@@ -49942,7 +50369,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 251445,
-    "likes": 731,
+    "likes": 733,
     "tags": [
       "transformers",
       "safetensors",
@@ -50006,7 +50433,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 441699,
-    "likes": 379,
+    "likes": 380,
     "tags": [
       "transformers",
       "safetensors",
@@ -50030,7 +50457,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 3719280,
-    "likes": 515,
+    "likes": 516,
     "tags": [
       "transformers",
       "gguf",
@@ -50306,7 +50733,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 2320921,
-    "likes": 1856,
+    "likes": 1863,
     "tags": [
       "gguf",
       "uncensored",
@@ -50376,7 +50803,7 @@
     "pipeline_tag": "",
     "library_name": "minimax-h3",
     "downloads": 261875,
-    "likes": 412,
+    "likes": 414,
     "tags": [
       "minimax-h3",
       "latent_upscaler",
@@ -50594,7 +51021,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 2351917,
-    "likes": 1341,
+    "likes": 1346,
     "tags": [
       "transformers",
       "gguf",
@@ -50631,7 +51058,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 101148,
-    "likes": 1507,
+    "likes": 1511,
     "tags": [
       "gguf",
       "abliterated",
@@ -50767,7 +51194,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 140474,
-    "likes": 1809,
+    "likes": 1810,
     "tags": [
       "transformers",
       "safetensors",
@@ -51110,7 +51537,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "llama.cpp",
     "downloads": 2568641,
-    "likes": 1608,
+    "likes": 1609,
     "tags": [
       "llama.cpp",
       "gguf",
@@ -51141,7 +51568,7 @@
     "pipeline_tag": "image-to-video",
     "library_name": "diffusers",
     "downloads": 0,
-    "likes": 100,
+    "likes": 101,
     "tags": [
       "diffusers",
       "lora",
@@ -51199,7 +51626,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 1086373,
-    "likes": 691,
+    "likes": 694,
     "tags": [
       "transformers",
       "safetensors",
@@ -51283,8 +51710,8 @@
     "created_at": "2026-08-14",
     "pipeline_tag": "image-text-to-text",
     "library_name": "mlx",
-    "downloads": 883264,
-    "likes": 206,
+    "downloads": 885428,
+    "likes": 209,
     "tags": [
       "mlx",
       "safetensors",
@@ -51545,8 +51972,8 @@
     "created_at": "2026-08-14",
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
-    "downloads": 4009210,
-    "likes": 26,
+    "downloads": 3913584,
+    "likes": 34,
     "tags": [
       "transformers",
       "safetensors",
@@ -51598,7 +52025,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 1185598,
-    "likes": 71,
+    "likes": 72,
     "tags": [
       "gguf",
       "base_model:Qwen/Qwen3.8-27B",
@@ -51890,7 +52317,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 6663225,
-    "likes": 5128,
+    "likes": 5137,
     "tags": [
       "gguf",
       "qwen3_5",
@@ -51914,7 +52341,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 4459370,
-    "likes": 920,
+    "likes": 922,
     "tags": [
       "transformers",
       "safetensors",
@@ -52018,7 +52445,7 @@
     "created_at": "2026-08-13",
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
-    "downloads": 957689,
+    "downloads": 954783,
     "likes": 11,
     "tags": [
       "transformers",
@@ -52277,7 +52704,7 @@
     "pipeline_tag": "text-to-video",
     "library_name": "",
     "downloads": 0,
-    "likes": 357,
+    "likes": 360,
     "tags": [
       "video-generation",
       "text-to-video",
@@ -52373,7 +52800,7 @@
     "pipeline_tag": "",
     "library_name": "mlx",
     "downloads": 0,
-    "likes": 458,
+    "likes": 459,
     "tags": [
       "mlx",
       "jinja",
@@ -52404,7 +52831,7 @@
     "pipeline_tag": "image-text-to-video",
     "library_name": "minimax-h3",
     "downloads": 87157,
-    "likes": 482,
+    "likes": 484,
     "tags": [
       "minimax-h3",
       "lora",
@@ -52542,7 +52969,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 251886,
-    "likes": 2041,
+    "likes": 2044,
     "tags": [
       "transformers",
       "safetensors",
@@ -52601,7 +53028,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 787954,
-    "likes": 371,
+    "likes": 372,
     "tags": [
       "gguf",
       "image-text-to-text",
@@ -52696,7 +53123,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 31991,
-    "likes": 1313,
+    "likes": 1315,
     "tags": [
       "transformers",
       "safetensors",
@@ -52739,7 +53166,7 @@
     "pipeline_tag": "image-to-video",
     "library_name": "diffusers",
     "downloads": 1488903,
-    "likes": 1085,
+    "likes": 1087,
     "tags": [
       "diffusers",
       "t2v",
@@ -52790,7 +53217,7 @@
     "pipeline_tag": "text-to-audio",
     "library_name": "diffusers",
     "downloads": 6224,
-    "likes": 1453,
+    "likes": 1454,
     "tags": [
       "diffusers",
       "safetensors",
@@ -53030,7 +53457,7 @@
     "pipeline_tag": "text-to-video",
     "library_name": "minimax-h3",
     "downloads": 202816,
-    "likes": 511,
+    "likes": 512,
     "tags": [
       "minimax-h3",
       "lora",
@@ -53185,7 +53612,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 7516626,
-    "likes": 17821,
+    "likes": 17845,
     "tags": [
       "transformers",
       "safetensors",
@@ -53210,7 +53637,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 0,
-    "likes": 600,
+    "likes": 601,
     "tags": [
       "region:us"
     ],
@@ -53353,7 +53780,7 @@
     "pipeline_tag": "image-text-to-video",
     "library_name": "",
     "downloads": 0,
-    "likes": 827,
+    "likes": 828,
     "tags": [
       "text-to-video",
       "image-text-to-video",
@@ -53374,7 +53801,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "comfyui",
     "downloads": 0,
-    "likes": 714,
+    "likes": 715,
     "tags": [
       "comfyui",
       "h3",
@@ -53665,7 +54092,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 870096,
-    "likes": 380,
+    "likes": 381,
     "tags": [
       "gguf",
       "safetensors",
@@ -53791,7 +54218,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "",
     "downloads": 0,
-    "likes": 327,
+    "likes": 328,
     "tags": [
       "lora",
       "comfyui",
@@ -53912,8 +54339,8 @@
     "created_at": "2026-07-31",
     "pipeline_tag": "",
     "library_name": "",
-    "downloads": 1230,
-    "likes": 84,
+    "downloads": 1246,
+    "likes": 89,
     "tags": [
       "safetensors",
       "gemma4",
@@ -53935,7 +54362,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "",
     "downloads": 0,
-    "likes": 460,
+    "likes": 467,
     "tags": [
       "krea2",
       "krea",
@@ -53956,7 +54383,7 @@
     "pipeline_tag": "",
     "library_name": "diffusion-single-file",
     "downloads": 24667625,
-    "likes": 2304,
+    "likes": 2307,
     "tags": [
       "diffusion-single-file",
       "comfyui",
@@ -54002,7 +54429,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 4659,
-    "likes": 542,
+    "likes": 543,
     "tags": [
       "safetensors",
       "en",
@@ -54028,7 +54455,7 @@
     "pipeline_tag": "image-text-to-video",
     "library_name": "minimax-h3",
     "downloads": 4014459,
-    "likes": 6169,
+    "likes": 6172,
     "tags": [
       "minimax-h3",
       "diffusers",
@@ -54060,7 +54487,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 115088,
-    "likes": 838,
+    "likes": 839,
     "tags": [
       "transformers",
       "safetensors",
@@ -54537,8 +54964,8 @@
     "created_at": "2026-07-24",
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
-    "downloads": 699922,
-    "likes": 142,
+    "downloads": 621652,
+    "likes": 146,
     "tags": [
       "transformers",
       "safetensors",
@@ -54551,11 +54978,12 @@
       "apertus",
       "image-text-to-text",
       "conversational",
+      "arxiv:2610.15542",
       "license:apache-2.0",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, apertus1p5, text-generation, multilingual, multimodal, switzerland, swiss-ai, apertus, image-text-to-text, conversational, license:apache-2.0, endpoints_compatible, region:us"
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, apertus1p5, text-generation, multilingual, multimodal, switzerland, swiss-ai, apertus, image-text-to-text, conversational, arxiv:2610.15542, license:apache-2.0, endpoints_compatible, region:us"
   },
   {
     "id": "mudler/Laguna-XS-2.1-APEX-GGUF",
@@ -54565,8 +54993,8 @@
     "created_at": "2026-07-24",
     "pipeline_tag": "",
     "library_name": "",
-    "downloads": 1883921,
-    "likes": 15,
+    "downloads": 1644992,
+    "likes": 23,
     "tags": [
       "gguf",
       "quantized",
@@ -54625,8 +55053,8 @@
     "created_at": "2026-07-24",
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
-    "downloads": 6193,
-    "likes": 118,
+    "downloads": 3623,
+    "likes": 124,
     "tags": [
       "transformers",
       "safetensors",
@@ -54639,12 +55067,13 @@
       "apertus",
       "image-text-to-text",
       "conversational",
+      "arxiv:2610.15542",
       "license:apache-2.0",
       "eval-results",
       "endpoints_compatible",
       "region:us"
     ],
-    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, apertus1p5, text-generation, multilingual, multimodal, switzerland, swiss-ai, apertus, image-text-to-text, conversational, license:apache-2.0, eval-results, endpoints_compatible, region:us"
+    "content": "Pipeline: image-text-to-text. Library: transformers. Tags: transformers, safetensors, apertus1p5, text-generation, multilingual, multimodal, switzerland, swiss-ai, apertus, image-text-to-text, conversational, arxiv:2610.15542, license:apache-2.0, eval-results, endpoints_compatible, region:us"
   },
   {
     "id": "Lightricks/LTX-2.5",
@@ -54655,7 +55084,7 @@
     "pipeline_tag": "image-to-video",
     "library_name": "diffusion-single-file",
     "downloads": 1920611,
-    "likes": 8011,
+    "likes": 8068,
     "tags": [
       "diffusion-single-file",
       "image-to-video",
@@ -54697,8 +55126,8 @@
     "created_at": "2026-07-23",
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
-    "downloads": 2440875,
-    "likes": 22,
+    "downloads": 212019,
+    "likes": 30,
     "tags": [
       "transformers",
       "safetensors",
@@ -54774,7 +55203,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "",
     "downloads": 0,
-    "likes": 95,
+    "likes": 97,
     "tags": [
       "lora",
       "krea2",
@@ -54825,6 +55254,21 @@
     "content": "Pipeline: text-generation. Library: llama.cpp. Tags: llama.cpp, gguf, conversational, on-device, mobile, iphone, android, cpu, local-llm, edge, mixture-of-experts, moe, quantized, pocket, vidraft, qwen3_5_moe, darwin, text-generation, base_model:FINAL-Bench/Darwin-36B-Opus, base_model:quantized:FINAL-Bench/Darwin-36B-Opus, license:apache-2.0, endpoints_compatible, region:us, imatrix"
   },
   {
+    "id": "RL-MIND/DFA-MoE",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/RL-MIND/DFA-MoE",
+    "author": "RL-MIND",
+    "created_at": "2026-07-22",
+    "pipeline_tag": "",
+    "library_name": "",
+    "downloads": 0,
+    "likes": 14,
+    "tags": [
+      "region:us"
+    ],
+    "content": "Tags: region:us"
+  },
+  {
     "id": "Nanbeige/Nanbeige4.2-3B",
     "source": "Hugging Face",
     "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
@@ -54832,7 +55276,7 @@
     "created_at": "2026-07-21",
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
-    "downloads": 113920,
+    "downloads": 119096,
     "likes": 825,
     "tags": [
       "transformers",
@@ -54974,7 +55418,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 1883365,
-    "likes": 1091,
+    "likes": 1096,
     "tags": [
       "gguf",
       "MTP GGUFS",
@@ -55301,7 +55745,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 0,
-    "likes": 334,
+    "likes": 335,
     "tags": [
       "arxiv:2608.06009",
       "license:apache-2.0",
@@ -55634,7 +56078,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "hermes",
     "downloads": 646580,
-    "likes": 691,
+    "likes": 692,
     "tags": [
       "hermes",
       "gguf",
@@ -55831,10 +56275,11 @@
     "author": "conradlocke",
     "created_at": "2026-07-07",
     "pipeline_tag": "",
-    "library_name": "",
+    "library_name": "diffusers",
     "downloads": 0,
-    "likes": 835,
+    "likes": 839,
     "tags": [
+      "diffusers",
       "image-editing",
       "lora",
       "comfyui",
@@ -55844,7 +56289,7 @@
       "license:other",
       "region:us"
     ],
-    "content": "Tags: image-editing, lora, comfyui, krea-2, base_model:krea/Krea-2-Raw, base_model:adapter:krea/Krea-2-Raw, license:other, region:us"
+    "content": "Library: diffusers. Tags: diffusers, image-editing, lora, comfyui, krea-2, base_model:krea/Krea-2-Raw, base_model:adapter:krea/Krea-2-Raw, license:other, region:us"
   },
   {
     "id": "aina-tech/Anima-Lightning",
@@ -56144,8 +56589,8 @@
     "created_at": "2026-07-01",
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
-    "downloads": 17386,
-    "likes": 75,
+    "downloads": 18492,
+    "likes": 79,
     "tags": [
       "diffusers",
       "safetensors",
@@ -56180,7 +56625,7 @@
     "pipeline_tag": "",
     "library_name": "muscriptor",
     "downloads": 5789,
-    "likes": 451,
+    "likes": 454,
     "tags": [
       "muscriptor",
       "safetensors",
@@ -56635,7 +57080,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 385407,
-    "likes": 306,
+    "likes": 307,
     "tags": [
       "gguf",
       "uncensored",
@@ -56805,7 +57250,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 921815,
-    "likes": 447,
+    "likes": 450,
     "tags": [
       "gguf",
       "uncensored",
@@ -56979,7 +57424,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 1262307,
-    "likes": 4725,
+    "likes": 4744,
     "tags": [
       "transformers",
       "safetensors",
@@ -57009,7 +57454,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 503136,
-    "likes": 1687,
+    "likes": 1688,
     "tags": [
       "gguf",
       "gemma4",
@@ -57040,7 +57485,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "gguf",
     "downloads": 465977,
-    "likes": 2862,
+    "likes": 2863,
     "tags": [
       "gguf",
       "llama.cpp",
@@ -57146,7 +57591,7 @@
     "pipeline_tag": "image-to-video",
     "library_name": "",
     "downloads": 0,
-    "likes": 46,
+    "likes": 48,
     "tags": [
       "text-to-video",
       "image-to-video",
@@ -57170,7 +57615,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 89963,
-    "likes": 1655,
+    "likes": 1662,
     "tags": [
       "diffusers",
       "safetensors",
@@ -57193,7 +57638,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 87603,
-    "likes": 1069,
+    "likes": 1073,
     "tags": [
       "diffusers",
       "safetensors",
@@ -57354,7 +57799,7 @@
     "pipeline_tag": "",
     "library_name": "diffusion-single-file",
     "downloads": 4196255,
-    "likes": 704,
+    "likes": 705,
     "tags": [
       "diffusion-single-file",
       "comfyui",
@@ -57512,7 +57957,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 1052786,
-    "likes": 11743,
+    "likes": 11745,
     "tags": [
       "transformers",
       "safetensors",
@@ -57693,7 +58138,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 113251,
-    "likes": 1419,
+    "likes": 1420,
     "tags": [
       "transformers",
       "safetensors",
@@ -57739,7 +58184,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "gguf",
     "downloads": 220887,
-    "likes": 2952,
+    "likes": 2957,
     "tags": [
       "gguf",
       "gemma4",
@@ -57768,7 +58213,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 666680,
-    "likes": 1298,
+    "likes": 1301,
     "tags": [
       "transformers",
       "safetensors",
@@ -57911,7 +58356,7 @@
     "pipeline_tag": "any-to-any",
     "library_name": "transformers",
     "downloads": 349515,
-    "likes": 587,
+    "likes": 588,
     "tags": [
       "transformers",
       "gguf",
@@ -58193,8 +58638,8 @@
     "created_at": "2026-06-05",
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
-    "downloads": 22122,
-    "likes": 473,
+    "downloads": 21974,
+    "likes": 475,
     "tags": [
       "transformers",
       "safetensors",
@@ -58456,7 +58901,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 10498,
-    "likes": 59,
+    "likes": 61,
     "tags": [
       "gguf",
       "heretic",
@@ -58762,7 +59207,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 1615593,
-    "likes": 910,
+    "likes": 912,
     "tags": [
       "gguf",
       "gemma4",
@@ -58982,7 +59427,7 @@
     "pipeline_tag": "any-to-any",
     "library_name": "transformers",
     "downloads": 1656973,
-    "likes": 1666,
+    "likes": 1667,
     "tags": [
       "transformers",
       "safetensors",
@@ -59009,7 +59454,7 @@
     "pipeline_tag": "any-to-any",
     "library_name": "transformers",
     "downloads": 78712,
-    "likes": 792,
+    "likes": 795,
     "tags": [
       "transformers",
       "safetensors",
@@ -59324,7 +59769,7 @@
     "pipeline_tag": "text-to-audio",
     "library_name": "stable-audio-3",
     "downloads": 41818,
-    "likes": 233,
+    "likes": 236,
     "tags": [
       "stable-audio-3",
       "safetensors",
@@ -60027,8 +60472,8 @@
     "created_at": "2026-05-06",
     "pipeline_tag": "text-to-speech",
     "library_name": "supertonic",
-    "downloads": 38600,
-    "likes": 993,
+    "downloads": 41857,
+    "likes": 995,
     "tags": [
       "supertonic",
       "onnx",
@@ -60104,8 +60549,8 @@
     "created_at": "2026-05-01",
     "pipeline_tag": "text-to-image",
     "library_name": "",
-    "downloads": 14192,
-    "likes": 284,
+    "downloads": 13300,
+    "likes": 299,
     "tags": [
       "safetensors",
       "gguf",
@@ -60295,7 +60740,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "",
     "downloads": 24386,
-    "likes": 738,
+    "likes": 740,
     "tags": [
       "safetensors",
       "gguf",
@@ -60706,7 +61151,7 @@
     "pipeline_tag": "",
     "library_name": "mlx",
     "downloads": 0,
-    "likes": 1849,
+    "likes": 1851,
     "tags": [
       "mlx",
       "jinja",
@@ -60992,7 +61437,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 2276577,
-    "likes": 2329,
+    "likes": 2330,
     "tags": [
       "transformers",
       "safetensors",
@@ -61072,7 +61517,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 890197,
-    "likes": 3940,
+    "likes": 3941,
     "tags": [
       "gguf",
       "uncensored",
@@ -61214,7 +61659,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 1219066,
-    "likes": 1692,
+    "likes": 1693,
     "tags": [
       "transformers",
       "gguf",
@@ -61282,7 +61727,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 3724301,
-    "likes": 2991,
+    "likes": 2992,
     "tags": [
       "transformers",
       "safetensors",
@@ -61511,7 +61956,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 208939,
-    "likes": 1237,
+    "likes": 1238,
     "tags": [
       "transformers",
       "safetensors",
@@ -61823,7 +62268,7 @@
     "pipeline_tag": "any-to-any",
     "library_name": "transformers",
     "downloads": 72862,
-    "likes": 239,
+    "likes": 240,
     "tags": [
       "transformers",
       "gguf",
@@ -61853,7 +62298,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "mlx",
     "downloads": 16807,
-    "likes": 1749,
+    "likes": 1750,
     "tags": [
       "mlx",
       "safetensors",
@@ -61878,7 +62323,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "voxcpm",
     "downloads": 754970,
-    "likes": 1688,
+    "likes": 1689,
     "tags": [
       "voxcpm",
       "safetensors",
@@ -62122,7 +62567,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 1208208,
-    "likes": 1398,
+    "likes": 1400,
     "tags": [
       "gguf",
       "uncensored",
@@ -62212,7 +62657,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 817686,
-    "likes": 1220,
+    "likes": 1221,
     "tags": [
       "gguf",
       "gemma4",
@@ -62324,7 +62769,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 593886,
-    "likes": 654,
+    "likes": 655,
     "tags": [
       "gguf",
       "gemma4",
@@ -62443,7 +62888,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "omnivoice",
     "downloads": 1576534,
-    "likes": 1546,
+    "likes": 1547,
     "tags": [
       "omnivoice",
       "safetensors",
@@ -63248,7 +63693,7 @@
     "pipeline_tag": "mask-generation",
     "library_name": "checkpoint",
     "downloads": 90912,
-    "likes": 1086,
+    "likes": 1093,
     "tags": [
       "checkpoint",
       "sam3_video",
@@ -63307,7 +63752,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "transformers",
     "downloads": 120080,
-    "likes": 1186,
+    "likes": 1187,
     "tags": [
       "transformers",
       "safetensors",
@@ -63507,7 +63952,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 395765,
-    "likes": 569,
+    "likes": 570,
     "tags": [
       "transformers",
       "safetensors",
@@ -63529,7 +63974,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 43253,
-    "likes": 443,
+    "likes": 445,
     "tags": [
       "transformers",
       "safetensors",
@@ -63551,7 +63996,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 9088689,
-    "likes": 4133,
+    "likes": 4140,
     "tags": [
       "transformers",
       "safetensors",
@@ -63579,7 +64024,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 10951317,
-    "likes": 1659,
+    "likes": 1662,
     "tags": [
       "transformers",
       "safetensors",
@@ -63737,7 +64182,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 125503,
-    "likes": 1523,
+    "likes": 1524,
     "tags": [
       "gguf",
       "uncensored",
@@ -63767,7 +64212,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "",
     "downloads": 34350,
-    "likes": 1433,
+    "likes": 1434,
     "tags": [
       "safetensors",
       "fish_qwen3_omni",
@@ -64200,7 +64645,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 698887,
-    "likes": 2290,
+    "likes": 2291,
     "tags": [
       "gguf",
       "uncensored",
@@ -64227,7 +64672,7 @@
     "pipeline_tag": "image-to-video",
     "library_name": "diffusers",
     "downloads": 958354,
-    "likes": 1968,
+    "likes": 1970,
     "tags": [
       "diffusers",
       "image-to-video",
@@ -64391,7 +64836,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 3343,
-    "likes": 167,
+    "likes": 168,
     "tags": [
       "transformers",
       "safetensors",
@@ -64421,7 +64866,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "",
     "downloads": 59976,
-    "likes": 83,
+    "likes": 84,
     "tags": [
       "gguf",
       "abliterated",
@@ -64511,7 +64956,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 41481,
-    "likes": 182,
+    "likes": 183,
     "tags": [
       "gguf",
       "qwen3_5",
@@ -64614,7 +65059,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 374476,
-    "likes": 3117,
+    "likes": 3118,
     "tags": [
       "transformers",
       "safetensors",
@@ -64654,7 +65099,7 @@
     "pipeline_tag": "any-to-any",
     "library_name": "transformers",
     "downloads": 4161755,
-    "likes": 1724,
+    "likes": 1728,
     "tags": [
       "transformers",
       "safetensors",
@@ -64850,7 +65295,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 1217222,
-    "likes": 1002,
+    "likes": 1003,
     "tags": [
       "transformers",
       "gguf",
@@ -64951,7 +65396,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 8584713,
-    "likes": 2176,
+    "likes": 2178,
     "tags": [
       "transformers",
       "safetensors",
@@ -64978,7 +65423,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 7930131,
-    "likes": 1079,
+    "likes": 1081,
     "tags": [
       "transformers",
       "safetensors",
@@ -65335,7 +65780,7 @@
     "pipeline_tag": "image-to-text",
     "library_name": "transformers",
     "downloads": 5145,
-    "likes": 166,
+    "likes": 167,
     "tags": [
       "transformers",
       "safetensors",
@@ -65746,7 +66191,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 138575,
-    "likes": 884,
+    "likes": 885,
     "tags": [
       "gguf",
       "qwen3_next",
@@ -65773,7 +66218,7 @@
     "pipeline_tag": "any-to-any",
     "library_name": "transformers",
     "downloads": 593983,
-    "likes": 1528,
+    "likes": 1533,
     "tags": [
       "transformers",
       "onnx",
@@ -65921,7 +66366,7 @@
     "pipeline_tag": "",
     "library_name": "diffusion-single-file",
     "downloads": 1347076,
-    "likes": 2431,
+    "likes": 2432,
     "tags": [
       "diffusion-single-file",
       "comfyui",
@@ -65992,7 +66437,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "",
     "downloads": 714064,
-    "likes": 378,
+    "likes": 379,
     "tags": [
       "safetensors",
       "qwen3_asr",
@@ -66085,8 +66530,8 @@
     "created_at": "2026-01-26",
     "pipeline_tag": "object-detection",
     "library_name": "ultralytics",
-    "downloads": 19565,
-    "likes": 221,
+    "downloads": 20057,
+    "likes": 226,
     "tags": [
       "ultralytics",
       "yolo",
@@ -66273,7 +66718,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "",
     "downloads": 2144940,
-    "likes": 2133,
+    "likes": 2134,
     "tags": [
       "safetensors",
       "qwen3_tts",
@@ -66366,7 +66811,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 3151487,
-    "likes": 562,
+    "likes": 563,
     "tags": [
       "safetensors",
       "qwen3_tts",
@@ -66652,7 +67097,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 36339,
-    "likes": 1305,
+    "likes": 1311,
     "tags": [
       "diffusers",
       "image-generation",
@@ -66675,7 +67120,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 187392,
-    "likes": 1688,
+    "likes": 1691,
     "tags": [
       "diffusers",
       "safetensors",
@@ -66700,7 +67145,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 48410,
-    "likes": 790,
+    "likes": 792,
     "tags": [
       "diffusers",
       "image-generation",
@@ -66748,7 +67193,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 102665,
-    "likes": 385,
+    "likes": 386,
     "tags": [
       "diffusers",
       "safetensors",
@@ -66969,7 +67414,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 62147,
-    "likes": 1588,
+    "likes": 1589,
     "tags": [
       "diffusers",
       "qwen",
@@ -67000,7 +67445,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 76989,
-    "likes": 1022,
+    "likes": 1024,
     "tags": [
       "transformers",
       "safetensors",
@@ -67146,7 +67591,7 @@
     "pipeline_tag": "image-to-video",
     "library_name": "diffusers",
     "downloads": 269955,
-    "likes": 1798,
+    "likes": 1799,
     "tags": [
       "diffusers",
       "safetensors",
@@ -67284,7 +67729,7 @@
     "pipeline_tag": "audio-to-audio",
     "library_name": "moshi",
     "downloads": 152148,
-    "likes": 2838,
+    "likes": 2839,
     "tags": [
       "moshi",
       "safetensors",
@@ -67337,7 +67782,7 @@
     "pipeline_tag": "",
     "library_name": "pocket-tts",
     "downloads": 1134,
-    "likes": 1272,
+    "likes": 1277,
     "tags": [
       "pocket-tts",
       "safetensors",
@@ -67394,7 +67839,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 84724,
-    "likes": 2067,
+    "likes": 2068,
     "tags": [
       "transformers",
       "safetensors",
@@ -67655,7 +68100,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "cosmos",
     "downloads": 637365,
-    "likes": 311,
+    "likes": 312,
     "tags": [
       "cosmos",
       "safetensors",
@@ -67926,7 +68371,7 @@
     "pipeline_tag": "image-to-3d",
     "library_name": "trellis2",
     "downloads": 2164283,
-    "likes": 1349,
+    "likes": 1350,
     "tags": [
       "trellis2",
       "image-to-3d",
@@ -68082,7 +68527,7 @@
     "pipeline_tag": "",
     "library_name": "vllm",
     "downloads": 5003,
-    "likes": 352,
+    "likes": 353,
     "tags": [
       "vllm",
       "safetensors",
@@ -68128,7 +68573,7 @@
     "pipeline_tag": "",
     "library_name": "diffusion-single-file",
     "downloads": 8950693,
-    "likes": 970,
+    "likes": 971,
     "tags": [
       "diffusion-single-file",
       "comfyui",
@@ -68148,7 +68593,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 640291,
-    "likes": 5478,
+    "likes": 5480,
     "tags": [
       "diffusers",
       "safetensors",
@@ -68229,7 +68674,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 398162,
-    "likes": 2419,
+    "likes": 2422,
     "tags": [
       "diffusers",
       "safetensors",
@@ -68355,7 +68800,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 894371,
-    "likes": 835,
+    "likes": 836,
     "tags": [
       "transformers",
       "safetensors",
@@ -68416,7 +68861,7 @@
     "pipeline_tag": "",
     "library_name": "sam-3d-body",
     "downloads": 8413,
-    "likes": 540,
+    "likes": 544,
     "tags": [
       "sam-3d-body",
       "sam-3d",
@@ -68543,6 +68988,35 @@
     "content": "Pipeline: audio-text-to-text. Library: transformers. Tags: transformers, safetensors, audioflamingo3, text2text-generation, music/songs, music understanding, music reasoning, audio-text-to-text, en, dataset:nvidia/MF-Skills, arxiv:2511.10289, arxiv:2505.13032, license:other, endpoints_compatible, region:us"
   },
   {
+    "id": "mistralai/Mistral-Large-3-675B-Instruct-2512-Eagle",
+    "source": "Hugging Face",
+    "url": "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512-Eagle",
+    "author": "mistralai",
+    "created_at": "2025-11-10",
+    "pipeline_tag": "",
+    "library_name": "vllm",
+    "downloads": 172,
+    "likes": 38,
+    "tags": [
+      "vllm",
+      "mistral-common",
+      "en",
+      "fr",
+      "es",
+      "de",
+      "it",
+      "pt",
+      "nl",
+      "zh",
+      "ja",
+      "ko",
+      "ar",
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "content": "Library: vllm. Tags: vllm, mistral-common, en, fr, es, de, it, pt, nl, zh, ja, ko, ar, license:apache-2.0, region:us"
+  },
+  {
     "id": "TheDrummer/Cydonia-24B-v4.3",
     "source": "Hugging Face",
     "url": "https://huggingface.co/TheDrummer/Cydonia-24B-v4.3",
@@ -68570,7 +69044,7 @@
     "pipeline_tag": "image-to-image",
     "library_name": "diffusers",
     "downloads": 270752,
-    "likes": 1406,
+    "likes": 1409,
     "tags": [
       "diffusers",
       "lora",
@@ -68601,7 +69075,7 @@
     "pipeline_tag": "mask-generation",
     "library_name": "transformers",
     "downloads": 2033919,
-    "likes": 4487,
+    "likes": 4501,
     "tags": [
       "transformers",
       "safetensors",
@@ -68986,7 +69460,7 @@
     "pipeline_tag": "",
     "library_name": "vllm",
     "downloads": 41340,
-    "likes": 100,
+    "likes": 101,
     "tags": [
       "vllm",
       "gguf",
@@ -69054,7 +69528,7 @@
     "pipeline_tag": "",
     "library_name": "vllm",
     "downloads": 37953,
-    "likes": 36,
+    "likes": 37,
     "tags": [
       "vllm",
       "safetensors",
@@ -69184,7 +69658,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 365224,
-    "likes": 74,
+    "likes": 75,
     "tags": [
       "transformers",
       "gguf",
@@ -69548,7 +70022,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "transformers",
     "downloads": 7089,
-    "likes": 913,
+    "likes": 914,
     "tags": [
       "transformers",
       "safetensors",
@@ -70177,8 +70651,8 @@
     "created_at": "2025-09-20",
     "pipeline_tag": "any-to-any",
     "library_name": "transformers",
-    "downloads": 720682,
-    "likes": 1028,
+    "downloads": 720971,
+    "likes": 1030,
     "tags": [
       "transformers",
       "safetensors",
@@ -72716,7 +73190,7 @@
     "pipeline_tag": "image-feature-extraction",
     "library_name": "transformers",
     "downloads": 777825,
-    "likes": 1307,
+    "likes": 1313,
     "tags": [
       "transformers",
       "safetensors",
@@ -72825,7 +73299,7 @@
     "pipeline_tag": "image-feature-extraction",
     "library_name": "transformers",
     "downloads": 454903,
-    "likes": 447,
+    "likes": 448,
     "tags": [
       "transformers",
       "safetensors",
@@ -72925,7 +73399,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 524450,
-    "likes": 875,
+    "likes": 876,
     "tags": [
       "transformers",
       "gguf",
@@ -73033,7 +73507,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 3362048,
-    "likes": 5410,
+    "likes": 5411,
     "tags": [
       "transformers",
       "safetensors",
@@ -73062,7 +73536,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 5956790,
-    "likes": 5184,
+    "likes": 5189,
     "tags": [
       "transformers",
       "safetensors",
@@ -75618,7 +76092,7 @@
     "pipeline_tag": "text-to-video",
     "library_name": "wan2.2",
     "downloads": 18939,
-    "likes": 836,
+    "likes": 837,
     "tags": [
       "wan2.2",
       "diffusers",
@@ -75689,7 +76163,7 @@
     "pipeline_tag": "sentence-similarity",
     "library_name": "sentence-transformers",
     "downloads": 3028857,
-    "likes": 2032,
+    "likes": 2031,
     "tags": [
       "sentence-transformers",
       "safetensors",
@@ -75817,8 +76291,8 @@
     "created_at": "2025-07-08",
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
-    "downloads": 762049,
-    "likes": 1061,
+    "downloads": 755881,
+    "likes": 1063,
     "tags": [
       "transformers",
       "safetensors",
@@ -75971,7 +76445,7 @@
     "pipeline_tag": "",
     "library_name": "mistral-common",
     "downloads": 174836,
-    "likes": 691,
+    "likes": 692,
     "tags": [
       "mistral-common",
       "safetensors",
@@ -76233,7 +76707,7 @@
     "pipeline_tag": "image-to-3d",
     "library_name": "hunyuan3d-2",
     "downloads": 69284,
-    "likes": 1282,
+    "likes": 1283,
     "tags": [
       "hunyuan3d-2",
       "diffusers",
@@ -76459,7 +76933,7 @@
     "pipeline_tag": "feature-extraction",
     "library_name": "sentence-transformers",
     "downloads": 2027544,
-    "likes": 833,
+    "likes": 834,
     "tags": [
       "sentence-transformers",
       "safetensors",
@@ -76593,7 +77067,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "",
     "downloads": 1869,
-    "likes": 761,
+    "likes": 762,
     "tags": [
       "dual_ar",
       "text-to-speech",
@@ -76773,7 +77247,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "mlx",
     "downloads": 429,
-    "likes": 15,
+    "likes": 16,
     "tags": [
       "mlx",
       "safetensors",
@@ -76797,7 +77271,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 638916,
-    "likes": 1101,
+    "likes": 1103,
     "tags": [
       "transformers",
       "safetensors",
@@ -77177,7 +77651,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "",
     "downloads": 581959,
-    "likes": 329,
+    "likes": 330,
     "tags": [
       "gguf",
       "text-generation",
@@ -77201,7 +77675,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 2164148,
-    "likes": 65,
+    "likes": 66,
     "tags": [
       "transformers",
       "safetensors",
@@ -77398,7 +77872,7 @@
     "pipeline_tag": "text-classification",
     "library_name": "transformers",
     "downloads": 119089,
-    "likes": 294,
+    "likes": 295,
     "tags": [
       "transformers",
       "safetensors",
@@ -77586,7 +78060,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 29878421,
-    "likes": 1819,
+    "likes": 1821,
     "tags": [
       "transformers",
       "safetensors",
@@ -77644,7 +78118,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 4094182,
-    "likes": 580,
+    "likes": 582,
     "tags": [
       "transformers",
       "safetensors",
@@ -77991,7 +78465,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "pyannote-audio",
     "downloads": 5385743,
-    "likes": 2984,
+    "likes": 3009,
     "tags": [
       "pyannote-audio",
       "pyannote",
@@ -78624,7 +79098,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "litert-lm",
     "downloads": 9834,
-    "likes": 1016,
+    "likes": 1018,
     "tags": [
       "litert-lm",
       "chat",
@@ -78992,7 +79466,7 @@
     "pipeline_tag": "text-to-video",
     "library_name": "diffusers",
     "downloads": 56274,
-    "likes": 631,
+    "likes": 632,
     "tags": [
       "diffusers",
       "safetensors",
@@ -79036,7 +79510,7 @@
     "pipeline_tag": "",
     "library_name": "diffusion-single-file",
     "downloads": 2857354,
-    "likes": 2544,
+    "likes": 2545,
     "tags": [
       "diffusion-single-file",
       "comfyui",
@@ -79078,7 +79552,7 @@
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
     "downloads": 1112164,
-    "likes": 1582,
+    "likes": 1583,
     "tags": [
       "transformers",
       "safetensors",
@@ -79383,8 +79857,8 @@
     "created_at": "2025-02-15",
     "pipeline_tag": "image-text-to-text",
     "library_name": "transformers",
-    "downloads": 1708633,
-    "likes": 108,
+    "downloads": 1679342,
+    "likes": 116,
     "tags": [
       "transformers",
       "safetensors",
@@ -79531,7 +80005,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 0,
-    "likes": 990,
+    "likes": 995,
     "tags": [
       "license:apache-2.0",
       "region:us"
@@ -79835,7 +80309,7 @@
     "pipeline_tag": "any-to-any",
     "library_name": "transformers",
     "downloads": 11060,
-    "likes": 3713,
+    "likes": 3714,
     "tags": [
       "transformers",
       "pytorch",
@@ -79971,7 +80445,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 1259978,
-    "likes": 14384,
+    "likes": 14387,
     "tags": [
       "transformers",
       "safetensors",
@@ -79998,8 +80472,8 @@
     "created_at": "2025-01-20",
     "pipeline_tag": "text-ranking",
     "library_name": "transformers",
-    "downloads": 1987841,
-    "likes": 98,
+    "downloads": 2089071,
+    "likes": 106,
     "tags": [
       "transformers",
       "onnx",
@@ -80487,7 +80961,7 @@
     "pipeline_tag": "text-to-speech",
     "library_name": "",
     "downloads": 10423691,
-    "likes": 7259,
+    "likes": 7261,
     "tags": [
       "text-to-speech",
       "en",
@@ -81068,7 +81542,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 257632,
-    "likes": 3138,
+    "likes": 3140,
     "tags": [
       "transformers",
       "safetensors",
@@ -81216,7 +81690,7 @@
     "pipeline_tag": "",
     "library_name": "diffusers",
     "downloads": 80318,
-    "likes": 1255,
+    "likes": 1258,
     "tags": [
       "diffusers",
       "safetensors",
@@ -81263,7 +81737,7 @@
     "pipeline_tag": "",
     "library_name": "vllm",
     "downloads": 9431,
-    "likes": 279,
+    "likes": 281,
     "tags": [
       "vllm",
       "safetensors",
@@ -81977,7 +82451,7 @@
     "pipeline_tag": "image-segmentation",
     "library_name": "transformers",
     "downloads": 392457,
-    "likes": 1533,
+    "likes": 1535,
     "tags": [
       "transformers",
       "pytorch",
@@ -82006,7 +82480,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 68863,
-    "likes": 1214,
+    "likes": 1217,
     "tags": [
       "diffusers",
       "safetensors",
@@ -82095,8 +82569,8 @@
     "created_at": "2024-10-22",
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
-    "downloads": 47695,
-    "likes": 4116,
+    "downloads": 62946,
+    "likes": 4130,
     "tags": [
       "diffusers",
       "safetensors",
@@ -82343,7 +82817,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "transformers",
     "downloads": 6291938,
-    "likes": 3454,
+    "likes": 3455,
     "tags": [
       "transformers",
       "safetensors",
@@ -82686,7 +83160,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 5841558,
-    "likes": 1848,
+    "likes": 1850,
     "tags": [
       "transformers",
       "safetensors",
@@ -82725,7 +83199,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 1250531,
-    "likes": 2797,
+    "likes": 2800,
     "tags": [
       "transformers",
       "safetensors",
@@ -82763,7 +83237,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 324322,
-    "likes": 549,
+    "likes": 552,
     "tags": [
       "transformers",
       "gguf",
@@ -82794,7 +83268,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 246545,
-    "likes": 1029,
+    "likes": 1031,
     "tags": [
       "transformers",
       "safetensors",
@@ -82832,7 +83306,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 603835,
-    "likes": 2695,
+    "likes": 2696,
     "tags": [
       "transformers",
       "safetensors",
@@ -83006,7 +83480,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 5920307,
-    "likes": 888,
+    "likes": 889,
     "tags": [
       "transformers",
       "safetensors",
@@ -83422,7 +83896,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 5973624,
-    "likes": 692,
+    "likes": 693,
     "tags": [
       "transformers",
       "safetensors",
@@ -83732,7 +84206,7 @@
     "pipeline_tag": "feature-extraction",
     "library_name": "transformers",
     "downloads": 1764526,
-    "likes": 1167,
+    "likes": 1168,
     "tags": [
       "transformers",
       "pytorch",
@@ -84135,7 +84609,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 368390,
-    "likes": 1277,
+    "likes": 1278,
     "tags": [
       "transformers",
       "safetensors",
@@ -84505,7 +84979,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 645995,
-    "likes": 15590,
+    "likes": 15597,
     "tags": [
       "diffusers",
       "safetensors",
@@ -84529,7 +85003,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 563011,
-    "likes": 6291,
+    "likes": 6298,
     "tags": [
       "diffusers",
       "safetensors",
@@ -84892,7 +85366,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 5764653,
-    "likes": 8450,
+    "likes": 8460,
     "tags": [
       "transformers",
       "safetensors",
@@ -85020,7 +85494,7 @@
     "pipeline_tag": "image-to-3d",
     "library_name": "",
     "downloads": 48076,
-    "likes": 1270,
+    "likes": 1272,
     "tags": [
       "safetensors",
       "image-to-3d",
@@ -85246,7 +85720,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 671635,
-    "likes": 2661,
+    "likes": 2665,
     "tags": [
       "transformers",
       "safetensors",
@@ -86329,8 +86803,8 @@
     "created_at": "2024-06-05",
     "pipeline_tag": "object-detection",
     "library_name": "transformers",
-    "downloads": 893185,
-    "likes": 19,
+    "downloads": 1164902,
+    "likes": 27,
     "tags": [
       "transformers",
       "safetensors",
@@ -86528,7 +87002,7 @@
     "pipeline_tag": "text-to-audio",
     "library_name": "stable-audio-tools",
     "downloads": 19934,
-    "likes": 1766,
+    "likes": 1768,
     "tags": [
       "stable-audio-tools",
       "diffusers",
@@ -87189,7 +87663,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 582550,
-    "likes": 5375,
+    "likes": 5377,
     "tags": [
       "transformers",
       "safetensors",
@@ -87249,7 +87723,7 @@
     "pipeline_tag": "",
     "library_name": "vllm",
     "downloads": 44125,
-    "likes": 773,
+    "likes": 774,
     "tags": [
       "vllm",
       "safetensors",
@@ -87516,7 +87990,7 @@
     "pipeline_tag": "text-to-video",
     "library_name": "diffusers",
     "downloads": 25322,
-    "likes": 1012,
+    "likes": 1013,
     "tags": [
       "diffusers",
       "text-to-video",
@@ -88786,7 +89260,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 209243,
-    "likes": 1902,
+    "likes": 1903,
     "tags": [
       "diffusers",
       "text-to-image",
@@ -90205,7 +90679,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "pyannote-audio",
     "downloads": 6843016,
-    "likes": 4397,
+    "likes": 4407,
     "tags": [
       "pyannote-audio",
       "pyannote",
@@ -90266,7 +90740,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "transformers",
     "downloads": 3716209,
-    "likes": 6653,
+    "likes": 6655,
     "tags": [
       "transformers",
       "pytorch",
@@ -90739,8 +91213,8 @@
     "created_at": "2023-10-26",
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
-    "downloads": 88276,
-    "likes": 1859,
+    "downloads": 91314,
+    "likes": 1861,
     "tags": [
       "transformers",
       "pytorch",
@@ -91130,7 +91604,7 @@
     "pipeline_tag": "voice-activity-detection",
     "library_name": "pyannote-audio",
     "downloads": 5243294,
-    "likes": 2246,
+    "likes": 2253,
     "tags": [
       "pyannote-audio",
       "pytorch",
@@ -91720,7 +92194,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 0,
-    "likes": 1441,
+    "likes": 1442,
     "tags": [
       "diffusers",
       "safetensors",
@@ -91883,7 +92357,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 4252456,
-    "likes": 8345,
+    "likes": 8347,
     "tags": [
       "diffusers",
       "onnx",
@@ -92496,7 +92970,7 @@
     "pipeline_tag": "",
     "library_name": "",
     "downloads": 0,
-    "likes": 799,
+    "likes": 800,
     "tags": [
       "onnx",
       "ar",
@@ -94316,7 +94790,7 @@
     "pipeline_tag": "text-to-image",
     "library_name": "diffusers",
     "downloads": 2345,
-    "likes": 3973,
+    "likes": 3972,
     "tags": [
       "diffusers",
       "stable-diffusion",
@@ -94719,7 +95193,7 @@
     "pipeline_tag": "automatic-speech-recognition",
     "library_name": "transformers",
     "downloads": 3392042,
-    "likes": 630,
+    "likes": 631,
     "tags": [
       "transformers",
       "pytorch",
@@ -97025,7 +97499,7 @@
     "pipeline_tag": "sentence-similarity",
     "library_name": "sentence-transformers",
     "downloads": 213006807,
-    "likes": 6343,
+    "likes": 6345,
     "tags": [
       "sentence-transformers",
       "pytorch",
@@ -97086,7 +97560,7 @@
     "pipeline_tag": "text-generation",
     "library_name": "transformers",
     "downloads": 16217581,
-    "likes": 4257,
+    "likes": 4258,
     "tags": [
       "transformers",
       "pytorch",
@@ -98547,8 +99021,8 @@
     "created_at": "2022-03-02",
     "pipeline_tag": "fill-mask",
     "library_name": "transformers",
-    "downloads": 2311949,
-    "likes": 440,
+    "downloads": 2278248,
+    "likes": 448,
     "tags": [
       "transformers",
       "pytorch",
