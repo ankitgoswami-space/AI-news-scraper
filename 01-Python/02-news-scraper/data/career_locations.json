@@ -2,10 +2,10 @@
   "generated_from": "company_location_extractor.py",
   "locations": {
     "Bengaluru": {
-      "total": 4432,
+      "total": 4450,
       "sources": {
         "Adzuna India": 2978,
-        "AIM": 1229,
+        "AIM": 1247,
         "YourStory": 106,
         "Inc42": 73,
         "ET Tech": 33,
@@ -14,10 +14,10 @@
       }
     },
     "Hyderabad": {
-      "total": 1602,
+      "total": 1606,
       "sources": {
-        "Adzuna India": 1264,
-        "AIM": 302,
+        "Adzuna India": 1266,
+        "AIM": 304,
         "Inc42": 17,
         "YourStory": 12,
         "ET Tech": 4,
@@ -26,12 +26,12 @@
       }
     },
     "Remote": {
-      "total": 1351,
+      "total": 1354,
       "sources": {
         "HN Who's Hiring": 427,
         "Adzuna India": 359,
         "RemoteOK": 196,
-        "We Work Remotely": 156,
+        "We Work Remotely": 159,
         "arXiv": 139,
         "AIM": 28,
         "Google Research": 15,
@@ -43,10 +43,10 @@
       }
     },
     "Mumbai": {
-      "total": 935,
+      "total": 938,
       "sources": {
         "Adzuna India": 603,
-        "AIM": 257,
+        "AIM": 260,
         "Inc42": 40,
         "YourStory": 26,
         "ET Tech": 8,
@@ -54,10 +54,10 @@
       }
     },
     "Chennai": {
-      "total": 878,
+      "total": 916,
       "sources": {
-        "Adzuna India": 634,
-        "AIM": 208,
+        "Adzuna India": 636,
+        "AIM": 244,
         "YourStory": 18,
         "Inc42": 12,
         "RemoteOK": 4,
