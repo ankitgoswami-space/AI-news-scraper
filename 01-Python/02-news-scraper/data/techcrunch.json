@@ -1,19 +1,187 @@
 [
     {
+        "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
+        "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
+        "url": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Anthropic’s cloud partnerships are getting messy",
+        "url": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "SpaceX’s AI business is beating expectations",
+        "url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
+        "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Google has joined Amazon in attacking Nvidia’s stronghold with AI app developers",
+        "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "ChatGPT now lets you lock your chats",
+        "url": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Eric Schmidt reportedly owns about half as much of Anthropic as CEO Dario Amodei",
+        "url": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Meta’s Muse hits 10M US downloads in 40 days, a milestone reached by only 11 other apps",
+        "url": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Ex-Nvidia-turned-VC Amulya Vishwanath: ‘Physical AI is in its LEGO era’",
+        "url": "https://techcrunch.com/2026/10/20/ex-nvidia-turned-vc-amulya-vishwanath-physical-ai-is-in-its-lego-era/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Plants can speak using electricity, so this startup built an AI model to decipher their language",
+        "url": "https://techcrunch.com/2026/10/20/plants-can-speak-using-electricity-so-this-startup-built-an-ai-model-to-decipher-their-language/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Figma co-founder Dylan Field thinks MCP is not a perfect protocol",
+        "url": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "US orders federal agencies to remove China’s DeepSeek AI from their systems",
+        "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Eka is worth $1.45B thanks to a physical AI model that has experts raving",
+        "url": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Yelp can now call on your behalf to check wait times at a restaurant",
+        "url": "https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Otter AI raises $320M from General Catalyst’s growth fund for its meeting tool",
+        "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Mamdani says feds have abdicated on AI, urges New Yorkers to push back",
+        "url": "https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Nscale and Anthropic are reportedly in talks for yet another $45B compute deal",
+        "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Embedded AI evaluators won’t be an easy solution, Hugging Face’s policy chief says",
+        "url": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Microsoft says AI agents are like insider threats as ‘frontier models can’t be trusted’",
+        "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+        "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Hackers hit AI coding tool OpenCode, running up charges on users’ AI accounts",
+        "url": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Tolan snags $30M for its AI companion that helps users navigate life",
+        "url": "https://techcrunch.com/2026/10/19/tolan-snags-30m-for-its-ai-companion-that-helps-users-navigate-life/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Replika’s founder built the AI assistant she pitched at Disrupt 12 years ago",
+        "url": "https://techcrunch.com/2026/10/19/replikas-founder-built-the-ai-assistant-she-pitched-at-disrupt-12-years-ago/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Tenstorrent hits $6.2B valuation to scale open-weight AI chips",
+        "url": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "People are using AI to make their smart TVs dumb again",
+        "url": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Nvidia launches new open models to run agents in the enterprise and on PCs",
+        "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Laplace Intelligence red-teams robots and self-driving cars before they hit the real world",
+        "url": "https://techcrunch.com/2026/10/19/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
         "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
         "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
         "source": "TechCrunch",
         "category": "AI"
     },
     {
-        "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+        "title": "Disney agrees to hire the majority of Character AI’s workforce",
         "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
         "source": "TechCrunch",
         "category": "AI"
     },
     {
-        "title": "Meta removes language that raised scraping and AI training concerns",
-        "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+        "title": "Everyone’s watching the Elizabeth Holmes documentary ‘You Can See Everything’",
+        "url": "https://techcrunch.com/2026/10/18/everyones-watching-the-elizabeth-holmes-documentary-you-can-see-everything/",
         "source": "TechCrunch",
         "category": "AI"
     },
@@ -30,176 +198,20 @@
         "category": "AI"
     },
     {
-        "title": "India becomes the latest country to report rogue AI agent activity",
-        "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Elorian’s first AI model wants to reason with images, not just about them",
-        "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Jev is Vercel’s fastest-adopted AI model ever",
-        "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Mark Wahlberg on using AI in film ‘the right way’ and being open to an AI clone carrying on his legacy",
-        "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
-        "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
-        "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
-        "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Meta launches an open-weight AI model that runs on Macs",
-        "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps",
-        "url": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Anthropic is letting METR researchers look under the hood with employee-level access",
-        "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Bluesky expands its AI-powered Attie app to let anyone build websites, games, and more",
-        "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Last chance to save up to $200 on your TechCrunch Founder Summit pass: Early booking ends October 16",
-        "url": "https://techcrunch.com/2026/10/15/last-chance-to-save-up-to-200-on-techcrunch-founder-summit-early-booking-ends-oct-16/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "AI agents are coming to Rivian’s cars",
-        "url": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Google’s Universal Cart shopping tool launches in the US",
-        "url": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "TechCrunch Disrupt 2026: Last day",
-        "url": "https://techcrunch.com/2026/10/15/techcrunch-disrupt-2026-last-day/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Amazon’s Bee launches two new personal AI devices, starting at $75",
-        "url": "https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Figma announces new features to define how agents work on its platform",
-        "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Ricursive Intelligence is betting on AI-designed chips to help solve the compute crisis",
-        "url": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Gudea leverages AI to help organizations prevent social media crises before they erupt",
-        "url": "https://techcrunch.com/2026/10/14/gudea-leverages-ai-to-help-organizations-prevent-social-media-crises-before-they-erupt/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Flock CEO says its microphones detect ‘just gunshots’ — its website says different",
-        "url": "https://techcrunch.com/2026/10/14/flock-ceo-says-its-microphones-detect-just-gunshots-its-website-says-different/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-        "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
-        "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Deezer will soon let you filter out AI-generated music",
-        "url": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
         "title": "Mark Wahlberg wants to take on the longevity-startup crowd with an affordable gym concept",
         "url": "https://techcrunch.com/2026/10/16/mark-wahlberg-wants-to-take-on-the-longevity-startup-crowd-with-an-affordable-gym-concept/",
         "source": "TechCrunch",
         "category": "AI"
     },
     {
+        "title": "India becomes the latest country to report rogue AI agent activity",
+        "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
         "title": "Tesla reveals SpaceX-powered Roadster that flies and falls with style",
         "url": "https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Bumble agrees to a $1.3B acquisition deal as online dating faces a reset",
-        "url": "https://techcrunch.com/2026/10/13/bumble-agrees-to-a-1-3b-acquisition-deal-as-online-dating-faces-a-reset/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Just 5 years in, interactive chatbot platform Character.AI files for bankruptcy",
-        "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Meta releases its first frontier model, Muse Wonder",
-        "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "This AI startup says it can generate permit-ready blueprints in minutes",
-        "url": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
         "source": "TechCrunch",
         "category": "AI"
     }

@@ -2,17 +2,17 @@
   "generated_from": "company_location_extractor.py",
   "companies": {
     "Google": {
-      "total": 4348,
+      "total": 4463,
       "sources": {
         "AIM": 2243,
-        "Google Research": 784,
-        "arXiv": 317,
-        "Adzuna India": 298,
-        "Hugging Face": 295,
-        "ET Tech": 183,
-        "Mint": 83,
-        "Inc42": 46,
-        "YourStory": 44,
+        "Google Research": 826,
+        "arXiv": 340,
+        "Adzuna India": 316,
+        "Hugging Face": 301,
+        "ET Tech": 182,
+        "Mint": 84,
+        "YourStory": 69,
+        "Inc42": 47,
         "HN Who's Hiring": 27,
         "RemoteOK": 24,
         "We Work Remotely": 3,
@@ -20,52 +20,52 @@
       }
     },
     "Anthropic": {
-      "total": 2719,
+      "total": 2844,
       "sources": {
-        "AIM": 1875,
-        "arXiv": 364,
-        "ET Tech": 253,
-        "Inc42": 51,
-        "Mint": 47,
-        "Adzuna India": 42,
+        "AIM": 1948,
+        "arXiv": 405,
+        "ET Tech": 254,
+        "Inc42": 52,
+        "Mint": 50,
+        "Adzuna India": 43,
         "HN Who's Hiring": 27,
-        "Hugging Face": 25,
+        "Hugging Face": 26,
         "Google Research": 10,
-        "YourStory": 8,
+        "YourStory": 9,
         "RemoteOK": 8,
-        "We Work Remotely": 5,
-        "TechCrunch": 4
+        "TechCrunch": 7,
+        "We Work Remotely": 5
       }
     },
     "OpenAI": {
-      "total": 1978,
+      "total": 2009,
       "sources": {
-        "AIM": 1510,
-        "ET Tech": 186,
-        "arXiv": 67,
-        "Hugging Face": 58,
-        "Inc42": 57,
-        "Adzuna India": 41,
-        "Mint": 37,
+        "AIM": 1517,
+        "ET Tech": 191,
+        "arXiv": 70,
+        "Hugging Face": 60,
+        "Inc42": 58,
+        "Mint": 47,
+        "Adzuna India": 42,
         "YourStory": 8,
         "HN Who's Hiring": 6,
         "Google Research": 4,
+        "TechCrunch": 3,
         "We Work Remotely": 2,
-        "TechCrunch": 1,
         "RemoteOK": 1
       }
     },
     "Amazon / AWS": {
-      "total": 1753,
+      "total": 1831,
       "sources": {
-        "Adzuna India": 1096,
+        "Adzuna India": 1151,
         "AIM": 310,
-        "Mint": 71,
-        "arXiv": 55,
-        "ET Tech": 45,
+        "Mint": 77,
+        "arXiv": 59,
+        "YourStory": 54,
         "HN Who's Hiring": 45,
-        "YourStory": 43,
-        "Inc42": 33,
+        "ET Tech": 44,
+        "Inc42": 36,
         "We Work Remotely": 27,
         "RemoteOK": 20,
         "Google Research": 4,
@@ -74,60 +74,62 @@
       }
     },
     "NVIDIA": {
-      "total": 1535,
+      "total": 1615,
       "sources": {
-        "AIM": 909,
-        "Hugging Face": 317,
-        "arXiv": 124,
-        "ET Tech": 118,
-        "Adzuna India": 30,
-        "Mint": 24,
-        "YourStory": 5,
+        "AIM": 925,
+        "Hugging Face": 348,
+        "arXiv": 131,
+        "ET Tech": 130,
+        "Adzuna India": 34,
+        "Mint": 26,
+        "YourStory": 8,
+        "TechCrunch": 4,
         "RemoteOK": 4,
-        "Inc42": 2,
+        "Inc42": 3,
         "HN Who's Hiring": 2
       }
     },
     "Meta": {
-      "total": 1424,
+      "total": 1533,
       "sources": {
-        "Hugging Face": 528,
-        "arXiv": 491,
+        "Hugging Face": 568,
+        "arXiv": 530,
         "AIM": 161,
+        "Mint": 91,
         "Adzuna India": 80,
-        "ET Tech": 70,
-        "Mint": 66,
-        "YourStory": 13,
-        "Inc42": 7,
+        "ET Tech": 68,
+        "YourStory": 14,
+        "Inc42": 11,
+        "RemoteOK": 4,
         "Google Research": 3,
-        "HN Who's Hiring": 3,
-        "RemoteOK": 2
+        "HN Who's Hiring": 3
       }
     },
     "Microsoft": {
-      "total": 1176,
+      "total": 1257,
       "sources": {
         "AIM": 540,
-        "Adzuna India": 400,
-        "ET Tech": 102,
-        "Hugging Face": 37,
-        "Mint": 29,
+        "Adzuna India": 460,
+        "ET Tech": 101,
+        "Hugging Face": 43,
+        "Mint": 38,
         "RemoteOK": 27,
-        "arXiv": 13,
-        "YourStory": 11,
-        "Inc42": 6,
+        "arXiv": 15,
+        "YourStory": 14,
+        "Inc42": 7,
         "HN Who's Hiring": 6,
-        "We Work Remotely": 5
+        "We Work Remotely": 5,
+        "TechCrunch": 1
       }
     },
     "Oracle": {
-      "total": 1078,
+      "total": 1125,
       "sources": {
-        "arXiv": 697,
+        "arXiv": 742,
         "AIM": 264,
-        "Adzuna India": 75,
+        "Adzuna India": 76,
         "RemoteOK": 17,
-        "ET Tech": 8,
+        "ET Tech": 9,
         "Google Research": 7,
         "Inc42": 6,
         "YourStory": 3,
@@ -135,26 +137,26 @@
       }
     },
     "Accenture": {
-      "total": 858,
+      "total": 941,
       "sources": {
-        "Adzuna India": 683,
-        "AIM": 164,
+        "Adzuna India": 754,
+        "AIM": 176,
         "ET Tech": 6,
         "YourStory": 4,
         "RemoteOK": 1
       }
     },
     "Apple": {
-      "total": 776,
+      "total": 876,
       "sources": {
-        "Mint": 275,
+        "Mint": 328,
         "AIM": 208,
-        "ET Tech": 141,
-        "Inc42": 53,
-        "Hugging Face": 39,
-        "arXiv": 25,
-        "Adzuna India": 20,
-        "YourStory": 6,
+        "ET Tech": 148,
+        "Inc42": 86,
+        "Hugging Face": 40,
+        "arXiv": 29,
+        "Adzuna India": 21,
+        "YourStory": 7,
         "HN Who's Hiring": 5,
         "RemoteOK": 2,
         "Google Research": 1,
@@ -162,11 +164,11 @@
       }
     },
     "IBM": {
-      "total": 612,
+      "total": 614,
       "sources": {
         "AIM": 381,
         "Adzuna India": 188,
-        "arXiv": 25,
+        "arXiv": 27,
         "Hugging Face": 12,
         "ET Tech": 6
       }
@@ -183,9 +185,9 @@
       }
     },
     "Databricks": {
-      "total": 450,
+      "total": 480,
       "sources": {
-        "Adzuna India": 314,
+        "Adzuna India": 344,
         "AIM": 133,
         "RemoteOK": 2,
         "We Work Remotely": 1
@@ -204,10 +206,10 @@
       }
     },
     "Salesforce": {
-      "total": 359,
+      "total": 376,
       "sources": {
+        "Adzuna India": 166,
         "AIM": 151,
-        "Adzuna India": 149,
         "We Work Remotely": 36,
         "RemoteOK": 10,
         "arXiv": 7,
@@ -217,11 +219,11 @@
       }
     },
     "Mistral AI": {
-      "total": 321,
+      "total": 335,
       "sources": {
-        "Hugging Face": 121,
+        "Hugging Face": 124,
         "AIM": 98,
-        "arXiv": 81,
+        "arXiv": 92,
         "Mint": 13,
         "Adzuna India": 4,
         "Google Research": 3,
@@ -239,6 +241,19 @@
         "Inc42": 1
       }
     },
+    "Snowflake": {
+      "total": 271,
+      "sources": {
+        "Adzuna India": 164,
+        "AIM": 93,
+        "YourStory": 4,
+        "Hugging Face": 4,
+        "arXiv": 2,
+        "HN Who's Hiring": 2,
+        "RemoteOK": 1,
+        "We Work Remotely": 1
+      }
+    },
     "HCLTech": {
       "total": 253,
       "sources": {
@@ -249,55 +264,42 @@
         "Adzuna India": 2
       }
     },
-    "Snowflake": {
-      "total": 248,
-      "sources": {
-        "Adzuna India": 141,
-        "AIM": 93,
-        "YourStory": 4,
-        "Hugging Face": 4,
-        "arXiv": 2,
-        "HN Who's Hiring": 2,
-        "RemoteOK": 1,
-        "We Work Remotely": 1
-      }
-    },
     "AMD": {
-      "total": 218,
+      "total": 232,
       "sources": {
         "AIM": 143,
-        "ET Tech": 35,
-        "arXiv": 24,
-        "Hugging Face": 11,
+        "ET Tech": 40,
+        "arXiv": 32,
+        "Hugging Face": 12,
         "Google Research": 3,
         "Inc42": 1,
         "HN Who's Hiring": 1
       }
     },
     "Cognizant": {
-      "total": 201,
+      "total": 204,
       "sources": {
         "AIM": 133,
         "Adzuna India": 66,
-        "YourStory": 1,
+        "YourStory": 4,
         "ET Tech": 1
       }
     },
     "Wipro": {
-      "total": 198,
+      "total": 199,
       "sources": {
         "AIM": 141,
         "ET Tech": 27,
-        "Adzuna India": 21,
+        "Adzuna India": 22,
         "HN Who's Hiring": 4,
         "YourStory": 3,
         "Inc42": 2
       }
     },
     "SAP": {
-      "total": 184,
+      "total": 192,
       "sources": {
-        "Adzuna India": 83,
+        "Adzuna India": 91,
         "AIM": 59,
         "RemoteOK": 14,
         "arXiv": 13,
@@ -308,31 +310,32 @@
         "YourStory": 1
       }
     },
+    "Qualcomm": {
+      "total": 184,
+      "sources": {
+        "ET Tech": 81,
+        "AIM": 46,
+        "Adzuna India": 29,
+        "Inc42": 13,
+        "Mint": 6,
+        "arXiv": 5,
+        "HN Who's Hiring": 3,
+        "YourStory": 1
+      }
+    },
     "Intel": {
-      "total": 176,
+      "total": 182,
       "sources": {
         "AIM": 119,
-        "ET Tech": 17,
+        "ET Tech": 22,
+        "Adzuna India": 11,
         "arXiv": 10,
-        "Adzuna India": 10,
         "YourStory": 7,
         "Mint": 6,
         "Hugging Face": 4,
         "Google Research": 1,
         "HN Who's Hiring": 1,
         "RemoteOK": 1
-      }
-    },
-    "Qualcomm": {
-      "total": 165,
-      "sources": {
-        "ET Tech": 81,
-        "AIM": 37,
-        "Adzuna India": 22,
-        "Inc42": 13,
-        "Mint": 5,
-        "arXiv": 4,
-        "HN Who's Hiring": 3
       }
     },
     "Adobe": {
@@ -367,11 +370,11 @@
       }
     },
     "Fractal": {
-      "total": 64,
+      "total": 68,
       "sources": {
         "Adzuna India": 23,
+        "arXiv": 18,
         "Inc42": 16,
-        "arXiv": 14,
         "AIM": 8,
         "YourStory": 1,
         "ET Tech": 1,
@@ -379,11 +382,12 @@
       }
     },
     "Broadcom": {
-      "total": 55,
+      "total": 56,
       "sources": {
         "AIM": 49,
         "ET Tech": 4,
-        "Mint": 2
+        "Mint": 2,
+        "Adzuna India": 1
       }
     },
     "Neysa": {
@@ -401,9 +405,9 @@
       }
     },
     "Capgemini": {
-      "total": 32,
+      "total": 34,
       "sources": {
-        "Adzuna India": 18,
+        "Adzuna India": 20,
         "AIM": 12,
         "YourStory": 1,
         "ET Tech": 1
