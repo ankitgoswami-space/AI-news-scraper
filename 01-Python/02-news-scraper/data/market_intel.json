@@ -1,6 +1,6 @@
 {
   "generated_by": "blog_intel.py",
-  "last_updated": "2026-10-21 09:44:54",
+  "last_updated": "2026-10-21 10:13:35",
   "articles": [
     {
       "salary_bands": [
@@ -2609,6 +2609,180 @@
         "title": "AI Jobs in India Salary (2026): Complete Pay Guide from Fresher to 1 Crore",
         "source_url": "",
         "scraped_date": "2026-06-06"
+      }
+    },
+    {
+      "salary_bands": [
+        {
+          "role": "data annotation contractor",
+          "experience": "fresher",
+          "min_lpa": 3,
+          "max_lpa": 3,
+          "notes": "Contractor role"
+        },
+        {
+          "role": "senior LLM engineer",
+          "experience": "senior",
+          "min_lpa": 70,
+          "max_lpa": 70,
+          "notes": "At a product company"
+        },
+        {
+          "role": "Prompt Engineer",
+          "experience": "fresher",
+          "min_lpa": 6,
+          "max_lpa": null,
+          "notes": "Entry level"
+        },
+        {
+          "role": "Prompt Engineer",
+          "experience": "senior",
+          "min_lpa": null,
+          "max_lpa": 40,
+          "notes": "Senior and lead roles at product companies and MNCs"
+        },
+        {
+          "role": "MLOps Engineer",
+          "experience": "mid",
+          "min_lpa": 12,
+          "max_lpa": 35,
+          "notes": "Managing AI model infrastructure"
+        },
+        {
+          "role": "AI Product Manager",
+          "experience": "senior",
+          "min_lpa": 18,
+          "max_lpa": 55,
+          "notes": "At senior levels"
+        },
+        {
+          "role": "Junior Agentic AI Developer",
+          "experience": "junior",
+          "min_lpa": 12,
+          "max_lpa": 20,
+          "notes": "Requires strong GenAI foundation"
+        },
+        {
+          "role": "Mid-Level Agentic Systems Engineer",
+          "experience": "mid",
+          "min_lpa": 25,
+          "max_lpa": 45,
+          "notes": null
+        },
+        {
+          "role": "Senior Agentic AI Architect",
+          "experience": "senior",
+          "min_lpa": 50,
+          "max_lpa": 80,
+          "notes": "At product companies"
+        }
+      ],
+      "skills_in_demand": [
+        {
+          "skill": "Python",
+          "relevance": "core",
+          "notes": "High demand for depth in Python"
+        },
+        {
+          "skill": "PyTorch",
+          "relevance": "core",
+          "notes": "Scarcity resource skill"
+        },
+        {
+          "skill": "LLMs",
+          "relevance": "core",
+          "notes": "Generative AI foundational skill"
+        },
+        {
+          "skill": "RAG systems",
+          "relevance": "core",
+          "notes": "Used in transformer architectures and LLM deployment"
+        },
+        {
+          "skill": "LangChain",
+          "relevance": "important",
+          "notes": "Used by GenAI developers for LLM-powered applications"
+        },
+        {
+          "skill": "GPT",
+          "relevance": "important",
+          "notes": "Used in building GenAI applications"
+        },
+        {
+          "skill": "Llama",
+          "relevance": "important",
+          "notes": "Used in building GenAI applications"
+        },
+        {
+          "skill": "HuggingFace",
+          "relevance": "important",
+          "notes": "Used in building GenAI applications"
+        },
+        {
+          "skill": "LangGraph",
+          "relevance": "important",
+          "notes": "Multi-agent orchestration framework"
+        },
+        {
+          "skill": "CrewAI",
+          "relevance": "important",
+          "notes": "Multi-agent orchestration framework"
+        },
+        {
+          "skill": "AutoGen",
+          "relevance": "important",
+          "notes": "Multi-agent orchestration framework"
+        },
+        {
+          "skill": "Vector databases",
+          "relevance": "important",
+          "notes": "Required for agentic systems"
+        }
+      ],
+      "city_patterns": [
+        {
+          "city": "Bengaluru",
+          "typical_roles": [
+            "GenAI engineers",
+            "Mid-senior AI roles"
+          ],
+          "salary_range_lpa": "15-45 LPA"
+        },
+        {
+          "city": "Hyderabad",
+          "typical_roles": [
+            "Enterprise AI and GCC roles"
+          ],
+          "salary_range_lpa": "13-35 LPA"
+        },
+        {
+          "city": "Mumbai",
+          "typical_roles": [
+            "FinTech and retail AI applications"
+          ],
+          "salary_range_lpa": "12-38 LPA"
+        },
+        {
+          "city": "Delhi-NCR",
+          "typical_roles": [
+            "Startup and enterprise roles"
+          ],
+          "salary_range_lpa": "10-32 LPA"
+        }
+      ],
+      "key_insights": [
+        "India's AI job demand grew over 40% year-on-year according to NASSCOM's 2024 report, with over 450,000 AI job listings existing on major platforms.",
+        "Freshers in India are landing 8-12 LPA packages without prior corporate experience due to a severe supply-demand mismatch where fewer than 3% of engineering graduates have real AI/ML skills.",
+        "Generative AI engineers in India earn 20-70 LPA compared to 10-40 LPA for traditional ML engineers due to immediate business impact and scarcer talent.",
+        "By 2026, India is projected to host over 1 million active AI and ML job roles, with 15-20% year-on-year salary growth expected to continue.",
+        "ESOPs at startups and BigTech Global Capability Centres (GCCs) can add 20-50% on top of base salary.",
+        "Bengaluru leads in volume and top-end salary, while Hyderabad is the fastest-growing hub driven by enterprise AI and GCC presence.",
+        "Gartner predicted that four out of five engineers will need to upskill by 2027 to stay relevant in GenAI-shaped roles."
+      ],
+      "article_meta": {
+        "title": "AI Jobs in India Salary (2026): Complete Pay Guide from Fresher to 1 Crore",
+        "source_url": "",
+        "scraped_date": "2026-03-30"
       }
     }
   ]
