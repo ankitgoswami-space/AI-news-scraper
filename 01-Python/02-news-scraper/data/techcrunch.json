@@ -1,6 +1,162 @@
 [
     {
-        "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+        "title": "VCs will make billions on Anthropic’s IPO, but Amazon is set to make much (much) more",
+        "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+        "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "The data center boom has an upside: innovation for the US grid",
+        "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Bank of America kindly asks that you don’t share your banking password with your AI assistant",
+        "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Who’s really in charge at Anthropic after the IPO?",
+        "url": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Disruptive raises $10B fund to make big bets on at least 10 companies",
+        "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Frontier AI labs say their models refuted the Exponential Time Hypothesis. What does that mean?",
+        "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Google’s Genie 4 world model adds audio, more realistic worlds, and real-time steering",
+        "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Workspace",
+        "url": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Japan internet giant GMO says hackers posted stolen customer data",
+        "url": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Opera introduces a new web standard to let users deploy AI locally in their browser",
+        "url": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "General Compute raises $100 million Series A, countering the neocloud disaster narrative",
+        "url": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Nvidia backs Indian startup helping companies run AI models with fewer GPUs",
+        "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "How OpenAI turned its coding tools into dots, an always-on personal assistant",
+        "url": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Cohere says Alibaba’s Qwen model tried to send a file to Beijing",
+        "url": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
+        "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "SpaceX locks in $40B GPU financing deal with Apollo",
+        "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Anthropic officially files for its public debut",
+        "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+        "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+        "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "The hottest AI wearables and gadgets you should know about",
+        "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Will AI expose the rickety infrastructure of the internet?",
+        "url": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+        "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Block’s new voice model sounds eerily human",
+        "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+        "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Here are the top AI agents that can live in your text messages",
+        "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "OpenAI says it will no longer train its AI models on the live internet, citing ‘significant risks’",
         "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
         "source": "TechCrunch",
         "category": "AI"
@@ -24,158 +180,8 @@
         "category": "AI"
     },
     {
-        "title": "Left alone with nothing to do, AI agents started playing",
-        "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
-        "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
-        "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "OpenAI makes its Jev competitor widely available as decision model competition heats up",
-        "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Canva releases its first image generation model",
-        "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’",
-        "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise",
-        "url": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Uber puts all 30,000 employees on ChatGPT Work",
-        "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Spotify’s current AI bet is about being the music service that agents choose",
-        "url": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Claude Duet app is Anthropic’s bet on agents",
-        "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Nirva raises $33M for a pendant that only listens to you",
-        "url": "https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "DeepSeek reportedly raises $15B days after US restrictions",
-        "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown",
-        "url": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Meta wants to pay for its broad AI buildout with a newly created class of stock",
-        "url": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "TechCrunch Founder Summit 2026: Everything you need to know",
-        "url": "https://techcrunch.com/2026/10/21/techcrunch-founder-summit-2026-everything-you-need-to-know/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Meta says Muse has over 10M users, with shopping a top activity",
-        "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Recursive launches Flint, a laptop coding model it says was largely built by AI",
-        "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
-        "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "PHP Armageddon: OpenAI, Google’s Wiz find ancient holes, panicking the internet",
-        "url": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Blacksmith hits unicorn valuation after Sequoia leads Series C",
-        "url": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "AI promises productivity, but for managers, it’s mostly a headache for now",
-        "url": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Anthropic pitches AI safety bill that may block a model if 50+ people could be killed",
-        "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Hugging Face CEO warns that Netflix’s OpenAI hack documentary isn’t accurate",
-        "url": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Anthropic’s cloud partnerships are getting messy",
-        "url": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "SpaceX’s AI business is beating expectations",
-        "url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
-        "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
+        "title": "Microsoft offers buyouts to around 60,000 employees",
+        "url": "https://techcrunch.com/2026/10/26/microsoft-offers-buyouts-to-around-60000-employees-reports-say/",
         "source": "TechCrunch",
         "category": "AI"
     },
@@ -186,32 +192,14 @@
         "category": "AI"
     },
     {
+        "title": "Uber puts all 30,000 employees on ChatGPT Work",
+        "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
         "title": "Airbnb limits chores for guests, sparking backlash from hosts",
         "url": "https://techcrunch.com/2026/10/21/airbnb-limits-chores-for-guests-sparking-backlash-from-hosts/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
-        "url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Tesla starts Optimus robot production in California as profit falls 43%",
-        "url": "https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "The internet is having a very bad cybersecurity day",
-        "url": "https://techcrunch.com/2026/10/21/the-internet-is-having-a-very-bad-cybersecurity-day/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "People are using AI to make their smart TVs dumb again",
-        "url": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
         "source": "TechCrunch",
         "category": "AI"
     }
