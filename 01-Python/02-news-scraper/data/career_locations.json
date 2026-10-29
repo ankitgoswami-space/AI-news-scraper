@@ -2,23 +2,23 @@
   "generated_from": "company_location_extractor.py",
   "locations": {
     "Bengaluru": {
-      "total": 5989,
+      "total": 6203,
       "sources": {
-        "Adzuna India": 4367,
-        "AIM": 1324,
-        "YourStory": 125,
-        "Inc42": 114,
-        "ET Tech": 38,
+        "Adzuna India": 4547,
+        "AIM": 1351,
+        "YourStory": 127,
+        "Inc42": 117,
+        "ET Tech": 40,
         "Mint": 15,
         "HN Who's Hiring": 5,
         "We Work Remotely": 1
       }
     },
     "Hyderabad": {
-      "total": 2242,
+      "total": 2314,
       "sources": {
-        "Adzuna India": 1887,
-        "AIM": 304,
+        "Adzuna India": 1945,
+        "AIM": 318,
         "YourStory": 22,
         "Inc42": 21,
         "ET Tech": 4,
@@ -27,27 +27,27 @@
       }
     },
     "Remote": {
-      "total": 1629,
+      "total": 1644,
       "sources": {
-        "Adzuna India": 547,
+        "Adzuna India": 554,
         "HN Who's Hiring": 427,
         "RemoteOK": 220,
-        "We Work Remotely": 192,
+        "We Work Remotely": 198,
         "arXiv": 161,
         "AIM": 29,
         "Google Research": 17,
         "Mint": 16,
-        "YourStory": 9,
+        "YourStory": 10,
         "Inc42": 5,
-        "ET Tech": 3,
+        "ET Tech": 4,
         "Hugging Face": 3
       }
     },
     "Mumbai": {
-      "total": 1261,
+      "total": 1283,
       "sources": {
-        "Adzuna India": 903,
-        "AIM": 261,
+        "Adzuna India": 921,
+        "AIM": 265,
         "Inc42": 54,
         "YourStory": 32,
         "ET Tech": 10,
@@ -55,10 +55,10 @@
       }
     },
     "Chennai": {
-      "total": 1224,
+      "total": 1246,
       "sources": {
-        "Adzuna India": 923,
-        "AIM": 258,
+        "Adzuna India": 936,
+        "AIM": 267,
         "YourStory": 23,
         "Inc42": 13,
         "RemoteOK": 4,
@@ -67,36 +67,36 @@
       }
     },
     "Pune": {
-      "total": 984,
+      "total": 1024,
       "sources": {
-        "Adzuna India": 901,
-        "AIM": 59,
+        "Adzuna India": 938,
+        "AIM": 62,
         "Inc42": 12,
         "ET Tech": 7,
         "YourStory": 5
       }
     },
     "United Kingdom": {
-      "total": 699,
+      "total": 707,
       "sources": {
-        "Adzuna India": 145,
-        "AIM": 126,
-        "Hugging Face": 102,
+        "Adzuna India": 148,
+        "AIM": 128,
+        "Hugging Face": 104,
         "arXiv": 77,
         "HN Who's Hiring": 75,
         "ET Tech": 51,
         "RemoteOK": 49,
         "Mint": 38,
         "Google Research": 23,
-        "YourStory": 5,
+        "YourStory": 6,
         "Inc42": 4,
         "We Work Remotely": 4
       }
     },
     "Delhi NCR": {
-      "total": 476,
+      "total": 481,
       "sources": {
-        "Adzuna India": 228,
+        "Adzuna India": 233,
         "AIM": 107,
         "Mint": 49,
         "Inc42": 44,
@@ -107,9 +107,9 @@
       }
     },
     "Noida": {
-      "total": 426,
+      "total": 441,
       "sources": {
-        "Adzuna India": 371,
+        "Adzuna India": 386,
         "AIM": 36,
         "Inc42": 8,
         "YourStory": 7,
@@ -118,22 +118,22 @@
       }
     },
     "Gurgaon": {
-      "total": 395,
+      "total": 404,
       "sources": {
-        "Adzuna India": 349,
+        "Adzuna India": 357,
         "AIM": 20,
-        "Inc42": 10,
+        "Inc42": 11,
         "YourStory": 9,
         "ET Tech": 7
       }
     },
     "United States": {
-      "total": 327,
+      "total": 330,
       "sources": {
-        "AIM": 81,
+        "AIM": 82,
+        "Adzuna India": 48,
         "arXiv": 47,
-        "Adzuna India": 47,
-        "ET Tech": 41,
+        "ET Tech": 42,
         "RemoteOK": 40,
         "We Work Remotely": 28,
         "HN Who's Hiring": 16,
@@ -144,18 +144,18 @@
       }
     },
     "Ahmedabad": {
-      "total": 224,
+      "total": 227,
       "sources": {
-        "Adzuna India": 197,
+        "Adzuna India": 200,
         "AIM": 23,
         "Inc42": 2,
         "YourStory": 2
       }
     },
     "Kolkata": {
-      "total": 144,
+      "total": 146,
       "sources": {
-        "Adzuna India": 117,
+        "Adzuna India": 119,
         "AIM": 15,
         "Inc42": 10,
         "YourStory": 1,
@@ -163,9 +163,9 @@
       }
     },
     "Coimbatore": {
-      "total": 114,
+      "total": 116,
       "sources": {
-        "Adzuna India": 96,
+        "Adzuna India": 98,
         "AIM": 17,
         "YourStory": 1
       }
@@ -188,17 +188,17 @@
       }
     },
     "Kochi": {
-      "total": 51,
+      "total": 54,
       "sources": {
-        "Adzuna India": 43,
+        "Adzuna India": 46,
         "AIM": 7,
         "YourStory": 1
       }
     },
     "Trivandrum": {
-      "total": 33,
+      "total": 34,
       "sources": {
-        "Adzuna India": 31,
+        "Adzuna India": 32,
         "AIM": 2
       }
     }

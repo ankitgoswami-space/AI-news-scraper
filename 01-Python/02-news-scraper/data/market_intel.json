@@ -1,6 +1,6 @@
 {
   "generated_by": "blog_intel.py",
-  "last_updated": "2026-10-28 18:48:40",
+  "last_updated": "2026-10-29 11:15:43",
   "articles": [
     {
       "salary_bands": [
@@ -3158,6 +3158,260 @@
         "title": "AI Jobs in India Salary (2026): Complete Pay Guide from Fresher to 1 Crore",
         "source_url": "",
         "scraped_date": "2026-03-30"
+      }
+    },
+    {
+      "salary_bands": [
+        {
+          "role": "data annotation contractor",
+          "experience": "fresher",
+          "min_lpa": 3,
+          "max_lpa": 3,
+          "notes": "Low end of the AI job spectrum"
+        },
+        {
+          "role": "senior LLM engineer",
+          "experience": "senior",
+          "min_lpa": 70,
+          "max_lpa": 70,
+          "notes": "At product companies; global remote roles can go north of $280,000"
+        },
+        {
+          "role": "freshers",
+          "experience": "fresher",
+          "min_lpa": 8,
+          "max_lpa": 12,
+          "notes": "Packages without a single year of corporate experience"
+        },
+        {
+          "role": "Generative AI Engineers",
+          "experience": "mid",
+          "min_lpa": 20,
+          "max_lpa": 70,
+          "notes": "Spans mid to senior levels in India"
+        },
+        {
+          "role": "traditional ML engineers",
+          "experience": "mid",
+          "min_lpa": 10,
+          "max_lpa": 40,
+          "notes": "Compared to GenAI engineers"
+        },
+        {
+          "role": "GenAI engineers",
+          "experience": "mid",
+          "min_lpa": 15,
+          "max_lpa": 45,
+          "notes": "Mid to senior in Bengaluru"
+        },
+        {
+          "role": "GenAI engineers",
+          "experience": "mid",
+          "min_lpa": 13,
+          "max_lpa": 35,
+          "notes": "Hyderabad"
+        },
+        {
+          "role": "GenAI engineers",
+          "experience": "mid",
+          "min_lpa": 12,
+          "max_lpa": 38,
+          "notes": "Mumbai"
+        },
+        {
+          "role": "GenAI engineers",
+          "experience": "mid",
+          "min_lpa": 10,
+          "max_lpa": 32,
+          "notes": "Delhi-NCR"
+        },
+        {
+          "role": "MLOps Engineer",
+          "experience": "mid",
+          "min_lpa": 12,
+          "max_lpa": 35,
+          "notes": "Managing AI model infrastructure"
+        },
+        {
+          "role": "AI Product Manager",
+          "experience": "senior",
+          "min_lpa": 18,
+          "max_lpa": 55,
+          "notes": "At senior levels, bridging AI capability with business strategy"
+        },
+        {
+          "role": "Prompt Engineer",
+          "experience": "fresher",
+          "min_lpa": 6,
+          "max_lpa": null,
+          "notes": "Entry level"
+        },
+        {
+          "role": "Prompt Engineer",
+          "experience": "senior",
+          "min_lpa": null,
+          "max_lpa": 40,
+          "notes": "Senior and lead roles at product companies and MNCs"
+        },
+        {
+          "role": "Prompt Engineer",
+          "experience": "mid",
+          "min_lpa": 15,
+          "max_lpa": 20,
+          "notes": "Bengaluru per annum"
+        },
+        {
+          "role": "Prompt Engineer",
+          "experience": "mid",
+          "min_lpa": 13,
+          "max_lpa": 18,
+          "notes": "Hyderabad per annum"
+        },
+        {
+          "role": "Prompt Engineer",
+          "experience": "mid",
+          "min_lpa": 12,
+          "max_lpa": 25,
+          "notes": "Mumbai (FinTech paying 15-25 LPA for senior positions)"
+        },
+        {
+          "role": "Junior Agentic AI Developer",
+          "experience": "junior",
+          "min_lpa": 12,
+          "max_lpa": 20,
+          "notes": "Requires strong GenAI foundation"
+        },
+        {
+          "role": "Mid-Level Agentic Systems Engineer",
+          "experience": "mid",
+          "min_lpa": 25,
+          "max_lpa": 45,
+          "notes": "Agentic AI role"
+        },
+        {
+          "role": "Senior Agentic AI Architect",
+          "experience": "senior",
+          "min_lpa": 50,
+          "max_lpa": 80,
+          "notes": "At product companies"
+        }
+      ],
+      "skills_in_demand": [
+        {
+          "skill": "Python",
+          "relevance": "core",
+          "notes": "Mentioned as a depth requirement"
+        },
+        {
+          "skill": "PyTorch",
+          "relevance": "core",
+          "notes": "Mentioned as a depth requirement"
+        },
+        {
+          "skill": "LLMs",
+          "relevance": "core",
+          "notes": "Large language models"
+        },
+        {
+          "skill": "RAG systems",
+          "relevance": "core",
+          "notes": "Retrieval-Augmented Generation"
+        },
+        {
+          "skill": "Transformer architectures",
+          "relevance": "core",
+          "notes": "Required for Generative AI and LLM engineers"
+        },
+        {
+          "skill": "GPT",
+          "relevance": "important",
+          "notes": "Used by GenAI Developers"
+        },
+        {
+          "skill": "Llama",
+          "relevance": "important",
+          "notes": "Used by GenAI Developers"
+        },
+        {
+          "skill": "LangChain",
+          "relevance": "important",
+          "notes": "Used for building LLM-powered applications"
+        },
+        {
+          "skill": "HuggingFace",
+          "relevance": "important",
+          "notes": "Used for building LLM-powered applications"
+        },
+        {
+          "skill": "LangGraph",
+          "relevance": "core",
+          "notes": "Multi-agent orchestration framework for Agentic AI"
+        },
+        {
+          "skill": "CrewAI",
+          "relevance": "core",
+          "notes": "Multi-agent orchestration framework for Agentic AI"
+        },
+        {
+          "skill": "AutoGen",
+          "relevance": "core",
+          "notes": "Multi-agent orchestration framework for Agentic AI"
+        },
+        {
+          "skill": "Vector databases",
+          "relevance": "important",
+          "notes": "Required for Agentic AI systems"
+        }
+      ],
+      "city_patterns": [
+        {
+          "city": "Bengaluru",
+          "typical_roles": [
+            "GenAI engineers",
+            "Prompt Engineer",
+            "Mid-senior AI roles"
+          ],
+          "salary_range_lpa": "15-40 LPA"
+        },
+        {
+          "city": "Hyderabad",
+          "typical_roles": [
+            "Enterprise AI roles",
+            "GenAI engineers",
+            "Prompt Engineer"
+          ],
+          "salary_range_lpa": "13-35 LPA"
+        },
+        {
+          "city": "Mumbai",
+          "typical_roles": [
+            "GenAI engineers",
+            "FinTech AI applications",
+            "Prompt Engineer"
+          ],
+          "salary_range_lpa": "12-38 LPA"
+        },
+        {
+          "city": "Delhi-NCR",
+          "typical_roles": [
+            "GenAI engineers",
+            "Startup and enterprise roles"
+          ],
+          "salary_range_lpa": "10-32 LPA"
+        }
+      ],
+      "key_insights": [
+        "India's AI job demand grew over 40% year-on-year according to NASSCOM's 2024 report with over 450,000 AI job listings.",
+        "Fewer than 3% of India's 1.5 million yearly engineering graduates have real AI/ML skills, creating a massive supply-demand mismatch.",
+        "Generative AI Engineers and LLM Engineers earn 20-70 LPA, significantly outearning traditional ML engineers at 10-40 LPA.",
+        "Global capability centres (GCCs) in Bengaluru and Hyderabad are aggressively hiring Indian AI talent at below-US cost but above-Indian-average salaries.",
+        "Agentic AI is emerging as the next wave with senior architects commanding 50-80 LPA at product companies.",
+        "Gartner predicted that four out of five engineers will need to upskill by 2027 to stay relevant in GenAI-shaped roles."
+      ],
+      "article_meta": {
+        "title": "AI Jobs in India Salary (2026): Complete Pay Guide from Fresher to 1 Crore",
+        "source_url": "",
+        "scraped_date": "2026-03-31"
       }
     }
   ]
