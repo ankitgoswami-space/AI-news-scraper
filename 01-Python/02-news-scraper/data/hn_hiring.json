@@ -1,5 +1,50 @@
 [
   {
+    "title": "Bubblehouse — Fully REMOTE",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50363483",
+    "published_date": "2026-11-04",
+    "content": "Bubblehouse | Fully REMOTE | Full-Time | $200–250k | Principal Engineer\n\nWe’re a small team across the US and Europe. We build the platform that household-name brands use to run their own loyalty programs.\n\nWe write Go and run our own database engine on top of local key-value stores. We keep storage and compute on the same dedicated machines and read straight from mmap’ed pages. Ever came across HN saying that one can run Twitter on a single machine these days? We’re doing that in production.\n\nWe write our JavaScript by hand, have zero lines of React, and render HTML server-side like it’s 2005.\n\nWe’re looking for someone who knows the web platform well and can reason all the way down to CPU caches. You’ve spent years building across different stacks and have opinions about the tradeoffs you made. We’d love to see something you built that you’re proud of, and hear why you built it that way.\n\nWe pay $200–250k a year, all cash. You’ll need to be available from 9am to noon New York time.\n\nFull description and how to apply: https:&#x2F;&#x2F;jobs.bubblehouse.com&#x2F;principal-engineer&#x2F;",
+    "company": "Bubblehouse",
+    "location": "Remote"
+  },
+  {
+    "title": "Bikky — Engineering Manager",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50363693",
+    "published_date": "2026-11-04",
+    "content": "Bikky | Engineering Manager | Hybrid | Full time | NYC\nBikky | Senior Software Engineer | Hybrid | Full time | NYC\n\nHi, all!\n\nAt Bikky, we unify POS, online ordering, payments, and loyalty data to help multi-unit restaurant brands understand their customers and make better business decisions.\n\nWe’re a small, growing team working on hard problems across data engineering, infrastructure, AI, and analytics. We’re looking for engineering folks that would help shape technical direction, and build systems that have a real impact on how restaurants operate and grow.\n\nGet to know us and what we build: https:&#x2F;&#x2F;bikky.com \n\nWhat we're hiring:\n\nEngineering Manager: https:&#x2F;&#x2F;jobs.gem.com&#x2F;bikky&#x2F;am9icG9zdDrig2-gSSfERF_im4MwYESW \n\nSenior Software Engineer: https:&#x2F;&#x2F;jobs.gem.com&#x2F;bikky&#x2F;am9icG9zdDqBgAV6R5An0LWf8Ua8v-s_",
+    "company": "Bikky",
+    "location": ""
+  },
+  {
+    "title": "Coder — https:&#x2F;&#x2F;coder.com&#x2F;",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50360244",
+    "published_date": "2026-11-04",
+    "content": "Coder | https:&#x2F;&#x2F;coder.com&#x2F; | Multiple roles | Multiple locations | Full-time\n\nCoder is an AI software development company leading the future of autonomous coding. We empower teams to build software faster, more securely, and at scale through the collaboration of AI coding agents and human developers. Our mission is to make agentic AI a safe, trusted, and integral part of every software development lifecycle.\n\nCoder’s self-hosted Agentic Development Environment (ADE) is the foundation for deploying agentic AI in the enterprise. It provides a secure, standardized, and governed workspace to deploy autonomous coding agents alongside human developers, accelerating innovation while maintaining control and compliance. Coder's isolated, policy-driven environments improve productivity, cut cloud costs, and reduce data risks. Developers transition to AI at their own pace using their own tools. Platform and security teams can govern, audit, and manage a great developer experience at scale.\n\nCheck out our OSS product with 100k+ stars on GitHub! https:&#x2F;&#x2F;github.com&#x2F;coder \n\nAll positions are fully remote in the countries listed unless otherwise specified.\n\n[1]Senior Customer Support Engineer • North America • Full time\n\n[2]Senior Software Engineer (Multiple Teams, Europe) • United Kingdom; Ireland; Poland • Full time •\n\n[3]Senior Software Engineer (Multiple Teams, North America) • United States; Canada • Full time\n\n[4]Software Engineer (Enterprise Experience, Backend) • Europe • Full time\n\n[5]Software Engineering Manager (Agentic Engineering) • United Kingdom; Ireland; Poland • Full time\n\n[6]Software Engineering Manager (Agentic Engineering) • United States (Eastern) • Full time\n\n[7]Staff Software Engineer (Agentic Engineering) • United Kingdom; Ireland; Poland • Full time\n\n[8]Staff Software Engineer (AI Governance) — Research & Development • United States • Full time",
+    "company": "Coder",
+    "location": "Remote"
+  },
+  {
+    "title": "One high-leverage open-data play we have been building around is combining municipal property tax assessment appeal arbitrage, off-market DOT fleet su",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50361287",
+    "published_date": "2026-11-04",
+    "content": "One high-leverage open-data play we have been building around is combining municipal property tax assessment appeal arbitrage, off-market DOT fleet succession leads, and non-dilutive government R&D grants (45% SR&ED + 80% NRC IRAP + 67% ISED Sovereign AI compute rebates + 3,855 MERX&#x2F;CanadaBuys RFPs and 840 winning IT vendors) into a single 6-pillar underwriting desk (DealVectorAI — dealvectorai.com).",
+    "company": "One high-leverage open-data play we have been building around is combining municipal property tax assessment appeal arbitrage, off-market DOT fleet succession leads, and non-dilutive government R&D grants (45% SR&ED + 80% NRC IRAP + 67% ISED Sovereign AI compute rebates + 3,855 MERX&#x2F;CanadaBuys RFPs and 840 winning IT vendors) into a single 6-pillar underwriting desk (DealVectorAI — dealvectorai.com).",
+    "location": ""
+  },
+  {
+    "title": "Lumen Labs — Robotics&#x2F;Hardware Engineer, Simulation Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50361229",
+    "published_date": "2026-11-04",
+    "content": "Lumen Labs | Robotics&#x2F;Hardware Engineer, Simulation Engineer | San Francisco, CA | ONSITE | Full-time | $150k–200k + equity | https:&#x2F;&#x2F;lumenresearch.co \n\nHowdy! Lumen Labs is building the cognitive layer for physical AI. Nearly every major robotics effort today teaches machines by showing them thousands of hours of human teleoperation. We think that paradigm has a ceiling, and we’re working on nature-inspired architectures for unstructured environments (construction sites, mining, pipelines, battlefield). Pre-seed, backed by top VC funds and operators from robotics&#x2F;AI companies. Today we run wheeled navigation, we’re dipping our toes into drones, and we’re eyeing weirder platforms like home inspection.\n\nWe’re a small team hiring two engineers who will work closely with each other and with our model engineer:\n\nROBOTICS &#x2F; HARDWARE ENGINEER: Own the hardware and infrastructure that keeps our research platforms running: the ROS2 (Humble) stack across onboard and offboard compute, sensor integration and calibration (LiDAR, depth, IMU, encoders), the safety pipeline during autonomous runs, and getting trained policies onto real hardware. Will be hands-on with real mobile robots (UART, encoders, PWM, IMU, LiDAR), strong Python + embedded, comfortable reading code you didn’t write, and can debug hardware and firmware at the same time. Full posting: https:&#x2F;&#x2F;desert-bearskin-26d.notion.site&#x2F;Robotics-Engineer-Ro... \n\nSIMULATION ENGINEER: Own “the gauntlet,” our test library for putting new architectures through their paces: a Gymnasium-style interface on both sides (environment and model) so anything built to spec is compatible with everything else. Mostly MuJoCo and Gazebo today, moving toward Isaac Sim, and some other more bespoke sims. You will be building task simulators for training and testing and keeping them running (GPS-denied drone nav, construction sites, boat cleaning, forklifts, abstract control), including physics, honest sensor models, digital twins of our real platforms, domain randomization, and the sim compute. Dungeon Master. If you have built or substantially rebuilt a simulator of some kind (robotics&#x2F;RL is closest, but a physics-based game, scientific sim, or flight sim mod counts) this would be a good role for you. Comfortable with the Gymnasium&#x2F;dm_control way of thinking, can pick up GPU-vectorized sim (MJX, Isaac Lab, JAX) quickly, and test-driven. Full posting: https:&#x2F;&#x2F;desert-bearskin-26d.notion.site&#x2F;Simulation-Engineer-... \n\nEmail hi@lumenresearch.co, mention HN and which role, and tell us about a project you’ve built. If you can link to a trained policy running on real hardware (robotics) or a simulator you built or fixed and something you trained inside it (sim), you go to the top of the pile.",
+    "company": "Lumen Labs",
+    "location": ""
+  },
+  {
     "title": "ProphetX — Multiple Roles",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50351346",
@@ -40,7 +85,7 @@
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50349751",
     "published_date": "2026-11-03",
-    "content": "Encube | ML Engineer, ML Ops Engineer | Stockholm, Sweden | ONSITE | Full-time\n\nEncube is a platform where hardware teams look at their 3D designs and engineering drawings together and make better products faster. We're building AI that understands those drawings and 3D models, and can eventually create them. Evaluations are a massive priority, and we need to consistently demonstrate how our models are better than frontier VLMs.\n\nML Engineer: train models that connect 2D drawings to 3D models, build agents that generate CAD and drawings, figure out how to measure if they're actually good, and ship them to real customers. PyTorch. Bonus if you've worked with 3D, CAD or graph neural nets.\n\nML Ops Engineer: on-prem and AWS GPUs, make every experiment reproducible, keep costs down and customer data safe, and get rid of whatever slows the ML team down. SkyPilot, MLflow, PyTorch.",
+    "content": "Encube | ML Engineer, ML Ops Engineer | Stockholm, Sweden | ONSITE | Full-time\n\nEncube is a platform where hardware teams look at their 3D designs and engineering drawings together and make better products faster. We're building AI that understands those drawings and 3D models, and can eventually create them. Evaluations are a massive priority, and we need to consistently demonstrate how our models are better than frontier VLMs.\n\nML Engineer: train models that connect 2D drawings to 3D models, build agents that generate CAD and drawings, figure out how to measure if they're actually good, and ship them to real customers. PyTorch. Bonus if you've worked with 3D, CAD or graph neural nets.\n\nML Ops Engineer: on-prem and AWS GPUs, make every experiment reproducible, keep costs down and customer data safe, and get rid of whatever slows the ML team down. SkyPilot, MLflow, PyTorch.\n\n https:&#x2F;&#x2F;www.getencube.com&#x2F;ml-engineer-oct-2026 \n https:&#x2F;&#x2F;www.getencube.com&#x2F;ml-ops-engineer-oct-2026",
     "company": "Encube",
     "location": ""
   },
@@ -99,11 +144,11 @@
     "location": "Remote"
   },
   {
-    "title": "Splash Tech — DevOps Mid&#x2F;Senior",
+    "title": "Splash Tech — DevOps Mid&#x2F;Senior &#x2F; Frontend",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50348022",
     "published_date": "2026-11-03",
-    "content": "Splash Tech | DevOps Mid&#x2F;Senior | Remote (LATAM and EU) | Full Time | https:&#x2F;&#x2F;splash.tech&#x2F; \n\nWe're a small UK-based free-to-play gaming company with a distributed team, growing fast after recent success and scaling our backend platform. We’re looking for a DevOps engineer with 5+ years of experience.\n\nMost of the work is AWS-focused. You should have hands-on experience with:\n\n- AWS, particularly EKS, EC2, Application Load Balancers, RDS, and IAM.\n- Terraform and managing infrastructure as code.\n- Kubernetes, including troubleshooting workloads and cluster issues.\n- CI&#x2F;CD and GitOps workflows using GitHub Actions and Flux.\n- Monitoring, alerting, and tracing with tools such as Grafana, Prometheus, Alertmanager, Jaeger, and OpenTelemetry.\n- DNS, TLS, and Cloudflare.\n\nStrong AWS networking knowledge, including VPC design, routing, private connectivity, and troubleshooting is highly desirable.\n\nOur stack includes AWS, Kubernetes (EKS), PostgreSQL, Trino, Flux, Terraform, and GitHub Actions. You don’t need to know every tool already, but you should be comfortable learning what the job requires.\n\nYou should be comfortable owning work from identifying a problem and proposing a solution through implementation, rollout, documentation, and ongoing operation.\n\nYou should be comfortable investigating issues across applications, Kubernetes, networking, and databases. We also value clear thinking and communication: you should be able to explain your ideas and trade-offs using simple architecture or flow diagrams—just boxes and lines, nothing formal.\n\nTo apply, email lucas[at]splash.tech with the subject “DevOps Engineer 2026”. Include a brief introduction and a link to a repository or project that demonstrates your infrastructure or automation work. If you don’t have work you can share, we may ask you to complete a small practical test.",
+    "content": "Splash Tech | DevOps Mid&#x2F;Senior &#x2F; Frontend | Remote (LATAM and EU) | Full Time | https:&#x2F;&#x2F;splash.tech&#x2F; \n\nWe're a small UK-based free-to-play gaming company with a distributed team, growing fast after recent success and scaling our backend platform. We’re looking for a DevOps engineer with 5+ years of experience.\n\nMost of the work is AWS-focused. You should have hands-on experience with:\n\n- AWS, particularly EKS, EC2, Application Load Balancers, RDS, and IAM.\n- Terraform and managing infrastructure as code.\n- Kubernetes, including troubleshooting workloads and cluster issues.\n- CI&#x2F;CD and GitOps workflows using GitHub Actions and Flux.\n- Monitoring, alerting, and tracing with tools such as Grafana, Prometheus, Alertmanager, Jaeger, and OpenTelemetry.\n- DNS, TLS, and Cloudflare.\n\nStrong AWS networking knowledge, including VPC design, routing, private connectivity, and troubleshooting is highly desirable.\n\nOur stack includes AWS, Kubernetes (EKS), PostgreSQL, Trino, Flux, Terraform, and GitHub Actions. You don’t need to know every tool already, but you should be comfortable learning what the job requires.\n\nYou should be comfortable owning work from identifying a problem and proposing a solution through implementation, rollout, documentation, and ongoing operation.\n\nYou should be comfortable investigating issues across applications, Kubernetes, networking, and databases. We also value clear thinking and communication: you should be able to explain your ideas and trade-offs using simple architecture or flow diagrams—just boxes and lines, nothing formal.\n\nTo apply, email lucas[at]splash.tech with the subject “DevOps Engineer 2026”. Include a brief introduction and a link to a repository or project that demonstrates your infrastructure or automation work. If you don’t have work you can share, we may ask you to complete a small practical test.\n\nWe're also hiring for a FE engineer that can create good looking games. Our stack is Angular, JavaScript, CSS.\n\nTo apply, email jack[at]splash.tech with the subject \"FE Engineer 2026\". Include a link to something visual you've built that you're proud of - a game, site, or UI. If you don't have shareable work, we may ask you to complete a small practical test.\n\nNote about AI: We expect you to write and own your own code.",
     "company": "Splash Tech",
     "location": "Remote"
   },
@@ -330,6 +375,213 @@
     "published_date": "2026-11-03",
     "content": "Location: Dorset, UK\n\nRemote: Yes (UK, US and EU time zones)\n\nWilling to relocate: No\n\nTechnologies: Ruby on Rails, Python (FastAPI), TypeScript&#x2F;Node, Go, PostgreSQL, AWS, Hotwire\n\nRésumé&#x2F;CV: https:&#x2F;&#x2F;wagnermatos.co.uk \n\nEmail: wm@wagnermatos.co.uk\n\nSenior engineer, 15 years. I build complete products on a fixed scope and fixed price: one senior engineer accountable end to end, AI-accelerated. Recent work includes a clinical alerting platform used by NHS trusts, an edge-to-cloud analytics platform for Johnson & Johnson Medical, and the cloud platform behind a fielded detection-hardware fleet. Also open to contract engagements (Rails). Case studies and client testimonials on the site.",
     "company": "Location: Dorset, UK",
+    "location": "Remote"
+  },
+  {
+    "title": "Cocient — Software Engineers, Data Scientists, and experts in finance, medicine, law, science and engineering",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50357754",
+    "published_date": "2026-11-03",
+    "content": "Cocient | Software Engineers, Data Scientists, and experts in finance, medicine, law, science and engineering | AI training & evaluation | REMOTE (most countries) | Contract, hourly | https:&#x2F;&#x2F;work.cocient.com&#x2F;opportunities \n\nCocient is a human data and AI training platform. We contract experienced professionals to produce evals and training data for AI labs: writing hard, realistic problems in your field, grading model answers, and pinning down where a model's reasoning breaks.\n\nPay by field, depending on experience: software engineering $70-150&#x2F;hr, data science $60-130&#x2F;hr, finance $90-180&#x2F;hr, medicine $120-250&#x2F;hr, law $80-200&#x2F;hr, science and engineering $50-120&#x2F;hr.\n\nIndependent contractor, flexible hours. To apply, sign up, upload your resume and take a short AI-led interview about your experience (computer with camera and mic): https:&#x2F;&#x2F;work.cocient.com&#x2F;opportunities?utm_source=hackernews... \n\nPlease apply through the link above; we don't accept applications by email.",
+    "company": "Cocient",
+    "location": "Remote"
+  },
+  {
+    "title": "Radar Labs — Software Engineers (SRE, ML, backend, full-stack, mobile, security, QA)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50357486",
+    "published_date": "2026-11-03",
+    "content": "Radar Labs | Software Engineers (SRE, ML, backend, full-stack, mobile, security, QA) | Remote (US), NYC | Full Time | https:&#x2F;&#x2F;radar.com \n\n- Radar is the geo-location dev tool\n\n- Doing 1B+ API calls per day\n\n- Our main languages are Rust and TypeScript, we also use mobile and offline pipeline languages (Python, Scala, and Terraform).\n\n- We're based in NYC with our HQ in Union Square and remote friendly (US)\n\nInteresting things we're working on:\n\n- HorizonDB, our Geospatial database written in Rust\n\n- Agents and MCP tools to visualize and debug location data at scale\n\n- Precise indoor location more accurate than iOS and Android leveraging Ultra-Wideband, other mobile sensors and ML.\n\n- Anomaly detection to identify spoofed locations\n\n- Mobile infrastructure that automatically configures itself optimizing battery-life and location accuracy for different use-cases over time\n\n- Multi-Region AWS K8s deployment, 99.99%+ availability\n\nCheck out our jobs page here: https:&#x2F;&#x2F;radar.com&#x2F;jobs#jobs If you have any questions, feel free to reply here or you can e-mail me at tim@radar.com",
+    "company": "Radar Labs",
+    "location": "Remote"
+  },
+  {
+    "title": "Solution Street — Northern Virginia &#x2F; Washington DC Metro Area - HYBRID & ONSITE roles available - USA only. Candidates MUST be based in the United States with US work authorization.",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50356544",
+    "published_date": "2026-11-03",
+    "content": "Solution Street | Northern Virginia &#x2F; Washington DC Metro Area - HYBRID & ONSITE roles available - USA only. Candidates MUST be based in the United States with US work authorization.\n\nWe are a software consulting company based in Northern Virginia.\n\nOur Website: https:&#x2F;&#x2F;www.solutionstreet.com&#x2F; \n\nInterested? Apply on our Careers Page (Make sure to mention you found our post on Hacker News): https:&#x2F;&#x2F;solutionstreet.com&#x2F;join.php \n\nCurrent Opportunities:\nJava Engineers: (ONSITE Chantilly, VA) Seeking Mid-to-Senior&#x2F;Lead levels of Full Stack Java Engineers with experience in Java, Spring, Hibernate, Kubernetes, and Helm.\n\nAutomation Testers: (ONSITE Chantilly, VA) Seeking Mid-to-Senior&#x2F;Lead levels of Automation Testers with experience with Javascript and WebdriverIO. Must be comfortable coding in Javascript. Open to considering junior software engineers with expertise in Javascript for these roles as well.",
+    "company": "Solution Street",
+    "location": ""
+  },
+  {
+    "title": "ThreatMark — Security, Machine Learning",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50353951",
+    "published_date": "2026-11-03",
+    "content": "ThreatMark | Security, Machine Learning | REMOTE(World) &#x2F; Brno, Czech Republic | Equity\n\nThreatMark protects >60M end users from finacial fraud and saves > $1.2M every day in losses.\n\nWe are working with banks in EU and US to protect their end users.\n\nWe develop large-behavioral models that recognizes returning users by their mouse movements, keystroke timings and sensoric data (accelerometer, gyroscope).\n\nWe detect cyberthreats (e.g. malware, phishing, scraping) by exploiting browsers&#x2F;sandboxes of devices.\n\nWe manage ~PB scale of data and provide realtime scoring in milliseconds driving authentication&#x2F;authorization flow (2nd factor).\n\nStack: [python, typescript, rust], [redis, postgresql], [aws, terraform] ...\n\nWe are looking for exceptional engineers to build with us and be part of the success:\n\n- Backend Engineer [rust, python] - low-latency stream processing engine, rewrite python microservices to rust, build new detection features\n\n- DevOps Engineer (IaaC in AWS)\n\n- DevSecOps Engineer\n\n- AI Tech Lead (loops & graphs guru, real ML background)\n\n- Security Researcher&#x2F;Engineer\n\n- Product Manager [USA]\n\n- Fraud Detection Specialist\n\n- Partner Manager\n\nIf you are interested, please email us @ career@threatmark.com with subject \"HN Who's Hiring\"\n\nIf you don't find the right role here or at https:&#x2F;&#x2F;www.threatmark.com&#x2F;careers&#x2F; , write us anyway if you believe you can be good fit :)\n\nKrystof Hilar, Co-Founder & CTO",
+    "company": "ThreatMark",
+    "location": "Remote"
+  },
+  {
+    "title": "Exponent — Lead Engineer, AI Accounting",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50354142",
+    "published_date": "2026-11-03",
+    "content": "Exponent | Lead Engineer, AI Accounting | New York (Flatiron) | HYBRID, 2+ days in office | $160k–$200k + equity | Full-time\n\nExponent is a financial platform for franchise and multi-location restaurant operators: charge cards, loans, and an AI-powered Accountant that pulls in an operator's POS, bank, payroll and processor data, reconciles it, and automates the monthly close.\n\nYou'd own core systems in the Accountant: idempotent ingestion from unreliable third-party APIs, the background jobs that keep thousands of accounts in sync, and the decisions about how LLM classification behaves inside a ledger that has to be right. Full stack, focused on backend architecture. Rails, Postgres, Sidekiq. We ship multiple times a day.\n\nWe want someone who ships fast and knows when to slow down. 5+ years, deep experience in any server-side framework (Rails, Django, Phoenix, TypeScript), and fluent with AI-assisted development. Fintech and Rails experience are strong pluses.\n\nEmail careers@exponentfi.com with a short note on why this interests you.",
+    "company": "Exponent",
+    "location": ""
+  },
+  {
+    "title": "IMC Trading — Machine Learning Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50352150",
+    "published_date": "2026-11-03",
+    "content": "IMC Trading | Machine Learning Engineer | Amsterdam OR London | ONSITE | Full-time\n\nIMC is a research-driven trading firm and has been a market maker since 1989. Our researchers, traders and engineers work as one team on systems we build ourselves, trading across global markets.\n\nWe want ML engineers to shorten the path from a research idea to a live trading strategy. You’ll work with quant researchers, HPC specialists and software engineers in one of two overlapping areas:\n\n- ML research engineering: distributed training pipelines, experiment automation, and making training faster and cheaper to run at scale.\n- ML performance engineering: low-latency, real-time inference, and getting the most out of GPUs.\n\nStack includes: PyTorch, CUDA\n\nWe’re looking for 3+ years of hands-on ML systems work and production Python code you’ve owned over time. You should understand what happens beneath the high-level APIs and measure performance before you optimize. Depth in distributed training, GPU optimization, real-time inference or numerics at scale is a big plus.\n\nApply: https:&#x2F;&#x2F;www.imc.com&#x2F;eu&#x2F;careers&#x2F;jobs&#x2F;4567047101 \n\nNB - visa sponsorship available",
+    "company": "IMC Trading",
+    "location": ""
+  },
+  {
+    "title": "Tether — Product Engineering Lead, Keet",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50355834",
+    "published_date": "2026-11-03",
+    "content": "Tether | Product Engineering Lead, Keet | REMOTE (Worldwide)\nWe're looking for a Product Engineering Lead to help build and scale Keet, a fully peer-to-peer messaging and video calling app.\nYou'll lead API and frontend engineering teams, working closely with Product to turn the roadmap into high-quality features.\nWe're looking for someone with:\n- Experience leading engineering teams building consumer products.\n- Strong JavaScript and React skills.\n- Solid product sense and technical leadership.\n- Understanding of distributed, local-first or P2P systems.\nApply: https:&#x2F;&#x2F;tether.recruitee.com&#x2F;o&#x2F;product-engineering-lead-keet...",
+    "company": "Tether",
+    "location": "Remote"
+  },
+  {
+    "title": "ControlPlane — OpenBao Consultant, Developer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50353340",
+    "published_date": "2026-11-03",
+    "content": "ControlPlane | OpenBao Consultant, Developer | Remote (UK or EU) | Full-Time | £100k-110k\n\nControlPlane is looking to grow our OpenBao group with consultant and Go developer positions!\n\nOpenBao is a fork of HashiCorp Vault under the Linux Foundation's OpenSSF, the sister project of OpenTofu under the CNCF.\n\nControlPlane was built as the open source, cloud native security consultancy and later expanded into open source maintenance through Flux CD and now OpenBao in 2026.\n\nCome work with me!\n\nMore info and apply here: https:&#x2F;&#x2F;job-boards.eu.greenhouse.io&#x2F;controlplane&#x2F;jobs&#x2F;501252... + https:&#x2F;&#x2F;job-boards.eu.greenhouse.io&#x2F;controlplane&#x2F;jobs&#x2F;502603...",
+    "company": "ControlPlane",
+    "location": "Remote"
+  },
+  {
+    "title": "Antithesis — Washington, DC, London",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50351981",
+    "published_date": "2026-11-03",
+    "content": "Antithesis | Washington, DC, London | Remote or In Office (US, UK) | Design Engineer\n\nWe create an expert system that verifies software and becomes an essential part of agentic workflows. https:&#x2F;&#x2F;antithesis.com \n\nI’m Vlad, Director of Product Design, engineer, and manager. I’m looking for a design engineer to help build our design system https:&#x2F;&#x2F;anta.design , improve the UI of our apps, and improve AI’s ability to generate high-quality interfaces.\n\nSend me a link to your website (it doesn’t have to be perfect; I just want to see what you’ve worked on). vlad.korobov@antithesis.com\n\nThere are other open roles, including SF:\n https:&#x2F;&#x2F;antithesis.com&#x2F;company&#x2F;careers&#x2F;#open-roles",
+    "company": "Antithesis",
+    "location": "Remote"
+  },
+  {
+    "title": "Clad (YC W23) — Software Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50353098",
+    "published_date": "2026-11-03",
+    "content": "Clad (YC W23) | Software Engineer | NYC | withclad.com\nClad is an AI-native platform for utility construction. We help contractors bill accurately, track their work, and automate their operations.\n\nWe're a 7 person team in-person in New York City, raised $2.7M, have >3 years of runway, and are growing faster than we ever have.\n\nYou'll build a well-crafted product, and work on challenging problems at intersection of AI, construction (mapping), and fintech.\n\nApply here: https:&#x2F;&#x2F;www.ycombinator.com&#x2F;companies&#x2F;clad&#x2F;jobs&#x2F;YHGyRSf-soft... \n\nOr email me at jason [at] withclad [dot] com",
+    "company": "Clad (YC W23)",
+    "location": ""
+  },
+  {
+    "title": "EggAI — AI tech leads, Software and Platform engineers",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50351693",
+    "published_date": "2026-11-03",
+    "content": "EggAI | AI tech leads, Software and Platform engineers | REMOTE (EU) | Full-time preferred. Contract possible. We are a small boutique consultancy and are quite experienced. A lot of us have extensive consultant experience. You will join a small, highly skilled remote team of engineers and transformation practitioners working at the forefront of enterprise AI.\nWe use AI for both development and in our solutions. We are looking for engineers that are critical thinkers, understand the limitations of AI but also where it can have a positive impact.\n\nApply at: https:&#x2F;&#x2F;grnh.se&#x2F;wr97lgu2teu \n\nOur website: https:&#x2F;&#x2F;egg-ai.com&#x2F;",
+    "company": "EggAI",
+    "location": "Remote"
+  },
+  {
+    "title": "DigiKey — Search Experience Manager",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50353464",
+    "published_date": "2026-11-03",
+    "content": "DigiKey | Search Experience Manager | Thief River Falls, MN | Bloomington, MN | Hybrid\n\nHow do you help an electrical engineer find the right part among millions of highly technical, nearly identical components?\n\nWe’re hiring someone to own that problem across search, ranking, filters, discovery, experimentation, and AI&#x2F;LLMs.\n\nElectronics + search is a surprisingly deep problem space.\n\n https:&#x2F;&#x2F;digikey.wd5.myworkdayjobs.com&#x2F;en-US&#x2F;Digi-Key&#x2F;details...",
+    "company": "DigiKey",
+    "location": ""
+  },
+  {
+    "title": "Thankly — Founding Engineer, Founding Engineer (RL Environments), Founding Product Designer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50357360",
+    "published_date": "2026-11-03",
+    "content": "Thankly | Founding Engineer, Founding Engineer (RL Environments), Founding Product Designer | REMOTE (US) | Full-time | Equity-first\n\nThankly builds branded shopping apps that run inside AI assistants, including ChatGPT, Claude and Gemini. Shoppers ask for what they need in conversation, the app recommends products from the brand's own catalog, and they can check out without leaving the chat.\n\nFounding Engineer: Build our platform and client apps on React, Vite, Express, TypeScript, Supabase and Postgres, working from technical designs written by our CTO. You have 3+ years of full-time experience and build with AI coding tools like Claude Code or Codex every day. https:&#x2F;&#x2F;thankly.ai&#x2F;careers&#x2F;founding-engineer \n\nFounding Engineer, RL Environments: Build RL environments for shopping agents from real shopper questions, including tasks, scoring rubrics and automated graders. Experience with LLM evaluation, reward design or AI training data is a plus. https:&#x2F;&#x2F;thankly.ai&#x2F;careers&#x2F;rl-environments \n\nFounding Product Designer: Own the UX of the apps we build for clients and of our own platform, and set the patterns for how shopping works inside AI conversations. 3+ years of full-time product design experience and a portfolio. https:&#x2F;&#x2F;thankly.ai&#x2F;careers&#x2F;product-designer \n\nThese are equity-first founding roles. At least 4 hours a day of overlap with Eastern Time.\n\nTo apply, email harsh@thankly.ai with your GitHub or portfolio and one sentence about the best thing you've built.",
+    "company": "Thankly",
+    "location": "Remote"
+  },
+  {
+    "title": "Taxnova — London",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50351794",
+    "published_date": "2026-11-03",
+    "content": "Taxnova | London | Hybrid\nFounding product engineer\n\nTaxnova (a16z Speedrun) builds AI that turns engineering data into tax and finance intelligence for teams like incident.io and Paddle.\nWe’re hiring a core founding engineer to work side by side with the CTO and own the AI product, roadmap input and client delivery.\n\n https:&#x2F;&#x2F;taxnova.notion.site&#x2F;founding-product-engineer",
+    "company": "Taxnova",
+    "location": ""
+  },
+  {
+    "title": "RedSeal — Sales Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50352541",
+    "published_date": "2026-11-03",
+    "content": "RedSeal | Sales Engineer | REMOTE | Full-time | https:&#x2F;&#x2F;www.redseal.net \n\nRedSeal is an exposure management platform. We integrate agentlessly with 2,000+ security and infrastructure systems and devices to model the full hybrid environment (on-prem, cloud, OT, IoT) and show which attack paths and vulnerabilities actually matter. Used by hundreds of Fortune 1000 companies and 75+ U.S. government agencies, including every branch of the U.S. military.\n\nLooking for 4+ years of security presales or consulting, plus deep networking: L2-L4, routing, and multi-vendor firewall&#x2F;load balancer config. Comfortable with REST APIs and scripting. Bonus: BGP&#x2F;MPLS&#x2F;SD-WAN, cloud networking, OT&#x2F;ICS, CCIE&#x2F;CCNP&#x2F;CISSP.\n\nApply: https:&#x2F;&#x2F;redseal.applytojob.com&#x2F;apply&#x2F;GOBu1zg3ZL&#x2F;Sales-Engine...",
+    "company": "RedSeal",
+    "location": "Remote"
+  },
+  {
+    "title": "SEEKING FREELANCER — Devops Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50352957",
+    "published_date": "2026-11-03",
+    "content": "SEEKING FREELANCER | Devops Engineer | Remote - UK or EU\n\ngetregistered is a better way to do event registration.\n\nWe're looking for an experienced devops freelancer to help manage and enhance our GCP + Terraform + GitLab based stack in our SOC2 &#x2F; PCI environment. Candidates must be willing to undergo a background check.\n\nPlease email hn@getregistered.com with LinkedIn &#x2F; CV &#x2F; Samples of work.",
+    "company": "SEEKING FREELANCER",
+    "location": "Remote"
+  },
+  {
+    "title": "Avoca — Full-Stack Engineers + FDEs",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50352134",
+    "published_date": "2026-11-03",
+    "content": "Avoca | Full-Stack Engineers + FDEs | ONSITE (NYC,US) | Full-time\n\nAvoca is transforming how home service companies engage with their customers. Our AI-powered conversational agents handle every high-value inbound call, from booking jobs, qualifying leads, and driving higher revenue, all at a speed and consistency unmatched by human call centers.\n\nWe're a Series B startup backed by Kleiner Perkins, Meritech Capital, General Catalyst, and other top-tier investors, with $125M raised and a $1B valuation. We grew 10x in 2025 and have scaled to 170+ employees in under two years across our NYC headquarters and Santa Barbara office.\n\nOur engineering team is still relatively small (~25 overall). So, anyone joining soon would still be a foundational engineer with a lot of autonomy and impact. Our Product Engineering and FDE teams are growing.\n\nTo apply: https:&#x2F;&#x2F;www.avoca.ai&#x2F;careers#open-roles",
+    "company": "Avoca",
+    "location": ""
+  },
+  {
+    "title": "TheraPlug — Founding CTO &#x2F; Technical Lead",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50352937",
+    "published_date": "2026-11-03",
+    "content": "TheraPlug | Founding CTO &#x2F; Technical Lead | Detroit preferred; remote considered | Equity-first, pre-funding\n\nI’m Marcelus Brice, founder of TheraPlug ( https:&#x2F;&#x2F;theraplug.health ). We’re building a behavioral health platform focused on making it easier for patients to find appropriate therapists and access care through insurance, starting in Detroit.\n\nWe’re looking for a hands-on technical leader who can build alongside a lean team and help recruit its founding engineers. You don’t need a previous CTO title, but you should have shipped and operated production software.\n\nThe product will support iOS, Android and responsive web, including:\n\n• Patient and provider onboarding, scheduling and secure messaging.\n• AI-assisted therapist matching based on clinical needs, preferences, insurance and availability.\n• Provider credential verification and payer enrollment workflows.\n• Insurance eligibility checks and estimated patient costs.\n• Secure video sessions and clinician-reviewed AI documentation.\n\nRelevant experience includes full-stack development, mobile apps, healthcare integrations, sensitive-data security and practical AI implementation. We value clear architecture, accessible design and thoughtful use of established services.\n\nCompensation: We are pre-funding and cannot offer an immediate cash salary. We’re seeking someone interested in an equity-first founding role, with a planned transition to salary when funding supports payroll. Equity, responsibilities, time commitment and compensation triggers would be agreed in writing before work begins. Funding timing is not guaranteed.\n\nTo start a conversation, email marcelus@theraplug.health with:\n• Products you’ve built and your specific contribution.\n• Relevant healthcare, security or AI experience.\n• Your location and realistic availability before funding.\n• Your interest in leading and assembling a small development team.\n\nI can share the detailed product scope and team requirements.",
+    "company": "TheraPlug",
+    "location": "Remote"
+  },
+  {
+    "title": "Apollo Research — Coding agent security product",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50357728",
+    "published_date": "2026-11-03",
+    "content": "Apollo Research | Coding agent security product\n\n1. Founding Account Executive: moves security champion's interest through the org to closing, run technical evaluations with FDE, writes the playbook for next hires. 5+ years in GTM with five- and six-figure ACV technical deals closed into security or engineering orgs that did not have a marketing or sales engine. Apply here: https:&#x2F;&#x2F;jobs.lever.co&#x2F;apolloresearch&#x2F;008a594d-0b50-4f15-be9d... \n\n2. GTM Associate: builds the pipeline engine and qualified pipeline.2+ years generating demand without a playbook, and the ability to build a working tool. Apply here: https:&#x2F;&#x2F;jobs.lever.co&#x2F;apolloresearch&#x2F;df8439d2-b43e-4136-94d9... \n\nWe have an intense in a good way culture. Read more about it here: https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1tEgMnROVFAeeBaA0kihzXf_K... \n\nLondon | Full time| competitive salary and benefits",
+    "company": "Apollo Research",
+    "location": ""
+  },
+  {
+    "title": "Special — Forward Deployed Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50353641",
+    "published_date": "2026-11-03",
+    "content": "Special | Forward Deployed Engineer | NYC | Full-Time | $200-300K + equity\n\nEx-DOGE team transforming critical American industries with AI. Backed by a16z, Human Capital, Brian Armstrong, Shyam Sankar, and Antonio Gracias.\n\nApply + vision: special.co&#x2F;careers + special.co&#x2F;vision",
+    "company": "Special",
+    "location": ""
+  },
+  {
+    "title": "Sphinx Defense — Software Engineering",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50359595",
+    "published_date": "2026-11-03",
+    "content": "Sphinx Defense | Software Engineering | Remote (US Only) | https:&#x2F;&#x2F;www.sphinxdefense.com \n\nSphinx Defense builds software to solve complex national security problems for America and its allies. Founded by engineers and technologists with deep experience across commercial and defense technology, we're building a vehicle-agnostic communication infrastructure to enable satellite operators to securely utilize antenna networks and maneuver satellites in real-time. We're bootstrapped, profitable, and growing aggressively.\n\nTo learn more about who we are, our engineering culture, and whether this is the right place for you, https:&#x2F;&#x2F;sphinxdefense.com&#x2F; .\n\nOur current openings are:\nAssociate DevOps Engineer - Colorado Springs, CO: https:&#x2F;&#x2F;grnh.se&#x2F;s1twrxb88us \n\nBackend Engineer - Colorado Springs, CO: https:&#x2F;&#x2F;grnh.se&#x2F;z0jox39h8us \n\nBackend Engineer - Remote: https:&#x2F;&#x2F;grnh.se&#x2F;bd3zrpcg8us \n\nDevOps Engineer - Colorado Springs, CO: https:&#x2F;&#x2F;grnh.se&#x2F;ediup2jj8us \n\nDevOps Engineer - Remote: https:&#x2F;&#x2F;grnh.se&#x2F;w6nfmsl18us \n\nFull Stack Engineer - Remote: https:&#x2F;&#x2F;grnh.se&#x2F;sw2e30pl8us \n\nSenior Backend Engineer - Colorado Springs, CO: https:&#x2F;&#x2F;grnh.se&#x2F;auntb4us8us \n\nSenior Backend Engineer - Remote: https:&#x2F;&#x2F;grnh.se&#x2F;kp0xwi9b8us \n\nSenior DevOps Engineer - Colorado Springs, CO: https:&#x2F;&#x2F;grnh.se&#x2F;i07aje6u8us \n\nSenior Full Stack Engineer - Chantilly, VA: https:&#x2F;&#x2F;grnh.se&#x2F;ndhlbbo18us \n\nSenior Full Stack Engineer - Colorado Springs, CO: https:&#x2F;&#x2F;grnh.se&#x2F;dugo9l3i8us \n\nSenior Full Stack Engineer - Seal Beach&#x2F;Los Angeles, CA: https:&#x2F;&#x2F;grnh.se&#x2F;vj6j0s6j8us \n\nSenior Infrastructure Architect - Colorado Springs, CO: https:&#x2F;&#x2F;grnh.se&#x2F;fibm1r478us \n\nSenior Network Engineer - Colorado Springs, CO: https:&#x2F;&#x2F;grnh.se&#x2F;v1c47kta8us \n\nDon’t see a role that aligns with your interests or don’t have the specific Space&#x2F; Command & Control experience? Apply to the general interest application and list what type of role you would be interested in: https:&#x2F;&#x2F;grnh.se&#x2F;4ce199d68us",
+    "company": "Sphinx Defense",
+    "location": "Remote"
+  },
+  {
+    "title": "Estuary — US-Based &#x2F; Remote",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50356058",
+    "published_date": "2026-11-03",
+    "content": "Estuary | US-Based &#x2F; Remote | Full-time – https:&#x2F;&#x2F;estuary.dev&#x2F; \n\nEstuary is a VC-backed, post–Series A startup powering real-time data replication and transform — from sub-second CDC replication to terabyte-scale OLAP data flows. We’re open-source, developer-first, and focused on making data movement radically simpler across both our Platform and Applications layers.\n\nWe’re hiring for:\n\nHead of Engineering — Own the engineering function end-to-end as a partner to our founder CTO: strategy, people, delivery, and operations across a compact but high-leverage team. You’ll grow the leaders already running our teams, set technical strategy jointly with the CTO, and be accountable for what engineering ships and what it costs.\n\nSenior Systems Engineer (Control & Data Plane) — Build the high-performance backbone of our platform: the orchestration, distributed state, and stream transport that keep pipelines at sub-second latency under massive throughput. You’ll work primarily in Rust on fault tolerance, consensus, and networking, and help set the bar for correctness and performance across the team.\n\nProduct Manager — Own product areas end-to-end, working closely with engineering and design to shape the roadmap and deliver a great developer experience. Engage with users, translate real-world use cases into product decisions, and help define how modern data infrastructure should feel to build with.\n\nHead of Product Marketing — Lead product marketing as we bring real-time, agent-ready data pipelines to technical buyers, partnering closely with our Head of Marketing, Developer Relations, and the founders. Own positioning, messaging, launches, and competitive narrative, turning what our engineers ship into stories data teams actually care about.\n\nSolutions Engineer — Partner with sales and customers from the first technical call through production, running discovery, demos, and proofs of concept for data engineering and platform teams. You’ll design CDC, streaming, and batch pipelines on Estuary, solve real integration problems hands-on, and feed what you learn back to Product and Engineering.\n\nCustomer Success Manager — Own the post-sale relationship for our data engineering and platform customers as our first CS hire. You’ll build onboarding, account health monitoring, and the expansion playbook from scratch while staying technical enough to resolve most issues yourself.\n\nSenior Compliance Engineer — Own our GDPR and PCI DSS programs while keeping our audited SOC 2 and HIPAA programs running smoothly, alongside hands-on ownership of identity, endpoint, and SaaS estate management. This is a governance-first role for someone who has run a compliance program end-to-end, not just contributed to one.\n\nWhat we’re looking for: People who care about building reliable, maintainable systems and processes and enjoy working with complex APIs, data flows, or customer relationships. We value curiosity, clear communication, and a willingness to learn.\n\nBonus points for experience with CDC tools, open source contributions, or fast-paced startups.\n\nTo apply: Email your resume to careers@estuary.dev",
+    "company": "Estuary",
+    "location": "Remote"
+  },
+  {
+    "title": "Location: Andalucía, Spain (CET)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50353980",
+    "published_date": "2026-11-03",
+    "content": "Location: Andalucía, Spain (CET)\nRemote: Yes – remote only\nWilling to relocate: No (EU citizen – no visa or work permit needed for EU employers)\nTechnologies: TypeScript, React, Next.js, Node.js, Fastify, React Native, PostgreSQL, Prisma, Supabase, Anthropic SDK (Claude), LLM pipelines, Vitest&#x2F;Jest, CI&#x2F;CD\nRésumé&#x2F;CV: https:&#x2F;&#x2F;saturnodev.netlify.app&#x2F; · linkedin.com&#x2F;in&#x2F;saturno-mangieri · github.com&#x2F;theghost1980\nEmail: saturnob612 [at] gmail.com\n\nFull-stack engineer, 6+ years on 100% remote teams, focused on shipping LLM features to production.\n\nLast role: tech lead for AI call analysis at a US marketing agency. Took the MVP from design to validated delivery in 2 months: a Claude-based pipeline that turns a month of customer calls into coaching reports, with model-free quote verification (every quoted sentence is checked against the transcript, so no fabricated quote reaches a client), batch runs of up to 300 calls with live progress, and cost protection so no paid model response is ever lost.\n\nBefore that: product engineer on a crypto wallet with 10k+ users, where I shipped a swap widget that generated $10k+ in direct revenue in its first 5 months and set up the project's first testing&#x2F;CI environment.\n\nLooking for: full-time or contract roles in AI product engineering or full-stack. Available now. English C2, Spanish native.",
+    "company": "Location: Andalucía, Spain (CET)",
     "location": "Remote"
   },
   {
@@ -1314,12 +1566,12 @@
     "location": "Remote"
   },
   {
-    "title": "*Data Engineer — Remote — US Only*",
+    "title": "*Software Engineer — Remote — US Only* - US Work Authorization Required",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50344339",
     "published_date": "2026-11-02",
-    "content": "*Data Engineer — Remote — US Only*\n\nKaveronix is looking for experienced Data Engineers currently based in the United States for fully remote opportunities with our client organizations.\n\n*What we’re looking for:*\n\n- 4+ years of professional data engineering experience\n- Strong experience with data pipelines, ETL&#x2F;ELT processes, and data integration\n- Experience with technologies such as Python, SQL, Apache Spark, Snowflake, AWS, Azure, Google Cloud, or Databricks is a plus\n- Strong understanding of data warehousing, database management, and data modeling\n- Strong communication and problem-solving skills\n- Ability to work independently in a remote environment\n\n*What we offer:*\n\n- Fully remote work\n- Flexible working hours\n- Competitive compensation based on experience\n\n*Compensation:* $80,000–$100,000&#x2F;year, depending on experience.\n\nIf you're interested, please send your resume to hassan.amir@kaveronix.com",
-    "company": "*Data Engineer — Remote — US Only*",
+    "content": "*Software Engineer — Remote — US Only* - US Work Authorization Required\n\nKaveronix is looking for experienced Software Engineers currently based in the United States for fully remote opportunity\n\n*What we’re looking for:*\n\nCandidates should have at least 4 years of professional experience in software engineering, with a strong understanding of modern development practices and workflows. Experience with technologies such as React, Node.js, Python, Java, .NET, TypeScript, or cloud platforms is preferred. Strong communication, analytical thinking, and problem-solving abilities are essential.\n\n*What we offer:*\n\n- Fully remote work\n- Flexible working hours\n- Competitive compensation based on experience\n\n*Compensation:* $80,000–$180,000&#x2F;year, depending on experience.\n\nIf you're interested, please send your resume to hassan.amir@kaveronix.com",
+    "company": "*Software Engineer — Remote — US Only* - US Work Authorization Required",
     "location": "Remote"
   },
   {
