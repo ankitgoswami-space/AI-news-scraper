@@ -45,6 +45,60 @@
     "location": ""
   },
   {
+    "title": "Kaida — Remote",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50370710",
+    "published_date": "2026-11-04",
+    "content": "Kaida | Remote | https:&#x2F;&#x2F;kaida.dev&#x2F; \n\nHi! I am Max. I do des & dev 13+ years. I am building AI frontend framework & platform for creating digital products. Looking for contributors & founding team members: https:&#x2F;&#x2F;kaida.dev&#x2F;blog&#x2F;looking-for-founding-team-members \n\nLinkedIn: https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;maxberdnikau&#x2F; \n\nEmail: max@kaida.dev",
+    "company": "Kaida",
+    "location": "Remote"
+  },
+  {
+    "title": "SentiLink — https:&#x2F;&#x2F;www.sentilink.com&#x2F;",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50370932",
+    "published_date": "2026-11-04",
+    "content": "SentiLink | https:&#x2F;&#x2F;www.sentilink.com&#x2F; | Engineering & Data Science | REMOTE, HYBRID, and ONSITE (UNITED STATES ONLY) | Full Time\nPrimarily hiring in the U.S. for more senior level roles.\n\nWe’re hiring across Engineering (Primarily Backend&#x2F;Data Platform) and Data Science &#x2F; ML roles. Hiring at Manager&#x2F;Director level as well as Senior IC levels. We’re language-agnostic and hire for fundamentals.\n\nAcross the team you’ll see: • Python, Go, Rust, Scala • PostgreSQL, Snowflake • Kafka, Redis • Terraform, Kubernetes • ML: XGBoost, PyTorch, Feature stores, real-time scoring pipelines\n\nIf you love solving complex distributed systems challenges, building customer-facing ML products, or working on detection systems that must be both high-precision and low-latency, you’ll fit right in.\n\nApply for roles here: https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;sentilink?utm_source=hacker_news \n\nAt SentiLink, we stop identity fraud at scale. Our products protect banks, fintechs, marketplaces, and leading financial institutions from synthetic identity fraud, identity theft, and emerging threat. We analyze millions of applications while keeping real users moving fast.\n\nWe’ve seen tremendous traction and are growing extremely quickly. Our real-time APIs have helped verify hundreds of millions of identities, starting with financial services and rapidly expanding into new markets. SentiLink is backed by world-class investors including Craft Ventures, Andreessen Horowitz, NYCA, and Max Levchin.\n\nSentiLink supports a variety of ways to work, ranging from fully remote to in-office. We operate as a digital-first company with strong collaboration across the U.S. and India. We maintain physical offices in Austin, San Francisco, New York City, Seattle, Los Angeles, and Chicago in the U.S. If you’re located near one of these offices, we would love for you to spend time in the office regularly. Some roles are hybrid or in-office by design.\n\nWe’re a small, high-impact team solving one of the most interesting and adversarial problems in fintech: how do you build systems that reliably determine whether a real human is on the other side of a financial transaction?",
+    "company": "SentiLink",
+    "location": "India"
+  },
+  {
+    "title": "Matcha.fm — REMOTE (Worldwide: US &#x2F; Canada &#x2F; Europe &#x2F; UK &#x2F; LATAM)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50369728",
+    "published_date": "2026-11-04",
+    "content": "Matcha.fm | REMOTE (Worldwide: US &#x2F; Canada &#x2F; Europe &#x2F; UK &#x2F; LATAM) | Full-time | https:&#x2F;&#x2F;matcha.fm \n\nI'm a Canadian repeat founder working on agents that cut the noise in large dataset search.\n\nLooking for a great builder (founding software engineer) and a great marketer with a track record of virality and driving product distribution.\n\nFully remote anywhere in the world, with some US &#x2F; EU timezone overlap.\n\nThe same salary regardless of where you live\n\nNo micromanagement, no unnecessary calls\n\nCalm, low-distraction culture to do your best work\n\nFounding Full-stack Software Engineer : https:&#x2F;&#x2F;matcha.fm&#x2F;apply&#x2F;fse \n\nFounding Backend Engineer AI Search : https:&#x2F;&#x2F;matcha.fm&#x2F;apply&#x2F;bee \n\nFounding Growth Marketer : \n https:&#x2F;&#x2F;matcha.fm&#x2F;apply&#x2F;marketing",
+    "company": "Matcha.fm",
+    "location": "Remote"
+  },
+  {
+    "title": "Location: Edirne, Turkey",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50369025",
+    "published_date": "2026-11-04",
+    "content": "Location: Edirne, Turkey\nRemote: Yes (remote only)\nWilling to relocate: No\nTechnologies: Python, scikit-learn, XGBoost, Hugging Face (BERT), RAG (Chroma, Gemini API), Streamlit, FastAPI, Node.js&#x2F;Express, Next.js, TypeScript, Tailwind, Git\nRésumé&#x2F;CV: https:&#x2F;&#x2F;egemenoral.com \nGitHub: https:&#x2F;&#x2F;github.com&#x2F;egemenoral1-jpg \nLinkedIn: https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;egemen-oral \nEmail: egemenoral1@gmail.com\n\nJunior full-stack &#x2F; ML developer looking for a full-time remote role. Computer Engineering degree (Trakya University). Frontend developer at Lumeon (Next.js). I have also done short freelance work for other companies, on a per-project basis. Projects: Turkish sentiment analysis with fine-tuned BERT, RAG system on Turkish Wikipedia, stock tracking app with AI commentary (Next.js + FastAPI), movie recommender, credit risk model.\n\nEnglish: A2 (basic).",
+    "company": "Location: Edirne, Turkey",
+    "location": "Remote"
+  },
+  {
+    "title": "Oscilar.com — Sr&#x2F;Staff Software Engineers, Data Scientist, FDE, PM",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50369581",
+    "published_date": "2026-11-04",
+    "content": "Oscilar.com | Sr&#x2F;Staff Software Engineers, Data Scientist, FDE, PM| REMOTE (US&#x2F;Canada&#x2F;Brazil&#x2F;Poland&#x2F;UK&#x2F;India) Full-time AI Risk Decisioning™ platform that helps organizations manage onboarding, fraud, credit, and compliance risks\nOpen roles: - Sr.&#x2F;Staff Analytics & Data Architecture Engineer (US&#x2F;Canada) - Sr.&#x2F;Staff Java Backend Engineer (Brazil&#x2F;Poland&#x2F;India) - Staff Web SDK Engineer (US&#x2F;Brazil&#x2F;India&#x2F;Canada&#x2F;Poland&#x2F;UK) - Data Scientist (US&#x2F;Canada) - Forward Deployment Engineer (Brazil) - Product Manager AML (US&#x2F;Canada) - Product Manager Device and Behavior (US&#x2F;Canada) apply at: https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;oscilar?utm_source=HackerNews",
+    "company": "Oscilar.com",
+    "location": "India"
+  },
+  {
+    "title": "Search Atlas — Product Engineer (PM)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50365279",
+    "published_date": "2026-11-04",
+    "content": "Search Atlas | Product Engineer (PM) | REMOTE (anywhere, EST hours) | Full-time | $23-34&#x2F;hr\n\nWe're ~160 people building an AI marketing platform. Our main product, OTTO, runs a site's SEO on its own: it reads live search data and ships the technical and on-page fixes itself. Customers include Autotrader, Hyundai, P&G and Vendasta.\n\nPods are 1 PM and 2-4 engineers. You own your pod's roadmap and ship it with them, with no veteran PM signing off on your specs.\n\nYou have 3+ years as a B2B SaaS PM with a real technical background (eng or QA before PM, or you already work in the codebase). You read Python and TS, write your own SQL, and don't need an engineer to explain a stack trace. Stack is Django + React&#x2F;Next. QA is yours end to end, release sign-off included. You use Claude Code or similar daily.\n\nApply (mention HN): https:&#x2F;&#x2F;careers.searchatlas.com&#x2F;jobs&#x2F;599248-product-engineer... \n\nAlso hiring:\n\n* Senior Full-Stack Engineer (Django&#x2F;Next.js) $25-$30&#x2F;hr: https:&#x2F;&#x2F;careers.searchatlas.com&#x2F;jobs&#x2F;595729-senior-full-stac... \n\n* SEO Automation Engineer (Python) $17-$28&#x2F;hr: https:&#x2F;&#x2F;careers.searchatlas.com&#x2F;jobs&#x2F;559066-seo-automation-e... \n\n* All roles: https:&#x2F;&#x2F;careers.searchatlas.com \n\nPlease apply through the links, not by email. No agencies.\n\nLocation: our ATS makes us list specific countries, but we hire anywhere you can work EST hours. If your country isn't listed, apply anyway.",
+    "company": "Search Atlas",
+    "location": "Remote"
+  },
+  {
     "title": "ProphetX — Multiple Roles",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50351346",
