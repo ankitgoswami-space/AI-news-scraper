@@ -1,5 +1,23 @@
 [
   {
+    "title": "BCDRPulse — Head of Global GTM",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50402383",
+    "published_date": "2026-11-07",
+    "content": "BCDRPulse | Head of Global GTM | REMOTE (worldwide) | Commission based, path to salary and equity | https:&#x2F;&#x2F;bcdrpulse.com \n\nBCDRPulse is an early stage B2B SaaS platform for website resilience, infrastructure monitoring, performance testing, security assessment and disaster recovery. The product is built. We have no paying customers yet, and I'm looking for someone to take it to market.\n\nThe role: own go to market end to end. Find prospects, run demos, negotiate and close, and build channel partnerships (MSP&#x2F;MSSP, resellers). You'd build your own pipeline, as there's no marketing team or inbound flow yet.\n\nPay: commission only to start, with terms agreed up front before any work begins. The intention is to move to a salary once there is revenue, with possible equity for the right person. We're bootstrapped, so you'd use your own laptop and tools for now.\n\nWelcome: former sales leaders, fractional CROs, independent GTM consultants, and experienced professionals returning from retirement or a career break, at any age, from this industry or a closely related one.\n\nFull description: https:&#x2F;&#x2F;wellfound.com&#x2F;recruit&#x2F;jobs&#x2F;5014388 \n\nTo apply, email support@bcdrpulse.com with \"HN\" in the subject: your best revenue result with numbers, the biggest B2B deal you personally closed, and how you'd win the first 10 customers.",
+    "company": "BCDRPulse",
+    "location": "Remote"
+  },
+  {
+    "title": "Location: Estonia Remote:Yes",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50403646",
+    "published_date": "2026-11-07",
+    "content": "Location: Estonia Remote:Yes\n\nWilling to relocate: No\n\nTechnologies: React.js,Vue.js, Next.js,Nuxt.js ,TypeScript, SCSS, CSS3, Tailwind CSS, Redux, Zustand\n\nPart-time&#x2F;Freelance: Yes\n\nLinkedin: https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;mustafadalga&#x2F; \n\nContact info: mustafadalga \\[at\\] gmail \\[dot\\] com\n\nFront-end engineer with 7+ years of experience in React&#x2F;Next.js, Vue&#x2F;Nuxt.js, and TypeScript. Focused on performance and UI modernization, with results such as improving Lighthouse scores from 50→88 and cutting load times by 80%. Experienced in migrating legacy codebases and mentoring teams, and interested in roles involving dashboard rebuilds, performance optimization, and modernization work.",
+    "company": "Location: Estonia Remote:Yes",
+    "location": "Remote"
+  },
+  {
     "title": "Machine Age — COO — founder-level role",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50393239",
@@ -52,6 +70,42 @@
     "content": "I am the founder of an early stage startup seeking to become the most effective B2B marketing platform for healthcare commercial teams - starting with the conference channel ($94B+ of spend and growing). We match professionals with the people most worth meeting, driving meaningful conversations and innovation across the industry. I am an experienced go-to-market leader with a decade of experience in a health-tech and marketing space.\n\nThis is an ONSITE role in NYC.\n\nJD can be found here: https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1KQbZwdXM0luk4z-cRHPG7oXY... \n\nReach out to shelly@shakehc.com with interest.",
     "company": "I am the founder of an early stage startup seeking to become the most effective B2B marketing platform for healthcare commercial teams - starting with the conference channel ($94B+ of spend and growing). We match professionals with the people most worth meeting, driving meaningful conversations and innovation across the industry. I am an experienced go-to-market leader with a decade of experience in a health-tech and marketing space.",
     "location": ""
+  },
+  {
+    "title": "Prior Labs — Berlin, Freiburg, NYC",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50398420",
+    "published_date": "2026-11-06",
+    "content": "Prior Labs | Berlin, Freiburg, NYC | ONSITE | Full-time | https:&#x2F;&#x2F;priorlabs.ai \n\nWe build foundation models for tables. TabPFN takes your whole dataset as context and predicts in one forward pass - no training, no tuning - after pre-training only on synthetic data from causal priors. TabPFN v2 was a Nature cover; the open models have 4M+ downloads and run in production from liquid biopsy to rail maintenance. Since July we're an independent lab inside SAP with €1B+ over four years; models stay open-weight and research stays public.\n\nWe're hiring engineers:\n\nInfrastructure Engineer - multi-cluster GPU training on Slurm, GCP today and more providers in 2027. The compute budget is tens of millions a year, and you own it.\n\nML Engineer, Backend - own inference end to end: latency, batching and memory on million-row inputs, across our API, customer VPCs and open weights.\n\nFull Stack Developer - the product where data scientists, agents and our models meet. TypeScript&#x2F;React + Python&#x2F;FastAPI.\n\nAlso hiring: Research Scientists and Research Engineers (Foundation Model), Applied Scientist (NYC), PhD research interns, GTM and ops roles. We sponsor visas and help with relocation.\n\n~45 people, led by Frank Hutter, advised by Yann LeCun and Bernhard Schölkopf.\n\n https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;prior-labs",
+    "company": "Prior Labs",
+    "location": ""
+  },
+  {
+    "title": "3ive — Senior&#x2F;Staff Software Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50398466",
+    "published_date": "2026-11-06",
+    "content": "3ive | Senior&#x2F;Staff Software Engineer | REMOTE (Europe) | Full-time | Python, TypeScript, React, AI Agents\n\nWe’re building Cursor for mechanical engineering.\n\nImagine an AI that doesn’t just answer questions about a mechanical design, but can actually understand CAD models, work with geometry, and help engineers create and modify real designs. That’s what we’re building.\n\nIt’s a hard engineering problem. We’re combining AI agents, CAD, computational geometry, and interactive software into a product engineers can rely on.\n\nWe’re a small but mighty team looking for an exceptional, hands-on Senior&#x2F;Staff Engineer to help build it. Think founding engineer in terms of ownership.\n\nYou’ll help shape our agent and backend architecture, solve challenging problems across the stack, and establish the engineering foundations as we grow.\n\nWe’re looking for someone who’s built ambitious products, ideally at startups or scaleups, and has the technical depth to figure things out when there’s no obvious solution.\n\nIdeally, you have experience with CAD, 3D geometry, or engineering software, alongside strong software engineering fundamentals. Experience building AI agents is a big plus.\n\nOur stack is primarily Python, TypeScript, and React.\n\nApply: https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;3ive&#x2F;36d01a3c-94ac-4d6c-b872-4b0f9c...",
+    "company": "3ive",
+    "location": "Remote"
+  },
+  {
+    "title": "BuildQ — Founding Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50396245",
+    "published_date": "2026-11-06",
+    "content": "BuildQ | Founding Engineer | REMOTE (PT to ET overlap preferred) | $130K - $150K + equity | Full-time | Seed | https:&#x2F;&#x2F;buildq.ai&#x2F;careers&#x2F;founding-engineer \n\nHey folks! I'm Dylan, CTO at BuildQ, and we're building out our founding eng team. Today, a $200M solar project sits for weeks while someone reads thousands of PDFs before it can be financed. We make that review fast: customers order diligence from us, our agents do the work, and an expert signs off. We've processed 200,000+ documents across 1,100+ projects so far. We're remote, and the benefits are great (a startup with a 401k match!).\n\nWe're looking for a Founding Engineer to join 2 of us on the engineering team. You'll ship to production on your first day, and you'll help shape what the future of BuildQ looks like.\n\nStack: Rails, Python, React, TS, Postgres, AWS\n\nEmail careers@buildq.ai with \"HN Founding Engineer\", anything you're proud to share that you've built, and any questions you may have.",
+    "company": "BuildQ",
+    "location": "Remote"
+  },
+  {
+    "title": "Sparcle — San Francisco Bay Area",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50398375",
+    "published_date": "2026-11-06",
+    "content": "Sparcle | San Francisco Bay Area | Remote | Equity, full-time, part-time, fractional, project, partnership or revenue share\n\nWe build Bolt, a governed AI workspace with on-device and hybrid AI, and Aeira, ACL-aware enterprise search. Privacy and sovereignty first.\n\nLooking for engineers (security, local-first systems), GTM and partnerships people who know regulated industries, fractional experts, and integrators open to revenue share. Try Bolt first (sparcle.app&#x2F;download) and see if we are the fit mutually.\n\nNo LeetCode, no trick questions. Tell us your story and what you would do first: rajendra@sparcle.app",
+    "company": "Sparcle",
+    "location": "Remote"
   },
   {
     "title": "Piramidal (YC W24) — Senior Backend Engineer",
@@ -837,11 +891,11 @@
     "location": "Remote"
   },
   {
-    "title": "Pond AI — Head of Engineering (founding-level)",
+    "title": "Pond AI — San Francisco",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50339881",
     "published_date": "2026-11-02",
-    "content": "Pond AI | Head of Engineering (founding-level) | San Francisco | Onsite | Full-time | https:&#x2F;&#x2F;joinpond.ai \n\nMost non-tech businesses know exactly which workflows they want AI agents to handle, but have no one to build, connect and run them. Pond delivers custom AI agents to these businesses through a network of 7k AI builders, with Pond as the platform and security layer over MCP.\n\nWe're backed by Tier-1 VCs and a co-inventor of GPT, and we're looking for a hands-on technical leader to own the platform end to end.\n\nYou'd be a great fit if you:\n\n- Build full-stack and ship AI agents in production (TypeScript&#x2F;Python, LLMs, tool use)\n\n- Have worked on payments, agent coordination&#x2F;MCP, or platform&#x2F;marketplace products\n\n- Have early-stage startup experience (founder, founding or early engineer) and like to grind\n\nEmail dylan@joinpond.ai with something you've built.",
+    "content": "Pond AI | San Francisco | Onsite | https:&#x2F;&#x2F;joinpond.ai \n\nMost non-tech businesses know exactly which workflows they want AI agents to handle, but have no one to build, connect and run them. Pond delivers custom AI agents to these businesses through a network of 7k AI builders, with Pond as the platform and security layer over MCP.\n\nWe're backed by Tier-1 VCs and a co-inventor of GPT.\n\nWe're hiring two roles:\n\n1) Head of Engineering (founding-level) | Full-time\n\nWe're looking for a hands-on technical leader to own the platform end to end. You'd be a great fit if you:\n\n- Build full-stack and ship AI agents in production (TypeScript&#x2F;Python, LLMs, tool use)\n- Have worked on payments, agent coordination&#x2F;MCP, or platform&#x2F;marketplace products\n- Have early-stage startup experience (founder, founding or early engineer) and like to grind\n\n2) Marketer | Full-time or part-time\n\nWe're looking for someone who understands content marketing, affiliate programs, and paid ads, and who has AI video experience. You should know the current AI video landscape well enough to create social assets with it.\n\nYou'll work inside a highly AI-native operating process, including marketing work that hasn't been built this way before. We're looking to fill this as soon as possible.\n\nEmail dylan@joinpond.ai with something you've built or shipped, and mention HN.",
     "company": "Pond AI",
     "location": ""
   },
