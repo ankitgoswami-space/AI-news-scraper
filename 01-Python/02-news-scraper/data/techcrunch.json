@@ -1,5 +1,167 @@
 [
     {
+        "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
+        "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Underdog shows off a 32MB speech model in new demo",
+        "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Physicl raises $10M to make the digital world real enough for robots",
+        "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
+        "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
+        "url": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Meta says US users can now video chat with their Muse AI avatar",
+        "url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Meta warns that election backlash against data centers could make AI expansion harder",
+        "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "OpenAI released a new cybersecurity model. Is that enough?",
+        "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
+        "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Claude can now analyze your spending with its new Personal Finance tool",
+        "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Axiom Math wants to keep AI slop out of mathematics",
+        "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
+        "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Aina’s smart ring has a screen, a joystick, and a mic so you can talk to AI agents",
+        "url": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Box taps Nvidia’s Nemotron for new agent-first content retrieval system",
+        "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "A YC startup is putting $1M behind 5 unsolved materials science problems for AI",
+        "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Agility is the first pure humanoid robot company on the stock market. Are you buying?",
+        "url": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Apple is reportedly cutting budgets for its internal AI usage",
+        "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "After the midterms, a bigger clash over data centers could be coming",
+        "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "AI PACs spent millions trying to shape Congress — here’s how they fared",
+        "url": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Nothing CEO says company’s mysterious AI-first device is dropping next month",
+        "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Almost no one uses AI agents to book their Uber, company says",
+        "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "OpenAI is already trying to shape the 2028 election",
+        "url": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Meta acquires AI coding startup Conductor",
+        "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy",
+        "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "I tried Apple’s Siri Recaps. They’re surprisingly useful — and a little unsettling",
+        "url": "https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little-unsettling/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Google faces backlash for plan that would turn off Search for schools that restrict AI",
+        "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "TechCrunch Founder Summit 2026: Doors open at 9 a.m. ET in Boston",
+        "url": "https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
         "title": "Anthropic is working on a system to prove AI models’ identity",
         "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
         "source": "TechCrunch",
@@ -12,74 +174,8 @@
         "category": "AI"
     },
     {
-        "title": "Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom",
-        "url": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Hiding inside Palantir’s skyrocketing quarter is a foreboding signal",
-        "url": "https://techcrunch.com/2026/11/03/hiding-inside-palantirs-skyrocketing-quarter-is-a-foreboding-signal/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "AI inference startup Fal doubles its valuation to $16B as demand surges",
-        "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Netflix’s new AI Discover tab helps you find something to watch based on your mood",
-        "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Anthropic is still grappling with the economics of compute",
-        "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Google will let schools disable its AI tools, but not without sacrificing Search",
-        "url": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Apple restricts dating apps and AI companions to users 18 and up",
-        "url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "The TechCrunch Founder Summit agenda is only half the reason to be in Boston on November 4",
-        "url": "https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Tomorrow: TechCrunch Founder Summit takes over Boston and when pass rates increase",
-        "url": "https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Apple Watch’s AI features for rewinding and recapping conversations begin beta testing",
-        "url": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses",
-        "url": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Apple may try to increase revenue by doing…something with third-party AI apps",
-        "url": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+        "title": "New York City’s Mamdani criticizes Madison Square Garden owner over surveillance tech",
+        "url": "https://techcrunch.com/2026/11/03/new-york-citys-mamdani-criticizes-madison-square-garden-owner-over-surveillance-tech/",
         "source": "TechCrunch",
         "category": "AI"
     },
@@ -90,20 +186,8 @@
         "category": "AI"
     },
     {
-        "title": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
-        "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
         "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
         "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Web host Squarespace lays off 19% of its employees",
-        "url": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
         "source": "TechCrunch",
         "category": "AI"
     },
@@ -114,98 +198,8 @@
         "category": "AI"
     },
     {
-        "title": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’",
-        "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
-        "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
-        "url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "2 days till TechCrunch Founder Summit: Boston founders don’t need a Silicon Valley address to build something big",
-        "url": "https://techcrunch.com/2026/11/02/2-days-till-techcrunch-founder-summit-boston-founders-dont-need-a-silicon-valley-address-to-build-something-big/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "OpenAI is finally merging ChatGPT’s Chat and Work tabs",
-        "url": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
-        "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "AI can make tech CEOs’ lives easier. What about everyone else?",
-        "url": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Data centers are now a midterm issue, even in Brooklyn",
-        "url": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
-        "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale",
-        "url": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
-        "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
         "title": "Ninja’s first-ever microwave just replaced two of my kitchen appliances at once",
         "url": "https://techcrunch.com/2026/11/02/ninjas-first-ever-microwave-just-replaced-two-of-my-kitchen-appliances-at-once/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says",
-        "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Google’s first data center satellite is online and writing poetry",
-        "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Binance pauses withdrawals as hackers suspected of stealing billions in crypto",
-        "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
-        "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
         "source": "TechCrunch",
         "category": "AI"
     }

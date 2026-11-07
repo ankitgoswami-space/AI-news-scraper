@@ -1,5 +1,158 @@
 [
   {
+    "title": "Machine Age — COO — founder-level role",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50393239",
+    "published_date": "2026-11-06",
+    "content": "Machine Age | COO — founder-level role | Full-time | UK time zone | Salary post-raise\n\nMachine Age is building a network of businesses and robotics providers to supply real-world data for robot training.\n\nWe’re seeing strong interest, with multimillion-dollar opportunities in the pipeline. We’re looking for a COO to work alongside the founder and help turn that interest into delivery.\n\nYou’ll grow our network of businesses, bring new robotics providers on board, and build the operations needed to scale both sides. This is a hands-on role for someone who wants to roll up their sleeves, build relationships and get things done.\n\nYou’ll need to work UK hours. This is a full-time opportunity, with salary starting after we complete our raise. An interest in robotics is a bonus.\n\nEmail frank@machineage.ai with things you’ve done and how you’d approach building a network of businesses and robot suppliers.\n\n https:&#x2F;&#x2F;machineage.ai",
+    "company": "Machine Age",
+    "location": ""
+  },
+  {
+    "title": "NetBird — Berlin, Germany (or remote, CET overlap)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50392398",
+    "published_date": "2026-11-06",
+    "content": "NetBird | Berlin, Germany (or remote, CET overlap) | Full-time\n\n https:&#x2F;&#x2F;netbird.io&#x2F;careers NetBird is open source networking and access control WireGuard-based overlay networks with zero-config peer-to-peer connectivity. Now working with new use cases in access for AI agents. Open source, built in Europe, used by thousands of teams worldwide. We're a small and growing team going up against (and working with) the incumbents in network security. Post Series A with 10xd revenue since the raise.\n\n- Senior&#x2F;Staff Backend Engineer (Go!!) : the control plane: peer coordination, policy and access control, multi-tenancy, and keeping it all fast as customer networks grow into the hundreds of thousands of peers.\n\n- Networking&#x2F;Client Software Engineer (Go!!) — Software Engineering on the NetBird client side: WireGuard, NAT traversal and hole punching, relays, DNS, and shipping one client across Linux, macOS, Windows. If you enjoy debugging why one connection out of a thousand won't go peer-to-peer, this is the role.\n\n- Technical Product Owner: Turn feedback into a clear roadmap, and work closely with the team to ship it. You should be comfortable with networking concepts and enjoy talking to users as much as reading a spec.\n\n- Technical Support Engineer: Help customers set up and debug NetBird in real environments (WireGuard, Linux, cloud, Kubernetes) and pass what you learn back to engineering. (REMOTE - US&#x2F;EST hours)\n\nWe have an office in Berlin and mostly work CET. We'd love to have you in the office with us, but if your experience is stellar we're happy to hire remote. We're scaling quickly, so this is a chance to join early and scale with us.\n\nApply at https:&#x2F;&#x2F;netbird.io&#x2F;careers , please mention you found us on Hacker News in your application.",
+    "company": "NetBird",
+    "location": "Remote"
+  },
+  {
+    "title": "Zefr — Los Angeles, CA (Marina del Rey)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50386884",
+    "published_date": "2026-11-06",
+    "content": "Zefr | Los Angeles, CA (Marina del Rey) | Site Reliability Engineer | Full-time | On-site 2-3x per week | $100,000 - $130,000 | https:&#x2F;&#x2F;zefr.com \n\n Company \n\nZefr is the leading global technology company enabling responsible marketing in walled garden social environments. Zefr’s solutions empower brands to manage their content adjacency on scaled platforms such as YouTube, Meta, TikTok, and Snap. Through its patented AI technology, Zefr offers brands and agencies more accurate and transparent solutions for social walled gardens.\n\n Role \n\nSite Reliability Engineer (1 - 3 years experience)\n\n You \n\nAs a Site Reliability Engineer at Zefr, you’ll apply your expertise in cloud infrastructure, CI&#x2F;CD, Observability, and core SRE concepts, to deliver high-quality, reliable, and scalable solutions.\n\nWe’re looking for someone to combine their technical expertise with a passion for continuous improvement and innovation.\n\nZefr wants a candidate that champions reliability as a product feature, and can translate complex technical concepts into strategy. This is a role where you'll help shape how we build and operate systems at scale.\n\n Tech Stack \n\nClouds - GCP, AWS\n\nKubernetes - GKE, EKS\n\nGitOps - ArgoCD, Github Actions\n\nLanguages - Python&#x2F;React&#x2F;Node.js\n\nObservability - Prometheus, Grafana, Open Telemetry, Chronosphere",
+    "company": "Zefr",
+    "location": ""
+  },
+  {
+    "title": "iCallidus — Azure Intune Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50389352",
+    "published_date": "2026-11-06",
+    "content": "iCallidus | Azure Intune Engineer | Denver, US | Remote | $130,000 - 160,000 | Full-Time\n\nTech used: AI, Azure, Firmware, Support, Microsoft Intune, Security, VPN, Incident Management\n\nWe are iCallidus, Inc., a small-business federal IT contractor hiring an Azure Intune Engineer for an agency IT support team. The position is fully remote within the United States, using a secure Government VPN and Government-furnished equipment.\n\nMore details and option to apply: https:&#x2F;&#x2F;devitjobs.com&#x2F;jobs&#x2F;iCallidus-Azure-Intune-Engineer",
+    "company": "iCallidus",
+    "location": "Remote"
+  },
+  {
+    "title": "I'm Sushant Gangurde, A Software Engineer focused on Full-Stack Development and AI-powered applications. I work with React, Next.js, TypeScript, Node.",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50388471",
+    "published_date": "2026-11-06",
+    "content": "I'm Sushant Gangurde, A Software Engineer focused on Full-Stack Development and AI-powered applications. I work with React, Next.js, TypeScript, Node.js, Python, PostgreSQL and MongoDB, and enjoy building practical products from frontend to backend.\n\nI've built projects involving AI integrations, authentication, APIs and database systems, and I'm also contributing to open-source software. I'm currently pursuing my Masters in Computer Science and actively looking for full-time Software Engineering opportunities where I can learn, take ownership and contribute to meaningful products.\n\nPortfolio: [ https:&#x2F;&#x2F;sushx.in ]( https:&#x2F;&#x2F;sushx.in )\nLinkedIn: [ https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;sushantgangurde-dev ]( https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;sushantgangurde-dev )\nMail: sushantcs2026@gmail.com",
+    "company": "I'm Sushant Gangurde, A Software Engineer focused on Full-Stack Development and AI-powered applications. I work with React, Next.js, TypeScript, Node.js, Python, PostgreSQL and MongoDB, and enjoy building practical products from frontend to backend.",
+    "location": ""
+  },
+  {
+    "title": "I am the founder of an early stage startup seeking to become the most effective B2B marketing platform for healthcare commercial teams - starting with",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50387346",
+    "published_date": "2026-11-06",
+    "content": "I am the founder of an early stage startup seeking to become the most effective B2B marketing platform for healthcare commercial teams - starting with the conference channel ($94B+ of spend and growing). We match professionals with the people most worth meeting, driving meaningful conversations and innovation across the industry. I am an experienced go-to-market leader with a decade of experience in a health-tech and marketing space.\n\nThis is an ONSITE role in NYC.\n\nJD can be found here: https:&#x2F;&#x2F;docs.google.com&#x2F;document&#x2F;d&#x2F;1KQbZwdXM0luk4z-cRHPG7oXY... \n\nReach out to shelly@shakehc.com with interest.",
+    "company": "I am the founder of an early stage startup seeking to become the most effective B2B marketing platform for healthcare commercial teams - starting with the conference channel ($94B+ of spend and growing). We match professionals with the people most worth meeting, driving meaningful conversations and innovation across the industry. I am an experienced go-to-market leader with a decade of experience in a health-tech and marketing space.",
+    "location": ""
+  },
+  {
+    "title": "Piramidal (YC W24) — Senior Backend Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50384764",
+    "published_date": "2026-11-05",
+    "content": "Piramidal (YC W24) | Senior Backend Engineer | New York, NY | $200K-$300K + equity | www.piramidal.ai\n\nWe’ve built the first-of-its-kind foundation model for brainwave data. Our goal is Intelligence Amplification (IA) by means of creating neural decoders that enable interactions with the language of neurons. Powered by our SOTA foundation model, our first product detects in real time abnormalities in the brains of ICU patients.\n\nWe are looking for a backend engineer to help build and scale the infrastructure behind our real time neural monitoring platform. You'll work on hard problems: high throughput streaming, real-time analytics, and hospital grade reliability.\n\nApply directly here: https:&#x2F;&#x2F;grnh.se&#x2F;uwaqx1xc9us",
+    "company": "Piramidal (YC W24)",
+    "location": ""
+  },
+  {
+    "title": "VictoriaMetrics — Remote",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50380208",
+    "published_date": "2026-11-05",
+    "content": "VictoriaMetrics | Remote | EMEA, North America | Hiring\nVictoriaMetrics is an open-source monitoring and observability company. We build VictoriaMetrics, VictoriaLogs, and VictoriaTraces — high-performance, cost-efficient solutions for metrics, logs, and traces.\n\nOur products are used by companies including Spotify, Wix, Grammarly, CERN, and thousands of others, with 1B+ downloads of our open-source products.\n\nWe're a fully remote team of 60+ and are currently hiring:\n\nSenior Solution Engineer — North America & EMEA, \nMarketing Manager — North America, \nProduct Marketing Manager (Cloud) — UK, \nEnterprise Account Executive - North America & EMEA, \nTechnical Expert Engineer - North America.\n\nWe're particularly interested in people with experience in open source, observability, monitoring, infrastructure, databases, developer tools, or technical B2B products.\n\nJobs & applications: https:&#x2F;&#x2F;careers.victoriametrics.com&#x2F; \n\nHappy to answer questions about VictoriaMetrics or the roles here.",
+    "company": "VictoriaMetrics",
+    "location": "Remote"
+  },
+  {
+    "title": "I'm Rajneesh Verma, a Full-Stack & AI Engineer currently working with a YC-backed startup. I have hands-on experience building and shipping production",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50382899",
+    "published_date": "2026-11-05",
+    "content": "I'm Rajneesh Verma, a Full-Stack & AI Engineer currently working with a YC-backed startup. I have hands-on experience building and shipping production-ready applications, scalable backend systems, APIs, and AI-powered products.\n\nMy tech stack includes React, Next.js, TypeScript, Node.js, Python, PostgreSQL, MongoDB, Docker, and LLM integrations. I enjoy solving real-world engineering problems, learning new technologies, and taking ownership of products from development to deployment.\n\nI'm always excited to connect with teams building impactful developer-focused products.\n\nPortfolio: https:&#x2F;&#x2F;www.rajneeshcodex.xyz \nGitHub: https:&#x2F;&#x2F;github.com&#x2F;rajneeshverma1",
+    "company": "I'm Rajneesh Verma, a Full-Stack & AI Engineer currently working with a YC-backed startup. I have hands-on experience building and shipping production-ready applications, scalable backend systems, APIs, and AI-powered products.",
+    "location": ""
+  },
+  {
+    "title": "COi Rubber Products — Independent Sales Representative",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50377145",
+    "published_date": "2026-11-05",
+    "content": "COi Rubber Products | Independent Sales Representative | REMOTE (US) | Commission (1099)\n\nCOi Rubber Products, Inc. is a U.S.-based manufacturer and supplier of custom rubber and plastic components, founded in 2013. We serve industrial OEMs across automotive, aerospace, medical, food equipment, agriculture, and energy, with ISO-certified factory partners and full in-house QA. We're growing our independent sales team, the Purple Team.\n\nThe role: independent B2B sales representative selling custom rubber and plastic parts to manufacturers in your territory. You build relationships with engineers, buyers, and operations teams, quote custom components, and manage accounts from first contact through production. This is a 1099 independent contractor position, commission-based.\n\nWhat we provide: free short guides on selling, business, and the rubber industry through our Purple Team library (coirubber.com&#x2F;reps&#x2F;purple-team-library), sales training and quoting support from our Pomona, CA office, and engineering backup for technical questions.\n\nPrior rubber industry experience is helpful but not required. Successful representatives are self-motivated, relationship-oriented, and comfortable with long B2B sales cycles.\n\nIf interested, contact Napoleon Castillo at napoleon@coirubber.com, or see coirubber.com&#x2F;reps&#x2F; for details.",
+    "company": "COi Rubber Products",
+    "location": "Remote"
+  },
+  {
+    "title": "N26 SE — Data Platform EMs",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50377000",
+    "published_date": "2026-11-05",
+    "content": "N26 SE | Data Platform EMs | Berlin, Barcelona | HYBRID | https:&#x2F;&#x2F;www.n26.com | Full-time(relocation support)\n\nN26 has reimagined banking for today’s digital world. Technology and design empower everything we do and it’s how we are building the global banking platform the world loves to use.\n\nWe've eliminated physical branches, paperwork, and hidden fees for an elegant digital experience and supreme savings. Giving people the power to live and bank their way is what gets us out of bed in the morning and inspires the work that we do.\n\nWe are headquartered in Berlin with offices in multiple cities across Europe, including Vienna and Barcelona, and a 1,500-strong team of more than 80 nationalities.\n\nFull job descriptions here: https:&#x2F;&#x2F;n26.com&#x2F;en-eu&#x2F;careers , you can email me with questions&#x2F;resumes dmitrii.sergeev@n26.com",
+    "company": "N26 SE",
+    "location": ""
+  },
+  {
+    "title": "ICEYE — Platform Software Engineers (Senior&#x2F;Staff)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50376253",
+    "published_date": "2026-11-05",
+    "content": "ICEYE | Platform Software Engineers (Senior&#x2F;Staff) | Espoo, Finland &#x2F; Berlin, Germany | HYBRID | Full-time (relocation support)\n\nICEYE builds and operates the world's largest SAR satellite constellation. I lead Platform: three teams (Core Platform, Developer Enablement, SRE) that run the foundation engineering teams ship on.\n\nWhy it is hard: we run Kubernetes in public cloud, in our own data centers, and inside customer sites that are air-gapped. Same platform, same tooling, no internet. Satellite tasking and image delivery run on it, so downtime is not an option. Stack: Go, Python, K8s, Terraform&#x2F;OpenTofu, Istio, Vault, LGTM, OpenTelemetry.\n\nWe are hiring in Espoo and our Berlin office:\n\n- Staff&#x2F;Senior Platform and DevOps Engineer: own the Kubernetes platform across cloud and on-prem, build & extend tooling in Go, set technical direction. https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;iceye&#x2F;cf6ba0e9-a750-4ee7-9b0a-8cb51... \n\n- Senior&#x2F;Staff Platform Observability Engineer: define the direction for our observability for all engineering teams, build tooling around it. https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;iceye&#x2F;19a2709c-1e6d-4c8d-958a-2f07f... \n\n- Senior Software Engineer (Developer Enablement&#x2F;Experience): build the developer tooling for engineering teams. Python&#x2F;Go, K8s, IaC, partner directly with developers. https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;iceye&#x2F;1ffce4d4-4088-4336-9007-622dc... \n\nWhat we look for in all of these positions: product-mindset, all these positions have impact across ICEYE, pragmatism and empathy for the developers you serve.",
+    "company": "ICEYE",
+    "location": ""
+  },
+  {
+    "title": "Sortrace — Computer Vision Engineer, Junior Frontend Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50384008",
+    "published_date": "2026-11-05",
+    "content": "Sortrace | Computer Vision Engineer, Junior Frontend Engineer | REMOTE (Europe), hybrid Norrköping or Stockholm | Full-time | https:&#x2F;&#x2F;sortrace.com \n\nSortrace is a small cleantech AI company in Sweden. Cameras on waste collection trucks and trained vision models flag material in the wrong fraction when bins are emptied. Customers use our platform to review deviations, images, and insights.\n\nWe're hiring for two roles on a small team with short decision paths.\n\nComputer Vision Engineer\n- Train, evaluate, and improve deep learning models for real-world image analysis on our existing platform (datasets, augmentation, architecture experiments, precision&#x2F;robustness&#x2F;performance).\n- Python; PyTorch or TensorFlow. ~3+ years hands-on CV&#x2F;model work, or equivalent documented experience (professional, OSS, or serious personal projects). We care about what you've built, not only job titles.\n- Plus: edge inference, quantization, real-time video.\n\nJunior Frontend Engineer\n- Build and improve the customer-facing web platform: TypeScript, React, Tailwind, Radix&#x2F;shadcn-style components, Git.\n- Early career is fine—show something you've built (side project, school, first job) and how you made it.\n- We use coding agents (Cursor, Claude, etc.) heavily in day-to-day work; you should be comfortable adopting that workflow.\n\nCompensation: monthly salary by agreement; equity&#x2F;options possible.\n\nApply: jobs@sortrace.com or https:&#x2F;&#x2F;sortrace.com&#x2F;careers , subject line with the role name. CV role: short note on CV experience + links to projects&#x2F;GitHub. Frontend role: what you built, how, and a link or demo if you have one. Questions welcome; we reply to applicants.",
+    "company": "Sortrace",
+    "location": "Remote"
+  },
+  {
+    "title": "Odette Technologies — Senior Integration Engineer, Data&#x2F;ML Engineer, Product Lead",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50385049",
+    "published_date": "2026-11-05",
+    "content": "Odette Technologies | Senior Integration Engineer, Data&#x2F;ML Engineer, Product Lead | HYBRID (NC) &#x2F; REMOTE | Full-time | US citizens, clearable, East Coast-based | https:&#x2F;&#x2F;odettetechnologies.com \n\nWe're building an AI-powered situational awareness platform for intelligence and information operations teams, helping analysts and decision-makers make sense of overwhelming open and closed source data. Small, operator-founded team.\n\nAll three are first hires in their function. You'll work on hard problems: entity resolution across messy multilingual text, taking prototypes to production, and building product for defense and intel users. Python and LLM experience preferred for the engineering roles.\n\nApply: careers@odettetechnologies.com with \"HN\" and the role in the subject line. Full descriptions on our site.",
+    "company": "Odette Technologies",
+    "location": "Remote"
+  },
+  {
+    "title": "ChainSecurity — Blockchain Security Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50380439",
+    "published_date": "2026-11-05",
+    "content": "ChainSecurity | Blockchain Security Engineer | Full-time | INTERNS , HYBRID&#x2F;REMOTE, Zurich, Switzerland | VISA possible (for an employment) | https:&#x2F;&#x2F;chainsecurity.com&#x2F; \n\nChainSecurity is a young and innovative cybersecurity company that operates in the blockchain and cryptocurrency space. Our mission is to make the blockchain space secure and trustworthy for people, companies, and governments alike. We are proud of our security experts from the renowned universities ETH Zurich, EPFL Lausanne and others.\n\nWe are trusted by 100+ blockchain companies and established corporations with security audits and services. We have secured complex systems for top blockchain clients, such as decentralized finance (DeFi) projects, and multinational organizations, such as banks and industrial consortia. A ChainSecurity Auditor will review the most complex blockchain projects to find vulnerabilities which no-one else can. By using state of the art tools, expert knowledge and a deep understanding of the fundamentals, we secure projects handling billions, often forming the foundation in the new paradigm of an open financial system.\n\nYour Responsibilities:\n\n* Work directly with the developers of the most successful teams in the blockchain industry to audit their code and secure their products\n\n* Contribute to our security tools and create new ones in collaboration with our internal research team\n\n* Conduct security research and publish your findings\n\nRequirements:\n\n* Strong background in software engineering, focused on security relevant areas and most importantly being able to reason about complex code\n\n* Experience with penetration testing, vulnerability scanning, threat modeling or similar is a plus\n\n* Good knowledge of cryptography\n\n* Proficiency with Linux and Git\n\n* Good written communication skills\n\n* Fluent in OOP programming language\n\nBonus Points:\n\n* Formal Verification, White Box, Vulnerability Scanning\n\n* Solid Blockchain Knowledge\n\n* Consensus Algorithms\n\nJoin us here: https:&#x2F;&#x2F;www.chainsecurity.com&#x2F;jobs&#x2F;blockchain-security-engin... \n\nQuestions about the role? Contact: jobs@chainsecurity.com",
+    "company": "ChainSecurity",
+    "location": "Remote"
+  },
+  {
+    "title": "ALBERT — REMOTE, ALMOST ANYWHERE",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50373706",
+    "published_date": "2026-11-05",
+    "content": "ALBERT | REMOTE, ALMOST ANYWHERE | New grads who’ve shipped AI features (max 2 years out of school) + Principal&#x2F;Distinguished engineers for net-new consumer products | senior track up to ~$750k cash plus meaningful equity\n\nConsumer fintech, 20M+ users, profitable 4+ years, 3.6-year average tenure. People stay because the work is good and the people are sharp.\n\nWe hire like a barbell: exceptional builders at the top, exceptional builders at the start, nothing in the middle.\n\nNEW GRADS (0 to 2 years out): We don’t care about your school or GPA. We care that you’ve already shipped something with an LLM in it that real people used, and you can show us the link. You haven’t learned to hedge or wait for a ticket yet. Come here before a big company sands that off you. You’ll ship to 20M users in your first weeks, working directly with the principal engineers below.\n\nPRINCIPAL&#x2F;DISTINGUISHED: Building net-new consumer products from zero. Top fraction of a percentile in craft. Builds for fun and ships prototypes on weekends. Owns 0 to 1 end-to-end. Founding engineer experience is a strong signal. Allergic to politics and bureaucracy.\n\nBoth tracks: comp that beats the market (base, year-end bonus, meaningful 401(k) match, meaningful equity in a profitable unicorn), platinum PPO for your whole family, small senior-heavy teams with no layers, full transparency on business metrics, catered lunches, wellness stipend, offsites.\n\nStack: python, claude, postgres, react.js &#x2F; react native\n\nEmail recruiting@albert.com with your track and a link to something you built. We read every application and reply within a few business days if there’s a fit.",
+    "company": "ALBERT",
+    "location": "Remote"
+  },
+  {
+    "title": "Nirvana Robotics — Mechanical Engineer, Electrical Engineer, Robotic Controls Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50383984",
+    "published_date": "2026-11-05",
+    "content": "Nirvana Robotics | Mechanical Engineer, Electrical Engineer, Robotic Controls Engineer | New York, NY | ONSITE | Full-time | $220K-$300K\n\nNirvana Robotics builds humanoid robots with robotic arms that work in industrial environments. Their hardware team in NYC is growing, and each of these roles owns a subsystem end to end on physical robots. I'm a recruiter at Niuro, Nirvana's hiring partner for these roles; the links below go to our application form and I read every application myself.\n\nMechanical Engineer ($230K-$260K): mechanical design of robotic arms and manipulators: joints, actuators, transmissions, end effectors. You optimize for torque density, backdrivability and stiffness, prototype with additive and precision machining, and take assemblies to production. GD&T, tolerance stack-ups, SolidWorks (or Creo&#x2F;NX&#x2F;Onshape).\nApply: https:&#x2F;&#x2F;app.niuro.io&#x2F;source&#x2F;H4yYHesP?ref=ps_EBRp88zU7jcdRZm8... \n\nElectrical Engineer ($220K-$250K): electrical architecture for arms and humanoids: power distribution, motor-driver boards, sensor PCBs, harnessing. Multilayer mixed-signal and high-current layout in Altium, BLDC drivers and current sensing, bench bring-up and DFM with PCBA partners. EtherCAT, CAN or BMS is a plus.\nApply: https:&#x2F;&#x2F;app.niuro.io&#x2F;source&#x2F;BeVx3CrN?ref=ps_5biniQ0FTotNxfmT... \n\nRobotic Controls Engineer ($270K-$300K): low-level control for multi-DOF arms: joint-level actuation, impedance&#x2F;admittance and whole-body control, sim-to-real. PID&#x2F;LQR&#x2F;state-space, MoveIt or cuRobo, C++ and Python, ROS 2.\nApply: https:&#x2F;&#x2F;app.niuro.io&#x2F;source&#x2F;gUNqx8Lj?ref=ps_BdIAhZPrP7yQt2P4... \n\nFor all three: hands-on work on real robot hardware (arms, grippers, mobile manipulators, actuated joints or humanoids). Mechanical and Electrical: 5+ years with a bachelor's or 3+ with a master's. Controls: roughly BS + 4 years, MS + 2 or a PhD. US-based; relocation to NYC within the US is supported. Visa sponsorship is not available.",
+    "company": "Nirvana Robotics",
+    "location": ""
+  },
+  {
     "title": "Bubblehouse — Fully REMOTE",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50363483",
@@ -97,6 +250,15 @@
     "content": "Search Atlas | Product Engineer (PM) | REMOTE (anywhere, EST hours) | Full-time | $23-34&#x2F;hr\n\nWe're ~160 people building an AI marketing platform. Our main product, OTTO, runs a site's SEO on its own: it reads live search data and ships the technical and on-page fixes itself. Customers include Autotrader, Hyundai, P&G and Vendasta.\n\nPods are 1 PM and 2-4 engineers. You own your pod's roadmap and ship it with them, with no veteran PM signing off on your specs.\n\nYou have 3+ years as a B2B SaaS PM with a real technical background (eng or QA before PM, or you already work in the codebase). You read Python and TS, write your own SQL, and don't need an engineer to explain a stack trace. Stack is Django + React&#x2F;Next. QA is yours end to end, release sign-off included. You use Claude Code or similar daily.\n\nApply (mention HN): https:&#x2F;&#x2F;careers.searchatlas.com&#x2F;jobs&#x2F;599248-product-engineer... \n\nAlso hiring:\n\n* Senior Full-Stack Engineer (Django&#x2F;Next.js) $25-$30&#x2F;hr: https:&#x2F;&#x2F;careers.searchatlas.com&#x2F;jobs&#x2F;595729-senior-full-stac... \n\n* SEO Automation Engineer (Python) $17-$28&#x2F;hr: https:&#x2F;&#x2F;careers.searchatlas.com&#x2F;jobs&#x2F;559066-seo-automation-e... \n\n* All roles: https:&#x2F;&#x2F;careers.searchatlas.com \n\nPlease apply through the links, not by email. No agencies.\n\nLocation: our ATS makes us list specific countries, but we hire anywhere you can work EST hours. If your country isn't listed, apply anyway.",
     "company": "Search Atlas",
     "location": "Remote"
+  },
+  {
+    "title": "Furtim Modus — Hiring Java Developer (Full-Time)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50372966",
+    "published_date": "2026-11-04",
+    "content": "Furtim Modus | Hiring Java Developer (Full-Time) | NYC (HYBRID) | $150K-$300K + equity | https:&#x2F;&#x2F;www.furtimmodus.com&#x2F;software-engineer \n\nWe are currently seeking a talented and driven Java Developer to join our team full-time. This is an exciting opportunity to contribute your skills and expertise to a venture backed funded fintech trading firm with emphasis in US equities capital markets tech based out of the New York City and in exchange we’ll provide you with base comp $150k-$300k, full benefits, cash bonus, and equity.\n\nRequired Qualifications:\n\n- Experience developing server-side software for electronic trading systems for US Equities\n\n- Strong low-latency programming experience using Core Java 17 or later\n\nHighly Preferred:\n\n- Experience with open-source technologies such as Aeron Transport, Aeron Cluster, Aeron Archive, Artio, and Agrona\n\n- Experience with the Adaptive Hydra trading platform\n\nBenefits:\n\n- Flexible hybrid schedule to accommodate other commitments\n\n- Collaborative and supportive team environment\n\n- Relocation assistance to NYC Metro area\n\nIf you are passionate about Java development and interested in joining a fintech venture, we would love to hear from you. If you meet the minimum requirements, please submit your resume if interested to agency@furtimmodus.com in this opportunity. All other inquiries will be auto marked as spam.",
+    "company": "Furtim Modus",
+    "location": ""
   },
   {
     "title": "ProphetX — Multiple Roles",
