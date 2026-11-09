@@ -1,5 +1,77 @@
 [
   {
+    "title": "Tecla IO — Digital Sales Specialist",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50427828",
+    "published_date": "2026-11-09",
+    "content": "Tecla IO | Digital Sales Specialist | REMOTE (Worldwide) | Paid, $10 -$13 per hour\n\nWe are searching for a high-energy communicator to join our team as a Digital Sales & Communications Specialist. If you love building rapport, solving problems, and turning casual chats into meaningful business wins, this opportunity is built for you.\n\nKey Responsibilities & Focus\nDirect Outreach: Initiate contact with prospective clients using phone lines, digital messaging, and email networks.\nAdvisory & Solutions: Listen closely to customer inquiries and present our offerings clearly and effectively.\nRecord Management: Log notes, track lead stages, and update pipeline info cleanly using our CRM.\nTeam Innovation: Share feedback and brainstorm strategies during our regular team meetings.\nCompensation & Rewards\nHourly Pay Rate: $10.35 – $13.95 &#x2F; hour\n\nTo apply: lily.stewart.recruiting@outlook.com\n\nSubject: Digital Sales & Communications Specialist",
+    "company": "Tecla IO",
+    "location": "Remote"
+  },
+  {
+    "title": "Sunsave — Product Engineer (Mid-Level &#x2F; Senior)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50427924",
+    "published_date": "2026-11-09",
+    "content": "Sunsave | Product Engineer (Mid-Level &#x2F; Senior) | London, United Kingdom (Holborn) | ONSITE (hybrid, 3 days&#x2F;week in office) | Full-time\n\nSunsave is building what replaces your energy supplier. Customers switch to solar and a battery with nothing to pay upfront: kit, install, finance and long-term protection in one package, and the battery trades energy on the grid every day to push their bills towards zero. Founded in 2022, £113m Series A (equity and debt) in 2025, more than 3x growth last year, nearly 90 people.\n\nI lead engineering and data science. Software runs every step of the customer journey: the quote, the finance application, the contract, the install and the battery trading. You'd join a small squad on one area: acquisition (website, quote, finance, contract), installation, in-life (customer app, monitoring, maintenance) or energy (battery optimisation and grid trading).\n\nProduct engineers here own problems end to end, from working with the people who use what they build to running it in production. Agents do a lot of the implementation. We expect you to use them every day, delegate the implementation but never the thinking, and own every line you merge. We offer finance and hold customer data, so correctness, auditability and security matter a lot.\n\nExperience: 2+ years running production software for mid-level, 6+ for senior. TypeScript, NestJS, React&#x2F;Next.js, PostgreSQL and AWS are a plus but not required. Right to work in the UK required.\n\nThe interview is built for how we work. No leetcode. A ~45 min async review of a pull request written with AI, then a ~90 min live session where you shape and build a small problem close to our work with your own AI tools.\n\nJD: https:&#x2F;&#x2F;sunsave.notion.site&#x2F;Sunsave-Product-Engineer-410e7b6... \nApply: https:&#x2F;&#x2F;ats.welcometothejungle.com&#x2F;board&#x2F;sunsave-RTBuAt&#x2F;job&#x2F;...",
+    "company": "Sunsave",
+    "location": ""
+  },
+  {
+    "title": "Collabify — Senior Full-Stack Engineer (backend-heavy)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50428062",
+    "published_date": "2026-11-09",
+    "content": "Collabify | Senior Full-Stack Engineer (backend-heavy) | REMOTE (worldwide) | Contract, 4–5 months | $3,000–4,000&#x2F;month\n\nI'm looking to hire our first engineer to own architecture and build product first version.\n\nStack: TypeScript, React&#x2F;Next.js, Node.js and PostgreSQL.\n\nThe core challenges: tenant isolation on a shared Postgres schema with row level security, multiple authentication flows, subdomain-based client portals and large video uploads.\n\nYou should have personally shipped and maintained a production multi-tenant SaaS product, have strong PostgreSQL and data-modelling experience, and be able to explain your architectural decisions and trade-offs.\n\nTerms: a paid 4–5-month contract, 20-30+ hours&#x2F;week, at $3,000–4,000&#x2F;month, paid against agreed milestones. At least three hours of daily overlaps. For the right person, there’s potential to continue in a founding role with equity\n\nProcess: a short application, a live walkthrough of something you've built, then a paid 2-3hr tenant-isolation exercise and a 30-minute discussion.\n\nApply here: https:&#x2F;&#x2F;forms.gle&#x2F;yJAabKvLKtJmfz21A \n\nPublic source code isn't required. Please don't share confidential employer or client material.",
+    "company": "Collabify",
+    "location": "Remote"
+  },
+  {
+    "title": "AetherGrid — Founding GTM Lead",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50423766",
+    "published_date": "2026-11-09",
+    "content": "AetherGrid | Founding GTM Lead | REMOTE (Worldwide) | Paid, Fractional &#x2F; Contract\n\nAetherGrid ( https:&#x2F;&#x2F;www.aethergrid.co.ke ) is an open-source control plane for distributed AI workloads. I'm the founder and have built the technical foundation. We're now moving into commercial growth.\n\nI'm looking for a hands-on GTM operator to help acquire our first paying customers, develop partnerships and build a repeatable sales strategy.\n\nIdeal background:\n- B2B infrastructure, cloud, AI or developer tools sales.\n- Proven experience acquiring and closing technical customers.\n- Strong understanding of developer-led growth and enterprise sales.\n- Comfortable engaging CTOs, infrastructure operators and engineering leaders.\n- Can execute independently, not just produce strategy decks.\n\nThis is a paid engagement, initially fractional or contract, with compensation based on experience and scope. No unpaid or equity-only arrangements.\n\nTo apply: wycliffe@aethergrid.co.ke\n\nSubject: HN Founding GTM Lead\n\nPlease share a product you've taken to market, measurable results you've achieved, and how you'd approach getting AetherGrid its first 10 paying customers.",
+    "company": "AetherGrid",
+    "location": "Remote"
+  },
+  {
+    "title": "Seal (YC S20) — Forward Deployed Engineer, Founding Product Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50424162",
+    "published_date": "2026-11-09",
+    "content": "Seal (YC S20) | Forward Deployed Engineer, Founding Product Engineer | London | ONSITE | Full-time | £50k–£120k + equity\n\nWe build AI software that biotech and pharma manufacturers use to run their labs and prove every batch. Small team, real customers, lots of ownership. Early-career engineers welcome.\n\n https:&#x2F;&#x2F;seal.run · Apply: https:&#x2F;&#x2F;docs.google.com&#x2F;forms&#x2F;d&#x2F;e&#x2F;1FAIpQLSfcS1I3eaCac9aV7F3n...",
+    "company": "Seal (YC S20)",
+    "location": ""
+  },
+  {
+    "title": "Amodo Design — Compute Infrastructure Lead",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50426542",
+    "published_date": "2026-11-09",
+    "content": "Amodo Design | Compute Infrastructure Lead | ONSITE (UK) | Fulltime, Paid\n\nAmodo Design is a hardware engineering company based in Sheffield (UK).\n\nI am looking for someone to manage our small HPC cluster that we use for software and hardware R&D.\n\nFull job ad here: https:&#x2F;&#x2F;amododesign.com&#x2F;career&#x2F;compute-infrastructure-lead&#x2F;",
+    "company": "Amodo Design",
+    "location": ""
+  },
+  {
+    "title": "DevOps Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50425675",
+    "published_date": "2026-11-09",
+    "content": "DevOps Engineer\nHybrid, 3 days a week in the office\nHong Kong\nFull-time\n\nWe are looking for a DevOps Engineer to own, scale, and secure our cloud and on-premise computing environments. You will work closely with ML researchers, data scientists, and software engineers to streamline model training, optimize GPU cluster utilization, and automate our continuous integration and deployment (CI&#x2F;CD) pipelines.\n\nCore Responsibilities\nAI & GPU Infrastructure Management: Provision, monitor, and scale high-performance GPU clusters (NVIDIA H100&#x2F;A100, CUDA&#x2F;ROCm setups) for heavy model training and inference workloads.\nMLOps & Model Serving Pipelines: Support model deployment, fine-tuning, and low-latency inference optimization using open LLM ecosystems (e.g., vLLM, Triton Inference Server, Llama, Mistral).\nCI&#x2F;CD & Automation: Design, build, and maintain robust CI&#x2F;CD pipelines for both software services and ML model artifacts using GitHub Actions, GitLab CI, or ArgoCD.\nInfrastructure as Code (IaC): Manage cloud resources (AWS, GCP, or Azure) repeatably using tools like Terraform or Pulumi.\nContainerization & Orchestration: Deploy, scale, and manage distributed containerized workloads using Kubernetes (K8s), Docker, and KubeFlow or Ray.\nObservability & Reliability: Implement logging, tracing, and metric dashboards (Prometheus, Grafana, OpenTelemetry) to track cluster health, GPU memory&#x2F;utilization, and inference latency.\nSecurity & Governance: Enforce DevSecOps practices, secret management (HashiCorp Vault), container image scanning, and access controls tailored for sensitive AI datasets and models.\nRequired Qualifications\nExperience: 3+ years of experience in DevOps, Site Reliability Engineering (SRE), or Cloud&#x2F;Platform Engineering, with exposure to MLOps or AI&#x2F;ML workloads.\nCloud & Containers: Strong hands-on experience with AWS, GCP, or Azure, alongside production Kubernetes and Docker management.\nScripting & Programming: Proficiency in Python, Bash&#x2F;Shell, or Go for automation and tooling.\nIaC & CI&#x2F;CD: Demonstrated mastery of Terraform, GitOps workflows, and automated testing&#x2F;deployment pipelines.\nAI Ecosystem Knowledge: Familiarity with GPU node provisioning, distributed storage for massive datasets, and model serving runtimes.\nPreferred Qualifications\nExperience with LLM orchestration frameworks (LangChain, Ray Serve, vLLM).\nBachelor's or Master’s degree in Computer Science, Computer Engineering, or a related technical field.\nActive cloud or Kubernetes certifications (e.g., CKA, AWS&#x2F;GCP DevOps Engineer).\n\nApply: https:&#x2F;&#x2F;round1.work&#x2F;listings&#x2F;listing_tenant_a741427d-313d-41...",
+    "company": "DevOps Engineer",
+    "location": ""
+  },
+  {
+    "title": "OpenTrain AI — REMOTE (US)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50420399",
+    "published_date": "2026-11-09",
+    "content": "OpenTrain AI | REMOTE (US) | Part-time | Backend Engineer, AI Coding Task Design\n\nOpenTrain AI connects experienced professionals with paid, part-time AI training work. We are the hiring company and are actively filling this role.\n\n- $30–$100 per hour equivalent, paid per accepted task\n- 100% remote, United States\n- About 15 hours&#x2F;week; choose your schedule\n\nWe need backend engineers to design realistic coding tasks for AI systems, write deterministic verifiers, assess correctness and code quality, and apply secure coding and security review where relevant. This work helps improve AI systems that write software.\n\nIdeal background\n- Strong professional backend experience with Python, Java, Node.js, Go, Rust, TypeScript, C++ or similar\n- Scalable APIs&#x2F;services, complex features, debugging, bottleneck resolution and code review\n- Strong analytical, problem-solving and technical communication skills; professional English\n- Helpful: application security, secure coding, vulnerability assessment, penetration testing, OWASP&#x2F;CWE or security-focused code review\n- No AI experience needed; structured task-design guidelines and verification criteria are provided\n\nIndependent contractor; pay is per accepted task. Fully remote and flexible, with no fixed shifts. Apply on OpenTrain (resume upload): https:&#x2F;&#x2F;app.opentrain.ai&#x2F;api&#x2F;out&#x2F;cmu9linxg000o0bgm9xiw33b9?c... \n\nThen complete a short application on the hiring platform. Shortlisted applicants take a short AI interview.",
+    "company": "OpenTrain AI",
+    "location": "Remote"
+  },
+  {
     "title": "BCDRPulse — Head of Global GTM",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50402383",

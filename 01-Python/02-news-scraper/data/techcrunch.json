@@ -1,5 +1,41 @@
 [
     {
+        "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
+        "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Medium’s new TK app brings AI assistance directly into the writing process",
+        "url": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Automattic debuts a platform to deploy vibe-coding apps amid a changing internet",
+        "url": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
+        "url": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+        "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
+        "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
         "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
         "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
         "source": "TechCrunch",
@@ -132,26 +168,14 @@
         "category": "AI"
     },
     {
-        "title": "Apple is reportedly cutting budgets for its internal AI usage",
-        "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+        "title": "Tesla will stop making the Cybertruck in 2027",
+        "url": "https://techcrunch.com/2026/11/06/tesla-will-stop-making-the-cybertruck-in-2027/",
         "source": "TechCrunch",
         "category": "AI"
     },
     {
-        "title": "After the midterms, a bigger clash over data centers could be coming",
-        "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "AI PACs spent millions trying to shape Congress — here’s how they fared",
-        "url": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Nothing CEO says company’s mysterious AI-first device is dropping next month",
-        "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
+        "title": "Harbinger raises $240M after expanding into defense",
+        "url": "https://techcrunch.com/2026/11/05/harbinger-raises-240m-after-expanding-into-defense/",
         "source": "TechCrunch",
         "category": "AI"
     },
@@ -162,14 +186,8 @@
         "category": "AI"
     },
     {
-        "title": "OpenAI is already trying to shape the 2028 election",
-        "url": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Tesla will stop making the Cybertruck in 2027",
-        "url": "https://techcrunch.com/2026/11/06/tesla-will-stop-making-the-cybertruck-in-2027/",
+        "title": "Meta acquires AI coding startup Conductor",
+        "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
         "source": "TechCrunch",
         "category": "AI"
     },
@@ -182,24 +200,6 @@
     {
         "title": "New York City’s Mamdani criticizes Madison Square Garden owner over surveillance tech",
         "url": "https://techcrunch.com/2026/11/03/new-york-citys-mamdani-criticizes-madison-square-garden-owner-over-surveillance-tech/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
-        "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
-        "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Ninja’s first-ever microwave just replaced two of my kitchen appliances at once",
-        "url": "https://techcrunch.com/2026/11/02/ninjas-first-ever-microwave-just-replaced-two-of-my-kitchen-appliances-at-once/",
         "source": "TechCrunch",
         "category": "AI"
     }

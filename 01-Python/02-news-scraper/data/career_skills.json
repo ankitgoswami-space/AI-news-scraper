@@ -2,81 +2,81 @@
   "generated_from": "skills_extractor.py",
   "sources_processed": {
     "AIM": {
-      "records": 1177,
-      "chars_scanned": 5873302
+      "records": 1184,
+      "chars_scanned": 5895706
     },
     "TechCrunch": {
       "records": 34,
-      "chars_scanned": 2379
+      "chars_scanned": 2375
     },
     "Inc42": {
-      "records": 334,
-      "chars_scanned": 1744625
+      "records": 337,
+      "chars_scanned": 1779360
     },
     "YourStory": {
-      "records": 276,
-      "chars_scanned": 1277425
+      "records": 284,
+      "chars_scanned": 1308414
     },
     "ET Tech": {
-      "records": 470,
-      "chars_scanned": 1839263
+      "records": 482,
+      "chars_scanned": 1881908
     },
     "Mint": {
-      "records": 265,
-      "chars_scanned": 877482
+      "records": 276,
+      "chars_scanned": 914480
     },
     "arXiv": {
-      "records": 24035,
-      "chars_scanned": 36862684
+      "records": 24406,
+      "chars_scanned": 37416129
     },
     "Hugging Face": {
-      "records": 4770,
-      "chars_scanned": 2278634
+      "records": 4849,
+      "chars_scanned": 2317667
     },
     "Google Research": {
       "records": 111,
-      "chars_scanned": 1269142
+      "chars_scanned": 1269296
     },
     "Adzuna India": {
-      "records": 10711,
-      "chars_scanned": 6596953
+      "records": 11159,
+      "chars_scanned": 6873627
     },
     "HN Who's Hiring": {
-      "records": 475,
-      "chars_scanned": 590730
+      "records": 483,
+      "chars_scanned": 601300
     },
     "RemoteOK": {
-      "records": 194,
-      "chars_scanned": 929278
+      "records": 199,
+      "chars_scanned": 959817
     },
     "We Work Remotely": {
-      "records": 79,
-      "chars_scanned": 418646
+      "records": 82,
+      "chars_scanned": 437017
     }
   },
   "skills": {
     "LLM": {
-      "total": 21171,
+      "total": 21522,
       "sources": {
-        "arXiv": 18503,
-        "Adzuna India": 1728,
+        "arXiv": 18814,
+        "Adzuna India": 1754,
         "Google Research": 411,
-        "Hugging Face": 186,
+        "Hugging Face": 188,
         "AIM": 169,
-        "HN Who's Hiring": 67,
-        "We Work Remotely": 28,
-        "RemoteOK": 26,
+        "HN Who's Hiring": 69,
+        "RemoteOK": 34,
+        "We Work Remotely": 29,
         "Inc42": 21,
-        "ET Tech": 14,
+        "ET Tech": 15,
         "YourStory": 11,
         "Mint": 7
       }
     },
     "Transformers": {
-      "total": 10462,
+      "total": 10616,
       "sources": {
-        "Hugging Face": 7630,
-        "arXiv": 2730,
+        "Hugging Face": 7744,
+        "arXiv": 2770,
         "AIM": 36,
         "Google Research": 32,
         "Adzuna India": 27,
@@ -87,33 +87,33 @@
       }
     },
     "Agentic AI": {
-      "total": 9466,
+      "total": 9628,
       "sources": {
-        "arXiv": 4672,
-        "Adzuna India": 1843,
-        "AIM": 1792,
-        "Hugging Face": 202,
+        "arXiv": 4741,
+        "Adzuna India": 1908,
+        "AIM": 1810,
+        "Hugging Face": 206,
         "Google Research": 190,
         "Inc42": 159,
+        "ET Tech": 135,
         "Mint": 135,
-        "ET Tech": 133,
         "HN Who's Hiring": 121,
         "YourStory": 114,
-        "We Work Remotely": 61,
-        "RemoteOK": 41,
+        "We Work Remotely": 62,
+        "RemoteOK": 44,
         "TechCrunch": 3
       }
     },
     "Fine-tuning": {
-      "total": 7512,
+      "total": 7631,
       "sources": {
-        "arXiv": 4638,
-        "Hugging Face": 2514,
-        "Adzuna India": 145,
+        "arXiv": 4705,
+        "Hugging Face": 2564,
+        "Adzuna India": 146,
         "Google Research": 109,
         "AIM": 82,
         "Inc42": 11,
-        "HN Who's Hiring": 4,
+        "HN Who's Hiring": 5,
         "YourStory": 3,
         "Mint": 3,
         "ET Tech": 2,
@@ -121,11 +121,12 @@
       }
     },
     "Quantization": {
-      "total": 7003,
+      "total": 7142,
       "sources": {
-        "Hugging Face": 5428,
-        "arXiv": 1552,
+        "Hugging Face": 5536,
+        "arXiv": 1580,
         "Google Research": 15,
+        "RemoteOK": 3,
         "We Work Remotely": 3,
         "Adzuna India": 2,
         "HN Who's Hiring": 2,
@@ -133,24 +134,24 @@
       }
     },
     "Multimodal": {
-      "total": 4095,
+      "total": 4154,
       "sources": {
-        "arXiv": 2995,
-        "Hugging Face": 566,
+        "arXiv": 3047,
+        "Hugging Face": 572,
         "AIM": 370,
         "Google Research": 85,
         "Adzuna India": 58,
         "HN Who's Hiring": 12,
-        "Inc42": 4,
+        "Inc42": 5,
         "Mint": 3,
         "YourStory": 2
       }
     },
     "Machine Learning": {
-      "total": 3985,
+      "total": 4087,
       "sources": {
-        "Adzuna India": 2460,
-        "arXiv": 1225,
+        "Adzuna India": 2536,
+        "arXiv": 1251,
         "AIM": 84,
         "Google Research": 63,
         "HN Who's Hiring": 62,
@@ -163,29 +164,29 @@
       }
     },
     "Embeddings": {
-      "total": 3366,
+      "total": 3442,
       "sources": {
-        "arXiv": 2568,
-        "Hugging Face": 554,
-        "Google Research": 108,
-        "Adzuna India": 67,
+        "arXiv": 2631,
+        "Hugging Face": 562,
+        "Google Research": 109,
+        "Adzuna India": 70,
         "AIM": 58,
         "HN Who's Hiring": 5,
         "YourStory": 4,
-        "RemoteOK": 2
+        "RemoteOK": 3
       }
     },
     "Git": {
-      "total": 2944,
+      "total": 3003,
       "sources": {
-        "arXiv": 2397,
+        "arXiv": 2435,
         "AIM": 204,
-        "Adzuna India": 138,
-        "HN Who's Hiring": 80,
+        "Adzuna India": 146,
+        "HN Who's Hiring": 82,
+        "RemoteOK": 39,
         "Google Research": 33,
-        "RemoteOK": 29,
         "Mint": 18,
-        "We Work Remotely": 15,
+        "We Work Remotely": 16,
         "Hugging Face": 12,
         "ET Tech": 10,
         "Inc42": 4,
@@ -193,47 +194,47 @@
       }
     },
     "NVIDIA": {
-      "total": 2588,
+      "total": 2725,
       "sources": {
-        "AIM": 1020,
-        "Hugging Face": 988,
-        "ET Tech": 258,
-        "arXiv": 202,
-        "Adzuna India": 43,
+        "AIM": 1030,
+        "Hugging Face": 1006,
+        "ET Tech": 340,
+        "arXiv": 204,
+        "Adzuna India": 49,
         "Mint": 39,
-        "YourStory": 16,
-        "Inc42": 11,
-        "HN Who's Hiring": 4,
+        "YourStory": 31,
+        "Inc42": 13,
+        "HN Who's Hiring": 5,
         "RemoteOK": 4,
-        "TechCrunch": 2,
+        "TechCrunch": 3,
         "We Work Remotely": 1
       }
     },
     "GPU": {
-      "total": 2116,
+      "total": 2170,
       "sources": {
-        "arXiv": 1422,
+        "arXiv": 1455,
         "AIM": 451,
-        "Adzuna India": 60,
-        "HN Who's Hiring": 35,
-        "ET Tech": 33,
-        "Mint": 32,
+        "Adzuna India": 62,
+        "ET Tech": 44,
+        "HN Who's Hiring": 40,
+        "Mint": 33,
         "Inc42": 29,
         "Hugging Face": 28,
         "YourStory": 12,
-        "RemoteOK": 6,
+        "RemoteOK": 8,
         "Google Research": 5,
         "We Work Remotely": 3
       }
     },
     "Python": {
-      "total": 1852,
+      "total": 1891,
       "sources": {
-        "Adzuna India": 1229,
-        "arXiv": 255,
-        "HN Who's Hiring": 159,
-        "RemoteOK": 104,
-        "We Work Remotely": 57,
+        "Adzuna India": 1250,
+        "arXiv": 261,
+        "HN Who's Hiring": 161,
+        "RemoteOK": 111,
+        "We Work Remotely": 60,
         "AIM": 26,
         "Google Research": 13,
         "Hugging Face": 6,
@@ -241,13 +242,13 @@
       }
     },
     "Azure": {
-      "total": 1793,
+      "total": 1830,
       "sources": {
-        "Hugging Face": 828,
-        "Adzuna India": 819,
+        "Adzuna India": 843,
+        "Hugging Face": 834,
         "AIM": 64,
-        "HN Who's Hiring": 23,
-        "RemoteOK": 21,
+        "RemoteOK": 26,
+        "HN Who's Hiring": 25,
         "ET Tech": 16,
         "We Work Remotely": 15,
         "arXiv": 6,
@@ -255,11 +256,11 @@
       }
     },
     "PyTorch": {
-      "total": 1747,
+      "total": 1762,
       "sources": {
-        "Hugging Face": 1506,
+        "Hugging Face": 1520,
         "arXiv": 137,
-        "Adzuna India": 64,
+        "Adzuna India": 65,
         "HN Who's Hiring": 16,
         "AIM": 10,
         "We Work Remotely": 7,
@@ -269,37 +270,37 @@
       }
     },
     "RAG": {
-      "total": 1698,
+      "total": 1720,
       "sources": {
-        "arXiv": 1066,
-        "Adzuna India": 445,
+        "arXiv": 1080,
+        "Adzuna India": 448,
         "AIM": 88,
         "Google Research": 47,
         "Hugging Face": 32,
         "HN Who's Hiring": 17,
-        "RemoteOK": 2,
+        "RemoteOK": 7,
         "We Work Remotely": 1
       }
     },
     "LoRA": {
-      "total": 1597,
+      "total": 1619,
       "sources": {
-        "arXiv": 932,
-        "Hugging Face": 650,
+        "arXiv": 942,
+        "Hugging Face": 662,
         "Google Research": 10,
         "AIM": 3,
         "Adzuna India": 2
       }
     },
     "AWS": {
-      "total": 1398,
+      "total": 1450,
       "sources": {
-        "Adzuna India": 963,
+        "Adzuna India": 1005,
         "AIM": 210,
-        "HN Who's Hiring": 75,
-        "We Work Remotely": 53,
-        "RemoteOK": 41,
-        "arXiv": 24,
+        "HN Who's Hiring": 79,
+        "We Work Remotely": 56,
+        "RemoteOK": 43,
+        "arXiv": 25,
         "ET Tech": 13,
         "Inc42": 9,
         "YourStory": 7,
@@ -307,58 +308,59 @@
       }
     },
     "Reasoning": {
-      "total": 1283,
+      "total": 1312,
       "sources": {
-        "arXiv": 1201,
+        "arXiv": 1228,
         "AIM": 35,
-        "Hugging Face": 28,
+        "Hugging Face": 30,
         "Google Research": 13,
         "Adzuna India": 5,
         "Inc42": 1
       }
     },
     "Diffusers": {
-      "total": 1195,
+      "total": 1216,
       "sources": {
-        "Hugging Face": 1190,
+        "Hugging Face": 1210,
         "arXiv": 4,
+        "Mint": 1,
         "HN Who's Hiring": 1
       }
     },
     "Deep Learning": {
-      "total": 1183,
+      "total": 1210,
       "sources": {
-        "arXiv": 831,
-        "Adzuna India": 291,
+        "arXiv": 845,
+        "Adzuna India": 303,
         "Google Research": 42,
         "Hugging Face": 6,
         "AIM": 5,
         "HN Who's Hiring": 4,
-        "RemoteOK": 2,
+        "RemoteOK": 3,
         "YourStory": 1,
         "We Work Remotely": 1
       }
     },
     "GCP": {
-      "total": 898,
+      "total": 939,
       "sources": {
-        "Adzuna India": 609,
-        "AIM": 150,
-        "ET Tech": 26,
+        "Adzuna India": 635,
+        "AIM": 156,
+        "ET Tech": 29,
+        "HN Who's Hiring": 26,
         "Google Research": 25,
-        "HN Who's Hiring": 23,
-        "YourStory": 18,
+        "YourStory": 20,
         "RemoteOK": 18,
-        "We Work Remotely": 17,
+        "We Work Remotely": 18,
         "arXiv": 6,
         "Inc42": 5,
         "Mint": 1
       }
     },
     "Diffusion": {
-      "total": 877,
+      "total": 885,
       "sources": {
-        "arXiv": 840,
+        "arXiv": 848,
         "Google Research": 26,
         "Hugging Face": 4,
         "Adzuna India": 3,
@@ -367,9 +369,9 @@
       }
     },
     "Prompt Engg": {
-      "total": 829,
+      "total": 838,
       "sources": {
-        "arXiv": 703,
+        "arXiv": 712,
         "Adzuna India": 34,
         "AIM": 33,
         "Google Research": 19,
@@ -383,12 +385,12 @@
       }
     },
     "SQL": {
-      "total": 801,
+      "total": 815,
       "sources": {
-        "Adzuna India": 431,
-        "arXiv": 273,
+        "Adzuna India": 443,
+        "arXiv": 274,
         "HN Who's Hiring": 32,
-        "We Work Remotely": 23,
+        "We Work Remotely": 24,
         "RemoteOK": 22,
         "Hugging Face": 10,
         "AIM": 6,
@@ -397,23 +399,23 @@
       }
     },
     "Java": {
-      "total": 763,
+      "total": 793,
       "sources": {
-        "Adzuna India": 602,
+        "Adzuna India": 627,
         "arXiv": 45,
-        "HN Who's Hiring": 43,
-        "We Work Remotely": 34,
-        "RemoteOK": 24,
+        "HN Who's Hiring": 44,
+        "We Work Remotely": 35,
+        "RemoteOK": 27,
         "AIM": 8,
         "Hugging Face": 4,
         "ET Tech": 3
       }
     },
     "NLP": {
-      "total": 724,
+      "total": 735,
       "sources": {
-        "Adzuna India": 300,
-        "arXiv": 288,
+        "Adzuna India": 306,
+        "arXiv": 293,
         "Google Research": 105,
         "Hugging Face": 24,
         "AIM": 5,
@@ -421,43 +423,45 @@
       }
     },
     "Databricks": {
-      "total": 720,
+      "total": 731,
       "sources": {
-        "Adzuna India": 553,
-        "AIM": 150,
+        "Adzuna India": 561,
+        "AIM": 153,
         "We Work Remotely": 13,
         "HN Who's Hiring": 2,
         "RemoteOK": 2
       }
     },
     "vLLM": {
-      "total": 680,
+      "total": 694,
       "sources": {
-        "Hugging Face": 534,
-        "arXiv": 129,
+        "Hugging Face": 538,
+        "arXiv": 136,
         "AIM": 12,
         "RemoteOK": 4,
-        "ET Tech": 1
+        "HN Who's Hiring": 2,
+        "ET Tech": 1,
+        "Adzuna India": 1
       }
     },
     "Spark": {
-      "total": 620,
+      "total": 629,
       "sources": {
-        "Adzuna India": 291,
+        "Adzuna India": 298,
         "Hugging Face": 184,
         "AIM": 86,
         "arXiv": 21,
-        "ET Tech": 19,
+        "ET Tech": 20,
+        "We Work Remotely": 7,
         "Mint": 6,
-        "We Work Remotely": 6,
         "RemoteOK": 4,
         "YourStory": 3
       }
     },
     "Computer Vision": {
-      "total": 500,
+      "total": 502,
       "sources": {
-        "Adzuna India": 358,
+        "Adzuna India": 360,
         "arXiv": 74,
         "AIM": 19,
         "We Work Remotely": 18,
@@ -469,10 +473,10 @@
       }
     },
     "Snowflake": {
-      "total": 447,
+      "total": 460,
       "sources": {
-        "Adzuna India": 299,
-        "AIM": 115,
+        "Adzuna India": 310,
+        "AIM": 117,
         "YourStory": 9,
         "Hugging Face": 8,
         "HN Who's Hiring": 8,
@@ -482,22 +486,22 @@
       }
     },
     "Sarvam AI": {
-      "total": 412,
+      "total": 443,
       "sources": {
-        "AIM": 320,
+        "AIM": 332,
         "Adzuna India": 38,
         "Inc42": 31,
+        "ET Tech": 15,
         "Mint": 12,
-        "ET Tech": 5,
-        "arXiv": 4,
-        "YourStory": 2
+        "YourStory": 11,
+        "arXiv": 4
       }
     },
     "Hugging Face": {
-      "total": 381,
+      "total": 387,
       "sources": {
         "AIM": 157,
-        "arXiv": 151,
+        "arXiv": 157,
         "Adzuna India": 20,
         "Google Research": 17,
         "ET Tech": 16,
@@ -508,67 +512,67 @@
       }
     },
     "TypeScript": {
-      "total": 365,
+      "total": 374,
       "sources": {
-        "HN Who's Hiring": 122,
-        "Adzuna India": 94,
+        "HN Who's Hiring": 125,
+        "Adzuna India": 98,
         "RemoteOK": 58,
-        "We Work Remotely": 44,
+        "We Work Remotely": 46,
         "AIM": 34,
         "arXiv": 11,
         "Hugging Face": 2
       }
     },
-    "PEFT": {
-      "total": 360,
-      "sources": {
-        "Hugging Face": 252,
-        "arXiv": 106,
-        "Adzuna India": 2
-      }
-    },
     "JavaScript": {
-      "total": 352,
+      "total": 369,
       "sources": {
-        "Adzuna India": 107,
-        "RemoteOK": 83,
-        "We Work Remotely": 60,
-        "HN Who's Hiring": 48,
+        "Adzuna India": 113,
+        "RemoteOK": 89,
+        "We Work Remotely": 63,
+        "HN Who's Hiring": 50,
         "AIM": 24,
         "arXiv": 17,
         "Hugging Face": 8,
         "ET Tech": 5
       }
     },
-    "MLOps": {
-      "total": 340,
+    "PEFT": {
+      "total": 364,
       "sources": {
-        "Adzuna India": 319,
+        "Hugging Face": 252,
+        "arXiv": 110,
+        "Adzuna India": 2
+      }
+    },
+    "MLOps": {
+      "total": 347,
+      "sources": {
+        "Adzuna India": 324,
         "arXiv": 7,
+        "HN Who's Hiring": 6,
         "We Work Remotely": 5,
-        "HN Who's Hiring": 4,
         "RemoteOK": 3,
         "AIM": 2
       }
     },
     "Rust": {
-      "total": 311,
+      "total": 313,
       "sources": {
-        "HN Who's Hiring": 101,
+        "HN Who's Hiring": 102,
         "Hugging Face": 74,
         "AIM": 55,
         "arXiv": 46,
         "Adzuna India": 16,
         "We Work Remotely": 13,
-        "RemoteOK": 5,
+        "RemoteOK": 6,
         "Mint": 1
       }
     },
     "JAX": {
-      "total": 311,
+      "total": 312,
       "sources": {
         "Hugging Face": 202,
-        "arXiv": 67,
+        "arXiv": 68,
         "Google Research": 34,
         "We Work Remotely": 3,
         "Adzuna India": 2,
@@ -577,11 +581,11 @@
       }
     },
     "Kubernetes": {
-      "total": 215,
+      "total": 224,
       "sources": {
-        "Adzuna India": 88,
-        "HN Who's Hiring": 65,
-        "RemoteOK": 19,
+        "Adzuna India": 92,
+        "HN Who's Hiring": 69,
+        "RemoteOK": 20,
         "We Work Remotely": 17,
         "arXiv": 15,
         "AIM": 10,
@@ -589,56 +593,58 @@
       }
     },
     "PostgreSQL": {
-      "total": 191,
+      "total": 197,
       "sources": {
-        "HN Who's Hiring": 92,
-        "Adzuna India": 38,
+        "HN Who's Hiring": 96,
+        "Adzuna India": 39,
         "RemoteOK": 24,
         "arXiv": 17,
-        "We Work Remotely": 10,
+        "We Work Remotely": 11,
         "AIM": 7,
         "Hugging Face": 2,
         "Inc42": 1
       }
     },
     "Go": {
-      "total": 155,
+      "total": 168,
       "sources": {
-        "RemoteOK": 109,
-        "Adzuna India": 31,
+        "RemoteOK": 115,
+        "Adzuna India": 38,
         "We Work Remotely": 12,
         "HN Who's Hiring": 2,
         "arXiv": 1
       }
     },
     "CUDA": {
-      "total": 149,
+      "total": 155,
       "sources": {
-        "arXiv": 73,
+        "arXiv": 76,
         "Hugging Face": 36,
         "AIM": 30,
         "Adzuna India": 5,
-        "HN Who's Hiring": 4,
+        "HN Who's Hiring": 5,
+        "RemoteOK": 2,
         "ET Tech": 1
       }
     },
     "Vector DB": {
-      "total": 141,
+      "total": 143,
       "sources": {
-        "Adzuna India": 95,
+        "Adzuna India": 96,
         "arXiv": 23,
         "AIM": 7,
         "Google Research": 6,
         "HN Who's Hiring": 4,
         "We Work Remotely": 4,
-        "YourStory": 2
+        "YourStory": 2,
+        "RemoteOK": 1
       }
     },
     "MongoDB": {
-      "total": 126,
+      "total": 129,
       "sources": {
         "AIM": 57,
-        "Adzuna India": 49,
+        "Adzuna India": 52,
         "HN Who's Hiring": 11,
         "arXiv": 3,
         "We Work Remotely": 3,
@@ -648,25 +654,36 @@
       }
     },
     "Docker": {
-      "total": 106,
+      "total": 115,
       "sources": {
-        "Adzuna India": 40,
-        "RemoteOK": 21,
-        "HN Who's Hiring": 20,
+        "Adzuna India": 42,
+        "RemoteOK": 26,
+        "HN Who's Hiring": 22,
         "arXiv": 18,
         "We Work Remotely": 4,
         "AIM": 3
       }
     },
     "LangChain": {
-      "total": 93,
+      "total": 95,
       "sources": {
-        "Adzuna India": 83,
+        "Adzuna India": 84,
         "AIM": 3,
         "arXiv": 3,
-        "HN Who's Hiring": 2,
+        "HN Who's Hiring": 3,
         "Inc42": 1,
         "RemoteOK": 1
+      }
+    },
+    "Kafka": {
+      "total": 76,
+      "sources": {
+        "Adzuna India": 55,
+        "We Work Remotely": 8,
+        "HN Who's Hiring": 6,
+        "RemoteOK": 5,
+        "AIM": 1,
+        "arXiv": 1
       }
     },
     "TensorFlow": {
@@ -680,31 +697,21 @@
         "Google Research": 1
       }
     },
-    "Kafka": {
-      "total": 71,
-      "sources": {
-        "Adzuna India": 53,
-        "We Work Remotely": 8,
-        "HN Who's Hiring": 6,
-        "RemoteOK": 2,
-        "AIM": 1,
-        "arXiv": 1
-      }
-    },
     "Ollama": {
-      "total": 55,
+      "total": 58,
       "sources": {
         "Hugging Face": 36,
         "AIM": 11,
-        "arXiv": 8
+        "arXiv": 8,
+        "RemoteOK": 3
       }
     },
     "Airflow": {
-      "total": 47,
+      "total": 48,
       "sources": {
         "Adzuna India": 23,
         "AIM": 8,
-        "We Work Remotely": 6,
+        "We Work Remotely": 7,
         "arXiv": 4,
         "YourStory": 3,
         "Inc42": 1,
