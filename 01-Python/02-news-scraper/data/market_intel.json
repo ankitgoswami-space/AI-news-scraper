@@ -1,6 +1,6 @@
 {
   "generated_by": "blog_intel.py",
-  "last_updated": "2026-11-10 22:10:03",
+  "last_updated": "2026-11-11 02:28:02",
   "articles": [
     {
       "salary_bands": [
@@ -5144,6 +5144,197 @@
         "title": "AI Jobs in India Salary (2026): Complete Pay Guide from Fresher to 1 Crore",
         "source_url": "https://example.com/ai-jobs-india-salary-2026",
         "scraped_date": "2026-03-30"
+      }
+    },
+    {
+      "salary_bands": [
+        {
+          "role": "data annotation contractor",
+          "experience": "fresher",
+          "min_lpa": 3,
+          "max_lpa": 3,
+          "notes": "Contractor role"
+        },
+        {
+          "role": "senior LLM engineer",
+          "experience": "senior",
+          "min_lpa": 70,
+          "max_lpa": 70,
+          "notes": "At product companies"
+        },
+        {
+          "role": "GenAI engineers",
+          "experience": "mid",
+          "min_lpa": 20,
+          "max_lpa": 70,
+          "notes": "Compared to 10-40 LPA for traditional ML engineers"
+        },
+        {
+          "role": "traditional ML engineers",
+          "experience": "mid",
+          "min_lpa": 10,
+          "max_lpa": 40,
+          "notes": null
+        },
+        {
+          "role": "MLOps Engineer",
+          "experience": "mid",
+          "min_lpa": 12,
+          "max_lpa": 35,
+          "notes": "Growing 20% YoY"
+        },
+        {
+          "role": "AI Product Manager",
+          "experience": "senior",
+          "min_lpa": 18,
+          "max_lpa": 55,
+          "notes": "At senior levels"
+        },
+        {
+          "role": "Prompt Engineer",
+          "experience": "fresher",
+          "min_lpa": 6,
+          "max_lpa": null,
+          "notes": "Entry level"
+        },
+        {
+          "role": "Prompt Engineer",
+          "experience": "senior",
+          "min_lpa": null,
+          "max_lpa": 40,
+          "notes": "For senior and lead roles at product companies and MNCs"
+        },
+        {
+          "role": "Junior Agentic AI Developer",
+          "experience": "junior",
+          "min_lpa": 12,
+          "max_lpa": 20,
+          "notes": "Requires strong GenAI foundation"
+        },
+        {
+          "role": "Mid-Level Agentic Systems Engineer",
+          "experience": "mid",
+          "min_lpa": 25,
+          "max_lpa": 45,
+          "notes": null
+        },
+        {
+          "role": "Senior Agentic AI Architect",
+          "experience": "senior",
+          "min_lpa": 50,
+          "max_lpa": 80,
+          "notes": "At product companies"
+        }
+      ],
+      "skills_in_demand": [
+        {
+          "skill": "Python",
+          "relevance": "core",
+          "notes": "Required for depth in AI right now"
+        },
+        {
+          "skill": "PyTorch",
+          "relevance": "core",
+          "notes": "Required for depth in AI right now"
+        },
+        {
+          "skill": "LLMs",
+          "relevance": "core",
+          "notes": "High demand for foundation models and fine-tuning"
+        },
+        {
+          "skill": "RAG",
+          "relevance": "important",
+          "notes": "Used in transformer architectures and LLM deployment"
+        },
+        {
+          "skill": "LangChain",
+          "relevance": "important",
+          "notes": "Used for building LLM-powered applications"
+        },
+        {
+          "skill": "GPT",
+          "relevance": "important",
+          "notes": "Used by GenAI developers"
+        },
+        {
+          "skill": "Llama",
+          "relevance": "important",
+          "notes": "Used by GenAI developers"
+        },
+        {
+          "skill": "HuggingFace",
+          "relevance": "important",
+          "notes": "Used by GenAI developers"
+        },
+        {
+          "skill": "LangGraph",
+          "relevance": "core",
+          "notes": "Multi-agent orchestration framework"
+        },
+        {
+          "skill": "CrewAI",
+          "relevance": "important",
+          "notes": "Multi-agent orchestration framework"
+        },
+        {
+          "skill": "AutoGen",
+          "relevance": "important",
+          "notes": "Multi-agent orchestration framework"
+        },
+        {
+          "skill": "vector databases",
+          "relevance": "important",
+          "notes": "Required for agentic systems"
+        }
+      ],
+      "city_patterns": [
+        {
+          "city": "Bengaluru",
+          "typical_roles": [
+            "GenAI engineers",
+            "mid-senior roles",
+            "Prompt Engineer"
+          ],
+          "salary_range_lpa": "15-45 LPA"
+        },
+        {
+          "city": "Hyderabad",
+          "typical_roles": [
+            "GenAI engineers",
+            "Prompt Engineer"
+          ],
+          "salary_range_lpa": "13-35 LPA"
+        },
+        {
+          "city": "Mumbai",
+          "typical_roles": [
+            "GenAI engineers",
+            "Prompt Engineer"
+          ],
+          "salary_range_lpa": "12-38 LPA"
+        },
+        {
+          "city": "Delhi-NCR",
+          "typical_roles": [
+            "GenAI engineers"
+          ],
+          "salary_range_lpa": "10-32 LPA"
+        }
+      ],
+      "key_insights": [
+        "India's AI job demand grew over 40% year-on-year according to NASSCOM's 2024 report with over 450,000 AI job listings.",
+        "Fewer than 3% of India's 1.5 million annual engineering graduates have real AI/ML skills, creating a major supply-demand mismatch.",
+        "Generative AI engineers and LLM engineers earn between 20 to 70 LPA, significantly higher than traditional ML engineers.",
+        "Bengaluru leads in both volume and top-end AI salaries, while Hyderabad is the fastest-growing hub.",
+        "Remote work allows senior AI engineers working for US-based companies from Tier-2 cities to earn 60-80 LPA equivalent.",
+        "Agentic AI is emerging as a new high-paying wave with senior architects reaching 50-80 LPA at product companies.",
+        "Gartner predicted four out of five engineers will need to upskill by 2027 to stay relevant in GenAI-shaped roles."
+      ],
+      "article_meta": {
+        "title": "AI Jobs in India Salary (2026): Complete Pay Guide from Fresher to 1 Crore",
+        "source_url": "",
+        "scraped_date": "2026-03-31"
       }
     }
   ]

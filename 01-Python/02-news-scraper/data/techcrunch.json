@@ -1,5 +1,41 @@
 [
     {
+        "title": "All 7 Anthropic founders will each cash out about $250M in IPO",
+        "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
+        "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "PSI is trying to make a business out of AI-driven scientific discovery",
+        "url": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
+        "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
+        "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Nvidia CEO Jensen Huang’s affair with alleged Chinese spy: a timeline",
+        "url": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
         "title": "Google broadens its AI hardware portfolio with two new specialized chips",
         "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
         "source": "TechCrunch",
@@ -36,7 +72,13 @@
         "category": "AI"
     },
     {
-        "title": "Cyberattacks threaten to make open-source AI a little less open, Hugging Face exec warns",
+        "title": "Ring, known for its doorbell cameras, launches a home security drone and an enterprise security robot",
+        "url": "https://techcrunch.com/2026/11/10/ring-known-for-its-doorbell-cameras-launches-a-home-security-drone-and-an-enterprise-security-robot/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Cyberattacks threaten to make open source AI a little less open, Hugging Face exec warns",
         "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
         "source": "TechCrunch",
         "category": "AI"
@@ -138,32 +180,8 @@
         "category": "AI"
     },
     {
-        "title": "From the front row to the hot seat — what the midterms mean for Big Tech",
-        "url": "https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Crusoe sells troubled Wyoming data center project to Google",
-        "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
-        "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
-        "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
-        "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+        "title": "Jensen Huang’s alleged honeypot scandal has inspired some top-notch memes",
+        "url": "https://techcrunch.com/2026/11/09/jensen-huangs-alleged-honeypot-scandal-has-inspired-some-top-notch-memes/",
         "source": "TechCrunch",
         "category": "AI"
     },
@@ -188,12 +206,6 @@
     {
         "title": "Harbinger raises $240M after expanding into defense",
         "url": "https://techcrunch.com/2026/11/05/harbinger-raises-240m-after-expanding-into-defense/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Apple is reportedly cutting budgets for its internal AI usage",
-        "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
         "source": "TechCrunch",
         "category": "AI"
     },
