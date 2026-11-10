@@ -1,5 +1,23 @@
 [
   {
+    "title": "Epsilon — Hybrid (Chicago, IL)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50441512",
+    "published_date": "2026-11-10",
+    "content": "Epsilon |Hybrid (Chicago, IL) | Full time | $150-$160K USD\n\nHello everyone, Epsilon is hiring for a Lead Software Engineer. This is a hybrid role working out of our downtown Chicago office. Looking for backend&#x2F;API development as well as data engineering experience.\n\nApply here: https:&#x2F;&#x2F;careers.publicisgroupe.com&#x2F;epsilon&#x2F;jobs&#x2F;151072?lang=...",
+    "company": "Epsilon",
+    "location": ""
+  },
+  {
+    "title": "Who's hiring a customer success, guide onboarding specialist and account management roles remotely in US UK and other European countries, Netherlands ",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50437037",
+    "published_date": "2026-11-10",
+    "content": "Who's hiring a customer success, guide onboarding specialist and account management roles remotely in US UK and other European countries, Netherlands Germany or even worldwide",
+    "company": "Who's hiring a customer success, guide onboarding specialist and account management roles remotely in US UK and other European countries, Netherlands Germany or even worldwide",
+    "location": "Remote"
+  },
+  {
     "title": "Tecla IO — Digital Sales Specialist",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50427828",
@@ -70,6 +88,42 @@
     "content": "OpenTrain AI | REMOTE (US) | Part-time | Backend Engineer, AI Coding Task Design\n\nOpenTrain AI connects experienced professionals with paid, part-time AI training work. We are the hiring company and are actively filling this role.\n\n- $30–$100 per hour equivalent, paid per accepted task\n- 100% remote, United States\n- About 15 hours&#x2F;week; choose your schedule\n\nWe need backend engineers to design realistic coding tasks for AI systems, write deterministic verifiers, assess correctness and code quality, and apply secure coding and security review where relevant. This work helps improve AI systems that write software.\n\nIdeal background\n- Strong professional backend experience with Python, Java, Node.js, Go, Rust, TypeScript, C++ or similar\n- Scalable APIs&#x2F;services, complex features, debugging, bottleneck resolution and code review\n- Strong analytical, problem-solving and technical communication skills; professional English\n- Helpful: application security, secure coding, vulnerability assessment, penetration testing, OWASP&#x2F;CWE or security-focused code review\n- No AI experience needed; structured task-design guidelines and verification criteria are provided\n\nIndependent contractor; pay is per accepted task. Fully remote and flexible, with no fixed shifts. Apply on OpenTrain (resume upload): https:&#x2F;&#x2F;app.opentrain.ai&#x2F;api&#x2F;out&#x2F;cmu9linxg000o0bgm9xiw33b9?c... \n\nThen complete a short application on the hiring platform. Shortlisted applicants take a short AI interview.",
     "company": "OpenTrain AI",
     "location": "Remote"
+  },
+  {
+    "title": "LiveKit — http:&#x2F;&#x2F;livekit.io&#x2F;",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50433727",
+    "published_date": "2026-11-09",
+    "content": "LiveKit| http:&#x2F;&#x2F;livekit.io&#x2F; | VoiceAI | webRTC | Remote | Full Time LiveKit is building the infrastructure layer for the voice-driven era of computing. Our platform gives developers everything they need to build, test, deploy, scale, and observe agents in production. Hiring:\n\n>> Solutions Architect | UK (Remote): https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;livekit&#x2F;63cec43b-4627-4494-b70d-cb7... \n\n>> Solutions Architect | Germany (Remote): https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;livekit&#x2F;d79e72d0-8bde-42b8-8a21-184... \n\n>> Staff Product Manager, Telephony | North America (Remote) or SF (Hybrid): https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;livekit&#x2F;d0dbf189-af6d-400e-ac1f-4da... \n\nCo-founders: Russ d'Sa (CEO) https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;russelldsa&#x2F; & David Zhao (CTO) https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;davidzhao&#x2F; \n\nCheck out our blog: https:&#x2F;&#x2F;livekit.com&#x2F;blog \n\nOur other roles: https:&#x2F;&#x2F;jobs.ashbyhq.com&#x2F;livekit?utm_source=1bpyr8q375",
+    "company": "LiveKit",
+    "location": "Remote"
+  },
+  {
+    "title": "Polymath — Founding MTS, Full-Stack",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50432950",
+    "published_date": "2026-11-09",
+    "content": "Polymath | Founding MTS, Full-Stack | San Francisco | ONSITE (5 days) | $160K–$220K + 0.75%–1.5% equity | https:&#x2F;&#x2F;polymathmade.com \n\nPolymath builds AI agents that read engineering drawings, generate CAD models, and rebuild parts across CAD systems. We're VC-backed, Harvard- and Stanford-founded, in production with our first product, and running pilots with Fortune 100 manufacturers in aerospace and consumer hardware.\n\nWe're hiring our first dedicated full-stack engineer to own the product stack end to end: the chat UIs inside CAD (TypeScript&#x2F;React over MCP and REST), the Python&#x2F;FastAPI services behind them (auth, job orchestration, metered billing with Auth0 and Stripe), and the pipeline that packages and deploys it all. You report to the CEO, join customer calls, and set the standards for the next ten hires.\n\nLooking for: 5+ years running production web apps with ownership across front end, API, and deployment; prior early-stage experience (first 50 engineers somewhere); TypeScript and Python; shipped on AWS or GCP with Terraform&#x2F;CloudFormation and Kubernetes&#x2F;ECS&#x2F;Cloud Run. Nice to have: LLM product ops, enterprise SSO, C#&#x2F;C++ desktop packaging, any CAD or mech-eng curiosity.\n\nMust be authorized to work in the U.S. Immediate start.\n\nApply: email careers@polymathmade.com with a resume, a GitHub or portfolio link if you have one, and a few sentences on a system you built and ran in production. I read every application and reply within a week. Full JD: https:&#x2F;&#x2F;polymath-ai.notion.site&#x2F;careers-1",
+    "company": "Polymath",
+    "location": ""
+  },
+  {
+    "title": "Stealth Health-Tech Startup — Senior Backend&#x2F;Infrastructure Engineer",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50429861",
+    "published_date": "2026-11-09",
+    "content": "Stealth Health-Tech Startup | Senior Backend&#x2F;Infrastructure Engineer | San Francisco | ONSITE | Full-time | [salary range] + generous equity\n\nWe're a rapidly growing, venture-backed stealth startup helping people understand their medical records and lab results. We need an engineer to own security (HIPAA&#x2F;SOC 2, KMS, IAM, audit logging), indexing and querying large volumes of medical data in Postgres, and scaling a serverless backend as traffic grows.\n\nStack: TypeScript, Next.js, AWS serverless (Lambda, Aurora Postgres, SQS, Step Functions), CDK.\n\nApply (5 min): https:&#x2F;&#x2F;forms.gle&#x2F;N9U7zkz2zaUUtunV7",
+    "company": "Stealth Health-Tech Startup",
+    "location": ""
+  },
+  {
+    "title": "Location: Bangalore, India (IST &#x2F; UTC+5:30)",
+    "source": "HN Who's Hiring",
+    "url": "https://news.ycombinator.com/item?id=50430411",
+    "published_date": "2026-11-09",
+    "content": "Location: Bangalore, India (IST &#x2F; UTC+5:30)\nRemote: Yes (Worldwide)\nWilling to relocate: Yes (Worldwide, visa sponsorship required)\nTechnologies: TypeScript, Node.js, Go, Python, React, PostgreSQL, MongoDB, Redis, RabbitMQ, BullMQ, AWS, Docker, WebSockets, WebRTC, GraphQL, OpenAI, RAG, Vector DBs, ONNX Runtime, Grafana&#x2F;Loki\nRésumé&#x2F;CV: https:&#x2F;&#x2F;drive.google.com&#x2F;file&#x2F;d&#x2F;1kHPNmquEQniZlqC8bJYhCKPTztC... \nEmail: shubhankars361@gmail.com\n\nSenior Software Engineer (~5 YoE) building real-time AI systems, event-driven backends, and distributed infrastructure in Node.js&#x2F;TypeScript, Python, and Go. Available immediately.\n\nExperience:\n\n- Playhouse Media (Senior SDE): Re-architected real-time voice AI for sub-300ms latency (streaming LLMs, STT&#x2F;TTS), Redis&#x2F;BullMQ queues, Stripe billing, and Grafana&#x2F;Loki observability (-80% MTTR) powering https:&#x2F;&#x2F;secretdesires.ai \n\n- Troopr Labs (SDE): Built enterprise AI Agent Assist & RAG pipelines (Jira&#x2F;Salesforce), vector search, and WebSockets; optimized Node.js concurrency to boost AI throughput by 40%.\n\n- Zeeve (Software Engineer): Built distributed notification and async event infrastructure using RabbitMQ, Node.js, TypeScript, and PostgreSQL.\n\nShipped & Open Source:\n\n- ServerPulse ( https:&#x2F;&#x2F;serverpulse.strangr.space ): VPS monitoring platform with a lightweight Go telemetry agent and React dashboard.\n\n- EmbedServe-ORT ( https:&#x2F;&#x2F;github.com&#x2F;shubhankar-mern&#x2F;EmbedServe-ORT ): CPU-optimized ONNX embeddings server with an OpenAI-compatible REST API.\n\n- redis-lua-rate-limiter ( https:&#x2F;&#x2F;www.npmjs.com&#x2F;package&#x2F;redis-lua-rate-limiter ): Atomic Redis Lua token-bucket rate limiter for Node.js.\n\nPortfolio: https:&#x2F;&#x2F;shubhankar-devv-portfolio.pages.dev \nGitHub: https:&#x2F;&#x2F;github.com&#x2F;shubhankar-mern \nLinkedIn: https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;shubhankar27",
+    "company": "Location: Bangalore, India (IST &#x2F; UTC+5:30)",
+    "location": "Bangalore"
   },
   {
     "title": "BCDRPulse — Head of Global GTM",
@@ -1143,11 +1197,11 @@
     "location": ""
   },
   {
-    "title": "Memorang — Product Engineers + Technical Project Manager",
+    "title": "Memorang — Product Engineers + Design Engineers + Technical Project Manager",
     "source": "HN Who's Hiring",
     "url": "https://news.ycombinator.com/item?id=50340985",
     "published_date": "2026-11-02",
-    "content": "Memorang | Product Engineers + Technical Project Manager | Full-Time | Los Angeles (or US remote for exceptional hires)\n\nMemorang is an \"AI stack for education\" that helps organizations build, launch, and monetize AI-powered learning and assessment products. Think Vercel plus Shopify for EdTech. We currently operate on an enterprise model, serving as the AI technology and commercial partner behind new product lines for organizations like ETS, McGraw-Hill, Pearson, and the ACT.\n\nWe’re hiring for two roles:\n\nProduct Engineers\nOwn features from the first rough idea to production. You’ll work across AI workflows, backend systems, and user interfaces, making product decisions along the way. We’re looking for engineers who ask good questions, care about the details users notice, and can turn an ambiguous problem into something useful and shipped.\n\nStack: TypeScript, React&#x2F;Next.js, React Native, Node.js, AWS Lambda, Postgres, and Neo4j.\n\nTechnical Project Manager\nTurn complex work into clear plans and keep delivery moving. You’ll coordinate across engineering, design, and customer needs, surface dependencies early, resolve blockers, and keep owners and timelines clear as priorities change.\n\nIdeal background: an engineer who moved into project management, with startup experience and enough technical depth to discuss APIs, architecture, and AI workflows with the people building them.\n\nWhy join?\nA small team, meaningful ownership, and products used by millions. You’ll help shape what we build and how we work, with a short path from an idea to seeing it in users’ hands.\n\nRemote-first, async-friendly, with health and wellness stipends, home-office support, and paid time off.\n\nApply: Email careers@memorang.com with your CV, a few sentences about what interests you, and something you’re proud to have built or delivered.",
+    "content": "Memorang | Product Engineers + Design Engineers + Technical Project Manager | Full-Time | Los Angeles (or US remote for exceptional hires)\n\nMemorang is an \"AI stack for education\" that helps organizations build, launch, and monetize AI-powered learning and assessment products. Think Vercel plus Shopify for EdTech. We currently operate on an enterprise model, serving as the AI technology and commercial partner behind new product lines for organizations like ETS, McGraw-Hill, Pearson, and the ACT.\n\nWe’re hiring for two roles:\n\nProduct Engineers\nOwn features from the first rough idea to production. You’ll work across AI workflows, backend systems, and user interfaces, making product decisions along the way. We’re looking for engineers who ask good questions, care about the details users notice, and can turn an ambiguous problem into something useful and shipped.\n\nStack: TypeScript, React&#x2F;Next.js, React Native, Node.js, AWS Lambda, Postgres, and Neo4j.\n\nDesign Engineers\nDesign and build interfaces that make complex workflows feel simple. You’ll take ideas from early exploration through working prototypes to production, with attention to interaction design, typography, accessibility, and the small details that make a product feel finished. We’re looking for someone with strong visual judgment who can also ship in React and TypeScript.\n\nShow us products you’ve designed and built, with a clear sense of what you personally owned.\n\nTechnical Project Manager\nTurn complex work into clear plans and keep delivery moving. You’ll coordinate across engineering, design, and customer needs, surface dependencies early, resolve blockers, and keep owners and timelines clear as priorities change.\n\nIdeal background: an engineer who moved into project management, with startup experience and enough technical depth to discuss APIs, architecture, and AI workflows with the people building them.\n\nWhy join?\nA small team, meaningful ownership, and products used by millions. You’ll help shape what we build and how we work, with a short path from an idea to seeing it in users’ hands.\n\nRemote-first, async-friendly, with health and wellness stipends, home-office support, and paid time off.\n\nApply: Email careers@memorang.com with your CV, a few sentences about what interests you, and something you’re proud to have built or delivered.",
     "company": "Memorang",
     "location": "Remote"
   },

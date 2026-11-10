@@ -1,5 +1,101 @@
 [
     {
+        "title": "Google broadens its AI hardware portfolio with two new specialized chips",
+        "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
+        "url": "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
+        "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
+        "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "After challenging Google’s Android with Cyanogen, its co-founder takes aim at Windows for AI era",
+        "url": "https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Spotify’s AI DJ gets new voices, personalities, and an option for less chatter",
+        "url": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Cyberattacks threaten to make open-source AI a little less open, Hugging Face exec warns",
+        "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Otter AI can now follow conversations across 30+ languages",
+        "url": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Anthropic reportedly plans to move forward with IPO plans",
+        "url": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Jensen Huang reportedly engaged a PR firm with a history of handling  high-profile sex scandals a year ago",
+        "url": "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "A short seller flagged Nvidia CEO’s ties to a suspected Chinese spy six months before the scandal",
+        "url": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "The race is on to sue Nvidia",
+        "url": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Jensen Huang pulls out of ElevenLabs Summit amid Nvidia controversy",
+        "url": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Anthropic releases new Mythos and Fable models amid RSI concerns",
+        "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
+        "url": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Meta releases Muse Ember, a new lightweight model for agent execution",
+        "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
         "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
         "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
         "source": "TechCrunch",
@@ -18,7 +114,7 @@
         "category": "AI"
     },
     {
-        "title": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
+        "title": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s ‘about a 50-50’",
         "url": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
         "source": "TechCrunch",
         "category": "AI"
@@ -38,6 +134,12 @@
     {
         "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
         "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "From the front row to the hot seat — what the midterms mean for Big Tech",
+        "url": "https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/",
         "source": "TechCrunch",
         "category": "AI"
     },
@@ -66,104 +168,8 @@
         "category": "AI"
     },
     {
-        "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
-        "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
-        "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Underdog shows off a 32MB speech model in new demo",
-        "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Physicl raises $10M to make the digital world real enough for robots",
-        "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
-        "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
-        "url": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Meta says US users can now video chat with their Muse AI avatar",
-        "url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Meta warns that election backlash against data centers could make AI expansion harder",
-        "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "OpenAI released a new cybersecurity model. Is that enough?",
-        "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
-        "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Claude can now analyze your spending with its new Personal Finance tool",
-        "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Axiom Math wants to keep AI slop out of mathematics",
-        "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
-        "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Aina’s smart ring has a screen, a joystick, and a mic so you can talk to AI agents",
-        "url": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Box taps Nvidia’s Nemotron for new agent-first content retrieval system",
-        "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "A YC startup is putting $1M behind 5 unsolved materials science problems for AI",
-        "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Agility is the first pure humanoid robot company on the stock market. Are you buying?",
-        "url": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/",
+        "title": "Musk says Tesla will refund some Cybertruck deposits, defends decision to end production",
+        "url": "https://techcrunch.com/2026/11/09/musk-says-tesla-will-refund-some-cybertruck-deposits-defends-decision-to-end-production/",
         "source": "TechCrunch",
         "category": "AI"
     },
@@ -174,8 +180,20 @@
         "category": "AI"
     },
     {
+        "title": "Claude can now analyze your spending with its new Personal Finance tool",
+        "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
         "title": "Harbinger raises $240M after expanding into defense",
         "url": "https://techcrunch.com/2026/11/05/harbinger-raises-240m-after-expanding-into-defense/",
+        "source": "TechCrunch",
+        "category": "AI"
+    },
+    {
+        "title": "Apple is reportedly cutting budgets for its internal AI usage",
+        "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
         "source": "TechCrunch",
         "category": "AI"
     },
@@ -188,18 +206,6 @@
     {
         "title": "Meta acquires AI coding startup Conductor",
         "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "Data centers are turning to old jet engines as the wait for power grows",
-        "url": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
-        "source": "TechCrunch",
-        "category": "AI"
-    },
-    {
-        "title": "New York City’s Mamdani criticizes Madison Square Garden owner over surveillance tech",
-        "url": "https://techcrunch.com/2026/11/03/new-york-citys-mamdani-criticizes-madison-square-garden-owner-over-surveillance-tech/",
         "source": "TechCrunch",
         "category": "AI"
     }
